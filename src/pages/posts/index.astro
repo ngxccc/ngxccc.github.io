@@ -1,0 +1,116 @@
+---
+import BaseLayout from "../../layouts/BaseLayout.astro";
+import { getCollection } from "astro:content";
+
+const allPosts = await getCollection("posts");
+const sortedPosts = allPosts
+  .filter((post) => post.data.isPublished !== false)
+  .sort(
+    (a, b) => new Date(b.data.date).getTime() - new Date(a.data.date).getTime(),
+  )
+  .slice();
+
+// Group posts by Year
+const postsByYear = sortedPosts.reduce<Record<string, typeof sortedPosts>>(
+  (acc, post) => {
+    const year = post.data.date.split("-")[0] ?? "Unknown";
+    if (!acc[year]) acc[year] = [];
+    acc[year].push(post);
+    return acc;
+  },
+  {},
+);
+
+const years = Object.keys(postsByYear).sort((a, b) => Number(b) - Number(a));
+
+function formatArchiveDate(dateStr: string) {
+  const d = new Date(dateStr);
+  const month = d.toLocaleString("en-US", {
+    month: "short",
+    timeZone: "UTC",
+  });
+  const day = String(d.getUTCDate()).padStart(2, "0");
+  return `${month} ${day}`;
+}
+---
+
+<BaseLayout
+  title="Writing — Tran Van Ngoc"
+  description="Technical articles, architecture notes, and software engineering writings by Tran Van Ngoc."
+>
+  {
+    years.map((year, index) => (
+      <section
+        class="archive-year-group"
+        style={index === 0 ? "margin-top: 0.2rem;" : ""}
+      >
+        <div class="archive-year">{year}</div>
+        <ul class="archive-list">
+          {(postsByYear[year] ?? []).map((post) => {
+            const slug = post.id.replace(/\.(md|mdx)$/, "");
+            return (
+              <li class="archive-item">
+                <span class="archive-date">
+                  {formatArchiveDate(post.data.date)}
+                </span>
+                <span class="archive-title">
+                  <a href={`/posts/${slug}`}>{post.data.title}</a>
+                </span>
+              </li>
+            );
+          })}
+        </ul>
+      </section>
+    ))
+  }
+</BaseLayout>
+
+<style>
+  .archive-year-group {
+    margin-top: 1.8rem;
+    margin-bottom: 1.4rem;
+  }
+
+  .archive-year {
+    font-size: 1.4rem;
+    color: var(--heading-color);
+    font-family: "DejaVu Sans Condensed", sans-serif;
+    margin-bottom: 0.5rem;
+    border-bottom: 1px dotted var(--border-dotted);
+    padding-bottom: 0.2rem;
+  }
+
+  .archive-list {
+    list-style: none;
+    padding-left: 0;
+    margin-top: 0.4rem;
+  }
+
+  .archive-item {
+    display: flex;
+    align-items: baseline;
+    margin-bottom: 0.45rem;
+    line-height: 1.45;
+  }
+
+  .archive-date {
+    font-family: Consolas, "DejaVu Sans Mono", monospace;
+    font-size: 0.85rem;
+    color: var(--subheading-color);
+    width: 4.8rem;
+    flex-shrink: 0;
+  }
+
+  .archive-title {
+    flex-grow: 1;
+  }
+
+  @media (max-width: 600px) {
+    .archive-item {
+      flex-direction: row;
+    }
+    .archive-date {
+      width: 4rem;
+    }
+  }
+</style>

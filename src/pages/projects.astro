@@ -1,0 +1,90 @@
+---
+import BaseLayout from "../layouts/BaseLayout.astro";
+import { siteConfig } from "../data/site";
+import { projects } from "../data/projects";
+---
+
+<BaseLayout
+  title={`Projects — ${siteConfig.title}`}
+  description={`Technical projects, system architecture, and open source software by ${siteConfig.title}.`}
+>
+  {
+    projects.map((project, index) => (
+      <div>
+        <div
+          class="project-item"
+          style={index === 0 ? "margin-top: 0.2rem;" : ""}
+        >
+          <div class="project-title">
+            <a href={project.github} target="_blank" rel="noopener">
+              {project.title}
+            </a>
+          </div>
+          <div class="project-meta">{project.meta}</div>
+
+          <p>
+            <strong>The Problem:</strong> {project.problem}
+          </p>
+
+          <p style="margin-bottom: 0.4rem;">
+            <strong>Architecture & Key Decisions:</strong>
+          </p>
+          <ul>
+            {project.decisions.map((d) => (
+              <li>
+                <strong>{d.label}:</strong> {d.detail}
+              </li>
+            ))}
+          </ul>
+
+          {project.benchmark && (
+            <pre set:html={`<code>${project.benchmark.trim()}</code>`} />
+          )}
+
+          {project.demo && (
+            <div class="project-links">
+              <a href={project.demo} target="_blank" rel="noopener">
+                [Live Demo]
+              </a>
+            </div>
+          )}
+        </div>
+        {index < projects.length - 1 && <hr />}
+      </div>
+    ))
+  }
+</BaseLayout>
+
+<style>
+  .project-item {
+    margin-bottom: 2.2rem;
+  }
+
+  .project-title {
+    font-size: 1.2rem;
+    margin-bottom: 0.2rem;
+  }
+
+  .project-title a {
+    color: var(--heading-color);
+  }
+
+  .project-meta {
+    font-size: 0.833rem;
+    color: var(--subheading-color);
+    font-family: monospace;
+    margin-bottom: 0.5rem;
+  }
+
+  .project-links {
+    margin-top: 0.8rem;
+  }
+
+  .project-links a {
+    margin-right: 0.8rem;
+    font-size: 0.833rem;
+    font-family: Consolas, "DejaVu Sans Mono", monospace;
+    text-decoration: underline;
+    text-underline-offset: 3px;
+  }
+</style>

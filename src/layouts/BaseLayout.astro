@@ -1,0 +1,85 @@
+---
+import "../styles/global.css";
+import { siteConfig } from "../data/site";
+
+interface Props {
+  title?: string | undefined;
+  description?: string | undefined;
+}
+
+const { title = siteConfig.title, description = siteConfig.description } =
+  Astro.props;
+
+const pathname = Astro.url.pathname;
+const isHome = pathname === "/" || pathname === "";
+const isWriting = pathname.startsWith("/posts");
+const isProjects = pathname.startsWith("/projects");
+const isAbout = pathname.startsWith("/about");
+---
+
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>{title}</title>
+    <meta name="description" content={description} />
+    <link rel="canonical" href={new URL(Astro.url.pathname, Astro.site)} />
+    <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
+    <link rel="icon" href="/favicon.ico" sizes="any" />
+  </head>
+  <body>
+    <header id="site-header">
+      <nav id="navigation">
+        <a href="/" class={isHome ? "active" : ""}>Home</a>
+        <a href="/posts" class={isWriting ? "active" : ""}>Writing</a>
+        <a href="/projects" class={isProjects ? "active" : ""}>Projects</a>
+        <a href="/about" class={isAbout ? "active" : ""}>About</a>
+      </nav>
+    </header>
+
+    <main>
+      <slot />
+    </main>
+
+    <footer id="site-footer">
+      &copy; {`${new Date().getFullYear()} ${siteConfig.author.name}`}.<br />
+      Content licensed under <a
+        href="https://creativecommons.org/licenses/by-nc-sa/4.0/"
+        target="_blank"
+        rel="noopener">CC-BY-NC-SA 4.0</a
+      >.
+    </footer>
+
+    <script is:inline>
+      document.addEventListener("DOMContentLoaded", () => {
+        const preBlocks = document.querySelectorAll("pre");
+        preBlocks.forEach((pre) => {
+          if (pre.querySelector(".copy-code-btn")) return;
+          const button = document.createElement("button");
+          button.className = "copy-code-btn";
+          button.type = "button";
+          button.innerText = "copy";
+          button.setAttribute("aria-label", "Copy code to clipboard");
+
+          button.addEventListener("click", async () => {
+            const code = pre.querySelector("code")?.innerText || pre.innerText;
+            try {
+              await navigator.clipboard.writeText(code);
+              button.innerText = "copied!";
+              button.classList.add("copied");
+              setTimeout(() => {
+                button.innerText = "copy";
+                button.classList.remove("copied");
+              }, 2000);
+            } catch (err) {
+              console.error("Failed to copy code", err);
+            }
+          });
+
+          pre.appendChild(button);
+        });
+      });
+    </script>
+  </body>
+</html>

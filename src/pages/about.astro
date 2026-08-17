@@ -1,0 +1,99 @@
+---
+import BaseLayout from "../layouts/BaseLayout.astro";
+import { siteConfig } from "../data/site";
+---
+
+<BaseLayout
+  title={`About — ${siteConfig.title}`}
+  description={`About ${siteConfig.title} — background, engineering interests, and technical focus.`}
+>
+  <section style="margin-top: 0.2rem;">
+    <p>
+      Hi, I'm <strong>{siteConfig.author.name}</strong> (online as{" "}
+      <strong>{siteConfig.author.handle}</strong>). I am a software developer
+      based in {siteConfig.author.location}.
+    </p>
+    <p>
+      My path into computing didn't start with code—it started with taking apart
+      computer hardware, troubleshooting broken operating systems, and wondering
+      why computers freeze. That hands-on tinkering grew into a deeper curiosity
+      about software: how operating systems manage resources, how network
+      protocols communicate across machines, and how to write backend services
+      that don't break under pressure.
+    </p>
+    <p>
+      In engineering, I prefer <strong>simplicity over cleverness</strong>. I
+      value mechanical sympathy, deterministic behavior, and readable code. I'd
+      rather understand a single system deeply than glue together five heavy
+      frameworks I don't understand.
+    </p>
+  </section>
+
+  <hr />
+
+  <section>
+    <h2>What I Care About</h2>
+    <p>
+      Most of my technical curiosity revolves around backend systems and data
+      consistency:
+    </p>
+    <p>
+      I spend a lot of time thinking about <strong>concurrency control</strong
+      >—how to prevent race conditions and duplicate executions in distributed
+      environments using techniques like Redis Redlock and database pessimistic
+      locking. I'm fascinated by transactional resilience patterns, such as the
+      Transactional Outbox pattern for reliable message delivery and idempotent
+      API design.
+    </p>
+    <p>
+      Beyond backend services, I do all my daily work in a minimal <strong
+        >Arch Linux</strong
+      > environment. Working close to the command line has taught me to appreciate
+      small, single-purpose Unix tools, fast feedback loops, and efficient workflows.
+      I also experiment with systems programming in <strong>Go</strong> to build lightweight
+      CLI utilities.
+    </p>
+  </section>
+
+  <hr />
+
+  <section>
+    <h2>Background & Life</h2>
+    <p>
+      I am currently studying Information Technology at Cao Thang Technical
+      College. When I'm not writing code or debugging database queries, I enjoy
+      practicing calisthenics, refining my terminal setup, and reading technical
+      postmortems and system design notes.
+    </p>
+  </section>
+
+  <hr />
+
+  <section>
+    <h2>Get in Touch</h2>
+    <p>
+      I'm always happy to talk about backend systems, Linux tooling, or software
+      craftsmanship. You can reach me directly:
+    </p>
+    <ul>
+      <li>
+        <strong>Email:</strong>{" "}
+        <a href={`mailto:${siteConfig.author.email}`}
+          >{siteConfig.author.email}</a
+        >
+      </li>
+      <li>
+        <strong>GitHub:</strong>{" "}
+        <a href={siteConfig.author.github} target="_blank" rel="noopener"
+          >{siteConfig.author.github.replace("https://", "")}</a
+        >
+      </li>
+      <li>
+        <strong>LinkedIn:</strong>{" "}
+        <a href={siteConfig.author.linkedin} target="_blank" rel="noopener"
+          >{siteConfig.author.linkedin.replace("https://", "")}</a
+        >
+      </li>
+    </ul>
+  </section>
+</BaseLayout>

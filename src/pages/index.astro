@@ -1,11 +1,166 @@
 ---
-import Welcome from '../components/Welcome.astro';
-import Layout from '../layouts/Layout.astro';
+import BaseLayout from "../layouts/BaseLayout.astro";
+import { siteConfig } from "../data/site";
+import { projects } from "../data/projects";
+import { getCollection } from "astro:content";
 
-// Welcome to Astro! Wondering what to do next? Check out the Astro documentation at https://docs.astro.build
-// Don't want to use any of this? Delete everything in this file, the `assets`, `components`, and `layouts` directories, and start fresh.
+const allPosts = await getCollection("posts");
+const sortedPosts = allPosts
+  .filter((post) => post.data.isPublished !== false)
+  .sort(
+    (a, b) => new Date(b.data.date).getTime() - new Date(a.data.date).getTime(),
+  )
+  .slice(0, 5);
+
+const featuredProjects = projects.filter((p) => p.featured);
+
+function formatArchiveDate(dateStr: string) {
+  const d = new Date(dateStr);
+  const month = d.toLocaleString("en-US", {
+    month: "short",
+    timeZone: "UTC",
+  });
+  const day = String(d.getUTCDate()).padStart(2, "0");
+  return `${month} ${day}`;
+}
 ---
 
-<Layout>
-	<Welcome />
-</Layout>
+<BaseLayout title={`${siteConfig.title} — Home`}>
+  <section style="margin-top: 0.2rem; margin-bottom: 2rem;">
+    <p>{siteConfig.tagline}</p>
+  </section>
+
+  <section style="margin-bottom: 2.2rem;">
+    <h2>Selected Projects</h2>
+
+    {
+      featuredProjects.map((project) => (
+        <div class="project-item">
+          <div class="project-title">
+            <a href={project.github} target="_blank" rel="noopener">
+              {project.title}
+            </a>
+          </div>
+          <div class="project-meta">{project.meta}</div>
+          <p class="project-desc">{project.problem}</p>
+          <div class="project-links">
+            <a href="/projects">[Read Details -&gt;]</a>
+          </div>
+        </div>
+      ))
+    }
+  </section>
+
+  <section style="margin-bottom: 2rem;">
+    <h2>Recent Writing</h2>
+    <ul class="archive-list">
+      {
+        sortedPosts.map((post) => {
+          const slug = post.id.replace(/\.(md|mdx)$/, "");
+          return (
+            <li class="archive-item">
+              <span class="archive-date">
+                {formatArchiveDate(post.data.date)}
+              </span>
+              <span class="archive-title">
+                <a href={`/posts/${slug}`}>{post.data.title}</a>
+              </span>
+            </li>
+          );
+        })
+      }
+    </ul>
+    <p style="margin-top: 1rem;">
+      <a href="/posts" class="archive-more-link"
+        >View all posts in archives -&gt;</a
+      >
+    </p>
+  </section>
+</BaseLayout>
+
+<style>
+  .project-item {
+    margin-bottom: 2rem;
+  }
+
+  .project-title {
+    font-size: 1.2rem;
+    margin-bottom: 0.2rem;
+  }
+
+  .project-title a {
+    color: var(--heading-color);
+  }
+
+  .project-meta {
+    font-size: 0.833rem;
+    color: var(--subheading-color);
+    font-family: "JetBrains Mono", monospace;
+    margin-bottom: 0.4rem;
+  }
+
+  .project-desc {
+    margin-bottom: 0.4rem;
+  }
+
+  .project-links {
+    margin-top: 0;
+  }
+
+  .project-links a {
+    font-size: 0.833rem;
+    font-family: "JetBrains Mono", Consolas, monospace;
+    font-variant-ligatures: normal;
+    font-feature-settings: "calt" 1;
+    text-decoration: underline;
+    text-underline-offset: 3px;
+  }
+
+  .archive-list {
+    list-style: none;
+    padding-left: 0;
+    margin-top: 0.4rem;
+  }
+
+  .archive-item {
+    display: flex;
+    align-items: baseline;
+    margin-bottom: 0.45rem;
+    line-height: 1.45;
+  }
+
+  .archive-date {
+    font-family: "JetBrains Mono", Consolas, monospace;
+    font-size: 0.85rem;
+    color: var(--subheading-color);
+    width: 4.8rem;
+    flex-shrink: 0;
+  }
+
+  .archive-title {
+    flex-grow: 1;
+  }
+
+  .archive-more-link {
+    font-family: "JetBrains Mono", Consolas, monospace;
+    font-size: 0.85rem;
+    font-variant-ligatures: normal;
+    font-feature-settings: "calt" 1;
+    color: var(--subheading-color);
+    text-decoration: underline;
+    text-underline-offset: 3px;
+  }
+
+  .archive-more-link:hover {
+    color: var(--heading-color);
+  }
+
+  @media (max-width: 600px) {
+    .archive-item {
+      flex-direction: row;
+    }
+    .archive-date {
+      width: 4rem;
+    }
+  }
+</style>

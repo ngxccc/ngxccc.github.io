@@ -1,0 +1,178 @@
+---
+import BaseLayout from "../../layouts/BaseLayout.astro";
+import { getCollection, render } from "astro:content";
+
+export async function getStaticPaths() {
+  const posts = await getCollection("posts");
+  return posts.map((post) => ({
+    params: { slug: post.id.replace(/\.(md|mdx)$/, "") },
+    props: { post },
+  }));
+}
+
+const { post } = Astro.props;
+const { Content } = await render(post);
+
+function formatPostDate(dateStr: string) {
+  const d = new Date(dateStr);
+  const options: Intl.DateTimeFormatOptions = {
+    year: "numeric",
+    month: "long",
+    day: "numeric",
+    timeZone: "UTC",
+  };
+  return d.toLocaleDateString("en-US", options);
+}
+---
+
+<BaseLayout
+  title={`${post.data.title} — Tran Van Ngoc`}
+  description={post.data.description}
+>
+  <article>
+    <nav class="breadcrumb-nav">
+      <a href="/posts" class="back-link">&lt;- Writing</a>
+    </nav>
+
+    <header class="post-header">
+      <h1>{post.data.title}</h1>
+      <div class="post-date">{formatPostDate(post.data.date)}</div>
+      {
+        post.data.tags.length > 0 && (
+          <div class="post-tags">
+            {post.data.tags.map((tag: string) => (
+              <span class="post-tag">#{tag}</span>
+            ))}
+          </div>
+        )
+      }
+    </header>
+
+    <div class="post-content">
+      <Content />
+    </div>
+
+    <hr class="post-divider" />
+
+    <nav class="post-bottom-nav">
+      <a href="/posts" class="back-link">&lt;- Back to all articles</a>
+    </nav>
+  </article>
+
+  <script is:inline type="module">
+    const mermaidBlocks = document.querySelectorAll(
+      'pre[data-language="mermaid"], pre:has(code.language-mermaid), pre.mermaid, code.language-mermaid',
+    );
+
+    if (mermaidBlocks.length > 0) {
+      import("https://cdn.jsdelivr.net/npm/mermaid@11/dist/mermaid.esm.min.mjs").then(
+        (m) => {
+          m.default.initialize({
+            startOnLoad: false,
+            theme: "dark",
+            themeVariables: {
+              darkMode: true,
+              background: "#161618",
+              primaryColor: "#222226",
+              primaryTextColor: "#eeeeee",
+              primaryBorderColor: "#3f3f46",
+              lineColor: "#888888",
+              secondaryColor: "#1a1a1a",
+              tertiaryColor: "#111111",
+              fontFamily:
+                "'JetBrains Mono', Consolas, 'DejaVu Sans Mono', monospace",
+              fontSize: "14px",
+            },
+          });
+
+          mermaidBlocks.forEach(async (el, idx) => {
+            const pre = el.closest("pre") || el;
+            const code = el.textContent || "";
+            const id = `mermaid-diagram-${idx}`;
+            try {
+              const { svg } = await m.default.render(id, code.trim());
+              const container = document.createElement("div");
+              container.className = "mermaid-diagram-container";
+              container.innerHTML = svg;
+              pre.replaceWith(container);
+            } catch (err) {
+              console.error("Mermaid render error:", err);
+            }
+          });
+        },
+      );
+    }
+  </script>
+</BaseLayout>
+
+<style>
+  .breadcrumb-nav {
+    margin-top: 0.2rem;
+    margin-bottom: 1.2rem;
+  }
+
+  .post-header {
+    margin-bottom: 2rem;
+  }
+
+  .post-header h1 {
+    font-size: 1.75rem;
+    line-height: 1.25;
+    margin-bottom: 0.4rem;
+  }
+
+  .post-date {
+    font-size: 0.833rem;
+    color: var(--subheading-color);
+    font-family: "JetBrains Mono", monospace;
+  }
+
+  .post-tags {
+    font-size: 0.8rem;
+    color: var(--subheading-color);
+    margin-top: 0.4rem;
+  }
+
+  .post-tag {
+    margin-right: 0.6rem;
+  }
+
+  .post-divider {
+    margin: 2.5rem 0 1.2rem 0;
+  }
+
+  .post-bottom-nav {
+    margin-bottom: 1rem;
+  }
+
+  .back-link {
+    font-family: "JetBrains Mono", Consolas, monospace;
+    font-size: 0.85rem;
+    color: var(--subheading-color);
+    text-decoration: none;
+    transition: color 0.15s ease;
+  }
+
+  .back-link:hover {
+    color: var(--heading-color);
+    text-decoration: underline;
+    text-underline-offset: 3px;
+  }
+
+  :global(.mermaid-diagram-container) {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: var(--code-bg);
+    border: 1px solid var(--border-color);
+    border-radius: 4px;
+    padding: 1.5rem 1rem;
+    margin: 2rem 0;
+    overflow-x: auto;
+  }
+
+  :global(.mermaid-diagram-container svg) {
+    max-width: 100%;
+    height: auto;
+  }
+</style>

@@ -1,0 +1,260 @@
+@import url("https://fonts.googleapis.com/css2?family=JetBrains+Mono:ital,wght@0,400;0,500;0,700;1,400&display=swap");
+
+:root {
+  --bg-color: #111111;
+  --text-color: #dddddd;
+  --heading-color: #ffffff;
+  --subheading-color: #888888;
+  --link-color: #ffffff;
+  --link-visited: #bbbbbb;
+  --link-hover: #ffffff;
+  --code-bg: #1a1a1a;
+  --code-text: #eeeeee;
+  --border-color: #2a2a2a;
+  --border-dotted: #3d3d3d;
+  --selection-bg: #fde047;
+  --selection-color: #111111;
+}
+
+::selection {
+  background-color: var(--selection-bg);
+  color: var(--selection-color);
+}
+
+html {
+  font-size: 18px;
+  color: var(--text-color);
+  background: var(--bg-color);
+  line-height: 1.55;
+  -webkit-text-size-adjust: 100%;
+}
+
+body {
+  margin: 0 auto;
+  padding: 0.5rem 1rem 0.5rem 1rem;
+  max-width: 48rem;
+  font-family:
+    "DejaVu Serif", "Bitstream Vera Serif", Constantia, Georgia,
+    "Lucida Bright", Lucidabright, "Lucida Serif", Lucida, serif;
+  font-variant-numeric: lining-nums;
+  background-color: var(--bg-color);
+  color: var(--text-color);
+}
+
+/* Base Typography */
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-family:
+    "DejaVu Sans Condensed", "Nimbus Sans L", Frutiger, "Frutiger Linotype",
+    Univers, Calibri, "Gill Sans", "Gill Sans MT", "Myriad Pro", Myriad, Tahoma,
+    Geneva, "Helvetica Neue", Helvetica, Arial, sans-serif;
+  font-weight: normal;
+  line-height: 1.2;
+  margin-top: 1.8rem;
+  margin-bottom: 0.8rem;
+  color: var(--heading-color);
+}
+
+h1 {
+  font-size: 1.55rem;
+}
+h2 {
+  font-size: 1.25rem;
+}
+h3 {
+  font-size: 1.1rem;
+}
+
+p,
+blockquote,
+ul,
+ol,
+table,
+pre {
+  margin-top: 0;
+  margin-bottom: 1.2rem;
+}
+
+li + li {
+  margin-top: 0.4rem;
+}
+
+ul {
+  list-style-type: square;
+  padding-left: 1.2rem;
+}
+
+ol {
+  padding-left: 1.2rem;
+}
+
+/* Links */
+a {
+  text-decoration: underline;
+  text-underline-offset: 3px;
+  text-decoration-thickness: 1px;
+}
+
+a:link {
+  color: var(--link-color);
+}
+
+a:visited {
+  color: var(--link-visited);
+}
+
+a:hover,
+a:active {
+  color: var(--link-hover);
+  text-decoration-thickness: 2px;
+}
+
+/* Header & Navigation */
+#site-header {
+  margin-bottom: 1.8rem;
+}
+
+nav#navigation {
+  border-bottom: 1px solid var(--border-color);
+  padding-top: 7px;
+  display: flex;
+  justify-content: space-around;
+  margin-bottom: 1.6rem;
+}
+
+nav#navigation a {
+  text-decoration: none;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+  font-family: "DejaVu Sans Condensed", sans-serif;
+  font-size: 0.95rem;
+  padding-bottom: 7px;
+  color: var(--subheading-color);
+  flex-grow: 1;
+  text-align: center;
+  border-bottom: 3px solid transparent;
+  margin-bottom: -1px;
+  line-height: 1.2;
+}
+
+nav#navigation a:hover {
+  color: var(--heading-color);
+}
+
+nav#navigation a.active {
+  border-bottom: 3px solid var(--heading-color);
+  padding-bottom: 4px;
+  color: var(--heading-color);
+}
+
+/* Code & Pre Blocks with Ligatures */
+code {
+  font-size: 0.9em;
+  font-family:
+    "JetBrains Mono", "Fira Code", Consolas, "DejaVu Sans Mono", monospace;
+  font-variant-ligatures: normal;
+  font-feature-settings: "calt" 1;
+  background-color: var(--code-bg);
+  color: var(--code-text);
+  padding: 0.15em 0.35em;
+  border-radius: 3px;
+  border: 1px solid var(--border-color);
+}
+
+pre {
+  position: relative;
+  border-top: 1px solid var(--border-color);
+  border-bottom: 1px solid var(--border-color);
+  padding: 0.8rem 3.5rem 0.8rem 1.1rem;
+  background-color: var(--code-bg);
+  font-size: 0.9rem;
+  line-height: 1.55;
+  white-space: pre-wrap;
+  word-wrap: break-word;
+  word-break: break-word;
+}
+
+pre code {
+  font-family:
+    "JetBrains Mono", "Fira Code", Consolas, "DejaVu Sans Mono", monospace;
+  font-variant-ligatures: normal;
+  font-feature-settings: "calt" 1;
+  background-color: transparent;
+  padding: 0;
+  border-radius: 0;
+  border: none;
+  white-space: inherit;
+  word-break: inherit;
+}
+
+/* Copy Code Button */
+.copy-code-btn {
+  position: absolute;
+  top: 0.45rem;
+  right: 0.5rem;
+  background: #222226;
+  color: #a1a1aa;
+  border: 1px solid #3f3f46;
+  border-radius: 3px;
+  font-family: "JetBrains Mono", monospace;
+  font-size: 0.72rem;
+  padding: 0.15rem 0.45rem;
+  cursor: pointer;
+  opacity: 0;
+  transition:
+    opacity 0.15s ease,
+    color 0.15s ease,
+    background 0.15s ease;
+}
+
+pre:hover .copy-code-btn {
+  opacity: 1;
+}
+
+.copy-code-btn:hover {
+  color: #ffffff;
+  background: #3f3f46;
+}
+
+.copy-code-btn.copied {
+  color: #ffffff;
+  border-color: #888888;
+}
+
+blockquote {
+  border-left: 2px solid var(--subheading-color);
+  margin-left: 0;
+  margin-right: 0;
+  padding-left: 0.9rem;
+  color: #bbbbbb;
+  font-style: italic;
+  font-size: 0.85rem;
+}
+
+hr {
+  border: 0;
+  height: 1px;
+  background: var(--border-color);
+  margin: 2rem 0;
+}
+
+/* Footer */
+footer#site-footer {
+  border-top: 1px solid var(--border-color);
+  font-size: 0.833rem;
+  text-align: center;
+  margin-top: 3.5rem;
+  padding-top: 0.8rem;
+  line-height: 1.4;
+  color: var(--subheading-color);
+}
+
+@media (max-width: 600px) {
+  body {
+    padding: 0.5rem 0.8rem 0.5rem 0.8rem;
+  }
+}
