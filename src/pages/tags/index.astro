@@ -47,8 +47,6 @@ const sortedTags = Array.from(tagCounts.entries()).sort((a, b) =>
     }
   </ul>
 
-  <hr class="post-divider" />
-
   <nav class="post-bottom-nav">
     <a href="/posts" class="back-link">&lt;- Back to all articles</a>
   </nav>
@@ -108,12 +106,9 @@ const sortedTags = Array.from(tagCounts.entries()).sort((a, b) =>
     color: var(--subheading-color);
   }
 
-  .post-divider {
-    margin: 2.5rem 0 1.2rem 0;
-  }
-
   .post-bottom-nav {
-    margin-bottom: 1rem;
+    margin-top: 2.2rem;
+    margin-bottom: 0;
   }
 
   .back-link {

@@ -53,8 +53,9 @@ function formatArchiveDate(dateStr: string) {
   <header class="tag-header">
     <h1>#{tag}</h1>
     <p class="tag-meta">
-      {posts.length}
-      {posts.length === 1 ? "article" : "articles"} in this topic
+      {
+        `${posts.length} ${posts.length === 1 ? "article" : "articles"} in this topic`
+      }
     </p>
   </header>
 
@@ -75,8 +76,6 @@ function formatArchiveDate(dateStr: string) {
       })
     }
   </ul>
-
-  <hr class="post-divider" />
 
   <nav class="post-bottom-nav">
     <a href="/tags" class="back-link">&lt;- View all tags</a>
@@ -135,12 +134,9 @@ function formatArchiveDate(dateStr: string) {
     flex-grow: 1;
   }
 
-  .post-divider {
-    margin: 2.5rem 0 1.2rem 0;
-  }
-
   .post-bottom-nav {
-    margin-bottom: 1rem;
+    margin-top: 2rem;
+    margin-bottom: 0;
   }
 
   .back-link {

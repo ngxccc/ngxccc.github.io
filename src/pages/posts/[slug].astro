@@ -54,8 +54,6 @@ function formatPostDate(dateStr: string) {
       <Content />
     </div>
 
-    <hr class="post-divider" />
-
     <nav class="post-bottom-nav">
       <a href="/posts" class="back-link">&lt;- Back to all articles</a>
     </nav>
@@ -147,12 +145,9 @@ function formatPostDate(dateStr: string) {
     color: var(--heading-color);
   }
 
-  .post-divider {
-    margin: 2.5rem 0 1.2rem 0;
-  }
-
   .post-bottom-nav {
-    margin-bottom: 1rem;
+    margin-top: 2.5rem;
+    margin-bottom: 0;
   }
 
   .back-link {
