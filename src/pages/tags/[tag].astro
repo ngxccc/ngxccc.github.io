@@ -1,0 +1,170 @@
+---
+import BaseLayout from "../../layouts/BaseLayout.astro";
+import { getCollection } from "astro:content";
+
+export async function getStaticPaths() {
+  const allPosts = await getCollection("posts");
+  const publishedPosts = allPosts.filter(
+    (post) => post.data.isPublished !== false,
+  );
+
+  const tags = [
+    ...new Set(publishedPosts.flatMap((post) => post.data.tags || [])),
+  ];
+
+  return tags.map((tag) => {
+    const filteredPosts = publishedPosts
+      .filter((post) => post.data.tags?.includes(tag))
+      .sort(
+        (a, b) =>
+          new Date(b.data.date).getTime() - new Date(a.data.date).getTime(),
+      );
+    return {
+      params: { tag },
+      props: { posts: filteredPosts, tag },
+    };
+  });
+}
+
+const { posts, tag } = Astro.props;
+
+function formatArchiveDate(dateStr: string) {
+  const d = new Date(dateStr);
+  const month = d.toLocaleString("en-US", {
+    month: "short",
+    timeZone: "UTC",
+  });
+  const day = String(d.getUTCDate()).padStart(2, "0");
+  const year = d.getUTCFullYear();
+  return `${month} ${day}, ${year}`;
+}
+---
+
+<BaseLayout
+  title={`#${tag} — Tran Van Ngoc`}
+  description={`Technical articles and notes tagged with #${tag}`}
+>
+  <nav class="breadcrumb-nav">
+    <a href="/posts" class="back-link">&lt;- Writing</a>
+    <span class="crumb-separator">/</span>
+    <a href="/tags" class="back-link">Tags</a>
+  </nav>
+
+  <header class="tag-header">
+    <h1>#{tag}</h1>
+    <p class="tag-meta">
+      {posts.length}
+      {posts.length === 1 ? "article" : "articles"} in this topic
+    </p>
+  </header>
+
+  <ul class="archive-list">
+    {
+      posts.map((post) => {
+        const slug = post.id.replace(/\.(md|mdx)$/, "");
+        return (
+          <li class="archive-item">
+            <span class="archive-date">
+              {formatArchiveDate(post.data.date)}
+            </span>
+            <span class="archive-title">
+              <a href={`/posts/${slug}`}>{post.data.title}</a>
+            </span>
+          </li>
+        );
+      })
+    }
+  </ul>
+
+  <hr class="post-divider" />
+
+  <nav class="post-bottom-nav">
+    <a href="/tags" class="back-link">&lt;- View all tags</a>
+  </nav>
+</BaseLayout>
+
+<style>
+  .breadcrumb-nav {
+    margin-top: 0.2rem;
+    margin-bottom: 1.2rem;
+  }
+
+  .crumb-separator {
+    color: var(--subheading-color);
+    margin: 0 0.35rem;
+    font-size: 0.85rem;
+  }
+
+  .tag-header {
+    margin-bottom: 1.8rem;
+  }
+
+  .tag-header h1 {
+    font-size: 1.75rem;
+    margin-bottom: 0.2rem;
+  }
+
+  .tag-meta {
+    font-size: 0.85rem;
+    color: var(--subheading-color);
+    margin-bottom: 0;
+  }
+
+  .archive-list {
+    list-style: none;
+    padding-left: 0;
+    margin-top: 0.8rem;
+  }
+
+  .archive-item {
+    display: flex;
+    align-items: baseline;
+    margin-bottom: 0.55rem;
+    line-height: 1.45;
+  }
+
+  .archive-date {
+    font-family: "JetBrains Mono", Consolas, monospace;
+    font-size: 0.85rem;
+    color: var(--subheading-color);
+    width: 7.8rem;
+    flex-shrink: 0;
+  }
+
+  .archive-title {
+    flex-grow: 1;
+  }
+
+  .post-divider {
+    margin: 2.5rem 0 1.2rem 0;
+  }
+
+  .post-bottom-nav {
+    margin-bottom: 1rem;
+  }
+
+  .back-link {
+    font-family: "JetBrains Mono", Consolas, monospace;
+    font-size: 0.85rem;
+    color: var(--subheading-color);
+    text-decoration: none;
+    transition: color 0.15s ease;
+  }
+
+  .back-link:hover {
+    color: var(--heading-color);
+    text-decoration: underline;
+    text-underline-offset: 3px;
+  }
+
+  @media (max-width: 600px) {
+    .archive-item {
+      flex-direction: column;
+      margin-bottom: 0.8rem;
+    }
+    .archive-date {
+      width: 100%;
+      margin-bottom: 0.1rem;
+    }
+  }
+</style>

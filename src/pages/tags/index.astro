@@ -1,0 +1,132 @@
+---
+import BaseLayout from "../../layouts/BaseLayout.astro";
+import { getCollection } from "astro:content";
+
+const allPosts = await getCollection("posts");
+const publishedPosts = allPosts.filter(
+  (post) => post.data.isPublished !== false,
+);
+
+const tagCounts = new Map<string, number>();
+publishedPosts.forEach((post) => {
+  post.data.tags?.forEach((tag: string) => {
+    tagCounts.set(tag, (tagCounts.get(tag) || 0) + 1);
+  });
+});
+
+const sortedTags = Array.from(tagCounts.entries()).sort((a, b) =>
+  a[0].localeCompare(b[0]),
+);
+---
+
+<BaseLayout
+  title="Tags — Tran Van Ngoc"
+  description="All topics and tags across engineering articles and notes."
+>
+  <nav class="breadcrumb-nav">
+    <a href="/posts" class="back-link">&lt;- Writing</a>
+  </nav>
+
+  <header class="page-header">
+    <h1>All Tags</h1>
+    <p class="page-desc">
+      Explore articles categorized by technical topics and domains.
+    </p>
+  </header>
+
+  <ul class="tags-grid">
+    {
+      sortedTags.map(([tag, count]) => (
+        <li class="tag-item">
+          <a href={`/tags/${tag}`} class="tag-link">
+            <span class="tag-name">#{tag}</span>
+            <span class="tag-count">({count})</span>
+          </a>
+        </li>
+      ))
+    }
+  </ul>
+
+  <hr class="post-divider" />
+
+  <nav class="post-bottom-nav">
+    <a href="/posts" class="back-link">&lt;- Back to all articles</a>
+  </nav>
+</BaseLayout>
+
+<style>
+  .breadcrumb-nav {
+    margin-top: 0.2rem;
+    margin-bottom: 1.2rem;
+  }
+
+  .page-header {
+    margin-bottom: 1.8rem;
+  }
+
+  .page-header h1 {
+    font-size: 1.75rem;
+    margin-bottom: 0.2rem;
+  }
+
+  .page-desc {
+    font-size: 0.9rem;
+    color: var(--subheading-color);
+    margin-bottom: 0;
+  }
+
+  .tags-grid {
+    list-style: none;
+    padding-left: 0;
+    margin-top: 1.2rem;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 0.8rem 1.2rem;
+  }
+
+  .tag-item {
+    margin: 0;
+  }
+
+  .tag-link {
+    display: inline-flex;
+    align-items: baseline;
+    gap: 0.3rem;
+    font-family: "JetBrains Mono", Consolas, monospace;
+    font-size: 0.9rem;
+    color: var(--heading-color);
+    text-decoration: underline;
+    text-underline-offset: 3px;
+  }
+
+  .tag-link:hover {
+    color: #ffffff;
+  }
+
+  .tag-count {
+    font-size: 0.78rem;
+    color: var(--subheading-color);
+  }
+
+  .post-divider {
+    margin: 2.5rem 0 1.2rem 0;
+  }
+
+  .post-bottom-nav {
+    margin-bottom: 1rem;
+  }
+
+  .back-link {
+    font-family: "JetBrains Mono", Consolas, monospace;
+    font-size: 0.85rem;
+    color: var(--subheading-color);
+    text-decoration: none;
+    transition: color 0.15s ease;
+  }
+
+  .back-link:hover {
+    color: var(--heading-color);
+    text-decoration: underline;
+    text-underline-offset: 3px;
+  }
+</style>

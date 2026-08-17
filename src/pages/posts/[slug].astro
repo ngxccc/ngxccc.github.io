@@ -41,7 +41,9 @@ function formatPostDate(dateStr: string) {
         post.data.tags.length > 0 && (
           <div class="post-tags">
             {post.data.tags.map((tag: string) => (
-              <span class="post-tag">#{tag}</span>
+              <a href={`/tags/${tag}`} class="post-tag">
+                #{tag}
+              </a>
             ))}
           </div>
         )
@@ -128,13 +130,21 @@ function formatPostDate(dateStr: string) {
   }
 
   .post-tags {
-    font-size: 0.8rem;
-    color: var(--subheading-color);
+    font-size: 0.833rem;
     margin-top: 0.4rem;
   }
 
   .post-tag {
-    margin-right: 0.6rem;
+    font-family: "JetBrains Mono", Consolas, monospace;
+    color: var(--subheading-color);
+    text-decoration: underline;
+    text-underline-offset: 3px;
+    margin-right: 0.75rem;
+    display: inline-block;
+  }
+
+  .post-tag:hover {
+    color: var(--heading-color);
   }
 
   .post-divider {
