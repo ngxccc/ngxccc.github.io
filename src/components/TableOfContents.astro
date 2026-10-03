@@ -82,7 +82,6 @@ const filteredHeadings = headings.filter((h) => h.depth >= 2 && h.depth <= 3);
     width: 260px;
     flex-shrink: 0;
     display: none;
-    /* Sticky trực tiếp trên sidebar */
     position: sticky;
     top: 2rem;
     align-self: flex-start;
@@ -128,7 +127,7 @@ const filteredHeadings = headings.filter((h) => h.depth >= 2 && h.depth <= 3);
   }
 
   .toc-link {
-    color: var(--text-color, #dddddd);
+    color: var(--subheading-color, #888888);
     text-decoration: none;
     display: inline-flex;
     align-items: flex-start;
@@ -137,17 +136,18 @@ const filteredHeadings = headings.filter((h) => h.depth >= 2 && h.depth <= 3);
   }
 
   .toc-bullet {
-    color: var(--subheading-color, #888888);
+    color: #555555;
     margin-right: 0.35rem;
     user-select: none;
+    transition: color 0.15s ease;
   }
 
   .toc-link:hover {
-    color: #ff5500;
+    color: var(--heading-color, #ffffff);
   }
 
   .toc-link:hover .toc-bullet {
-    color: #ff5500;
+    color: #ffffff;
   }
 
   .toc-link.active {
@@ -156,7 +156,7 @@ const filteredHeadings = headings.filter((h) => h.depth >= 2 && h.depth <= 3);
   }
 
   .toc-link.active .toc-bullet {
-    color: #ff5500;
+    color: #ffffff;
     font-weight: bold;
   }
 </style>

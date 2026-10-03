@@ -127,11 +127,11 @@ function formatNoteDate(dateStr?: string) {
   }
 
   .back-link:hover {
-    color: #ff5500;
+    color: var(--heading-color, #ffffff);
   }
 
   .domain-tag {
-    color: #ff5500;
+    color: var(--subheading-color, #888888);
     font-weight: 500;
   }
 
@@ -149,9 +149,9 @@ function formatNoteDate(dateStr?: string) {
   }
 
   .accent-bar {
-    width: 4px;
+    width: 3px;
     align-self: stretch;
-    background-color: #ff5500;
+    background-color: var(--heading-color, #ffffff);
     border-radius: 2px;
     flex-shrink: 0;
   }
@@ -203,7 +203,7 @@ function formatNoteDate(dateStr?: string) {
     border: 1px solid #2a2a2a;
   }
 
-  /* Note content typography matching terminal / clean hacker aesthetic */
+  /* Note content typography matching terminal / clean monochrome aesthetic */
   .note-content {
     line-height: 1.68;
     color: var(--text-color, #dddddd);
@@ -230,10 +230,11 @@ function formatNoteDate(dateStr?: string) {
   .note-content :global(code) {
     font-family: "JetBrains Mono", Consolas, Menlo, monospace;
     font-size: 0.88em;
-    background-color: #1a1a1a;
+    background-color: var(--code-bg, #1a1a1a);
     padding: 0.15em 0.35em;
     border-radius: 3px;
-    color: #ffaa66;
+    color: var(--code-text, #eeeeee);
+    border: 1px solid #282828;
   }
 
   .note-content :global(pre) {
@@ -248,18 +249,18 @@ function formatNoteDate(dateStr?: string) {
     background: transparent;
     padding: 0;
     color: inherit;
+    border: none;
   }
 
   .note-content :global(a) {
-    color: #ffffff;
+    color: var(--link-color, #ffffff);
     text-decoration: underline;
-    text-decoration-color: #ff5500;
     text-underline-offset: 3px;
     transition: all 0.15s ease;
   }
 
   .note-content :global(a:hover) {
-    color: #ff5500;
+    color: var(--link-hover, #ffffff);
   }
 
   .note-bottom-nav {
@@ -274,7 +275,7 @@ function formatNoteDate(dateStr?: string) {
   }
 
   .graph-link {
-    color: #ff5500;
+    color: var(--heading-color, #ffffff);
     text-decoration: none;
     font-weight: 500;
   }

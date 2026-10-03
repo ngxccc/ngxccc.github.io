@@ -56,7 +56,6 @@ import graphData from "../../../public/data/notes_graph.json";
     let width = container.clientWidth || 800;
     let height = container.clientHeight || 560;
 
-    // Handle high DPI screens
     const dpr = window.devicePixelRatio || 1;
     canvas.width = width * dpr;
     canvas.height = height * dpr;
@@ -73,24 +72,16 @@ import graphData from "../../../public/data/notes_graph.json";
 
     window.addEventListener("resize", updateSize);
 
-    // Bảng màu đồng bộ chuẩn terminal dark:
-    // Background: #111111 (đồng bộ với site --bg-color)
-    // Border: #2a2a2a
-    // Domain colors:
-    // Engineering: #4ea8de (Cyan Blue)
-    // Mental Models: #ff5500 (Vibrant Orange - Accent đồng bộ site)
-    // Linguistics: #06d6a0 (Mint Green)
-    // Economics: #ffd166 (Warm Gold)
+    // Bảng màu tối giản thanh lịch (Monochrome / Muted grayscale)
     const domainColors = {
-      Engineering: "#4ea8de",
-      "Mental Models": "#ff5500",
-      "Linguistics & Learning": "#06d6a0",
-      Economics: "#ffd166",
+      Engineering: "#ffffff",
+      "Mental Models": "#d4d4d8",
+      "Linguistics & Learning": "#a1a1aa",
+      Economics: "#71717a",
     };
 
-    const nodeRadius = 5;
+    const nodeRadius = 4.5;
     const nodes = initialGraphData.nodes.map((n) => {
-      // Spawn nodes in a clustered circle around center
       const angle = Math.random() * Math.PI * 2;
       const radius = Math.random() * (Math.min(width, height) * 0.35);
       return {
@@ -166,8 +157,7 @@ import graphData from "../../../public/data/notes_graph.json";
           tooltip.style.display = "block";
           tooltip.style.left = `${e.clientX - rect.left + 14}px`;
           tooltip.style.top = `${e.clientY - rect.top + 10}px`;
-          const color = domainColors[hoveredNode.domain] || "#ff5500";
-          tooltip.innerHTML = `<div style="font-weight:600; color:#ffffff; margin-bottom:2px;">${hoveredNode.title}</div><div style="font-size:0.75rem; color:${color};">[${hoveredNode.domain}]</div>`;
+          tooltip.innerHTML = `<div style="font-weight:600; color:#ffffff; margin-bottom:2px;">${hoveredNode.title}</div><div style="font-size:0.75rem; color:#888888;">[${hoveredNode.domain}]</div>`;
         } else if (tooltip) {
           canvas.style.cursor = "default";
           tooltip.style.display = "none";
@@ -188,7 +178,6 @@ import graphData from "../../../public/data/notes_graph.json";
       const zoomFactor = e.deltaY < 0 ? 1.15 : 0.87;
       const newScale = Math.min(Math.max(transform.scale * zoomFactor, 0.25), 4);
 
-      // Zoom toward cursor position
       transform.x = mouseX - (mouseX - transform.x) * (newScale / transform.scale);
       transform.y = mouseY - (mouseY - transform.y) * (newScale / transform.scale);
       transform.scale = newScale;
@@ -210,14 +199,11 @@ import graphData from "../../../public/data/notes_graph.json";
       transform = { x: 0, y: 0, scale: 1 };
     });
 
-    // Simple, stable force-directed physics
     let iteration = 0;
     function simulate() {
-      // Damping cools down slowly
       const alpha = Math.max(0.01, 1 - iteration * 0.001);
       iteration++;
 
-      // Repulsion between nodes (N^2 but N=202 is only 40k pairs, takes <1ms)
       for (let i = 0; i < nodes.length; i++) {
         for (let j = i + 1; j < nodes.length; j++) {
           const dx = nodes[j].x - nodes[i].x;
@@ -233,7 +219,6 @@ import graphData from "../../../public/data/notes_graph.json";
         }
       }
 
-      // Spring attraction on links
       for (const link of links) {
         if (!link.source || !link.target) continue;
         const dx = link.target.x - link.source.x;
@@ -247,7 +232,6 @@ import graphData from "../../../public/data/notes_graph.json";
         link.target.vy -= dy * force;
       }
 
-      // Center gravity & velocity friction
       const cx = width / 2;
       const cy = height / 2;
       for (const n of nodes) {
@@ -268,8 +252,8 @@ import graphData from "../../../public/data/notes_graph.json";
       ctx.translate(transform.x, transform.y);
       ctx.scale(transform.scale, transform.scale);
 
-      // Draw links
-      ctx.strokeStyle = "rgba(255, 255, 255, 0.12)";
+      // Links: muted white stroke
+      ctx.strokeStyle = "rgba(255, 255, 255, 0.08)";
       ctx.lineWidth = 1;
       ctx.beginPath();
       for (const link of links) {
@@ -279,10 +263,9 @@ import graphData from "../../../public/data/notes_graph.json";
       }
       ctx.stroke();
 
-      // If a node is hovered, highlight connected links
       if (hoveredNode) {
-        ctx.strokeStyle = "#ff5500";
-        ctx.lineWidth = 1.6;
+        ctx.strokeStyle = "rgba(255, 255, 255, 0.65)";
+        ctx.lineWidth = 1.5;
         ctx.beginPath();
         for (const link of links) {
           if (link.source === hoveredNode || link.target === hoveredNode) {
@@ -293,7 +276,6 @@ import graphData from "../../../public/data/notes_graph.json";
         ctx.stroke();
       }
 
-      // Draw nodes
       for (const n of nodes) {
         const isHovered = n === hoveredNode;
         const color = domainColors[n.domain] || "#888888";
@@ -308,7 +290,6 @@ import graphData from "../../../public/data/notes_graph.json";
           ctx.lineWidth = 2;
           ctx.stroke();
 
-          // Draw label above node
           ctx.font = "12px 'JetBrains Mono', monospace";
           ctx.fillStyle = "#ffffff";
           ctx.textAlign = "center";
@@ -320,11 +301,9 @@ import graphData from "../../../public/data/notes_graph.json";
       requestAnimationFrame(render);
     }
 
-    // Run first render immediately
     render();
   }
 
-  // Support both direct load and client navigation
   if (document.readyState === "loading") {
     document.addEventListener("DOMContentLoaded", initGraph);
   } else {
@@ -351,7 +330,7 @@ import graphData from "../../../public/data/notes_graph.json";
   }
 
   .back-link:hover {
-    color: #ff5500;
+    color: var(--heading-color, #ffffff);
   }
 
   .graph-header {
@@ -366,9 +345,9 @@ import graphData from "../../../public/data/notes_graph.json";
   }
 
   .accent-bar {
-    width: 4px;
+    width: 3px;
     height: 1.85rem;
-    background-color: #ff5500;
+    background-color: var(--heading-color, #ffffff);
     border-radius: 2px;
   }
 
@@ -407,16 +386,16 @@ import graphData from "../../../public/data/notes_graph.json";
   }
 
   .legend-dot.engineering {
-    background-color: #4ea8de;
+    background-color: #ffffff;
   }
   .legend-dot.mental-models {
-    background-color: #ff5500;
+    background-color: #d4d4d8;
   }
   .legend-dot.linguistics {
-    background-color: #06d6a0;
+    background-color: #a1a1aa;
   }
   .legend-dot.economics {
-    background-color: #ffd166;
+    background-color: #71717a;
   }
 
   .canvas-wrapper {
@@ -477,7 +456,7 @@ import graphData from "../../../public/data/notes_graph.json";
 
   .controls-overlay button:hover {
     background-color: #262626;
-    color: #ff5500;
-    border-color: #ff5500;
+    color: #ffffff;
+    border-color: #ffffff;
   }
 </style>

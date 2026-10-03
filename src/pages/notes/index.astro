@@ -137,9 +137,9 @@ const totalNotes = notes.length;
   }
 
   .accent-bar {
-    width: 4px;
+    width: 3px;
     height: 1.85rem;
-    background-color: #ff5500;
+    background-color: var(--heading-color, #ffffff);
     border-radius: 2px;
   }
 
@@ -175,15 +175,15 @@ const totalNotes = notes.length;
 
   .graph-btn {
     font-size: 0.85rem;
-    color: #ff5500;
-    text-decoration: none;
+    color: var(--link-color, #ffffff);
+    text-decoration: underline;
+    text-underline-offset: 3px;
     font-weight: 500;
     transition: all 0.15s ease;
   }
 
   .graph-btn:hover {
-    text-decoration: underline;
-    color: #ff7733;
+    color: var(--link-hover, #ffffff);
   }
 
   .search-box-wrap {
@@ -204,7 +204,7 @@ const totalNotes = notes.length;
   }
 
   #note-search:focus {
-    border-color: #ff5500;
+    border-color: #555555;
   }
 
   .domains-container {
@@ -223,7 +223,7 @@ const totalNotes = notes.length;
   }
 
   .domain-prefix {
-    color: #ff5500;
+    color: var(--subheading-color, #888888);
   }
 
   .count-pill {
@@ -255,14 +255,15 @@ const totalNotes = notes.length;
   }
 
   .note-bullet {
-    color: var(--subheading-color, #888888);
+    color: #555555;
+    transition: color 0.15s ease;
   }
 
   .note-link:hover {
-    color: #ff5500;
+    color: var(--heading-color, #ffffff);
   }
 
   .note-link:hover .note-bullet {
-    color: #ff5500;
+    color: #ffffff;
   }
 </style>
