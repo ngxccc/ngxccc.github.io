@@ -30,6 +30,6 @@
     "@types/node": "^26.6.4",
     "oxfmt": "^0.71.0",
     "oxlint": "^1.86.0",
-    "typescript": "^6"
+    "typescript": "^7"
   }
 }
