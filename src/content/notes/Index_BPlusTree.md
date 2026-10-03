@@ -7,9 +7,6 @@ aliases: ["Index và B+Tree", "B+Tree Index", "B-Tree vs B+Tree"]
 domain: "Engineering"
 sourcePath: "30_Resources/Tech/API_and_Data_Design/Index_BPlusTree.md"
 ---
-
-# Index và B+Tree
-
 ## TL;DR
 
 Index là cấu trúc dữ liệu phụ trợ giúp database chuyển đổi từ duyệt tuần tự Full Table Scan $O(N)$ sang tìm kiếm cây phân cấp $O(\log N)$. Cấu trúc **B+Tree** được thiết kế để tối ưu hóa hiệu năng trên ổ cứng nhờ mở rộng độ rộng của cây (fan-out) nhằm giảm tối đa số lần Disk I/O, đồng thời sử dụng Doubly Linked List để liên kết các Leaf Node nhằm tối ưu hóa các truy vấn khoảng (Range Queries).

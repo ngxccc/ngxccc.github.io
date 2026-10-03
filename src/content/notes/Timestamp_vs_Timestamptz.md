@@ -7,9 +7,6 @@ aliases: ["Timestamp vs Timestamptz", "Múi giờ Database", "Thời gian UTC SQ
 domain: "Engineering"
 sourcePath: "30_Resources/Tech/API_and_Data_Design/Timestamp_vs_Timestamptz.md"
 ---
-
-# Timestamp vs Timestamptz in Database
-
 ## TL;DR
 
 Phân biệt kiểu dữ liệu thời gian: `timestamp` (Without Time Zone) lưu trữ chuỗi thời gian tĩnh không đổi theo múi giờ, dễ gây lệch giờ. `timestamptz` (With Time Zone) lưu thời gian dưới dạng múi giờ chuẩn UTC tuyệt đối và tự động chuyển đổi phù hợp theo server/client truy vấn. Luật Enterprise: Luôn luôn dùng `timestamptz` cho `created_at` và `updated_at`.

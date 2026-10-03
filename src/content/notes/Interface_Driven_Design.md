@@ -7,9 +7,6 @@ aliases: ["IDD", "Contract-First Design", "Contract-Driven Development"]
 domain: "Engineering"
 sourcePath: "30_Resources/Tech/Architecture_and_Patterns/Interface_Driven_Design.md"
 ---
-
-# Interface-Driven Design
-
 ## TL;DR
 
 IDD (Interface-Driven Design) là hệ tư tưởng "chốt kèo trên giấy trước, code thật sau". Nó ép kỹ sư phải định nghĩa rành mạch các bản hợp đồng (Interface/Contract) quy định input/output giữa các module trước khi cắm đầu vào viết logic, giúp các team (Front-end, Back-end, Microservices) có thể làm việc song song mà không phải mốc mỏ chờ nhau.

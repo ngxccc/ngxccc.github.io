@@ -7,9 +7,6 @@ aliases: []
 domain: "Engineering"
 sourcePath: "30_Resources/Concepts/Software_Testing/Open_vs_Closed_Workload_Models.md"
 ---
-
-# Open vs Closed Workload Models
-
 ## TL;DR
 
 - **Bản chất**: Closed Model kích hoạt request tiếp theo phụ thuộc vào thời điểm hoàn tất của request trước đó; Open Model phát request độc lập theo nhịp định sẵn (Arrival Rate).

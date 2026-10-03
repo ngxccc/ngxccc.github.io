@@ -7,9 +7,6 @@ aliases: []
 domain: "Engineering"
 sourcePath: "30_Resources/Tech/API_and_Data_Design/Postgres_18_New_Features.md"
 ---
-
-# ️ PostgreSQL 18: Tính Năng & Cải Tiến Kiến Trúc
-
 ## TL;DR
 
 PostgreSQL 18 (phiên bản chính thức phát hành cuối năm 2025, đạt trạng thái GA ổn định trong năm 2026) mang lại những đột phá kiến trúc quan trọng cho các hệ thống doanh nghiệp tải cao. Các điểm cải tiến trọng tâm bao gồm: **B-Tree Index Skip Scan**, **Biến phiên chuẩn SQL (SQL-standard Session Variables)**, **DDL Logical Replication**, **Tối ưu hóa Scaling kết nối nội tại (Core Connection Scaling)**, **Tiến trình chuyển đổi 64-bit Transaction ID (64-bit XID)** và **Mã hóa Dữ liệu Tự động (Transparent Data Encryption - TDE)**.

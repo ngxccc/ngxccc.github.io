@@ -7,9 +7,6 @@ aliases: []
 domain: "Engineering"
 sourcePath: "30_Resources/Tech/Frameworks_and_Ecosystem/WinForms_Layout_Optimization.md"
 ---
-
-# Windows Forms Layout Engine Optimization
-
 ## TL;DR
 
 Tối ưu hóa tốc độ vẽ giao diện trong Windows Forms bằng cách sử dụng cặp phương thức `SuspendLayout()` và `ResumeLayout(false)` để tạm ngưng và khôi phục hoạt động tính toán layout của Layout Engine. Giúp triệt tiêu hiện tượng lag giật và chớp nháy màn hình (flickering) khi thêm hoặc thay đổi hàng loạt UI controls.

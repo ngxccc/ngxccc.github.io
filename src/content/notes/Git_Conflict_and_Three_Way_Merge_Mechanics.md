@@ -7,9 +7,6 @@ aliases: []
 domain: "Engineering"
 sourcePath: "30_Resources/Methods/Engineering/Git_Conflict_and_Three_Way_Merge_Mechanics.md"
 ---
-
-# Git Conflict and Three-Way Merge Mechanics
-
 ## TL;DR
 
 - **Bản chất**: Git không so sánh trực tiếp 2 file với nhau (2-Way Diff), mà vận hành dựa trên **Thuật toán Gộp 3 Chiều (Three-Way Merge)** giữa điểm tổ tiên chung gần nhất (`BASE`), nhánh hiện tại (`OURS`/`HEAD`), và nhánh gộp (`THEIRS`).

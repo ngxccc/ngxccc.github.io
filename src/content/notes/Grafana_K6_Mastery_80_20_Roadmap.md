@@ -7,9 +7,6 @@ aliases: []
 domain: "Engineering"
 sourcePath: "30_Resources/Methods/Engineering/Grafana_K6_Mastery_80_20_Roadmap.md"
 ---
-
-# Nghiên cứu Grafana k6: Tiêu chuẩn Nắm chắc và Phương pháp học 80/20
-
 ## TL;DR
 
 - **Bản chất**: Lộ trình chắt lọc 20% kiến thức Performance Engineering cốt lõi trong Grafana k6 (Workload Models, Coordinated Omission, Threshold Quality Gates, SharedArray, OS Tuning) thay vì học lan man 80% cú pháp script JavaScript đơn thuần.

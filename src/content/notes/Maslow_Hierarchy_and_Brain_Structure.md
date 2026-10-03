@@ -7,9 +7,6 @@ aliases: []
 domain: "Mental Models"
 sourcePath: "30_Resources/Concepts/Psychology_and_Mental_Models/Maslow_Hierarchy_and_Brain_Structure.md"
 ---
-
-# Maslow Hierarchy and Brain Structure Alignment
-
 ## TL;DR
 
 Liên kết giữa **Tháp nhu cầu Maslow (Hierarchy of Needs)** và **Cấu trúc phân tầng của Não bộ (Brain Structure Layers)** phản ánh sự trùng khớp sâu sắc giữa tâm lý học hành vi và thần kinh học tiến hóa. Từ tầng sinh tồn (Thân não), đe dọa & cảm xúc (Hệ viền), đến tư duy bậc cao & bản sắc (Vỏ não trước trán - PFC), mỗi tầng nhu cầu của Maslow được điều khiển bởi một vùng cấu trúc não bộ cụ thể. Việc hiểu rõ liên kết này giúp giải thích cơ chế "chiếm quyền" năng lượng khi bị đe dọa (Amygdala Hijack), cách điều khiển từ trên xuống (Top-Down Control) để đạt tới tầng tự thể hiện, và định hình thứ tự học tập/tư duy phù hợp với từng tầng lớp xã hội.

@@ -7,9 +7,6 @@ aliases: []
 domain: "Engineering"
 sourcePath: "30_Resources/Methods/Engineering/System_Design_Architecture_Roadmap.md"
 ---
-
-# System Design Architecture Roadmap
-
 ## TL;DR
 
 Lộ trình học thiết kế hệ thống (System Design) cho Backend Developer đi từ nguyên lý phần cứng (Hardware Latency), tối ưu 1 nút đơn (Single Node Limits), đến các mảnh ghép kiến trúc Enterprise (Caching, Rate Limiting, Connection Pooling, Event-Driven Architecture) với nguồn tài liệu chuẩn mực thế giới như _Designing Data-Intensive Applications_ (Martin Kleppmann) và _System Design Interview_ (Alex Xu).

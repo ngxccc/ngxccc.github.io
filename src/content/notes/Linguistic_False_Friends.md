@@ -7,9 +7,6 @@ aliases: ["Homographs", "Word Stress Shift"]
 domain: "Linguistics & Learning"
 sourcePath: "30_Resources/Concepts/Learning_and_Linguistics/Linguistic_False_Friends.md"
 ---
-
-# Linguistic False Friends
-
 ## TL;DR
 
 Các từ vựng tiếng Anh có mặt chữ (spelling) giống hệt nhau nhưng cách phát âm (trọng âm/nguyên âm) và nghĩa lại hoàn toàn khác biệt tùy thuộc vào từ loại (Noun/Verb). Đây là "điểm mù" lớn nhất gây hiểu lầm trong giao tiếp.

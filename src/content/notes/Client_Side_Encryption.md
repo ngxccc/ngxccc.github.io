@@ -7,9 +7,6 @@ aliases: ["AES Encryption", "Secure Local Storage"]
 domain: "Engineering"
 sourcePath: "30_Resources/Tech/Web_Client_and_Security/Client_Side_Encryption.md"
 ---
-
-# Client-Side Encryption
-
 ## TL;DR
 
 Sử dụng thuật toán (thường là AES) để mã hóa dữ liệu thành chuỗi vô nghĩa trước khi lưu vào LocalStorage/IndexedDB. Mục tiêu là làm rối (Obfuscation) để ngăn chặn việc đọc trộm dữ liệu nhạy cảm qua DevTools hoặc XSS cơ bản.

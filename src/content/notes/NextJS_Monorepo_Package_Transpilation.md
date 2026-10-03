@@ -7,9 +7,6 @@ aliases: ["Package Transpilation", "transpilePackages", "Monorepo Transpilation"
 domain: "Engineering"
 sourcePath: "30_Resources/Tech/Frameworks_and_Ecosystem/NextJS_Monorepo_Package_Transpilation.md"
 ---
-
-# Next.js Monorepo & Package Transpilation
-
 ## TL;DR
 
 Khi xây dựng ứng dụng với kiến trúc Monorepo (sử dụng Turborepo/Yarn/Bun Workspaces), Next.js mặc định không biên dịch (transpile) mã nguồn bên trong `node_modules` hoặc các liên kết cục bộ (symlinked workspace packages). Điều này dẫn đến lỗi build/compile khi ứng dụng Next.js import trực tiếp mã nguồn TypeScript hoặc JSX chưa qua biên dịch từ các gói nội bộ (như `@nhatnang/database`, `@nhatnang/ui`). Để giải quyết, Next.js cung cấp cấu hình `transpilePackages` để buộc compiler (SWC/Turbopack) biên dịch các gói này trên luồng chạy chính. Bài viết này phân tích bản chất, cách cấu hình và so sánh giữa giải pháp transpilation on-the-fly với phương pháp biên dịch trước (Pre-building).

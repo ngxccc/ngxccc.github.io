@@ -9,6 +9,7 @@
     "dist/**",
     ".astro/**",
     "node_modules/**",
-    "bun.lock"
+    "bun.lock",
+    "src/content/notes/**"
   ]
 }

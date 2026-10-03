@@ -7,9 +7,6 @@ aliases: []
 domain: "Engineering"
 sourcePath: "30_Resources/Tech/Language_and_Core/Go_Escape_Analysis_Mechanics.md"
 ---
-
-# Bản Chất Kiến Trúc Và Cơ Chế Vận Hành Của Go Escape Analysis
-
 Tài liệu này là một ghi chép Layer 2 mô tả chi tiết cơ chế phân tích thoát (Escape Analysis) trong trình biên dịch Go, một giải pháp tự động tối ưu hóa việc phân chia cấp phát bộ nhớ Stack và Heap, dựa trên nguyên lý khoa học máy tính cốt lõi của [[Stack_vs_Heap_Memory_Fundamentals]] và giúp tối ưu hóa hiệu năng dọn rác của [[Garbage_Collection_Fundamentals]].
 
 ## TL;DR

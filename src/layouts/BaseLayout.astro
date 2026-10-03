@@ -1,5 +1,6 @@
 ---
 import "../styles/global.css";
+import "katex/dist/katex.min.css";
 import { siteConfig } from "../data/site";
 
 interface Props {
@@ -37,58 +38,102 @@ const isAbout = pathname.startsWith("/about");
   <body class={wide ? "layout-wide" : "layout-standard"}>
     <div class="site-container">
       <header id="site-header">
-        <nav id="navigation">
-          <a href="/" class={isHome ? "active" : ""}>Home</a>
-          <a href="/posts" class={isWriting ? "active" : ""}>Writing</a>
-          <a href="/notes" class={isNotes ? "active" : ""}>Notes</a>
-          <a href="/projects" class={isProjects ? "active" : ""}>Projects</a>
-          <a href="/about" class={isAbout ? "active" : ""}>About</a>
-        </nav>
+        <div class="header-inner">
+          <nav id="navigation">
+            <a href="/" class={isHome ? "active" : ""}>Home</a>
+            <a href="/posts" class={isWriting ? "active" : ""}>Writing</a>
+            <a href="/notes" class={isNotes ? "active" : ""}>Notes</a>
+            <a href="/projects" class={isProjects ? "active" : ""}>Projects</a>
+            <a href="/about" class={isAbout ? "active" : ""}>About</a>
+          </nav>
+        </div>
       </header>
 
-      <main>
+      <main id="site-main">
         <slot />
       </main>
 
       <footer id="site-footer">
-        &copy; {`${new Date().getFullYear()} ${siteConfig.author.name}`}.<br />
-        Content licensed under <a
-          href="https://creativecommons.org/licenses/by-nc-sa/4.0/"
-          target="_blank"
-          rel="noopener">CC-BY-NC-SA 4.0</a
-        >.
+        <p>
+          © {new Date().getFullYear()} Tran Van Ngoc. Powered by Astro & Second
+          Brain.
+        </p>
       </footer>
     </div>
 
-    <script is:inline>
-      document.addEventListener("DOMContentLoaded", () => {
-        const preBlocks = document.querySelectorAll("pre");
-        preBlocks.forEach((pre) => {
-          if (pre.querySelector(".copy-code-btn")) return;
-          const button = document.createElement("button");
-          button.className = "copy-code-btn";
-          button.type = "button";
-          button.innerText = "copy";
-          button.setAttribute("aria-label", "Copy code to clipboard");
+    <!-- Minimalist Terminal Image Modal / Lightbox -->
+    <div id="image-modal-lightbox" class="image-modal-backdrop" aria-hidden="true">
+      <div class="image-modal-content">
+        <img id="image-modal-img" src="" alt="Zoomed view" />
+        <span class="image-modal-hint">[Click anywhere or press ESC to close]</span>
+      </div>
+    </div>
 
-          button.addEventListener("click", async () => {
-            const code = pre.querySelector("code")?.innerText || pre.innerText;
-            try {
-              await navigator.clipboard.writeText(code);
-              button.innerText = "copied!";
-              button.classList.add("copied");
-              setTimeout(() => {
-                button.innerText = "copy";
-                button.classList.remove("copied");
-              }, 2000);
-            } catch (err) {
-              console.error("Failed to copy code", err);
+    <script is:inline>
+      (function initImageLightbox() {
+        function setup() {
+          const modal = document.getElementById("image-modal-lightbox");
+          const modalImg = document.getElementById("image-modal-img");
+          if (!modal || !modalImg) return;
+
+          function openModal(src, alt) {
+            modalImg.src = src;
+            modalImg.alt = alt || "Zoomed view";
+            modal.classList.add("open");
+            modal.setAttribute("aria-hidden", "false");
+            document.body.style.overflow = "hidden";
+          }
+
+          function closeModal() {
+            modal.classList.remove("open");
+            modal.setAttribute("aria-hidden", "true");
+            modalImg.src = "";
+            document.body.style.overflow = "";
+          }
+
+          document.addEventListener("click", function(e) {
+            var target = e.target;
+            if (target && target.tagName === "IMG") {
+              if (target.id === "image-modal-img") return;
+              if (target.closest(".note-content") || target.closest(".post-content") || target.closest("article") || target.closest("main")) {
+                e.preventDefault();
+                e.stopPropagation();
+                openModal(target.src, target.alt);
+              }
             }
           });
 
-          pre.appendChild(button);
-        });
-      });
+          modal.addEventListener("click", closeModal);
+
+          document.addEventListener("keydown", function(e) {
+            if (e.key === "Escape" && modal.classList.contains("open")) {
+              closeModal();
+            }
+          });
+        }
+
+        if (document.readyState === "loading") {
+          document.addEventListener("DOMContentLoaded", setup);
+        } else {
+          setup();
+        }
+      })();
     </script>
   </body>
 </html>
+
+<style>
+  .site-container {
+    width: 100%;
+    margin: 0 auto;
+    position: relative;
+  }
+
+  .header-inner {
+    width: 100%;
+  }
+
+  #site-main {
+    min-height: 60vh;
+  }
+</style>

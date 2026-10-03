@@ -7,9 +7,6 @@ aliases: ["CA", "Kiến trúc sạch", "Clean Architecture"]
 domain: "Engineering"
 sourcePath: "30_Resources/Tech/Architecture_and_Patterns/Clean_Architecture.md"
 ---
-
-# Clean Architecture
-
 ## TL;DR
 
 Clean Architecture (Kiến trúc Sạch) do Robert C. Martin (Uncle Bob) khởi xướng là hệ tư tưởng phân tầng hệ thống với triết lý cốt lõi: **"Business Logic là vua, Công nghệ chỉ là chi tiết"**. Nó tạo ra một vách ngăn kiên cố ngăn cách luật nghiệp vụ cốt lõi khỏi sự ảnh hưởng của database, web framework, thư viện bên thứ ba, cho phép bạn dễ dàng thay đổi công nghệ như thay áo mà không làm suy chuyển phần hồn của ứng dụng.

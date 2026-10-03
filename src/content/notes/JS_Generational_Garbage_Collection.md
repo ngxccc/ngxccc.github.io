@@ -7,9 +7,6 @@ aliases: ["Generational Garbage Collection", "V8 GC Orinoco", "Minor and Major G
 domain: "Engineering"
 sourcePath: "30_Resources/Tech/Language_and_Core/JS_Generational_Garbage_Collection.md"
 ---
-
-# JS Generational Garbage Collection
-
 Tài liệu này là một ghi chép Layer 2 mô tả chi tiết cách JavaScript (V8 Engine) triển khai cơ chế dọn rác phân thế hệ (Generational Garbage Collection), dựa trên nguyên lý khoa học máy tính cốt lõi của [[Garbage_Collection_Fundamentals]].
 
 ## TL;DR

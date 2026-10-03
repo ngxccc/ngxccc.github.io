@@ -7,9 +7,6 @@ aliases: []
 domain: "Engineering"
 sourcePath: "30_Resources/Tech/Architecture_and_Patterns/Newsfeed_Architecture_Fanout.md"
 ---
-
-# Newsfeed System Design: Hybrid Fan-out Architecture
-
 ## TL;DR
 
 Thiết kế hệ thống Newsfeed (mạng xã hội giống Twitter/Facebook) đối mặt với thách thức phân phối bài viết lớn. Giải pháp tối ưu là sử dụng kiến trúc **Hybrid Fan-out** kết hợp giữa **Push Model (Fan-out on Write)** cho người dùng bình thường và **Pull Model (Fan-out on Read)** cho người dùng nổi tiếng (KOLs/Celebrities), giúp cân bằng tải trọng ghi và đọc dữ liệu.

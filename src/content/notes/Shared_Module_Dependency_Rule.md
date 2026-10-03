@@ -7,9 +7,6 @@ aliases: ["SDP", "Stable Dependencies Principle", "Circular Dependency"]
 domain: "Engineering"
 sourcePath: "30_Resources/Tech/Architecture_and_Patterns/Shared_Module_Dependency_Rule.md"
 ---
-
-# Shared Module Dependency Rule
-
 ## TL;DR
 
 Quy tắc kiến trúc quy định luồng phụ thuộc (import) một chiều bất di bất dịch: Các Module Nghiệp vụ (Features) được phép gọi đến Module Dùng chung (Shared), nhưng Shared tuyệt đối KHÔNG ĐƯỢC biết sự tồn tại của Features.

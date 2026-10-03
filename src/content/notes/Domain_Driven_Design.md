@@ -7,9 +7,6 @@ aliases: ["Domain-Driven Design", "Thiết kế hướng tên miền", "DDD"]
 domain: "Engineering"
 sourcePath: "30_Resources/Tech/Architecture_and_Patterns/Domain_Driven_Design.md"
 ---
-
-# Domain-Driven Design
-
 ## TL;DR
 
 Domain-Driven Design (DDD) là một phương pháp thiết kế phần mềm tập trung vào việc mô hình hóa các bài toán nghiệp vụ cốt lõi (**Domain**). Bằng cách kết nối chặt chẽ giữa code ứng dụng và thế giới thực của nghiệp vụ qua ngôn ngữ chung (**Ubiquitous Language**), DDD giúp quản lý hiệu quả các hệ thống phức tạp và phân rã các service lớn.

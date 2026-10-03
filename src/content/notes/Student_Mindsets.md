@@ -7,9 +7,6 @@ aliases: ["Tư duy sinh viên", "Student Mindsets", "Mô hình tư duy sinh viê
 domain: "Mental Models"
 sourcePath: "30_Resources/Concepts/Psychology_and_Mental_Models/Student_Mindsets.md"
 ---
-
-# Student Mindsets
-
 ## TL;DR
 
 Cẩm nang tổng hợp các mô hình tư duy (Mental Models) cốt lõi dành cho sinh viên để tối ưu hóa ba trụ cột: Phương pháp học tập hiệu suất cao (Learning), Quản lý tài chính cá nhân ở quy mô vốn nhỏ (Finance), và Định hướng phát triển sự nghiệp sớm (Career).

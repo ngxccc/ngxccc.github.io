@@ -7,9 +7,6 @@ aliases: ["SEO", "Search Engine Optimization", "Tối ưu hóa công cụ tìm k
 domain: "Engineering"
 sourcePath: "30_Resources/Tech/Web_Client_and_Security/Search_Engine_Optimization.md"
 ---
-
-# Search Engine Optimization
-
 ## TL;DR
 
 Tối ưu hóa công cụ tìm kiếm (SEO) là tập hợp các kỹ thuật tối ưu hóa website để tăng thứ hạng tự nhiên trên trang kết quả tìm kiếm (SERPs). Mục tiêu là thu hút lượng truy cập tự nhiên (organic traffic) chất lượng cao và giảm thiểu chi phí quảng cáo trả phí (PPC).

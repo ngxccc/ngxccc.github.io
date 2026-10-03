@@ -7,9 +7,6 @@ aliases: []
 domain: "Engineering"
 sourcePath: "30_Resources/Methods/Engineering/Problem_Driven_System_Design_Framework.md"
 ---
-
-# Problem-Driven System Design Framework
-
 ## TL;DR
 
 **Problem-Driven System Design Framework** là phương pháp thiết kế kiến trúc hệ thống dựa trên nhu cầu kinh doanh thực tế và tải hệ thống thực tế (Tư duy Tiến hóa Kiến trúc - _Incremental / Evolutionary Architecture_). Phương pháp này giúp triệt tiêu hoàn toàn sự quá tải nhận thức (_Cognitive Overload_) và cạm bẫy thiết kế thái quá (_Over-Engineering_) bằng cách đặt ra 4 câu hỏi bộ lọc trước khi quyết định áp dụng bất kỳ mẫu System Design nào.

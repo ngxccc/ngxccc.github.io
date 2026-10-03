@@ -7,9 +7,6 @@ aliases: []
 domain: "Engineering"
 sourcePath: "30_Resources/Tech/Language_and_Core/Go_Slice_Underlying_Mechanics.md"
 ---
-
-# Go Slice Underlying Mechanics
-
 Tài liệu này là một ghi chép Layer 2 phân tích cấu trúc hoạt động bên dưới của Slice trong Go (Slice Header, Underlying Array, và Memory Reallocation), dựa trên nguyên lý khoa học máy tính cốt lõi về quản lý bộ nhớ Stack và Heap của [[Stack_vs_Heap_Memory_Fundamentals]], đồng thời liên quan trực tiếp đến cơ chế dọn rác của [[Garbage_Collection_Fundamentals]].
 
 ## TL;DR

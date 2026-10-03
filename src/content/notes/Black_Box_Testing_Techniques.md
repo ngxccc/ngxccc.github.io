@@ -7,9 +7,6 @@ aliases: []
 domain: "Engineering"
 sourcePath: "30_Resources/Concepts/Software_Testing/Black_Box_Testing_Techniques.md"
 ---
-
-# Kỹ thuật Kiểm thử Hộp đen
-
 ## TL;DR
 
 Kiểm thử hộp đen là kỹ thuật thiết kế test case dựa trên yêu cầu hệ thống mà không cần biết cấu trúc mã nguồn bên trong. Hai phương pháp cốt lõi và phổ biến nhất của kiểm thử hộp đen là Phân vùng tương đương (Equivalence Partitioning) và Phân tích giá trị biên (Boundary Value Analysis), giúp giảm tối đa số lượng test case cần thực thi nhưng vẫn đảm bảo độ phủ cao nhất.

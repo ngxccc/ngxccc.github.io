@@ -7,9 +7,6 @@ aliases: []
 domain: "Engineering"
 sourcePath: "30_Resources/Tech/Language_and_Core/Dotnet_10_and_11_New_Features.md"
 ---
-
-# .NET 10 & .NET 11: So Sánh Tính Năng Cốt Lõi So Với .NET 9
-
 ## TL;DR
 
 Tài liệu so sánh các điểm cải tiến lớn của **.NET 10** (LTS, phát hành 11/2025) và bản xem trước **.NET 11** (phát hành 11/2026) so với **.NET 9** (STS, phát hành 11/2024). Trọng tâm cải tiến bao gồm **C# 14 (Field-backed properties, Extension blocks)**, **C# 15 (Union types, Closed hierarchies, Collection expression arguments)**, cùng các cải tiến lớn về **Native AOT**, **EF Core 10/11**, và **ASP.NET Core 10/11**.

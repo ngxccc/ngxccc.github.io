@@ -7,9 +7,6 @@ aliases: ["Hidden Classes", "Shapes", "Inline Caching", "JS Optimization"]
 domain: "Engineering"
 sourcePath: "30_Resources/Tech/Language_and_Core/JS_V8_Hidden_Classes_Inline_Caching.md"
 ---
-
-# JS Hidden Classes & Inline Caching
-
 ## TL;DR
 
 Trong JavaScript, các đối tượng (Objects) thực chất là các Hash Map động, khiến việc truy cập thuộc tính (property lookup) theo mặc định rất chậm do phải băm chuỗi. Để tối ưu hóa, các JS Engine hiện đại (như V8 của Google, JavaScriptCore của Apple) tự động tạo ra các **Class ẩn (Hidden Classes / Shapes)** ngầm bên dưới để ánh xạ vị trí thuộc tính trong bộ nhớ tĩnh (offsets). Kết hợp với cơ chế **Inline Caching (IC)**, Engine có thể truy cập bộ nhớ trực tiếp không qua tìm kiếm Hash Map, đạt hiệu năng tương đương C++. Việc gán thuộc tính động hoặc gán sai thứ tự sẽ phá vỡ cơ chế này, bắt buộc Engine phải quay về chế độ tìm kiếm chậm (Dictionary Mode).

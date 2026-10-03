@@ -7,9 +7,6 @@ aliases: ["Evan Wallace Path", "Figma CTO Career", "esbuild Creator"]
 domain: "Linguistics & Learning"
 sourcePath: "30_Resources/Concepts/Learning_and_Linguistics/Evan_Wallace_Path.md"
 ---
-
-# Evan Wallace Career Path
-
 ## TL;DR
 
 Evan Wallace là co-founder & cựu CTO Figma, người xây dựng rendering engine, multiplayer collab và plugin system. Ông nổi tiếng với esbuild (bundler JS/CSS cực nhanh) sau khi rời Figma năm 2021. Con đường: Brown University CS → Microsoft/Pixar → Figma (2012) → open source legend. Thành tựu dựa trên chuyên môn sâu WebGL, graphics, compilers.

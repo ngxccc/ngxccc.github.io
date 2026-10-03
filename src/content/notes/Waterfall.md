@@ -7,9 +7,6 @@ aliases: ["Quy trình Waterfall", "Mô hình thác nước", "Waterfall Model"]
 domain: "Engineering"
 sourcePath: "30_Resources/Methods/Engineering/Waterfall.md"
 ---
-
-# Quy Trình Phát Triển Phần Mềm Theo Mô Hình Waterfall
-
 ## TL;DR
 
 Quy trình phát triển phần mềm theo mô hình thác nước (Waterfall) là phương pháp quản lý dự án tuyến tính và tuần tự. Trong đó, mỗi giai đoạn của vòng đời phát triển phần mềm (SDLC) phải được hoàn thành và nghiệm thu đầy đủ trước khi bắt đầu giai đoạn tiếp theo, không có sự chồng chéo giữa các bước.

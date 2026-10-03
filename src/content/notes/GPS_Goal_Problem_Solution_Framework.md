@@ -7,9 +7,6 @@ aliases: []
 domain: "Linguistics & Learning"
 sourcePath: "30_Resources/Methods/Learning_and_Cognition/GPS_Goal_Problem_Solution_Framework.md"
 ---
-
-# GPS Goal Problem Solution Framework
-
 ## TL;DR
 
 **GPS (Goal - Problem - Solution) Framework** là phương pháp quản lý bối cảnh và duy trì định hướng bài toán bằng cách ghim chặt **North Star Goal (Mục tiêu tối thượng)** và các **Core Constraints (Ràng buộc cứng)** ở vị trí trên cùng của tài liệu. Phương pháp này triệt tiêu rủi ro Context Loss và Goal Drift khi người làm việc đào sâu vào các chi tiết kỹ thuật ở mức độ thấp.

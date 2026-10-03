@@ -7,9 +7,6 @@ aliases: []
 domain: "Mental Models"
 sourcePath: "30_Resources/Concepts/Psychology_and_Mental_Models/Cognitive_Stack_Framework.md"
 ---
-
-# Cognitive Stack Framework
-
 ## TL;DR
 
 Khung phân cấp nhận thức (Cognitive Stack Framework) là hệ quy chiếu tổ chức các mô hình tư duy (Mental Models) theo 5 tầng từ thấp đến cao, đi từ việc lọc nhiễu thông tin thô đến đưa ra hành động tối ưu. Mô hình phân cấp này được chứng thực bởi nghiên cứu khoa học hành vi và giáo dục, giúp giới tri thức nâng cao năng lực tự học sâu (Deep Learning) và đưa ra các quyết định chiến lược trong cuộc sống (Life Path).

@@ -7,9 +7,6 @@ aliases: []
 domain: "Engineering"
 sourcePath: "30_Resources/Tech/Language_and_Core/CSharp_WinForms_Thread_Invoke.md"
 ---
-
-# C# WinForms Thread Safety with Invoke
-
 ## TL;DR
 
 Trong lập trình Windows Forms (C#), mọi tương tác với UI controls (vẽ giao diện, nhận tương tác) bắt buộc phải do luồng chính **Main UI Thread** xử lý. Khi các tác vụ nền **Background Threads** cần đụng chạm UI, chúng phải thông qua cơ chế `Invoke()` để gửi yêu cầu nhờ luồng chính xử lý, tránh lỗi xung đột luồng `Cross-thread operation`.

@@ -39,15 +39,15 @@ body {
   font-variant-numeric: lining-nums;
   background-color: var(--bg-color);
   color: var(--text-color);
+  box-sizing: border-box;
 }
 
-/* Stable wide layout for all Second Brain pages: index, note detail, and graph */
-@media (min-width: 1080px) {
-  body:has(.note-page-wrapper),
-  body:has(.brain-index-container),
-  body:has(.graph-page-container),
-  body.layout-wide {
-    max-width: 76rem;
+@media (max-width: 640px) {
+  html {
+    font-size: 16px;
+  }
+  body {
+    padding: 0.5rem 0.75rem 1.5rem 0.75rem;
   }
 }
 
@@ -117,7 +117,7 @@ a:active {
   text-decoration-thickness: 2px;
 }
 
-/* Header & Navigation */
+/* Header & Navigation: Strict unified 48rem across the entire site */
 #site-header {
   margin-bottom: 1.8rem;
 }
@@ -145,6 +145,26 @@ nav#navigation a {
   line-height: 1.2;
 }
 
+@media (max-width: 640px) {
+  nav#navigation {
+    overflow-x: auto;
+    scrollbar-width: none;
+    -webkit-overflow-scrolling: touch;
+    justify-content: flex-start;
+    gap: 0.5rem;
+  }
+  nav#navigation::-webkit-scrollbar {
+    display: none;
+  }
+  nav#navigation a {
+    letter-spacing: 1px;
+    font-size: 0.85rem;
+    padding: 0 0.5rem 6px 0.5rem;
+    white-space: nowrap;
+    flex-grow: 0;
+  }
+}
+
 nav#navigation a:hover {
   color: var(--heading-color);
 }
@@ -155,7 +175,7 @@ nav#navigation a.active {
   color: var(--heading-color);
 }
 
-/* Code & Pre Blocks with Ligatures */
+/* Code & Pre Blocks with Custom Clean Dark Scrollbars */
 code {
   font-size: 0.9em;
   font-family: "JetBrains Mono", "Fira Code", Consolas, "DejaVu Sans Mono", monospace;
@@ -165,6 +185,7 @@ code {
   color: var(--code-text);
   padding: 0.2em 0.4em;
   border-radius: 2px;
+  word-break: break-word;
 }
 
 pre {
@@ -176,6 +197,25 @@ pre {
   border-radius: 4px;
   position: relative;
   font-family: "JetBrains Mono", "Fira Code", Consolas, monospace;
+  scrollbar-width: thin;
+  scrollbar-color: #333333 transparent;
+}
+
+pre::-webkit-scrollbar {
+  height: 4px;
+}
+
+pre::-webkit-scrollbar-track {
+  background: transparent;
+}
+
+pre::-webkit-scrollbar-thumb {
+  background: #333333;
+  border-radius: 2px;
+}
+
+pre::-webkit-scrollbar-thumb:hover {
+  background: #555555;
 }
 
 pre code {
@@ -185,6 +225,7 @@ pre code {
   border-radius: 0;
   font-size: 0.88rem;
   line-height: 1.5;
+  word-break: normal;
 }
 
 /* Copy Button for Pre Blocks */
@@ -211,9 +252,9 @@ pre code {
 }
 
 .copy-code-btn.copied {
-  background-color: #22c55e;
+  background-color: #ffffff;
   color: #111111;
-  border-color: #22c55e;
+  border-color: #ffffff;
   font-weight: bold;
 }
 
@@ -242,19 +283,63 @@ li {
   margin-bottom: 0.3rem;
 }
 
-/* Tables */
+/* Tables with Mobile/Narrow Horizontal Scroll Support */
+.table-wrapper {
+  width: 100%;
+  overflow-x: auto;
+  margin-bottom: 1.5rem;
+  scrollbar-width: thin;
+  scrollbar-color: #333333 transparent;
+  -webkit-overflow-scrolling: touch;
+}
+
+.table-wrapper::-webkit-scrollbar {
+  height: 4px;
+}
+
+.table-wrapper::-webkit-scrollbar-thumb {
+  background: #333333;
+  border-radius: 2px;
+}
+
 table {
   width: 100%;
   border-collapse: collapse;
-  margin-bottom: 1.5rem;
-  font-size: 0.95rem;
+  font-size: 0.92rem;
+  display: block;
+  max-width: 100%;
+  overflow-x: auto;
+  scrollbar-width: thin;
+  scrollbar-color: #333333 transparent;
+  -webkit-overflow-scrolling: touch;
+}
+
+table::-webkit-scrollbar {
+  height: 4px;
+}
+
+table::-webkit-scrollbar-track {
+  background: transparent;
+}
+
+table::-webkit-scrollbar-thumb {
+  background: #333333;
+  border-radius: 2px;
 }
 
 th,
 td {
-  padding: 0.5rem 0.75rem;
+  padding: 0.6rem 0.85rem;
   border: 1px solid var(--border-color);
   text-align: left;
+  min-width: 140px;
+  line-height: 1.45;
+}
+
+th:first-child,
+td:first-child {
+  min-width: 100px;
+  white-space: nowrap;
 }
 
 th {
@@ -265,10 +350,78 @@ th {
 }
 
 /* Images & Horizontal Rules */
-img {
+article img,
+.note-content img,
+.post-content img {
   max-width: 100%;
   height: auto;
   border-radius: 4px;
+  border: 1px solid var(--border-color, #2a2a2a);
+  background-color: #141414;
+  cursor: zoom-in;
+  transition:
+    border-color 0.15s ease,
+    opacity 0.15s ease;
+  display: block;
+  margin: 1.5rem auto;
+}
+
+article img:hover,
+.note-content img:hover,
+.post-content img:hover {
+  border-color: #555555;
+  opacity: 0.92;
+}
+
+/* Global Lightbox Modal Styles: Full-Scale Responsive View */
+.image-modal-backdrop {
+  display: none;
+  position: fixed;
+  inset: 0;
+  z-index: 99999;
+  background-color: rgba(10, 10, 10, 0.94);
+  backdrop-filter: blur(6px);
+  -webkit-backdrop-filter: blur(6px);
+  justify-content: center;
+  align-items: center;
+  cursor: zoom-out;
+  padding: 1.5rem;
+  box-sizing: border-box;
+}
+
+.image-modal-backdrop.open {
+  display: flex;
+}
+
+.image-modal-content {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 1rem;
+  width: 95vw;
+  height: 92vh;
+}
+
+.image-modal-content img {
+  width: 92vw;
+  height: 84vh;
+  max-width: 92vw;
+  max-height: 84vh;
+  object-fit: contain;
+  border-radius: 6px;
+  border: 1px solid #333333;
+  background-color: #0f1115;
+  box-shadow: 0 16px 48px rgba(0, 0, 0, 0.95);
+  cursor: default;
+}
+
+.image-modal-hint {
+  font-family: "JetBrains Mono", Consolas, monospace;
+  font-size: 0.8rem;
+  color: #888888;
+  user-select: none;
+  letter-spacing: 0.5px;
 }
 
 hr {
@@ -277,7 +430,7 @@ hr {
   margin: 2rem 0;
 }
 
-/* Footer */
+/* Footer: Always centered in standard width (48rem) */
 footer#site-footer {
   border-top: 1px solid var(--border-color);
   font-size: 0.833rem;
@@ -285,4 +438,7 @@ footer#site-footer {
   color: var(--subheading-color);
   margin-top: 3.5rem;
   padding: 1.5rem 0 2rem 0;
+  max-width: 48rem;
+  margin-left: auto;
+  margin-right: auto;
 }

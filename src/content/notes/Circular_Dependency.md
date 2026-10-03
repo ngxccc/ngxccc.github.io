@@ -7,9 +7,6 @@ aliases: []
 domain: "Engineering"
 sourcePath: "30_Resources/Tech/Architecture_and_Patterns/Circular_Dependency.md"
 ---
-
-# Circular Dependency
-
 ## TL;DR
 
 Circular Dependency (Phụ thuộc vòng tròn) xảy ra khi hai hoặc nhiều module phụ thuộc lẫn nhau trực tiếp hoặc gián tiếp, tạo thành chu kỳ trong dependency graph. Đây là anti-pattern nghiêm trọng, thường gây crash lúc khởi động và phá hủy khả năng maintain, test, scale codebase.

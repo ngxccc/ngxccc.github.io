@@ -7,9 +7,6 @@ aliases: ["Outbox Pattern", "Transactional Outbox", "Mẫu thiết kế Outbox"]
 domain: "Engineering"
 sourcePath: "30_Resources/Tech/API_and_Data_Design/Outbox_Pattern.md"
 ---
-
-# Outbox Pattern
-
 ## TL;DR
 
 **Transactional Outbox Pattern** là giải pháp giải quyết triệt để bài toán **Dual-Write** (ghi dữ liệu vào DB và phát sự kiện ra hệ thống bên ngoài). Bằng cách lưu trữ các sự kiện cần phát đi trực tiếp vào một bảng `outbox` trong cùng một Transaction ghi dữ liệu chính, hệ thống đảm bảo tính nhất quán cuối cùng (Eventual Consistency) và đảm bảo thông điệp sẽ được gửi ít nhất một lần (At-least-once delivery) kể cả khi worker hoặc database bị sập đột ngột.
@@ -66,29 +63,33 @@ import { OutboxEvent } from "./outbox.entity";
 
 @Injectable()
 export class OrderService {
-  constructor(@InjectEntityManager() private readonly entityManager: EntityManager) {}
+  constructor(
+    @InjectEntityManager() private readonly entityManager: EntityManager,
+  ) {}
 
   async createOrder(userId: number, ticketId: number, quantity: number) {
-    return this.entityManager.transaction(async (transactionalEntityManager) => {
-      // 1. Lưu thông tin đơn đặt vé vào database
-      const order = transactionalEntityManager.create(Order, {
-        userId,
-        ticketId,
-        quantity,
-        status: "PENDING_PAYMENT",
-      });
-      const savedOrder = await transactionalEntityManager.save(order);
+    return this.entityManager.transaction(
+      async (transactionalEntityManager) => {
+        // 1. Lưu thông tin đơn đặt vé vào database
+        const order = transactionalEntityManager.create(Order, {
+          userId,
+          ticketId,
+          quantity,
+          status: "PENDING_PAYMENT",
+        });
+        const savedOrder = await transactionalEntityManager.save(order);
 
-      // 2. Ghi sự kiện nghiệp vụ vào bảng Outbox trong cùng Transaction
-      const outboxEvent = transactionalEntityManager.create(OutboxEvent, {
-        eventType: "order.created",
-        payload: { orderId: savedOrder.id, userId, ticketId, quantity },
-        status: "PENDING",
-      });
-      await transactionalEntityManager.save(outboxEvent);
+        // 2. Ghi sự kiện nghiệp vụ vào bảng Outbox trong cùng Transaction
+        const outboxEvent = transactionalEntityManager.create(OutboxEvent, {
+          eventType: "order.created",
+          payload: { orderId: savedOrder.id, userId, ticketId, quantity },
+          status: "PENDING",
+        });
+        await transactionalEntityManager.save(outboxEvent);
 
-      return savedOrder;
-    });
+        return savedOrder;
+      },
+    );
   }
 }
 ```
@@ -148,7 +149,9 @@ import { Job } from "bullmq";
 
 @Processor("notification-queue")
 export class NotificationProcessor extends WorkerHost {
-  async process(job: Job<{ orderId: number; userId: number }, void, string>): Promise<void> {
+  async process(
+    job: Job<{ orderId: number; userId: number }, void, string>,
+  ): Promise<void> {
     const { orderId, userId } = job.data;
 
     switch (job.name) {

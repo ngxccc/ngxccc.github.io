@@ -7,9 +7,6 @@ aliases: []
 domain: "Engineering"
 sourcePath: "30_Resources/Concepts/Academic_and_Case_Studies/GPS_Case_Study_DailyDev_Analysis.md"
 ---
-
-# GPS Case Study: DailyDev Analysis Thread
-
 ## TL;DR
 
 Ghi chú này đóng gói trường hợp nghiên cứu thực tế (Case Study) minh họa cách ứng dụng [[GPS_Goal_Problem_Solution_Framework]] và [[McKinsey_Issue_Tree_Framework]] để theo dõi và quản lý một chuỗi thảo luận đào sâu qua nhiều câu hỏi (Prompts) liên tiếp mà không bị trôi bối cảnh ban đầu (Goal Drift). Ghi chú tích hợp toàn bộ các nội dung phân tích chuyên sâu về Sunk Cost Fallacy, Abstraction Layers, Deterministic Compilers vs Stochastic AI, 3 trụ cột đánh giá, giải mã nghịch lý Code Comprehension, và kiến trúc Automated Verification System.

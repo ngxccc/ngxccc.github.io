@@ -7,9 +7,6 @@ aliases: ["Product Mindset", "Tư duy sản phẩm", "Product-led Thinking"]
 domain: "Engineering"
 sourcePath: "30_Resources/Concepts/Product_and_Business_Mindsets/Product_Mindset.md"
 ---
-
-# Product Mindset
-
 ## TL;DR
 
 Tư duy sản phẩm (Product Mindset) là sự chuyển dịch từ việc tập trung hoàn thành các công việc ngắn hạn (Project Mindset) sang việc liên tục tối ưu hóa và tạo ra giá trị lâu dài cho người dùng. Tư duy này định nghĩa sự thành công của phần mềm bằng giá trị kinh doanh và sự hài lòng của khách hàng, thay vì chỉ là việc bàn giao đúng hạn.

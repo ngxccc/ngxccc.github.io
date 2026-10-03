@@ -7,9 +7,6 @@ aliases: []
 domain: "Engineering"
 sourcePath: "30_Resources/Tech/API_and_Data_Design/Partial_Index.md"
 ---
-
-# Partial Index
-
 ## TL;DR
 
 - **Bản chất**: Chỉ mục được xây dựng trên một tập con dữ liệu của bảng thỏa mãn điều kiện lọc xác định trước (`WHERE predicate`), thay vì bao phủ toàn bộ các hàng trong bảng.

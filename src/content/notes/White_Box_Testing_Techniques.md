@@ -7,9 +7,6 @@ aliases: []
 domain: "Engineering"
 sourcePath: "30_Resources/Concepts/Software_Testing/White_Box_Testing_Techniques.md"
 ---
-
-# Kỹ thuật Kiểm thử Hộp trắng
-
 ## TL;DR
 
 Kiểm thử hộp trắng là kỹ thuật thiết kế test case dựa trên việc phân tích cấu trúc mã nguồn bên trong của chương trình. Hai độ phủ cơ bản của kiểm thử hộp trắng là Độ phủ dòng lệnh (Statement Coverage) và Độ phủ nhánh/quyết định (Branch/Decision Coverage), giúp đo lường mức độ kiểm thử mã nguồn và hạn chế sót mã chưa chạy qua.

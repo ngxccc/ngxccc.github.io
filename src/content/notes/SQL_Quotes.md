@@ -7,9 +7,6 @@ aliases: ["Dấu nháy trong SQL", "SQL Quotes", "Single vs Double Quotes SQL"]
 domain: "Engineering"
 sourcePath: "30_Resources/Tech/API_and_Data_Design/SQL_Quotes.md"
 ---
-
-# SQL Quotes: Identifiers vs String Literals
-
 ## TL;DR
 
 Phân biệt sử dụng dấu nháy đơn và nháy kép trong SQL: Nháy đơn `''` dùng cho giá trị chuỗi (String Literals), nháy kép `""` dùng cho tên thực thể (Identifiers như tên cột, tên bảng).

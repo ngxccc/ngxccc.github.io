@@ -7,9 +7,6 @@ aliases: []
 domain: "Engineering"
 sourcePath: "30_Resources/Concepts/Knowledge_Management/Visual_Workflow_Documentation_Policy.md"
 ---
-
-# Visual Workflow Documentation Policy
-
 ## TL;DR
 
 **Visual Workflow Documentation Policy** là bộ quy chuẩn quản trị tài liệu bắt buộc nhằm chuyển đổi luồng công việc (workflow), quy trình xử lý và kiến trúc hệ thống từ dạng văn bản thô sang mô hình trực quan hóa (Diagrams/Flowcharts). Giúp loại bỏ sự mơ hình, tối ưu hóa tốc độ tiếp cận (onboarding) và phát hiện điểm nghẽn hệ thống.

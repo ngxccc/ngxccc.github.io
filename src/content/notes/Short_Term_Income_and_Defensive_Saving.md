@@ -7,9 +7,6 @@ aliases: []
 domain: "Economics"
 sourcePath: "30_Resources/Methods/Finance/Short_Term_Income_and_Defensive_Saving.md"
 ---
-
-# Short-Term Income Acceleration and Defensive Saving Strategy
-
 ## TL;DR
 
 Phương pháp **Tăng thu nhập ngắn hạn và Tiết kiệm phòng thủ (Short-Term Income Acceleration & Defensive Saving)** là chiến lược tài chính dành riêng cho cá nhân đang ở tầng nhu cầu Sinh lý và An toàn (Tầng 1 & 2 Maslow). Bằng cách tập trung tạo bệ đỡ tài chính thanh khoản cao (Quỹ khẩn cấp 3–6 tháng) và kích hoạt các luồng thu nhập bổ sung ngắn hạn, phương pháp này giúp giải tỏa áp lực đe dọa từ hạch hạnh nhân (Amygdala), khôi phục băng thông nhận thức của vỏ não trước trán (PFC) để thoát khỏi bẫy tư duy khan hiếm (Scarcity Mindset).

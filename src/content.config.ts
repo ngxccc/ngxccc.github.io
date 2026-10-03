@@ -14,7 +14,11 @@ const posts = defineCollection({
 });
 
 const notes = defineCollection({
-  loader: glob({ pattern: "**/*.{md,mdx}", base: "./src/content/notes" }),
+  loader: glob({
+    pattern: "**/*.{md,mdx}",
+    base: "./src/content/notes",
+    generateId: ({ entry }) => entry.replace(/\.(md|mdx)$/, ""),
+  }),
   schema: z.object({
     title: z.string(),
     description: z.string().optional(),

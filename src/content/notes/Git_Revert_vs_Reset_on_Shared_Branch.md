@@ -7,9 +7,6 @@ aliases: []
 domain: "Engineering"
 sourcePath: "30_Resources/Methods/Engineering/Git_Revert_vs_Reset_on_Shared_Branch.md"
 ---
-
-# Git Revert vs Reset on Shared Branch
-
 ## TL;DR
 
 - **Bản chất**: **Shared Branch** là nhánh dùng chung mà nhiều developer cùng clone/pull về máy (`main`, `develop`, `release`).

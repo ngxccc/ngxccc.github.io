@@ -7,9 +7,6 @@ aliases: ["IELTS Simon Method", "Phương pháp viết IELTS Simon", "IELTS Simo
 domain: "Linguistics & Learning"
 sourcePath: "30_Resources/Methods/Learning_and_Cognition/IELTS_Simon_Writing_Method.md"
 ---
-
-# IELTS Simon Writing Method
-
 ## TL;DR
 
 Chiến thuật làm bài thi IELTS Writing (Task 1 và Task 2) tập trung vào sự đơn giản, rõ ràng và mạch lạc. Triết lý cốt lõi của cựu giám khảo Simon Corcoran là "Less is more" - viết đúng những gì giám khảo cần đánh giá, tránh việc phô diễn từ vựng phức tạp hoặc dùng các mẫu câu học thuộc lòng sáo rỗng.

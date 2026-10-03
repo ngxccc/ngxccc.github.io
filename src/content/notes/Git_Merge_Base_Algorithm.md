@@ -7,9 +7,6 @@ aliases: []
 domain: "Engineering"
 sourcePath: "30_Resources/Concepts/Computer_Science/Git_Merge_Base_Algorithm.md"
 ---
-
-# Git Merge Base Algorithm
-
 ## TL;DR
 
 - **Bản chất**: Git **không** liên tục so sánh commit cha từng cặp một cách tuyến tính thô sơ, mà thực hiện phép duyệt đồ thị **Lowest Common Ancestor (LCA)** bằng thuật toán duyệt theo chiều rộng (BFS / Priority Queue theo commit timestamp) kết hợp kỹ thuật **sơn cờ bitwise (Commit Flags)** trên đồ thị DAG.

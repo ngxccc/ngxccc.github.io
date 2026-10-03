@@ -7,9 +7,6 @@ aliases: []
 domain: "Linguistics & Learning"
 sourcePath: "30_Resources/Methods/Learning_and_Cognition/Mental_Model_Automation_Method.md"
 ---
-
-# Mental Model Automation Method
-
 ## TL;DR
 
 Mental Model Automation Method là quy trình rèn luyện có chủ đích (Deliberate Practice) giúp chuyển hóa các mô hình tư duy đàm phán, phản biện và lý thuyết trò chơi từ dạng **Kiến thức khai báo (System 2 - Tư duy chậm, tốn sức)** thành **Phản xạ tự nhiên (System 1 - Tư duy tự động, tức thì)** trong các cuộc đối thoại thực tế. Phương pháp kết hợp thuật toán `IF-THEN`, cú phanh nhận thức 3 giây, thẻ Anki tình huống và nhật ký phản tư siêu nhận thức.

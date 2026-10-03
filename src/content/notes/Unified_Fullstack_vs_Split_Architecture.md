@@ -7,9 +7,6 @@ aliases: []
 domain: "Engineering"
 sourcePath: "30_Resources/Tech/Architecture_and_Patterns/Unified_Fullstack_vs_Split_Architecture.md"
 ---
-
-# Unified Fullstack Architecture vs. Split Repository Architecture
-
 ## TL;DR
 
 Kiến trúc Fullstack đồng nhất (Unified Fullstack - sử dụng Next.js App Router + Monorepo) gộp cả Frontend và Backend vào chung một codebase, trái ngược với kiến trúc chia tách (Split Architecture) chia thành 2 repository Backend (Node/Go/Java) và Frontend (React SPA) riêng biệt. Lựa chọn này mang lại lợi thế vượt trội về **End-to-End Type Safety** (Drizzle ORM truyền type trực tiếp lên UI), **tối ưu hóa hiệu năng render (zero network overhead từ Server Components đến DB)**, đơn giản hóa vận hành (DevOps/CORS) và tăng tốc độ phát triển (DX), đánh đổi lại bằng việc tăng độ phức tạp trong quản lý Monorepo và phụ thuộc công nghệ vào hệ sinh thái Next.js.

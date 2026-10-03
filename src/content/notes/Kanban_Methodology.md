@@ -7,9 +7,6 @@ aliases: ["Phương pháp Kanban", "Kanban Methodology", "Kanban Board Concept"]
 domain: "Engineering"
 sourcePath: "30_Resources/Concepts/Product_and_Business_Mindsets/Kanban_Methodology.md"
 ---
-
-# Phương Pháp & Bảng Kanban Trong Quản Trị Dự Án
-
 ## TL;DR
 
 Tài liệu phân tích cốt lõi về phương pháp Kanban—hệ thống quản lý dòng công việc (workflow) trực quan theo mô hình "Kéo" (Pull system) bắt nguồn từ Toyota. Giúp tối ưu hóa hiệu suất làm việc nhóm bằng cách trực quan hóa quy trình, giới hạn lượng việc đang làm (WIP Limit), giảm thời gian phản hồi (Cycle Time) và loại bỏ các điểm nghẽn (bottlenecks).

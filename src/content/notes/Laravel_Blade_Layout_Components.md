@@ -7,9 +7,6 @@ aliases: ["Blade Components", "Blade Layouts", "Kế thừa Layout Laravel", "x-
 domain: "Engineering"
 sourcePath: "30_Resources/Tech/Frameworks_and_Ecosystem/Laravel_Blade_Layout_Components.md"
 ---
-
-# Laravel Blade Layout Components
-
 ## TL;DR
 
 **Laravel Blade Components** (thông qua cú pháp thẻ `<x-component>`) cung cấp giải pháp hướng thành phần (Component-based approach) mạnh mẽ để thiết lập cấu trúc Layout kế thừa, thay thế cho các chỉ thị kế thừa truyền thống như `@extends` và `@section`. Bằng cách tự động ánh xạ tệp từ `resources/views/components/` và sử dụng cơ chế nội dung động `{{ $slot }}`, Blade Components cho phép cô lập phần khung HTML Boilerplate (`<!DOCTYPE html>`, `<head>`, stylesheet, scripts) khỏi trang con. Điều này giúp loại bỏ hoàn toàn các khai báo CSS inline cồng kềnh, cải thiện khả năng bảo trì và tổ chức mã nguồn ứng dụng sạch sẽ hơn.

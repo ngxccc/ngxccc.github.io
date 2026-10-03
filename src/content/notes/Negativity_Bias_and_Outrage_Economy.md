@@ -7,9 +7,6 @@ aliases: []
 domain: "Mental Models"
 sourcePath: "30_Resources/Concepts/Psychology_and_Mental_Models/Negativity_Bias_and_Outrage_Economy.md"
 ---
-
-# Negativity Bias and Outrage Economy
-
 ## TL;DR
 
 - **Bản chất**: Sự cộng hưởng nguy hiểm giữa thiên kiến tiến hóa ưu tiên xử lý mối đe dọa (Negativity Bias) và mô hình kinh doanh thuật toán tối ưu hóa thời lượng tương tác bằng cảm xúc phẫn nộ (Outrage Economy).

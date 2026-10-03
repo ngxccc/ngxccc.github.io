@@ -7,9 +7,6 @@ aliases: ["Chi phí cơ hội", "Sunk Cost Fallacy", "Loss Aversion"]
 domain: "Economics"
 sourcePath: "30_Resources/Concepts/Finance_and_Economics/Opportunity_Cost_Hold.md"
 ---
-
-# Opportunity Cost & Holding Psychology
-
 ## TL;DR
 
 Trạng thái tiến thoái lưỡng nan khi nhà đầu tư không dám bán một tài sản kém hiệu quả vì tiếc nuối quá khứ (Sunk Cost), dẫn đến việc bỏ lỡ các cơ hội sinh lời tốt hơn ở hiện tại (Opportunity Cost).

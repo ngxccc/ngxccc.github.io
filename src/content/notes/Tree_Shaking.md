@@ -7,9 +7,6 @@ aliases: []
 domain: "Engineering"
 sourcePath: "30_Resources/Tech/Language_and_Core/Tree_Shaking.md"
 ---
-
-# Tree Shaking
-
 ## TL;DR
 
 - **Bản chất**: Kỹ thuật tối ưu hóa mã nguồn trong quá trình đóng gói (Bundling / Compilation) dựa trên phân tích tĩnh (Static Analysis) cấu trúc cây cú pháp (AST) để định vị và loại bỏ hoàn toàn các hàm, biến, hoặc module không bao giờ được tham chiếu (Dead Code Elimination).

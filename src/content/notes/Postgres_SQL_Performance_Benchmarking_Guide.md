@@ -7,9 +7,6 @@ aliases: []
 domain: "Engineering"
 sourcePath: "30_Resources/Methods/Engineering/Postgres_SQL_Performance_Benchmarking_Guide.md"
 ---
-
-# Postgres SQL Performance & Benchmarking Guide
-
 ## TL;DR
 
 Hướng dẫn chuyên sâu về tối ưu hóa truy vấn PostgreSQL và đo đạc hiệu năng (Benchmarking) từ bản chất giải phẫu chỉ mục B+Tree, kỹ thuật đọc câu lệnh `EXPLAIN (ANALYZE, BUFFERS)`, phân trang Cursor-based đến thực hành viết kịch bản `k6` Stress Test đo RPS và Latency ($p95/p99$) cho ứng dụng Backend.

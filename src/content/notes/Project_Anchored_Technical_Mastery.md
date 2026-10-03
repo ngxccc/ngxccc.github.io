@@ -7,9 +7,6 @@ aliases: []
 domain: "Linguistics & Learning"
 sourcePath: "30_Resources/Methods/Learning_and_Cognition/Project_Anchored_Technical_Mastery.md"
 ---
-
-# Project-Anchored Technical Mastery
-
 ## TL;DR
 
 - **Bản chất**: Dự án đóng vai trò là đề bài thực tế và phòng thí nghiệm kiểm chứng; bản chất công nghệ tầng sâu đóng vai trò là công cụ giải đề được mổ xẻ đúng tại các điểm giao cắt kỹ thuật.

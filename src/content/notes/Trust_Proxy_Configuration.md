@@ -7,9 +7,6 @@ aliases: []
 domain: "Engineering"
 sourcePath: "30_Resources/Tech/Web_Client_and_Security/Trust_Proxy_Configuration.md"
 ---
-
-# Cấu Hình Trust Proxy Trong Express & NestJS
-
 ## TL;DR
 
 Khi ứng dụng NestJS/Express chạy phía sau một Reverse Proxy hoặc CDN (như Nginx, Cloudflare, AWS ALB), địa chỉ IP kết nối trực tiếp đến ứng dụng sẽ luôn là IP nội bộ của Proxy (`127.0.0.1`). Để đọc được IP thực tế của client, ứng dụng cần tin tưởng các header do proxy đính kèm (E.g. `X-Forwarded-For`) bằng cách thiết lập cấu hình `app.set("trust proxy", 1)`. Nếu không cấu hình, các tính năng bảo mật dựa trên IP như giới hạn tần suất yêu cầu (Rate Limiting/ThrottlerGuard) sẽ nhận diện sai và vô tình khóa truy cập của toàn bộ người dùng hệ thống.

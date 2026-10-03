@@ -7,9 +7,6 @@ aliases: ["Phương pháp phân rã công việc WBS", "WBS Best Practices"]
 domain: "Engineering"
 sourcePath: "30_Resources/Methods/Engineering/WBS_Best_Practices.md"
 ---
-
-# ️ Phương Pháp Phân Rã Công Việc WBS
-
 ## TL;DR
 
 Tài liệu hướng dẫn chi tiết phương pháp phân rã công việc WBS theo tiêu chuẩn quản lý dự án quốc tế PMBOK (PMI). Cung cấp các quy tắc vàng như Quy tắc 100%, tính hướng sản phẩm (Deliverable-oriented), so sánh thực tế Đúng vs Sai trong phát triển phần mềm và cách chuyển đổi từ WBS dự án sang Task List cá nhân.

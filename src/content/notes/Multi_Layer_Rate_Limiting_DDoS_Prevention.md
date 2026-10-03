@@ -7,9 +7,6 @@ aliases: []
 domain: "Engineering"
 sourcePath: "30_Resources/Methods/Engineering/Multi_Layer_Rate_Limiting_DDoS_Prevention.md"
 ---
-
-# Chiến Lược Rate Limiting Đa Lớp & Phòng Chống DDoS
-
 ## TL;DR
 
 Để bảo vệ các endpoint nhạy cảm (đặc biệt là Đăng ký/Đăng nhập) khỏi tấn công spam và brute-force phân tán (botnet), hệ thống cần áp dụng chiến lược phòng thủ đa lớp (Defense in Depth) kết hợp giới hạn thô IP ở tầng CDN/WAF và giới hạn tinh (Email/Account) ở tầng logic NestJS/Redis. Riêng luồng đăng ký phải chặn theo IP để tránh lỗi từ từ chối dịch vụ chiếm quyền (Account Pre-emption DoS).

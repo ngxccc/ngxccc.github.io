@@ -7,9 +7,6 @@ aliases: []
 domain: "Engineering"
 sourcePath: "30_Resources/Tech/Language_and_Core/TS_Type_System_Structural_Type_Erasure.md"
 ---
-
-# TS Type System: Structural Typing & Type Erasure
-
 ## TL;DR
 
 TypeScript sử dụng hệ thống kiểu cấu trúc **Structural Type System** (kiểm tra kiểu dựa trên hình dáng/cấu trúc dữ liệu thay vì tên lớp khai báo), trái ngược hoàn toàn với hệ thống kiểu định danh **Nominal Type System** của Java/C#. Thêm vào đó, TypeScript áp dụng cơ chế xóa bỏ kiểu **Type Erasure** — toàn bộ kiểu tĩnh (interface, type) bị xóa bỏ 100% khi biên dịch sang JavaScript, nghĩa là kiểu dữ liệu không tồn tại ở runtime. Do đó, để kiểm tra và thu hẹp kiểu dữ liệu (type narrowing) khi chạy ứng dụng (ví dụ nhận dữ liệu từ API), lập trình viên bắt buộc phải tự viết **Type Guards** và **User-Defined Type Predicates** (`parameter is Type`).

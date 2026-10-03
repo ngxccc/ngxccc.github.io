@@ -7,9 +7,6 @@ aliases: ["Socratic Method", "Maieutics", "Elenchus"]
 domain: "Linguistics & Learning"
 sourcePath: "30_Resources/Methods/Learning_and_Cognition/Socratic_Questioning_Method.md"
 ---
-
-# Socratic Questioning Method
-
 ## TL;DR
 
 Kỹ thuật đặt câu hỏi có hệ thống để bóc tách vấn đề, làm rõ sự mơ hồ và lôi các giả định ngầm (Assumptions) ra ánh sáng. Phương pháp này giúp tránh việc ra quyết định dựa trên cảm tính hoặc bị cuốn vào các cuộc tranh luận vô bổ.

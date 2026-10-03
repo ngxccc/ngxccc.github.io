@@ -7,9 +7,6 @@ aliases: ["Monorepo", "Turbo"]
 domain: "Engineering"
 sourcePath: "30_Resources/Tech/Frameworks_and_Ecosystem/Turborepo.md"
 ---
-
-# Turborepo và Kiến trúc Monorepo
-
 ## TL;DR
 
 Turborepo là một công cụ xây dựng (build system) hiệu suất cao cho các dự án Monorepo sử dụng JavaScript/TypeScript. Nó giúp chia sẻ code cực dễ dàng qua cơ chế workspace, quản lý luồng phụ thuộc task (Dependency Graph), và tối ưu tốc độ build cực hạn thông qua Caching.

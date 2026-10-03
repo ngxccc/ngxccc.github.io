@@ -7,9 +7,6 @@ aliases: []
 domain: "Engineering"
 sourcePath: "30_Resources/Concepts/Software_Testing/Equivalence_Partitioning.md"
 ---
-
-# Kỹ thuật Phân hoạch Tương đương
-
 ## TL;DR
 
 Phân hoạch tương đương (Equivalence Partitioning - EP) là kỹ thuật kiểm thử hộp đen chia miền dữ liệu đầu vào hoặc đầu ra thành các phân vùng tương đương nhau. Kỹ thuật này dựa trên giả định rằng hệ thống sẽ xử lý mọi giá trị trong cùng một phân vùng theo cùng một cách, giúp giảm thiểu đáng kể số lượng test case cần thiết nhưng vẫn duy trì độ phủ kiểm thử tối ưu.

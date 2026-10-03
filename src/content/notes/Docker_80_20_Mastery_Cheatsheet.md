@@ -7,9 +7,6 @@ aliases: []
 domain: "Engineering"
 sourcePath: "30_Resources/Methods/Engineering/Docker_80_20_Mastery_Cheatsheet.md"
 ---
-
-# Docker 80/20 Mastery Cheatsheet
-
 ## TL;DR
 
 - **Bản chất**: Cẩm nang nén **20% nhóm lệnh Docker** phục vụ cho **80% nhu cầu thực tế** của một Backend / DevOps Engineer: từ khởi tạo Container có kiểm soát, gắn Volume bền vững, ánh xạ Network Port, Debugging bên trong Container đến Dọn dẹp ổ cứng an toàn (Safe Cleanup).

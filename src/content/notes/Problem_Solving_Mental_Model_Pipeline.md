@@ -7,9 +7,6 @@ aliases: []
 domain: "Linguistics & Learning"
 sourcePath: "30_Resources/Methods/Learning_and_Cognition/Problem_Solving_Mental_Model_Pipeline.md"
 ---
-
-# Problem Solving Mental Model Pipeline
-
 ## TL;DR
 
 Quy trình 5 bước tiêu chuẩn hóa (Mental Model Decision Engine) giúp chuyển hóa các mô hình tư duy rải rác thành một pipeline đánh giá, phản biện và ra quyết định thực chiến cho bất kỳ bài toán phức tạp nào trong cuộc sống, sự nghiệp và đầu tư.

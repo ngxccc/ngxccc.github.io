@@ -7,9 +7,6 @@ aliases: ["Lambda", "Cloud Functions"]
 domain: "Engineering"
 sourcePath: "30_Resources/Tech/Infrastructure_and_Cloud/Serverless_Architecture.md"
 ---
-
-# Serverless Architecture
-
 ## TL;DR
 
 Mô hình điện toán đám mây nơi nhà cung cấp (AWS, Vercel) tự động quản lý việc cấp phát máy chủ. Hệ thống chỉ chạy (và tính tiền) khi có request từ user, không duy trì server 24/7.

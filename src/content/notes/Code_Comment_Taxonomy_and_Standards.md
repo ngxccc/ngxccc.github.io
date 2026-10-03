@@ -7,9 +7,6 @@ aliases: []
 domain: "Engineering"
 sourcePath: "30_Resources/Methods/Engineering/Code_Comment_Taxonomy_and_Standards.md"
 ---
-
-# Code Comment Taxonomy & Standards (SSOT)
-
 ## TL;DR
 
 - **Bản chất**: Phân cấp và chuẩn hóa việc viết comment trong mã nguồn theo nguyên lý: _"Code tells you HOW, Comments tell you WHY"_.
@@ -54,7 +51,10 @@ flowchart TD
  *
  * @invariant INV-6 (Anti-Tampering): Prevents unauthorized payment confirmations
  */
-export function verifyPayOSSignature(payload: unknown, signature: string): boolean {
+export function verifyPayOSSignature(
+  payload: unknown,
+  signature: string,
+): boolean {
   // ...
 }
 ```

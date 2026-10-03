@@ -7,9 +7,6 @@ aliases: []
 domain: "Mental Models"
 sourcePath: "30_Resources/Concepts/Psychology_and_Mental_Models/Availability_Heuristic_and_Base_Rate.md"
 ---
-
-# Availability Heuristic and Base Rate
-
 ## TL;DR
 
 - **Bản chất**: Xu hướng tâm lý đánh giá tần suất, xác suất hoặc tầm quan trọng của một hiện tượng dựa trên mức độ dễ dàng gợi nhớ lại các ví dụ về nó trong tâm trí (Availability Heuristic), dẫn đến việc phớt lờ hoàn toàn dữ liệu thống kê nền (Base-Rate Fallacy).

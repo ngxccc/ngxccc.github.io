@@ -7,9 +7,6 @@ aliases: ["Quy trình V-Model", "Mô hình chữ V", "V-Model"]
 domain: "Engineering"
 sourcePath: "30_Resources/Methods/Engineering/V_Model.md"
 ---
-
-# Quy Trình Phát Triển Phần Mềm Theo Mô Hình V-Model
-
 ## TL;DR
 
 Mô hình V-Model (mô hình chữ V) là bản mở rộng kỷ luật của mô hình thác nước (Waterfall), trong đó mỗi giai đoạn phát triển (Verification) đều đi kèm với một giai đoạn kiểm thử tương ứng (Validation). Quy trình này liên kết chặt chẽ thiết kế và kiểm thử ngay từ đầu để phát hiện lỗi sớm và đảm bảo chất lượng phần mềm cao nhất.

@@ -7,9 +7,6 @@ aliases: []
 domain: "Engineering"
 sourcePath: "30_Resources/Methods/Engineering/Data_Structures_and_Algorithms_Roadmap.md"
 ---
-
-# Data Structures and Algorithms Roadmap
-
 ## TL;DR
 
 Lộ trình học Cấu trúc Dữ liệu & Thuật toán (DSA) cải tiến được phân tầng theo **Giá trị Thực chiến & Mục đích Kỹ nghệ** thay vì cày LeetCode dàn phẳng. Khung lộ trình chia làm 3 Tầng: **Tầng 1 (Kỹ nghệ Thực chiến)** phục vụ 90% công việc lập trình hệ thống hàng ngày, **Tầng 2 (Tư duy Mẫu & Phỏng vấn)** giúp chinh phục các vòng phỏng vấn kỹ thuật bằng 8 Dạng Mẫu (Patterns), và **Tầng 3 (Hệ thống Chuyên sâu)** dành cho phát triển Core Engine, Database và Compiler.

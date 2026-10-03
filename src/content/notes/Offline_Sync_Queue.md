@@ -7,9 +7,6 @@ aliases: ["Background Sync", "Outbox Pattern", "Offline First"]
 domain: "Engineering"
 sourcePath: "30_Resources/Tech/Web_Client_and_Security/Offline_Sync_Queue.md"
 ---
-
-# Offline Sync Queue
-
 ## TL;DR
 
 Kỹ thuật "lưu trước, gửi sau" (Store-forward) dành cho các ứng dụng Offline-First. Bắt các HTTP request bị lỗi do mất mạng, đẩy vào một hàng đợi (Queue) tại Local DB, và tự động gửi lại (Flush) khi thiết bị khôi phục kết nối internet.

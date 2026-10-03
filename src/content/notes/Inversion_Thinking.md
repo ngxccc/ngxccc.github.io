@@ -7,9 +7,6 @@ aliases: []
 domain: "Mental Models"
 sourcePath: "30_Resources/Concepts/Psychology_and_Mental_Models/Inversion_Thinking.md"
 ---
-
-# Inversion Thinking
-
 ## TL;DR
 
 Tư duy đảo ngược (Inversion Thinking) là kỹ thuật giải quyết vấn đề bằng cách tiếp cận từ góc độ ngược lại: Thay vì tìm cách để thành công hay đạt mục tiêu, bạn tập trung xác định và loại bỏ tất cả những cách dẫn đến thất bại, thảm họa hoặc sai lầm.

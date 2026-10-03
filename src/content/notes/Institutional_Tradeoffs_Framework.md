@@ -7,9 +7,6 @@ aliases: []
 domain: "Mental Models"
 sourcePath: "30_Resources/Concepts/Psychology_and_Mental_Models/Institutional_Tradeoffs_Framework.md"
 ---
-
-# Institutional Tradeoffs Framework
-
 ## TL;DR
 
 - **Bản chất**: Khung phân tích dựa trên nguyên lý kinh tế học thể chế (Douglass North, Daron Acemoglu) và triết lý Thomas Sowell: _Không có giải pháp hoàn hảo trong quản trị xã hội, chỉ tồn tại các gói đánh đổi (Trade-offs) dưới các ràng buộc nguồn lực và lịch sử nhất định_.

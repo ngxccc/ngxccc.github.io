@@ -7,9 +7,6 @@ aliases: []
 domain: "Engineering"
 sourcePath: "30_Resources/Tech/API_and_Data_Design/Prepare_Statements.md"
 ---
-
-# Prepare Statements
-
 ## TL;DR
 
 - **Bản chất**: Cơ chế giao tiếp cơ sở dữ liệu phân tách quy trình thực thi SQL thành 2 pha độc lập: Pha 1 biên dịch khung truy vấn (Query Template Compilation & Optimization) và Pha 2 truyền dữ liệu tham số (Parameter Binding & Execution).

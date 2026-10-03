@@ -7,9 +7,6 @@ aliases: []
 domain: "Engineering"
 sourcePath: "30_Resources/Methods/Engineering/Agile_Management_via_GitHub.md"
 ---
-
-# Quản Lý Dự Án Agile/Scrum Bằng GitHub Projects
-
 ## TL;DR
 
 Hướng dẫn cấu hình và vận hành quy trình quản lý tiến độ, quản lý công việc (tasks) và theo dõi hiệu suất của thành viên bằng GitHub Projects và Issues thay thế cho hệ thống JIRA đắt đỏ.

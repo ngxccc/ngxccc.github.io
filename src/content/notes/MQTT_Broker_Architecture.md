@@ -7,9 +7,6 @@ aliases: []
 domain: "Engineering"
 sourcePath: "30_Resources/Concepts/Computer_Science/MQTT_Broker_Architecture.md"
 ---
-
-# MQTT Broker Architecture
-
 ## TL;DR
 
 - **Bản chất**: **MQTT Broker** là một Stateful In-Memory Routing Hub hoạt động theo mô hình Publish/Subscribe trên nền TCP, trung chuyển bản tin nhị phân giữa các Client phân tán mà không đòi hỏi kết nối trực tiếp Point-to-Point.

@@ -7,9 +7,6 @@ aliases: ["Quy trình bản mẫu", "Mô hình bản mẫu", "Prototype Model", 
 domain: "Engineering"
 sourcePath: "30_Resources/Methods/Engineering/Prototype_Model.md"
 ---
-
-# Quy Trình Phát Triển Phần Mềm Theo Mô Hình Bản Mẫu
-
 ## TL;DR
 
 Quy trình phát triển phần mềm theo mô hình bản mẫu (Prototype Model) là phương pháp xây dựng một phiên bản thử nghiệm sớm (prototype) của sản phẩm để trình diễn, thu thập phản hồi và làm rõ yêu cầu của khách hàng trước khi tiến hành phát triển hệ thống hoàn chỉnh. Mô hình này tập trung giảm thiểu rủi ro hiểu sai nghiệp vụ và tăng tính trực quan cho người dùng.

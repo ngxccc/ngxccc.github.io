@@ -7,9 +7,6 @@ aliases: []
 domain: "Engineering"
 sourcePath: "30_Resources/Tech/API_and_Data_Design/RFC_Trending_Cache.md"
 ---
-
-# RFC: Realtime Leaderboard Caching System
-
 ## TL;DR
 
 Tài liệu đề xuất (RFC) giải quyết bài toán Over-engineering và nghẽn CPU trên PostgreSQL khi tính toán bảng xếp hạng realtime bằng cách áp dụng bộ đệm Redis Sorted Sets (ZSET) với độ phức tạp $O(log(N))$ cho việc xếp hạng.

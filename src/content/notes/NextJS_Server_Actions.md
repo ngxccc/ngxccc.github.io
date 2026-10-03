@@ -7,9 +7,6 @@ aliases: []
 domain: "Engineering"
 sourcePath: "30_Resources/Tech/Frameworks_and_Ecosystem/NextJS_Server_Actions.md"
 ---
-
-# Next.js Server Actions & React 19 Integration
-
 ## TL;DR
 
 **Server Actions** (được giới thiệu từ Next.js 14 và tối ưu hóa trong React 19) là cơ chế thiết lập các hàm xử lý bất đồng bộ (async functions) chạy hoàn toàn trên Server nhưng có thể được gọi (trigger) trực tiếp từ phía Client (như submit `<form>` hoặc click button) thông qua cơ chế **RPC (Remote Procedure Call)**. Server Actions thay thế hoàn toàn việc viết REST/GraphQL API thủ công cho các thao tác thay đổi dữ liệu (Mutations), đồng thời tích hợp chặt chẽ với các hook của React 19 (`useActionState`, `useFormStatus`, `useTransition`) để quản lý loading state và xử lý lỗi chuyên nghiệp.

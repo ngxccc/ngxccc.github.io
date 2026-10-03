@@ -1,0 +1,198 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1500 1000" width="100%" height="100%">
+  <defs>
+    <style>
+      .bg { fill: #0f1115; }
+      .title { font-family: 'JetBrains Mono', 'Fira Code', 'Courier New', monospace; font-size: 26px; font-weight: 700; fill: #ffffff; letter-spacing: 3px; }
+      .subtitle { font-family: 'JetBrains Mono', monospace; font-size: 13px; fill: #7e8694; letter-spacing: 1px; }
+      
+      .box-label { font-family: 'JetBrains Mono', monospace; font-size: 15px; font-weight: 700; fill: #ffffff; letter-spacing: 1.5px; }
+      .box-sub { font-family: 'JetBrains Mono', monospace; font-size: 11px; fill: #8a93a0; }
+      .box-highlight-label { font-family: 'JetBrains Mono', monospace; font-size: 15px; font-weight: 700; fill: #ff5722; letter-spacing: 1.5px; }
+      
+      .code-text { font-family: 'JetBrains Mono', monospace; font-size: 12px; fill: #abb2bf; }
+      .code-keyword { fill: #e06c75; font-weight: 600; }
+      .code-var { fill: #61afef; }
+      .code-func { fill: #98c379; }
+      
+      .note-text { font-family: 'JetBrains Mono', monospace; font-size: 11px; fill: #e5c07b; }
+      .conn-label { font-family: 'JetBrains Mono', monospace; font-size: 11px; fill: #5c6370; }
+      .conn-highlight { font-family: 'JetBrains Mono', monospace; font-size: 11px; fill: #ff5722; font-weight: 600; }
+
+      .dashed-border { stroke: #2c313a; stroke-dasharray: 6,6; fill: none; stroke-width: 1.5; }
+      .solid-border { stroke: #2c313a; fill: #161920; stroke-width: 1.5; }
+      .active-border { stroke: #ff5722; fill: #1a1618; stroke-width: 2; }
+      
+      .arrow { stroke: #3e4451; stroke-width: 1.5; fill: none; stroke-dasharray: 4,4; }
+      .arrow-orange { stroke: #ff5722; stroke-width: 1.5; fill: none; }
+      .arrow-green { stroke: #98c379; stroke-width: 1.5; fill: none; }
+    </style>
+
+    <marker id="arrowhead" markerWidth="8" markerHeight="6" refX="7" refY="3" orient="auto">
+      <polygon points="0 0, 8 3, 0 6" fill="#3e4451" />
+    </marker>
+    <marker id="arrowhead-orange" markerWidth="8" markerHeight="6" refX="7" refY="3" orient="auto">
+      <polygon points="0 0, 8 3, 0 6" fill="#ff5722" />
+    </marker>
+    <marker id="arrowhead-green" markerWidth="8" markerHeight="6" refX="7" refY="3" orient="auto">
+      <polygon points="0 0, 8 3, 0 6" fill="#98c379" />
+    </marker>
+  </defs>
+
+  <!-- Background -->
+  <rect width="1500" height="1000" class="bg" />
+
+  <!-- Main Title -->
+  <text x="750" y="55" text-anchor="middle" class="title">REDIS EVENT LOOP &amp; EXECUTION ARCHITECTURE</text>
+  <text x="750" y="80" text-anchor="middle" class="subtitle">I/O MULTIPLEXING (NETWORK) VS SINGLE-THREADED EXECUTION (ENGINE)</text>
+
+  <!-- ==================== LEFT REGION: CLIENTS ==================== -->
+  <rect x="60" y="130" width="260" height="810" rx="4" class="dashed-border" />
+  <text x="80" y="165" class="box-label">CLIENT APPLICATIONS</text>
+  <text x="80" y="185" class="box-sub">Backend Apps (Node, Go, Java, C#)</text>
+
+  <!-- Client 1 -->
+  <rect x="85" y="220" width="210" height="110" rx="4" class="solid-border" />
+  <text x="105" y="250" class="box-label">APP INSTANCE #1</text>
+  <text x="105" y="275" class="code-text"><tspan class="code-keyword">await</tspan> redis.get(<tspan class="code-var">"user:1"</tspan>)</text>
+  <text x="105" y="300" class="box-sub">TCP Socket FD: 104</text>
+
+  <!-- Client 2 -->
+  <rect x="85" y="360" width="210" height="110" rx="4" class="solid-border" />
+  <text x="105" y="390" class="box-label">APP INSTANCE #2</text>
+  <text x="105" y="415" class="code-text"><tspan class="code-keyword">await</tspan> redis.set(<tspan class="code-var">"k"</tspan>, <tspan class="code-var">"v"</tspan>)</text>
+  <text x="105" y="440" class="box-sub">TCP Socket FD: 105</text>
+
+  <!-- Client 3 (Slow Blocker) -->
+  <rect x="85" y="500" width="210" height="115" rx="4" style="stroke: #e06c75; fill: #1c1518; stroke-width: 1.5;" />
+  <text x="105" y="530" class="box-label" style="fill: #e06c75;">APP INSTANCE #3</text>
+  <text x="105" y="555" class="code-text"><tspan class="code-keyword">await</tspan> redis.keys(<tspan class="code-var">"*"</tspan>)</text>
+  <text x="105" y="580" class="note-text">[BLOCKER: O(N) SCAN]</text>
+  <text x="105" y="600" class="box-sub">TCP Socket FD: 108</text>
+
+  <!-- Client N -->
+  <rect x="85" y="650" width="210" height="95" rx="4" class="solid-border" />
+  <text x="105" y="685" class="box-label">APP INSTANCE #10000</text>
+  <text x="105" y="710" class="code-text"><tspan class="code-keyword">await</tspan> redis.incr(<tspan class="code-var">"counter"</tspan>)</text>
+  <text x="105" y="730" class="box-sub">TCP Socket FD: 9942</text>
+
+  <text x="190" y="785" text-anchor="middle" class="conn-label">10,000+ Concurrent TCP Sockets</text>
+  <text x="190" y="805" text-anchor="middle" class="conn-label">Each connection = 1 File Descriptor (FD)</text>
+
+
+  <!-- ==================== MIDDLE REGION: NETWORK LAYER (KERNEL & EPOLL) ==================== -->
+  <rect x="370" y="130" width="410" height="810" rx="4" class="dashed-border" />
+  <text x="390" y="165" class="box-label">NETWORK LAYER (I/O MULTIPLEXING)</text>
+  <text x="390" y="185" class="box-sub">OS Kernel (epoll on Linux / kqueue on macOS)</text>
+
+  <!-- Socket Buffer & FD Map -->
+  <rect x="395" y="220" width="360" height="210" rx="4" class="solid-border" />
+  <text x="415" y="250" class="box-label">KERNEL TCP SOCKET TABLE</text>
+  <text x="415" y="270" class="box-sub">Kernel receives network packets into socket buffers</text>
+  
+  <rect x="415" y="290" width="320" height="32" rx="2" style="fill: #1a1e27; stroke: #2c313a; stroke-width: 1;" />
+  <text x="425" y="311" class="code-text">FD 104 [Client #1]: <tspan style="fill: #98c379;">DATA_READY ("GET user:1")</tspan></text>
+
+  <rect x="415" y="330" width="320" height="32" rx="2" style="fill: #1a1e27; stroke: #2c313a; stroke-width: 1;" />
+  <text x="425" y="351" class="code-text">FD 105 [Client #2]: <tspan style="fill: #98c379;">DATA_READY ("SET k v")</tspan></text>
+
+  <rect x="415" y="370" width="320" height="32" rx="2" style="fill: #1a1e27; stroke: #2c313a; stroke-width: 1;" />
+  <text x="425" y="391" class="code-text">FD 108 [Client #3]: <tspan style="fill: #e06c75;">DATA_READY ("KEYS *")</tspan></text>
+
+  <!-- EPOLL demultiplexer -->
+  <rect x="395" y="470" width="360" height="210" rx="4" class="active-border" />
+  <text x="415" y="500" class="box-highlight-label">EPOLL WAIT / EVENT NOTIFIER</text>
+  <text x="415" y="525" class="code-text"><tspan class="code-keyword">int</tspan> n = <tspan class="code-func">epoll_wait</tspan>(epfd, events, MAX, <tspan class="code-keyword">timeout</tspan>);</text>
+  <text x="415" y="555" class="box-sub">Kernel wakes up Redis main thread only when</text>
+  <text x="415" y="575" class="box-sub">one or more FDs have incoming bytes ready.</text>
+  <text x="415" y="605" class="note-text">NO BUSY WAITING. NO THREAD CONTEXT SWITCH.</text>
+  <text x="415" y="625" class="note-text">Single thread monitors 100k sockets with 0% CPU idle.</text>
+
+  <!-- Ready Queue / Event Queue -->
+  <rect x="395" y="720" width="360" height="190" rx="4" class="solid-border" />
+  <text x="415" y="750" class="box-label">FIRED EVENTS QUEUE</text>
+  <text x="415" y="775" class="code-text">events[0] -> { fd: 104, mask: READABLE }</text>
+  <text x="415" y="805" class="code-text">events[1] -> { fd: 105, mask: READABLE }</text>
+  <text x="415" y="835" class="code-text" style="fill: #e06c75;">events[2] -> { fd: 108, mask: READABLE }</text>
+  <text x="415" y="870" class="box-sub">Sequential Event Dispatcher (aeProcessEvents)</text>
+
+
+  <!-- ==================== RIGHT REGION: REDIS EXECUTION LAYER ==================== -->
+  <rect x="830" y="130" width="610" height="810" rx="4" class="dashed-border" />
+  <text x="850" y="165" class="box-label">EXECUTION LAYER (REDIS SERVER ENGINE)</text>
+  <text x="850" y="185" class="box-sub">Inside redis-server process: Exactly 1 Main Execution Thread</text>
+
+  <!-- The Event Loop while(1) -->
+  <rect x="855" y="220" width="560" height="340" rx="4" class="active-border" />
+  <text x="875" y="250" class="box-highlight-label">THE SINGLE-THREADED EVENT LOOP (aeMain)</text>
+  <text x="875" y="275" class="box-sub">Runs continuously inside redis-server: Single execution timeline</text>
+
+  <rect x="875" y="295" width="520" height="230" rx="4" style="fill: #11141a; stroke: #2c313a; stroke-width: 1;" />
+  <text x="895" y="325" class="code-text"><tspan class="code-keyword">void</tspan> <tspan class="code-func">aeMain</tspan>(aeEventLoop *eventLoop) {</text>
+  <text x="915" y="350" class="code-text"><tspan class="code-keyword">while</tspan> (!eventLoop->stop) {</text>
+  <text x="935" y="375" class="code-text"><tspan class="conn-label">// 1. Block on epoll until events fire</tspan></text>
+  <text x="935" y="395" class="code-text">n = <tspan class="code-func">aeProcessEvents</tspan>(eventLoop);</text>
+  <text x="935" y="425" class="code-text"><tspan class="conn-label">// 2. Execute commands sequentially (ONE BY ONE)</tspan></text>
+  <text x="935" y="445" class="code-text"><tspan class="code-func">readQueryFromClient</tspan>(fd);   <tspan class="conn-label">// read socket buffer</tspan></text>
+  <text x="935" y="465" class="code-text"><tspan class="code-func">processCommand</tspan>(client);      <tspan class="conn-label">// LOOKUP &amp; MUTATE RAM</tspan></text>
+  <text x="935" y="485" class="code-text"><tspan class="code-func">addReply</tspan>(client);             <tspan class="conn-label">// write back to client</tspan></text>
+  <text x="915" y="505" class="code-text">}</text>
+  <text x="895" y="520" class="code-text">}</text>
+
+  <!-- In-Memory Data Store (RAM + L1/L2/L3 Cache) -->
+  <rect x="855" y="585" width="560" height="195" rx="4" class="solid-border" />
+  <text x="875" y="615" class="box-label">IN-MEMORY DICT (KEYSPACE IN RAM)</text>
+  <text x="875" y="635" class="box-sub">Zero Disk I/O during execution | Pure memory pointers &amp; CPU cache lines</text>
+
+  <!-- Dict Entries -->
+  <rect x="875" y="650" width="160" height="50" rx="3" style="fill: #1b202a; stroke: #3e4451; stroke-width: 1;" />
+  <text x="890" y="670" class="code-text" style="fill: #61afef;">"user:1"</text>
+  <text x="890" y="688" class="box-sub">String SDS (O(1))</text>
+
+  <rect x="1055" y="650" width="160" height="50" rx="3" style="fill: #1b202a; stroke: #3e4451; stroke-width: 1;" />
+  <text x="1070" y="670" class="code-text" style="fill: #61afef;">"cart:104"</text>
+  <text x="1070" y="688" class="box-sub">Listpack Hash (O(1))</text>
+
+  <rect x="1235" y="650" width="160" height="50" rx="3" style="fill: #1b202a; stroke: #3e4451; stroke-width: 1;" />
+  <text x="1250" y="670" class="code-text" style="fill: #61afef;">"leaderboard"</text>
+  <text x="1250" y="688" class="box-sub">Skiplist ZSet (O(log N))</text>
+
+  <text x="875" y="730" class="note-text">No Mutex Locks. No Race Conditions. No Context Switches.</text>
+  <text x="875" y="750" class="box-sub">Every operation touches RAM pointers directly at ~10-50 nanoseconds.</text>
+
+  <!-- Asynchronous Background Helpers (bio.c) -->
+  <rect x="855" y="800" width="560" height="110" rx="4" class="solid-border" />
+  <text x="875" y="830" class="box-label">BACKGROUND THREADS (bio.c / io-threads)</text>
+  <text x="875" y="855" class="box-sub">bio_lazy_free (UNLINK) | bio_close_file | bio_aof_fsync</text>
+  <text x="875" y="880" class="note-text">Main thread offloads heavy disk I/O and large memory frees here.</text>
+
+
+  <!-- ==================== ARROWS & FLOWS ==================== -->
+  <!-- Client to Kernel Sockets -->
+  <line x1="295" y1="275" x2="415" y2="305" class="arrow" marker-end="url(#arrowhead)" />
+  <line x1="295" y1="415" x2="415" y2="345" class="arrow" marker-end="url(#arrowhead)" />
+  <line x1="295" y1="560" x2="415" y2="385" class="arrow-orange" marker-end="url(#arrowhead-orange)" />
+  <line x1="295" y1="710" x2="415" y2="400" class="arrow" marker-end="url(#arrowhead)" />
+
+  <text x="325" y="270" class="conn-label">TCP</text>
+  <text x="325" y="540" class="conn-highlight">KEYS *</text>
+
+  <!-- Kernel to Epoll -->
+  <line x1="575" y1="430" x2="575" y2="470" class="arrow" marker-end="url(#arrowhead)" />
+
+  <!-- Epoll to Fired Queue -->
+  <line x1="575" y1="680" x2="575" y2="720" class="arrow" marker-end="url(#arrowhead)" />
+  <text x="585" y="705" class="conn-label">Fired list</text>
+
+  <!-- Fired Queue to aeMain Event Loop -->
+  <path d="M 755 800 Q 800 800 800 480 T 875 480" class="arrow-orange" marker-end="url(#arrowhead-orange)" />
+  <text x="785" y="465" class="conn-highlight">aeProcessEvents()</text>
+
+  <!-- Event Loop to RAM -->
+  <line x1="1135" y1="560" x2="1135" y2="585" class="arrow-green" marker-end="url(#arrowhead-green)" />
+  <text x="1145" y="575" class="conn-label" style="fill: #98c379;">RAM access</text>
+
+  <!-- UNLINK offload to bio -->
+  <path d="M 1395 560 Q 1425 680 1415 800" class="arrow" marker-end="url(#arrowhead)" />
+  <text x="1360" y="785" class="conn-label">UNLINK offload</text>
+
+</svg>

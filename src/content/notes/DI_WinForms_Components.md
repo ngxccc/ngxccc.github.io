@@ -7,9 +7,6 @@ aliases: []
 domain: "Engineering"
 sourcePath: "30_Resources/Tech/Architecture_and_Patterns/DI_WinForms_Components.md"
 ---
-
-# WinForms Component Design with Dependency Injection
-
 ## TL;DR
 
 Quy tắc áp dụng Dependency Injection (DI) vào thiết kế các UI component trong C# Windows Forms. Phân loại cấu trúc component thành 3 nhóm: **Dumb Component** (dùng `new`), **Root Component** (khởi tạo qua Service Provider) và **Smart Child Component** (dùng `ActivatorUtilities.CreateInstance` kết hợp cả Service và State).

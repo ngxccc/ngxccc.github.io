@@ -7,9 +7,6 @@ aliases: []
 domain: "Linguistics & Learning"
 sourcePath: "30_Resources/Methods/Learning_and_Cognition/Metalearning_Just_In_Time_Framework.md"
 ---
-
-# Metalearning Just-In-Time Framework
-
 ## TL;DR
 
 **Metalearning Just-In-Time Framework** là phương pháp tiếp thu kiến thức và kỹ năng kỹ thuật tối ưu dựa trên nguyên tắc 80/20 và học tập dựa trên bài toán thực tế (_Problem-Driven Learning_). Phương pháp này thay thế tư duy học thuộc lòng thụ động (_Just-In-Case Learning_) bằng thuật toán 3 bước: Nắm sơ đồ tư duy cốt lõi (Mental Model 20%), Xây dựng sản phẩm thực tế (Build), và Tra cứu cú pháp đúng lúc cần (Just-In-Time Lookup).

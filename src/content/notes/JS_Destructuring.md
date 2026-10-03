@@ -7,9 +7,6 @@ aliases: ["Bóc tách dữ liệu JS", "Destructuring Assignment", "ES6 Destruct
 domain: "Engineering"
 sourcePath: "30_Resources/Tech/Language_and_Core/JS_Destructuring.md"
 ---
-
-# JS Destructuring Assignment
-
 ## TL;DR
 
 Destructuring Assignment (bóc tách dữ liệu) trong ES6 giúp trích xuất dữ liệu từ Mảng hoặc Đối tượng vào các biến riêng biệt một cách ngắn gọn. **Array Destructuring** dựa trên **thứ tự vị trí (Index)**, còn **Object Destructuring** dựa trên **tên thuộc tính (Key)**.

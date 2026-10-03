@@ -7,9 +7,6 @@ aliases: []
 domain: "Engineering"
 sourcePath: "30_Resources/Concepts/Negotiation_and_Communication/Tactical_Empathy_Chris_Voss.md"
 ---
-
-# Tactical Empathy
-
 ## TL;DR
 
 Tactical Empathy (Thấu cảm chiến thuật) là phương pháp đàm phán tâm lý được phát triển bởi Chris Voss (cựu chuyên gia đàm phán con tin FBI, tác giả cuốn _Never Split the Difference_). Phương pháp này thừa nhận con người ra quyết định chủ yếu dựa trên cảm xúc và bản năng thay vì logic thuần túy. Bằng cách chủ động lắng nghe, dán nhãn cảm xúc và đặt câu hỏi định hướng, bạn làm chủ cuộc đàm phán bằng cách xoa dịu cảm xúc tiêu cực và tạo sự tin tưởng tuyệt đối.

@@ -7,9 +7,6 @@ aliases: []
 domain: "Engineering"
 sourcePath: "30_Resources/Methods/Engineering/Local_Stress_Testing_Benchmark.md"
 ---
-
-# Local Stress Testing & Benchmarking Guide
-
 ## TL;DR
 
 Hướng dẫn thiết lập và tư duy thực hiện Stress Test (kiểm thử tải cực hạn) an toàn trong môi trường phát triển cục bộ (Localhost). Sử dụng các công cụ nhẹ nhàng như **k6**, **wrk**, **ab** thay vì JMeter để tìm ra giới hạn lỗi (Breaking Point) của ứng dụng mà không gây nghẽn phần cứng cục bộ.

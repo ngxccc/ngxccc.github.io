@@ -7,9 +7,6 @@ aliases: ["Hộp ghi chú", "Atomic Notes", "Linked Thinking"]
 domain: "Engineering"
 sourcePath: "30_Resources/Concepts/Knowledge_Management/Zettelkasten_Method.md"
 ---
-
-# Zettelkasten Method
-
 ## TL;DR
 
 Phương pháp quản lý tri thức bằng cách đập vụn kiến thức thành các ghi chú siêu nhỏ (Atomic Notes) và dùng siêu liên kết (Backlinks) để móc nối chúng lại với nhau. Mô hình này "kết liễu" tư duy nhét file vào thư mục cứng nhắc, tạo ra một mạng lưới não bộ thứ hai.

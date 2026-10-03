@@ -1,5 +1,6 @@
 ---
 import BaseLayout from "../../layouts/BaseLayout.astro";
+import TableOfContents from "../../components/TableOfContents.astro";
 import { getCollection, render } from "astro:content";
 
 export async function getStaticPaths() {
@@ -11,7 +12,7 @@ export async function getStaticPaths() {
 }
 
 const { post } = Astro.props;
-const { Content } = await render(post);
+const { Content, headings } = await render(post);
 
 function formatPostDate(dateStr: string) {
   const d = new Date(dateStr);
@@ -29,107 +30,228 @@ function formatPostDate(dateStr: string) {
   title={`${post.data.title} — Tran Van Ngoc`}
   description={post.data.description}
 >
-  <article>
-    <nav class="breadcrumb-nav">
-      <a href="/posts" class="back-link">&lt;- Writing</a>
-    </nav>
+  <div class="post-layout-container">
+    <article class="post-article">
+      <nav class="breadcrumb-nav">
+        <a href="/posts" class="back-link">&lt;- Writing</a>
+      </nav>
 
-    <header class="post-header">
-      <h1>{post.data.title}</h1>
-      <div class="post-date">{formatPostDate(post.data.date)}</div>
-      {
-        post.data.tags.length > 0 && (
-          <div class="post-tags">
-            {post.data.tags.map((tag: string) => (
-              <a href={`/tags/${tag}`} class="post-tag">
-                #{tag}
-              </a>
-            ))}
-          </div>
-        )
-      }
-    </header>
+      <header class="terminal-post-header">
+        <div class="title-bar-wrap">
+          <div class="accent-bar"></div>
+          <h1 class="post-title">{post.data.title}</h1>
+        </div>
 
-    <div class="post-content">
-      <Content />
+        <div class="post-meta">
+          <span class="meta-author">Tran Van Ngoc</span>
+          <span class="meta-divider">|</span>
+          <time class="meta-date">{formatPostDate(post.data.date)}</time>
+        </div>
+
+        {
+          post.data.tags.length > 0 && (
+            <div class="post-tags">
+              {post.data.tags.map((tag: string) => (
+                <a href={`/tags/${tag}`} class="post-tag">
+                  #{tag}
+                </a>
+              ))}
+            </div>
+          )
+        }
+      </header>
+
+      <div class="post-content">
+        <Content />
+      </div>
+
+      <nav class="post-bottom-nav">
+        <a href="/posts" class="back-link">&lt;- Back to all articles</a>
+      </nav>
+    </article>
+
+    <div class="toc-outer-rail">
+      <TableOfContents headings={headings} />
     </div>
-
-    <nav class="post-bottom-nav">
-      <a href="/posts" class="back-link">&lt;- Back to all articles</a>
-    </nav>
-  </article>
+  </div>
 
   <script is:inline type="module">
     const mermaidBlocks = document.querySelectorAll(
-      'pre[data-language="mermaid"], pre:has(code.language-mermaid), pre.mermaid, code.language-mermaid',
+      'pre[data-language="mermaid"], pre.mermaid, code.language-mermaid'
     );
-
     if (mermaidBlocks.length > 0) {
-      import("https://cdn.jsdelivr.net/npm/mermaid@11/dist/mermaid.esm.min.mjs").then(
-        (m) => {
-          m.default.initialize({
+      import("https://cdn.jsdelivr.net/npm/mermaid@11/dist/mermaid.esm.min.mjs")
+        .then(({ default: mermaid }) => {
+          mermaid.initialize({
             startOnLoad: false,
             theme: "dark",
             themeVariables: {
               darkMode: true,
-              background: "#161618",
-              primaryColor: "#222226",
-              primaryTextColor: "#eeeeee",
-              primaryBorderColor: "#3f3f46",
+              background: "#1a1a1a",
+              primaryColor: "#262626",
+              primaryTextColor: "#ffffff",
+              primaryBorderColor: "#3d3d3d",
               lineColor: "#888888",
-              secondaryColor: "#1a1a1a",
-              tertiaryColor: "#111111",
-              fontFamily:
-                "'JetBrains Mono', Consolas, 'DejaVu Sans Mono', monospace",
-              fontSize: "14px",
+              secondaryColor: "#1e1e1e",
+              tertiaryColor: "#141414",
             },
           });
 
-          mermaidBlocks.forEach(async (el, idx) => {
-            const pre = el.closest("pre") || el;
-            const code = el.textContent || "";
-            const id = `mermaid-diagram-${idx}`;
+          mermaidBlocks.forEach(async (block, index) => {
+            const preElement = block.tagName === "PRE" ? block : block.closest("pre");
+            if (!preElement || preElement.dataset.mermaidRendered) return;
+
+            const code = block.textContent?.trim() || "";
+            const id = `mermaid-svg-${index}`;
             try {
-              const { svg } = await m.default.render(id, code.trim());
+              const { svg } = await mermaid.render(id, code);
               const container = document.createElement("div");
               container.className = "mermaid-diagram-container";
               container.innerHTML = svg;
-              pre.replaceWith(container);
+              preElement.replaceWith(container);
             } catch (err) {
               console.error("Mermaid render error:", err);
             }
           });
-        },
-      );
+        })
+        .catch((err) => console.error("Failed to load Mermaid:", err));
     }
   </script>
 </BaseLayout>
 
 <style>
+  .post-layout-container {
+    position: relative;
+    width: 100%;
+    max-width: 48rem;
+    margin: 0 auto;
+  }
+
+  .post-article {
+    width: 100%;
+    min-width: 0;
+  }
+
+  /* TOC sits gracefully outside to the right on wide desktop screens (>= 1240px) and stays STICKY */
+  .toc-outer-rail {
+    display: none;
+  }
+
+  @media (min-width: 1240px) {
+    .toc-outer-rail {
+      display: block;
+      position: absolute;
+      left: calc(100% + 2.5rem);
+      top: 0;
+      bottom: 0;
+      width: 260px;
+      pointer-events: none;
+    }
+
+    .toc-outer-rail :global(.toc-sidebar) {
+      pointer-events: auto;
+      position: sticky;
+      top: 2rem;
+      align-self: flex-start;
+      max-height: calc(100vh - 4rem);
+      overflow-y: auto;
+    }
+  }
+
   .breadcrumb-nav {
-    margin-top: 0.2rem;
-    margin-bottom: 1.2rem;
-  }
-
-  .post-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
     margin-bottom: 2rem;
+    font-family: "JetBrains Mono", Consolas, Menlo, monospace;
+    font-size: 0.85rem;
   }
 
-  .post-header h1 {
-    font-size: 1.75rem;
+  .back-link {
+    color: var(--subheading-color, #888888);
+    text-decoration: none;
+    transition: color 0.15s ease;
+  }
+
+  .back-link:hover {
+    color: var(--heading-color, #ffffff);
+  }
+
+  .terminal-post-header {
+    margin-bottom: 2.5rem;
+    padding-bottom: 1.5rem;
+    border-bottom: 1px dashed var(--border-dotted, #3d3d3d);
+  }
+
+  .title-bar-wrap {
+    display: flex;
+    align-items: flex-start;
+    gap: 0.75rem;
+    margin-bottom: 0.75rem;
+  }
+
+  .accent-bar {
+    width: 3px;
+    align-self: stretch;
+    background-color: var(--heading-color, #ffffff);
+    border-radius: 2px;
+    flex-shrink: 0;
+  }
+
+  .post-title {
+    font-family: "JetBrains Mono", Consolas, Menlo, monospace;
+    font-size: 1.85rem;
+    font-weight: 700;
+    color: var(--heading-color, #ffffff);
+    margin: 0;
     line-height: 1.25;
-    margin-bottom: 0.4rem;
+    letter-spacing: -0.01em;
+    word-break: break-word;
   }
 
-  .post-date {
-    font-size: 0.833rem;
-    color: var(--subheading-color);
-    font-family: "JetBrains Mono", monospace;
+  @media (max-width: 640px) {
+    .post-title {
+      font-size: 1.45rem;
+    }
+    .terminal-post-header {
+      margin-bottom: 1.8rem;
+      padding-bottom: 1rem;
+    }
+    .post-meta {
+      padding-left: 0.5rem !important;
+      font-size: 0.78rem !important;
+    }
+    .post-tags {
+      padding-left: 0.5rem !important;
+    }
+  }
+
+  .post-meta {
+    display: flex;
+    align-items: center;
+    gap: 0.75rem;
+    font-family: "JetBrains Mono", Consolas, Menlo, monospace;
+    font-size: 0.85rem;
+    color: var(--subheading-color, #888888);
+    margin-top: 0.5rem;
+    padding-left: 1rem;
+  }
+
+  .meta-author {
+    color: #cccccc;
+  }
+
+  .meta-divider {
+    color: #555555;
   }
 
   .post-tags {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 0.75rem;
+    margin-top: 0.75rem;
+    padding-left: 1rem;
     font-size: 0.833rem;
-    margin-top: 0.4rem;
   }
 
   .post-tag {
@@ -137,7 +259,7 @@ function formatPostDate(dateStr: string) {
     color: var(--subheading-color);
     text-decoration: underline;
     text-underline-offset: 3px;
-    margin-right: 0.75rem;
+    transition: color 0.15s ease;
     display: inline-block;
   }
 
@@ -145,23 +267,21 @@ function formatPostDate(dateStr: string) {
     color: var(--heading-color);
   }
 
+  .post-content {
+    line-height: 1.68;
+    color: var(--text-color, #dddddd);
+    word-break: break-word;
+  }
+
   .post-bottom-nav {
-    margin-top: 2.5rem;
-    margin-bottom: 0;
-  }
-
-  .back-link {
-    font-family: "JetBrains Mono", Consolas, monospace;
-    font-size: 0.85rem;
-    color: var(--subheading-color);
-    text-decoration: none;
-    transition: color 0.15s ease;
-  }
-
-  .back-link:hover {
-    color: var(--heading-color);
-    text-decoration: underline;
-    text-underline-offset: 3px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: 4rem;
+    padding-top: 1.5rem;
+    border-top: 1px dashed var(--border-dotted, #3d3d3d);
+    font-family: "JetBrains Mono", Consolas, Menlo, monospace;
+    font-size: 0.88rem;
   }
 
   :global(.mermaid-diagram-container) {

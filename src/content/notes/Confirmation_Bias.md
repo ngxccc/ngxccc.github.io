@@ -7,9 +7,6 @@ aliases: []
 domain: "Mental Models"
 sourcePath: "30_Resources/Concepts/Psychology_and_Mental_Models/Confirmation_Bias.md"
 ---
-
-# Confirmation Bias
-
 ## TL;DR
 
 Thiên kiến xác nhận (Confirmation Bias) là lỗi tư duy khi chúng ta chỉ chủ động tìm kiếm, ghi nhớ và diễn giải thông tin theo cách ủng hộ hoặc xác nhận các niềm tin, giả định sẵn có của bản thân, đồng thời phớt lờ hoặc bác bỏ những bằng chứng đi ngược lại.

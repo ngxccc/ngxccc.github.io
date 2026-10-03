@@ -7,9 +7,6 @@ aliases: ["Mô hình kỹ năng chữ T", "Skill Stacking Strategy", "T-Shaped P
 domain: "Mental Models"
 sourcePath: "30_Resources/Concepts/Psychology_and_Mental_Models/T_Shaped_Skills_Model.md"
 ---
-
-# Mô hình Kỹ năng Chữ T và Chiến lược Xếp chồng Kỹ năng
-
 ## TL;DR
 
 Mô hình Kỹ năng Chữ T (T-Shaped Skills Model) và Chiến lược Xếp chồng Kỹ năng (Skill Stacking) là phương pháp phát triển sự nghiệp tối ưu cho kỷ nguyên hiện đại. Bằng cách kết hợp **một chuyên môn sâu cốt lõi** (thanh đứng chữ T) với **kiến thức đa ngành rộng** (thanh ngang chữ T), cá nhân có thể tạo ra bộ nhận diện độc bản thuộc Top 0.1% hiếm có mà không cần phải là thiên tài ở duy nhất một lĩnh vực.

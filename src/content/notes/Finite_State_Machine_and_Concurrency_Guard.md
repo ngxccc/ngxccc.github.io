@@ -7,9 +7,6 @@ aliases: []
 domain: "Engineering"
 sourcePath: "30_Resources/Concepts/Computer_Science/Finite_State_Machine_and_Concurrency_Guard.md"
 ---
-
-# Finite State Machine and Concurrency Guard
-
 ## TL;DR
 
 - **Bản chất**: **Finite State Machine (FSM - Máy trạng thái hữu hạn)** là mô hình toán học định nghĩa một tập hữu hạn các trạng thái (`States`) và các quy tắc chuyển đổi hợp lệ (`Transitions`) giữa chúng.

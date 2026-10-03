@@ -7,9 +7,6 @@ aliases: ["ZOPA", "Zone of Possible Agreement", "Vùng thỏa thuận khả thi"
 domain: "Engineering"
 sourcePath: "30_Resources/Concepts/Negotiation_and_Communication/ZOPA_Negotiation_Framework.md"
 ---
-
-# ZOPA Negotiation Framework
-
 ## TL;DR
 
 ZOPA (Zone of Possible Agreement - Vùng thỏa thuận khả thi) là khoảng không gian giao thoa giữa các giới hạn chấp nhận được của hai bên đàm phán. Nếu ranh giới tối thiểu của bên bán nằm dưới ranh giới tối đa của bên mua, một ZOPA dương tồn tại và thỏa thuận có thể đạt được. Ngược lại, nếu hai giới hạn không đè lên nhau, ZOPA bằng không và cuộc đàm phán sẽ bế tắc trừ khi các điều kiện được thay đổi.

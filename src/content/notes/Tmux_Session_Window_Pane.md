@@ -7,9 +7,6 @@ aliases: ["Tmux Session vs Window vs Pane", "Tmux Keybinds"]
 domain: "Engineering"
 sourcePath: "30_Resources/Tech/Infrastructure_and_Cloud/Tmux_Session_Window_Pane.md"
 ---
-
-# Quản lý và Điều hướng Terminal với Tmux
-
 ## TL;DR
 
 Tmux (Terminal Multiplexer) giúp quản lý nhiều phiên làm việc (Sessions), tab (Windows) và phân mảnh màn hình (Panes) trên một cửa sổ Terminal duy nhất. Bằng cách tích hợp `vim-tmux-navigator`, ta có thể di chuyển liền mạch giữa các split windows của Neovim và các panes của Tmux bằng tổ hợp phím `Ctrl + h/j/k/l` trực tiếp mà không cần bấm phím Prefix (`Ctrl + a`). Đồng thời, hệ thống hỗ trợ lưu trạng thái tự động qua `tmux-resurrect` giúp khôi phục toàn bộ môi trường làm việc khi khởi động lại máy.

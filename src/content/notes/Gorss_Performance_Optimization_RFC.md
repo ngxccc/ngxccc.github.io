@@ -7,9 +7,6 @@ aliases: []
 domain: "Engineering"
 sourcePath: "30_Resources/Methods/Engineering/Gorss_Performance_Optimization_RFC.md"
 ---
-
-# RFC: High-Performance UI Navigation & Asynchronous Storage Engine
-
 ## TL;DR
 
 RFC thiết kế và triển khai tối ưu hóa hiệu năng điều hướng UI và động cơ lưu trữ bất đồng bộ trong ứng dụng TUI `gorss`, giúp giảm độ trễ điều hướng từ hàng mili-giây xuống còn dưới 50 micro-giây ($83.1\times$ speedup) và cắt giảm hơn $99\%$ lượng cấp phát bộ nhớ.

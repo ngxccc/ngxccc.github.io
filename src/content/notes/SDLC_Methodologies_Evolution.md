@@ -7,9 +7,6 @@ aliases: ["Lịch sử tiến hóa SDLC", "Tiến trình phát triển SDLC", "S
 domain: "Engineering"
 sourcePath: "30_Resources/Concepts/Computer_Science/SDLC_Methodologies_Evolution.md"
 ---
-
-# Lịch Sử Tiến Hóa Của Các Mô Hình SDLC
-
 ## TL;DR
 
 Lịch sử phát triển các mô hình Vòng đời Phát triển Phần mềm (SDLC) là một tiến trình chuyển dịch từ các phương pháp lập kế hoạch tuyến tính, cứng nhắc (Plan-driven như Waterfall, V-Model) sang các phương pháp linh hoạt, thích ứng nhanh và hướng giá trị (Value-driven như Agile/Scrum). Sự thay đổi này được thúc đẩy bởi sự phức tạp ngày càng tăng của phần mềm và nhu cầu kiểm soát rủi ro, tối ưu hóa thời gian đưa ra thị trường (Time-to-market).

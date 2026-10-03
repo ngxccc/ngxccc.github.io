@@ -7,9 +7,6 @@ aliases: []
 domain: "Engineering"
 sourcePath: "30_Resources/Concepts/Software_Testing/K6_Execution_Lifecycle_and_Memory_Architecture.md"
 ---
-
-# k6 Execution Lifecycle & Memory Architecture
-
 ## TL;DR
 
 - **Bản chất**: k6 thực thi kịch bản bằng các máy ảo Goja JavaScript độc lập được quản lý bởi Go runtime chính.
@@ -128,13 +125,17 @@ export default function (): void {
     return;
   }
 
-  const res = post("http://127.0.0.1:3000/api/v1/booking", JSON.stringify({ seatId: "VIP-01" }), {
-    headers: {
-      "Content-Type": "application/json",
-      Authorization: `Bearer ${user.token}`,
-      "X-Forwarded-For": user.ip,
+  const res = post(
+    "http://127.0.0.1:3000/api/v1/booking",
+    JSON.stringify({ seatId: "VIP-01" }),
+    {
+      headers: {
+        "Content-Type": "application/json",
+        Authorization: `Bearer ${user.token}`,
+        "X-Forwarded-For": user.ip,
+      },
     },
-  });
+  );
 
   check(res, {
     "status valid": (r) => r.status === 201 || r.status === 409,

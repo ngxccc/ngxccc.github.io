@@ -7,9 +7,6 @@ aliases: ["Modular Architecture", "Feature-Based Architecture"]
 domain: "Engineering"
 sourcePath: "30_Resources/Tech/Architecture_and_Patterns/Modular_Monolith_Architecture.md"
 ---
-
-# Modular Monolith Architecture
-
 ## TL;DR
 
 Kiến trúc tổ chức codebase bằng cách gom nhóm file theo chức năng nghiệp vụ (Domain/Feature như Auth, Users, Orders) thay vì vai trò kỹ thuật (Controllers, Services, Models). Nó mang lại sự rạch ròi của Microservices nhưng vẫn giữ sự đơn giản khi deploy một khối (Monolith).

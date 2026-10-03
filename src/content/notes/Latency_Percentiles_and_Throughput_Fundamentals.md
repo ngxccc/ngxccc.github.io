@@ -7,9 +7,6 @@ aliases: []
 domain: "Engineering"
 sourcePath: "30_Resources/Concepts/Computer_Science/Latency_Percentiles_and_Throughput_Fundamentals.md"
 ---
-
-# Latency Percentiles and Throughput Fundamentals
-
 ## TL;DR
 
 - **Bản chất**: **Throughput (Ops/sec hoặc RPS)** đo tốc độ xử lý khối lượng công việc của hệ thống trên một đơn vị thời gian. **Latency Percentiles ($p50, p90, p95, p99$)** đo phân bố thời gian phản hồi thực tế của từng nhóm người dùng, phản ánh rủi ro **Tail Latency** mà số trung bình (Mean/Average) hoàn toàn che giấu.

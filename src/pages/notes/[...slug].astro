@@ -4,10 +4,30 @@ import { getCollection, render } from "astro:content";
 
 export async function getStaticPaths() {
   const notes = await getCollection("notes");
-  return notes.map((note) => ({
-    params: { slug: note.id.replace(/\.(md|mdx)$/, "") },
-    props: { note },
-  }));
+  const paths: Array<{
+    params: { slug: string };
+    props: { note: (typeof notes)[number] };
+  }> = [];
+
+  for (const note of notes) {
+    const rawId = note.id;
+    // Generate route preserving exact case (e.g. /notes/Stack_vs_Heap_Memory_Fundamentals)
+    paths.push({
+      params: { slug: rawId },
+      props: { note },
+    });
+
+    // Also support lowercase for tolerant web navigation
+    const lowerId = rawId.toLowerCase();
+    if (lowerId !== rawId) {
+      paths.push({
+        params: { slug: lowerId },
+        props: { note },
+      });
+    }
+  }
+
+  return paths;
 }
 
 const { note } = Astro.props;

@@ -7,9 +7,6 @@ aliases: ["Go Learning Roadmap", "Lộ trình học Go thực chiến"]
 domain: "Linguistics & Learning"
 sourcePath: "30_Resources/Tech/Language_and_Core/Go_Learning_Roadmap.md"
 ---
-
-# Lộ Trình Học Go Thực Chiến: Từ Cơ Bản Đến Microservices & Production
-
 ## TL;DR
 
 Tài liệu này phác thảo lộ trình học tập thực dụng và hiệu quả nhất để làm chủ ngôn ngữ Go (Golang). Đây là lộ trình được tối ưu hóa cho các kỹ sư Backend đang muốn nhanh chóng nắm bắt cơ hội việc làm rộng mở (Employability) tại thị trường Việt Nam năm 2026. Lộ trình tập trung vào việc đi từ cú pháp cơ bản, thực hành qua các dự án thực tế, và nâng cao lên các kỹ năng xây dựng Microservices và hệ thống phân tán chuẩn doanh nghiệp.

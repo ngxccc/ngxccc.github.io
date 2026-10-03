@@ -7,9 +7,6 @@ aliases: ["Next.js after()", "next/server after()", "after()"]
 domain: "Engineering"
 sourcePath: "30_Resources/Tech/Frameworks_and_Ecosystem/NextJS_after_API.md"
 ---
-
-# Next.js after() API
-
 ## TL;DR
 
 Next.js `after()` (import từ `next/server`) cho phép lập lịch thực thi các tác vụ nền (background tasks/side effects) như gửi mail, Telegram, hoặc ghi log/analytics **sau khi phản hồi HTTP (hoặc prerender) đã hoàn tất gửi về client**. Cơ chế này hoạt động non-blocking, cải thiện tối đa TTFB (Time to First Byte) và ngăn chặn tình trạng serverless function bị đóng băng (freeze) trước khi tác vụ nền hoàn thành.
@@ -63,7 +60,10 @@ export async function POST(request: Request) {
       processedCount: pendingEvents.length,
     });
   } catch (error) {
-    return NextResponse.json({ success: false, error: "Internal Error" }, { status: 500 });
+    return NextResponse.json(
+      { success: false, error: "Internal Error" },
+      { status: 500 },
+    );
   }
 }
 ```
@@ -90,7 +90,8 @@ after(async () => {
 export default async function Page() {
   // 1. Đọc dữ liệu trước ( Rendering Lifecycle )
   const userAgent = (await headers()).get("user-agent") || "unknown";
-  const sessionCookie = (await cookies()).get("session-id")?.value || "anonymous";
+  const sessionCookie =
+    (await cookies()).get("session-id")?.value || "anonymous";
 
   // 2. Truyền vào after qua closure
   after(() => {

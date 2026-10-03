@@ -1,0 +1,82 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 520" width="100%" height="100%">
+  <defs>
+    <style>
+      .bg { fill: #0f1115; }
+      .title { font-family: 'JetBrains Mono', monospace; font-size: 20px; font-weight: 700; fill: #ffffff; letter-spacing: 2px; }
+      .subtitle { font-family: 'JetBrains Mono', monospace; font-size: 12px; fill: #7e8694; }
+      
+      .box-label { font-family: 'JetBrains Mono', monospace; font-size: 14px; font-weight: 700; fill: #ffffff; letter-spacing: 1px; }
+      .box-sub { font-family: 'JetBrains Mono', monospace; font-size: 11px; fill: #8a93a0; }
+      .box-highlight { font-family: 'JetBrains Mono', monospace; font-size: 14px; font-weight: 700; fill: #ff5722; letter-spacing: 1px; }
+      
+      .code-text { font-family: 'JetBrains Mono', monospace; font-size: 11.5px; fill: #abb2bf; }
+      .code-keyword { fill: #e06c75; font-weight: 600; }
+      .code-func { fill: #98c379; }
+      .code-var { fill: #61afef; }
+      .note-text { font-family: 'JetBrains Mono', monospace; font-size: 11px; fill: #e5c07b; }
+      .conn-label { font-family: 'JetBrains Mono', monospace; font-size: 11px; fill: #5c6370; }
+
+      .dashed-border { stroke: #2c313a; stroke-dasharray: 5,5; fill: none; stroke-width: 1.5; }
+      .solid-border { stroke: #2c313a; fill: #161920; stroke-width: 1.5; }
+      .active-border { stroke: #ff5722; fill: #1a1618; stroke-width: 1.5; }
+      .danger-border { stroke: #e06c75; fill: #1f1418; stroke-width: 1.5; }
+      
+      .arrow { stroke: #3e4451; stroke-width: 1.5; fill: none; stroke-dasharray: 4,4; }
+      .arrow-orange { stroke: #ff5722; stroke-width: 1.5; fill: none; }
+      .arrow-green { stroke: #98c379; stroke-width: 1.5; fill: none; }
+    </style>
+    <marker id="arr2" markerWidth="8" markerHeight="6" refX="7" refY="3" orient="auto">
+      <polygon points="0 0, 8 3, 0 6" fill="#3e4451" />
+    </marker>
+    <marker id="arr2-orange" markerWidth="8" markerHeight="6" refX="7" refY="3" orient="auto">
+      <polygon points="0 0, 8 3, 0 6" fill="#ff5722" />
+    </marker>
+  </defs>
+
+  <rect width="1200" height="520" class="bg" />
+
+  <text x="600" y="40" text-anchor="middle" class="title">PART 2: EXECUTION LAYER - EVENT LOOP &amp; HEAD-OF-LINE BLOCKING</text>
+  <text x="600" y="65" text-anchor="middle" class="subtitle">WHY O(1) COMMANDS ARE SUB-MICROSECOND BUT O(N) COMMANDS FREEZE THE ENTIRE SERVER</text>
+
+  <!-- Left: The Sequential Command Timeline -->
+  <rect x="40" y="95" width="620" height="390" rx="4" class="dashed-border" />
+  <text x="60" y="125" class="box-label">SINGLE-THREAD EXECUTION TIMELINE</text>
+  <text x="60" y="145" class="box-sub">aeProcessEvents executes commands in strict FIFO order</text>
+
+  <!-- Command 1: Fast -->
+  <rect x="60" y="170" width="580" height="60" rx="3" class="solid-border" />
+  <text x="80" y="195" class="code-text"><tspan class="code-keyword">[Req 1]</tspan> Client #1: <tspan class="code-func">GET user:1</tspan> -> O(1) in RAM Dict</text>
+  <text x="80" y="215" class="box-sub" style="fill: #98c379;">Execution Time: 0.00005 ms (50 nanoseconds) | Status: COMPLETED INSTANTLY</text>
+
+  <!-- Command 2: Blocker! -->
+  <rect x="60" y="245" width="580" height="110" rx="3" class="danger-border" />
+  <text x="80" y="270" class="code-text" style="fill: #e06c75; font-weight: 700;"><tspan class="code-keyword">[Req 2]</tspan> Client #3: KEYS "*" -> O(N) Scan 1,000,000 keys in RAM</text>
+  <text x="80" y="295" class="note-text">Main thread is 100% CPU-bound traversing pointer list in dict buckets!</text>
+  <text x="80" y="318" class="box-sub" style="fill: #e06c75; font-weight: 700;">Execution Time: 850.00 ms (BLOCKED FOR NEARLY 1 SECOND)</text>
+  <text x="80" y="338" class="conn-label">During this 850ms, NO OTHER COMMAND CAN RUN ON THIS REDIS PROCESS.</text>
+
+  <!-- Command 3: Starved -->
+  <rect x="60" y="370" width="580" height="95" rx="3" class="solid-border" />
+  <text x="80" y="395" class="code-text"><tspan class="code-keyword">[Req 3]</tspan> Client #2: <tspan class="code-func">SET order:12 paid</tspan> (Light O(1) write)</text>
+  <text x="80" y="418" class="box-sub" style="fill: #e06c75;">Queue Wait Time: 850 ms (STARVATION DUE TO HEAD-OF-LINE BLOCKING)</text>
+  <text x="80" y="440" class="conn-label">Actual execution takes 50ns, but client observes 850ms latency spike!</text>
+
+  <!-- Right: In-Memory Datastore & Mechanics -->
+  <rect x="690" y="95" width="470" height="390" rx="4" class="active-border" />
+  <text x="710" y="125" class="box-highlight">IN-MEMORY DICT &amp; CACHE COHERENCY</text>
+  <text x="710" y="145" class="box-sub">Pure RAM Hash Table (dict.c)</text>
+
+  <rect x="710" y="170" width="430" height="120" rx="3" style="fill: #11141a; stroke: #2c313a; stroke-width: 1;" />
+  <text x="725" y="195" class="box-label">WHY IS REDIS NORMALLY ULTRA FAST?</text>
+  <text x="725" y="220" class="conn-label">1. Data in RAM: ~50ns vs Disk NVMe ~50,000ns</text>
+  <text x="725" y="245" class="conn-label">2. CPU Cache Locality: sequential memory pointers</text>
+  <text x="725" y="270" class="conn-label">3. Zero Mutex/Spinlock: No Lock Contention</text>
+
+  <rect x="710" y="305" width="430" height="160" rx="3" class="solid-border" />
+  <text x="725" y="330" class="box-label">THE ATOMICITY / NON-BLOCKING RULES</text>
+  <text x="725" y="355" class="note-text">Rule 1: Always keep command execution &lt; 1 ms</text>
+  <text x="725" y="380" class="code-text">- Replace <tspan class="code-keyword">KEYS *</tspan> with <tspan class="code-func">SCAN cursor COUNT 100</tspan></text>
+  <text x="725" y="405" class="code-text">- Replace <tspan class="code-keyword">DEL big_key</tspan> with <tspan class="code-func">UNLINK big_key</tspan></text>
+  <text x="725" y="430" class="code-text">- Replace <tspan class="code-keyword">HGETALL big_hash</tspan> with <tspan class="code-func">HSCAN</tspan></text>
+  <text x="725" y="452" class="box-sub">Background thread (bio.c) frees memory without blocking main thread.</text>
+</svg>

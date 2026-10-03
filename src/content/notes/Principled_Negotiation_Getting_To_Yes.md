@@ -7,9 +7,6 @@ aliases: []
 domain: "Engineering"
 sourcePath: "30_Resources/Concepts/Negotiation_and_Communication/Principled_Negotiation_Getting_To_Yes.md"
 ---
-
-# Principled Negotiation
-
 ## TL;DR
 
 Principled Negotiation (Đàm phán nguyên tắc) là phương pháp đàm phán hợp tác được phát triển bởi Roger Fisher và William Ury thuộc Dự án Đàm phán Harvard (Harvard Negotiation Project). Phương pháp này bác bỏ cả hai lối đàm phán truyền thống: đàm phán cứng (Hard negotiation - cố chấp ép giá) và đàm phán mềm (Soft negotiation - dễ dàng nhượng bộ), thay vào đó tập trung giải quyết vấn đề dựa trên lợi ích cốt lõi và các tiêu chí khách quan để đạt được thỏa thuận win-win bền vững.

@@ -7,9 +7,6 @@ aliases: []
 domain: "Engineering"
 sourcePath: "30_Resources/Methods/Engineering/Linux_Mastery_Core_Roadmap.md"
 ---
-
-# Linux Mastery Core Roadmap
-
 ## TL;DR
 
 - **Bản chất**: Lộ trình chắt lọc 20% kiến thức Linux nền tảng (Kernel Primitives, Process Memory, Sockets, Namespaces, Cgroups, Systemd, eBPF Tracing) trên Arch Linux thay vì học lan man 80% phần thừa (ricing, distro-hopping, flags vụn vặt).

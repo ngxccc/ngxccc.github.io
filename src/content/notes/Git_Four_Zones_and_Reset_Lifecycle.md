@@ -7,9 +7,6 @@ aliases: []
 domain: "Engineering"
 sourcePath: "30_Resources/Methods/Engineering/Git_Four_Zones_and_Reset_Lifecycle.md"
 ---
-
-# Git Four Zones and Reset Lifecycle
-
 ## TL;DR
 
 - **Bản chất**: Dữ liệu trong Git di chuyển qua **4 vùng lưu trữ**: Working Directory (Đĩa cứng), Staging Area / Index (Vùng đệm), Local Repository (Lịch sử commit / HEAD), và Remote Repository.

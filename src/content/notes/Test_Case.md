@@ -7,9 +7,6 @@ aliases: ["Trường hợp kiểm thử", "Ca kiểm thử", "Test Case Basics"]
 domain: "Engineering"
 sourcePath: "30_Resources/Concepts/Software_Testing/Test_Case.md"
 ---
-
-# Test Case
-
 ## TL;DR
 
 Test Case (trường hợp kiểm thử) là một tình huống kiểm tra được thiết kế để xác minh xem một đối tượng (chức năng/hệ thống) có thỏa mãn yêu cầu đặt ra hay không. Một test case cơ bản bao gồm 3 bước: **Mô tả** (các điều kiện cần có), **Nhập** (dữ liệu đầu vào), và **Kết quả mong chờ** (kết quả trả về từ đối tượng kiểm tra).

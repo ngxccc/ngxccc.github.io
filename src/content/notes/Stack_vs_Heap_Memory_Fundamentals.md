@@ -7,9 +7,6 @@ aliases: []
 domain: "Engineering"
 sourcePath: "30_Resources/Concepts/Computer_Science/Stack_vs_Heap_Memory_Fundamentals.md"
 ---
-
-# Stack vs Heap Memory Fundamentals
-
 ## TL;DR
 
 - **Bản chất**: Stack là cơ chế quản lý phần cứng trực tiếp bằng thanh ghi CPU Stack Pointer theo nguyên lý LIFO; Heap là vùng nhớ cấp phát động quản lý bằng phần mềm qua OS Virtual Memory và Runtime Memory Allocator.

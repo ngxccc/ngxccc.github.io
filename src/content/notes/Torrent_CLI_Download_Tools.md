@@ -7,9 +7,6 @@ aliases: []
 domain: "Engineering"
 sourcePath: "30_Resources/Tech/Infrastructure_and_Cloud/Torrent_CLI_Download_Tools.md"
 ---
-
-# Torrent CLI Download Tools Comparison
-
 ## TL;DR
 
 aria2c là công cụ download đa giao thức (HTTP/FTP/BitTorrent) mạnh về scripting và nhẹ nhàng, nhưng thiếu các tính năng quản lý torrent nâng cao. Dựa trên dữ liệu mới nhất tháng 7/2026 từ các nguồn seedboxes.cc, computingforgeeks.com, qBittorrent-nox vẫn là lựa chọn all-rounder hàng đầu cho server headless. Các lựa chọn thay thế tốt hơn cho use-case server/headless là **qBittorrent-nox** (hiện đại, WebUI, tích hợp Arr stack) và **rTorrent** (hiệu năng cao cho volume lớn/private tracker). Transmission-daemon phù hợp khi cần cực nhẹ.

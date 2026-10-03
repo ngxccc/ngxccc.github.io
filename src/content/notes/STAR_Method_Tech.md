@@ -7,9 +7,6 @@ aliases: ["STAR Framework", "Kỹ thuật phỏng vấn hành vi"]
 domain: "Engineering"
 sourcePath: "30_Resources/Methods/Engineering/STAR_Method_Tech.md"
 ---
-
-# STAR Method
-
 ## TL;DR
 
 Khung kể chuyện chiến lược (Situation -> Task -> Action -> Result) giúp cấu trúc hóa câu trả lời trong các vòng phỏng vấn hành vi (Behavioral Interview) hoặc khi viết CV. Mục tiêu là show ra bằng chứng thép về năng lực giải quyết vấn đề.

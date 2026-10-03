@@ -7,9 +7,6 @@ aliases: ["MOC", "Index Note", "Bản đồ định hướng"]
 domain: "Engineering"
 sourcePath: "30_Resources/Concepts/Knowledge_Management/Map_of_Content.md"
 ---
-
-# Map of Content
-
 ## TL;DR
 
 Một node (ghi chú) đặc biệt đóng vai trò làm "mục lục động" để gom nhóm và điều phối các Atomic Notes rời rạc. Giúp não bộ có được cái nhìn toàn cảnh (Bird's-eye view) chống lại sự hỗn loạn khi hệ thống Zettelkasten phình to.

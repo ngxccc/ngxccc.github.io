@@ -7,9 +7,6 @@ aliases: []
 domain: "Engineering"
 sourcePath: "30_Resources/Tech/Frameworks_and_Ecosystem/NextJS_16_Cache_Components.md"
 ---
-
-# Next.js 16 Cache Components & 'use cache'
-
 ## TL;DR
 
 Trong Next.js 16, **Cache Components** (kích hoạt bằng cấu hình `cacheComponents: true` trong `next.config.ts`) chuyển đổi toàn bộ kiến trúc caching của App Router từ mô hình cấp mạng `fetch()` (Request-level cache) sang mô hình cấp hàm/component (Component-level cache) thông qua chỉ thị **`"use cache"`**. Cơ chế này cho phép cache kết quả truy vấn database trực tiếp (ORM), tự động hóa việc tạo cache key dựa trên đối số truyền vào, và cung cấp các chế độ cache riêng tư (`"use cache: private"`) hoặc lưu trữ ngoài (`"use cache: remote"`). Nó cũng là nền tảng mặc định giúp kích hoạt chế độ **Partial Prerendering (PPR)**.

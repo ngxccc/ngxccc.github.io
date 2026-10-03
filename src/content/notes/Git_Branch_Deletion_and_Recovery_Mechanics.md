@@ -7,9 +7,6 @@ aliases: []
 domain: "Engineering"
 sourcePath: "30_Resources/Methods/Engineering/Git_Branch_Deletion_and_Recovery_Mechanics.md"
 ---
-
-# Git Branch Deletion and Recovery Mechanics
-
 ## TL;DR
 
 - **Bản chất**: `git branch -d` **chỉ xóa file text 41 bytes** trong `.git/refs/heads/<branch>`, **không hề xóa commit hay dữ liệu**. Commit chỉ trở thành "commit mồ côi" (Dangling Commit) và vẫn tồn tại trong Object Store ít nhất 30-90 ngày trước khi `git gc` dọn dẹp.

@@ -7,9 +7,6 @@ aliases: ["Capstone Roadmap", "Software Dev Lifecycle", "Project SOP"]
 domain: "Engineering"
 sourcePath: "30_Resources/Methods/Engineering/Standard_Project_Timeline_SOP.md"
 ---
-
-# Standard Project Timeline SOP
-
 ## TL;DR
 
 Quy trình 16 tuần tiêu chuẩn (SOP) định hình Vòng đời Phát triển Phần mềm (SDLC) từ con số 0 đến lúc deploy. Giúp cân bằng giữa chất lượng kỹ thuật (Technical) và khả năng đóng gói sản phẩm (Delivery/Presentation).

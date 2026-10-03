@@ -7,9 +7,6 @@ aliases: []
 domain: "Linguistics & Learning"
 sourcePath: "30_Resources/Concepts/Learning_and_Linguistics/Herbert_Simon_Learning_Method.md"
 ---
-
-# Herbert Simon Learning Method
-
 ## TL;DR
 
 Phương pháp học tập và xây dựng chuyên môn dựa trên các nghiên cứu khoa học nhận thức của Giáo sư Herbert A. Simon (đoạt giải Nobel). Trọng tâm của phương pháp là cơ chế **Chunking** (gom nhóm thông tin) kết hợp với **Deliberate Practice** (thực hành có chủ đích) nhằm tối ưu hóa bộ nhớ làm việc (Working Memory) hữu hạn và chuyển hóa kiến thức vào bộ nhớ dài hạn (Long-term Memory) hiệu quả.

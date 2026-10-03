@@ -7,9 +7,6 @@ aliases: ["Đặt tên Database", "DB Naming", "Database Naming Conventions"]
 domain: "Engineering"
 sourcePath: "30_Resources/Tech/API_and_Data_Design/DB_Naming.md"
 ---
-
-# DB Naming Conventions
-
 ## TL;DR
 
 Quy tắc đặt tên nhất quán giữa cơ sở dữ liệu (Database) và mã nguồn (TypeScript): Tên bảng vật lý trong DB và tên biến ORM/TypeScript đại diện đều dùng **Số nhiều (Plural)** (ví dụ: `users`, `categories`, `orders`, `sessions`). Định nghĩa bảng bằng helper `snakeCase.table` của Drizzle ORM để đảm bảo tự động chuẩn hóa snake_case và đồng bộ 1:1 từ mã nguồn tới cơ sở dữ liệu.

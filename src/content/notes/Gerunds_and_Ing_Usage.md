@@ -7,9 +7,6 @@ aliases: ["Danh động từ và cách dùng đuôi -ing", "Gerunds and Present 
 domain: "Linguistics & Learning"
 sourcePath: "30_Resources/Concepts/Learning_and_Linguistics/Gerunds_and_Ing_Usage.md"
 ---
-
-# Danh động từ và cách dùng đuôi -ing
-
 ## TL;DR
 
 Cách sử dụng đuôi `-ing` trong tiếng Anh để chuyển đổi động từ thành danh từ làm chủ ngữ/tân ngữ (Danh động từ - Gerund) hoặc mô tả tính chất của danh từ (Hiện tại phân từ - Present Participle). Giúp hiểu rõ các cấu trúc ngữ pháp phổ biến ngoài thì tiếp diễn trong giao tiếp và công việc lập trình.

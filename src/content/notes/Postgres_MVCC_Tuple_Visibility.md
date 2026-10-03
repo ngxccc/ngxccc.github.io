@@ -7,9 +7,6 @@ aliases: []
 domain: "Engineering"
 sourcePath: "30_Resources/Tech/API_and_Data_Design/Postgres_MVCC_Tuple_Visibility.md"
 ---
-
-# Postgres MVCC Tuple Visibility
-
 ## TL;DR
 
 - **Bản chất**: PostgreSQL thực thi quy tắc "Không sửa đè" (Out-of-place Update). Mọi thao tác `UPDATE` và `DELETE` không chỉnh sửa trực tiếp dữ liệu tại chỗ, mà ghi thêm Tuple phiên bản mới và đánh dấu trạng thái hết hạn trên Tuple cũ thông qua Transaction ID.

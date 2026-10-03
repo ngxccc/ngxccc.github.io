@@ -7,9 +7,6 @@ aliases: ["Atomic Update", "Conditional Update", "Compare-and-Swap SQL"]
 domain: "Engineering"
 sourcePath: "30_Resources/Tech/API_and_Data_Design/Atomic_Conditional_Update.md"
 ---
-
-# Atomic Conditional Update
-
 ## TL;DR
 
 - **Bản chất**: Gộp bước **Kiểm tra điều kiện (Check)** và bước **Ghi dữ liệu (Write)** thành **một thao tác nguyên tử duy nhất (Single Indivisible Operation)** tại tầng Storage Engine của Database.
@@ -77,7 +74,10 @@ Database trả về số dòng thực sự bị thay đổi (`affected_rows` ho�
 ```typescript
 import { eq, and, gt, sql } from "drizzle-orm";
 
-async function decrementStock(productId: number, quantity: number): Promise<boolean> {
+async function decrementStock(
+  productId: number,
+  quantity: number,
+): Promise<boolean> {
   const result = await db
     .update(products)
     .set({

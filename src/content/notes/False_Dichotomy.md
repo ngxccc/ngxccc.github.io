@@ -7,9 +7,6 @@ aliases: []
 domain: "Mental Models"
 sourcePath: "30_Resources/Concepts/Psychology_and_Mental_Models/False_Dichotomy.md"
 ---
-
-# False Dichotomy
-
 ## TL;DR
 
 - **Bản chất**: Ngụy biện phi hình thức và méo mó nhận thức ép buộc một bài toán liên tục hoặc phức tạp thành hai lựa chọn đối đầu duy nhất (Either-Or), che giấu toàn bộ các biến số trung gian.

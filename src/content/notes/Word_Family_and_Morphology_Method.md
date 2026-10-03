@@ -7,9 +7,6 @@ aliases: []
 domain: "Linguistics & Learning"
 sourcePath: "30_Resources/Concepts/Learning_and_Linguistics/Word_Family_and_Morphology_Method.md"
 ---
-
-# Word Family and Morphology Method
-
 ## TL;DR
 
 Phương pháp học từ loại dựa trên khoa học ngôn ngữ (Morphology) và phản xạ nhóm từ (Word Family Matrix). Thay vì học thuộc lòng từng từ riêng lẻ hay nhớ danh sách quy tắc khô khan, phương pháp sử dụng Kỹ thuật Neo Từ Mẫu (Anchor Words) và Vòng Lặp Thay Thế (Substitution Loop) để làm chủ 4 dạng từ (Verb, Noun, Adjective, Adverb).

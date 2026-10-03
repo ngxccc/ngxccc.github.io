@@ -7,9 +7,6 @@ aliases: []
 domain: "Engineering"
 sourcePath: "30_Resources/Concepts/Computer_Science/Redis_Single_Threaded_Event_Loop_Architecture.md"
 ---
-
-# Redis Single Threaded Event Loop Architecture
-
 ## TL;DR
 
 - **Bản chất**: **Redis** vận hành dựa trên kiến trúc **Reactor Pattern**: tách bạch tầng Network I/O xử lý hàng chục ngàn kết nối đồng thời qua cơ chế **I/O Multiplexing** (`epoll`/`kqueue` của OS Kernel) và tầng Execution xử lý tuần tự từng Command trên đúng **1 luồng chính duy nhất** (Single Execution Thread).
@@ -20,7 +17,7 @@ sourcePath: "30_Resources/Concepts/Computer_Science/Redis_Single_Threaded_Event_
 
 ## Kiến trúc Tổng quan (System Overview)
 
-![[30_Resources/Excalidraw/redis_event_loop_architecture.svg]]
+![redis_event_loop_architecture.svg](/assets/redis_event_loop_architecture.svg)
 
 Kiến trúc bên trong tiến trình `redis-server` được chia thành 2 phân tầng tách biệt:
 
@@ -33,7 +30,7 @@ Kiến trúc bên trong tiến trình `redis-server` được chia thành 2 phâ
 
 ### 1. Network Layer: I/O Multiplexing với `epoll` / `kqueue`
 
-![[30_Resources/Excalidraw/redis_network_epoll_layer.svg]]
+![redis_network_epoll_layer.svg](/assets/redis_network_epoll_layer.svg)
 
 Trong mô hình mạng truyền thống (Multi-threaded Blocking I/O):
 
@@ -54,7 +51,7 @@ Redis giải quyết bài toán này bằng **I/O Multiplexing**:
 
 ### 2. Execution Layer: Vòng lặp `aeMain` và Trực tiếp thao tác RAM
 
-![[30_Resources/Excalidraw/redis_execution_event_loop_layer.svg]]
+![redis_execution_event_loop_layer.svg](/assets/redis_execution_event_loop_layer.svg)
 
 Trái tim của Redis Engine là một vòng lặp vô tận viết bằng ngôn ngữ C trong file `ae.c`:
 

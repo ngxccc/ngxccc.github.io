@@ -63,7 +63,7 @@ const filteredHeadings = headings.filter((h) => h.depth >= 2 && h.depth <= 3);
     );
 
     const headings = document.querySelectorAll(
-      ".note-content h2, .note-content h3"
+      ".post-content h2, .post-content h3, .note-content h2, .note-content h3"
     );
     for (const heading of headings) {
       observer.observe(heading);
@@ -87,6 +87,26 @@ const filteredHeadings = headings.filter((h) => h.depth >= 2 && h.depth <= 3);
     align-self: flex-start;
     max-height: calc(100vh - 4rem);
     overflow-y: auto;
+    scrollbar-width: thin;
+    scrollbar-color: #333333 transparent;
+  }
+
+  /* Custom thin scrollbar for Webkit/Blink */
+  .toc-sidebar::-webkit-scrollbar {
+    width: 4px;
+  }
+
+  .toc-sidebar::-webkit-scrollbar-track {
+    background: transparent;
+  }
+
+  .toc-sidebar::-webkit-scrollbar-thumb {
+    background: #333333;
+    border-radius: 2px;
+  }
+
+  .toc-sidebar::-webkit-scrollbar-thumb:hover {
+    background: #555555;
   }
 
   @media (min-width: 1080px) {

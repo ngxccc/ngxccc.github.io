@@ -7,9 +7,6 @@ aliases: []
 domain: "Mental Models"
 sourcePath: "30_Resources/Concepts/Psychology_and_Mental_Models/Swimmers_Body_Illusion.md"
 ---
-
-# Swimmer's Body Illusion
-
 ## TL;DR
 
 Ảo tưởng vóc dáng kình ngư (Swimmer's Body Illusion) xảy ra khi chúng ta nhầm lẫn giữa **tiêu chí lựa chọn/đặc tính bẩm sinh** (selection factors) với **kết quả của quá trình rèn luyện/hành động** (results). Chúng ta tin rằng việc thực hiện một hoạt động sẽ mang lại các thuộc tính mong ước, trong khi thực chất chính những thuộc tính đó mới là nguyên nhân khiến một đối tượng được chọn lọc vào hoạt động đó.

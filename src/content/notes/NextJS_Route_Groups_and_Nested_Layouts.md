@@ -7,9 +7,6 @@ aliases: []
 domain: "Engineering"
 sourcePath: "30_Resources/Tech/Frameworks_and_Ecosystem/NextJS_Route_Groups_and_Nested_Layouts.md"
 ---
-
-# Next.js Route Groups & Nested Layouts Inheritance
-
 ## TL;DR
 
 **Route Groups** (thư mục có dấu ngoặc đơn `(group)`) trong Next.js App Router cho phép tổ chức cấu trúc file dự án và gom nhóm các route để chia sẻ chung Layout mà **không làm thay đổi cấu trúc URL đường dẫn**. Cơ chế này giải quyết hai bài toán lớn: (1) thiết lập các giao diện khác nhau cho từng phân khu (như trang mua sắm công cộng vs. trang quản trị nội bộ), và (2) cô lập các hàm động (như `headers()`, `cookies()`, check Auth session) vào một Layout con để tránh làm mất đi khả năng tối ưu hóa tĩnh (Static Site Generation - SSG) của Root Layout và ngăn ngừa lỗi build `DYNAMIC_SERVER_USAGE` trên Vercel.

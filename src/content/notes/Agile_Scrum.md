@@ -7,9 +7,6 @@ aliases: ["Quy trình Agile Scrum", "Agile Scrum Process"]
 domain: "Engineering"
 sourcePath: "30_Resources/Methods/Engineering/Agile_Scrum.md"
 ---
-
-# Quy Trình Agile & Scrum Trong Dự Án
-
 ## TL;DR
 
 Quy trình quản lý dự án linh hoạt (Agile) áp dụng khung làm việc Scrum nhằm tối ưu hóa năng suất phát triển phần mềm thông qua các chu kỳ phát triển ngắn (Sprints) và cải tiến liên tục.

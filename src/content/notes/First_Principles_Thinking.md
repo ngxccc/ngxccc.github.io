@@ -7,9 +7,6 @@ aliases: []
 domain: "Linguistics & Learning"
 sourcePath: "30_Resources/Methods/Learning_and_Cognition/First_Principles_Thinking.md"
 ---
-
-# First Principles Thinking
-
 ## TL;DR
 
 Kỹ thuật giải quyết vấn đề bằng cách phá vỡ các định kiến, bóc tách sự việc xuống thành những chân lý/sự thật cơ bản nhất (Facts), sau đó xây dựng lên một giải pháp hoàn toàn mới. Công cụ đắc lực để tạo ra sự đổi mới mang tính đột phá (Innovation).

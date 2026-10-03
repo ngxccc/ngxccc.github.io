@@ -7,9 +7,6 @@ aliases: ["Model-View-Controller", "Classical MVC"]
 domain: "Engineering"
 sourcePath: "30_Resources/Tech/Architecture_and_Patterns/MVC_Pattern.md"
 ---
-
-# MVC Pattern
-
 ## TL;DR
 
 Mẫu kiến trúc kinh điển chia ứng dụng thành 3 phần: **Model** (Dữ liệu & Logic), **View** (Giao diện hiển thị), và **Controller** (Điều phối). MVC là nền tảng giải quyết triệt để vấn đề "Spaghetti Code" (trộn lẫn logic query DB vào file HTML).

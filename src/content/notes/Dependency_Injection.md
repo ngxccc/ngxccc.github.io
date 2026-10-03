@@ -7,9 +7,6 @@ aliases: ["DI", "Inversion of Control", "IoC"]
 domain: "Engineering"
 sourcePath: "30_Resources/Tech/Architecture_and_Patterns/Dependency_Injection.md"
 ---
-
-# Dependency Injection
-
 ## TL;DR
 
 Kỹ thuật thiết kế trong đó một đối tượng nhận các phụ thuộc (dependencies) từ bên ngoài truyền vào thay vì tự mình khởi tạo chúng. Giúp code linh hoạt, giảm sự phụ thuộc cứng (Decoupling) và cực kỳ dễ viết Unit Test.

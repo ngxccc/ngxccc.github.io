@@ -7,9 +7,6 @@ aliases: ["Abstract Syntax Tree", "Custom Rules"]
 domain: "Engineering"
 sourcePath: "30_Resources/Tech/Language_and_Core/AST_ESLint.md"
 ---
-
-# Phân tích AST và Custom ESLint Rules
-
 ## TL;DR
 
 AST (Abstract Syntax Tree) là cấu trúc cây đại diện cho mã nguồn. Bằng cách viết các bộ chọn (AST Selectors) kết hợp với ESLint (`no-restricted-syntax`), ta có thể ép buộc các quy chuẩn kiến trúc (Architectural Boundaries) và tối ưu hóa performance một cách tự động ngay lúc code, thay vì dùng Regex vốn không hiểu ngữ cảnh và dễ lỗi.

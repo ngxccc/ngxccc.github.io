@@ -7,9 +7,6 @@ aliases: []
 domain: "Engineering"
 sourcePath: "30_Resources/Concepts/Product_and_Business_Mindsets/Customer_Outcome_Thinking.md"
 ---
-
-# Customer Outcome Thinking
-
 ## TL;DR
 
 Tư duy hướng kết quả khách hàng (Customer-Outcome Thinking) là phương pháp tiếp cận lập trình và thiết kế sản phẩm tập trung vào việc thay đổi hành vi hoặc trạng thái tích cực của người dùng (Outcomes), thay vì chỉ tập trung vào việc tạo ra các tính năng vật lý (Outputs). Tư duy này giúp lập trình viên trả lời câu hỏi: _"Người dùng đã giải quyết được vấn đề của họ nhanh hơn/tốt hơn thế nào nhờ dòng code của tôi?"_.

@@ -7,9 +7,6 @@ aliases: ["Lỗi nhầm lẫn sự cố", "Error Defect Failure"]
 domain: "Engineering"
 sourcePath: "30_Resources/Concepts/Software_Testing/Error_Defect_Failure.md"
 ---
-
-# Phân biệt Error, Defect và Failure
-
 ## TL;DR
 
 Trong kiểm thử phần mềm, việc phân biệt rõ giữa Error (Sai sót), Defect/Bug (Lỗi trong code/tài liệu) và Failure (Sự cố khi vận hành) là vô cùng quan trọng. Sự nhầm lẫn của con người (Error) dẫn đến khuyết tật trong hệ thống (Defect), và khi khuyết tật đó được thực thi sẽ tạo ra hoạt động sai lệch thực tế của phần mềm (Failure).

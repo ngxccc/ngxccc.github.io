@@ -7,9 +7,6 @@ aliases: []
 domain: "Engineering"
 sourcePath: "30_Resources/Tech/Frameworks_and_Ecosystem/React_Server_Components.md"
 ---
-
-# React Server Components vs. Client Components
-
 ## TL;DR
 
 Trong mô hình Next.js App Router, **React Server Components (RSC)** (mặc định) chạy hoàn toàn trên server để render ra HTML tĩnh và một cấu trúc dữ liệu gọi là RSC Payload, không gửi code JavaScript của component đó về trình duyệt (Zero Bundle Size). Ngược lại, **Client Components** (sử dụng chỉ thị `'use client'`) được render trước ở server (Pre-rendering) rồi gửi JS về client để thực hiện cơ chế **Hydration**, cho phép sử dụng hooks (`useState`, `useEffect`), lắng nghe sự kiện (`onClick`) và truy cập các Web API của trình duyệt.

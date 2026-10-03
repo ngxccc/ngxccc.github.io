@@ -7,9 +7,6 @@ aliases: []
 domain: "Engineering"
 sourcePath: "30_Resources/Tech/Frameworks_and_Ecosystem/NextJS_PPR_Platform_Support.md"
 ---
-
-# NextJS PPR Platform Support
-
 ## TL;DR
 
 Partial Prerendering (PPR) của Next.js kết hợp static và dynamic rendering trên cùng một route bằng cách tạo ra một static HTML shell lúc build và stream tiếp phần dynamic lúc request. Để hỗ trợ PPR, platform cần lưu trữ đồng thời và cập nhật nguyên tử cả shell tĩnh và chuỗi trạng thái trì hoãn (postponedState), sau đó dùng Resume Protocol để thực hiện việc render tiếp các suspense boundaries còn thiếu.

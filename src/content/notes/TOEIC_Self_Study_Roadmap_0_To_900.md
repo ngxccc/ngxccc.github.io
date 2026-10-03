@@ -7,9 +7,6 @@ aliases: []
 domain: "Linguistics & Learning"
 sourcePath: "30_Resources/Methods/Learning_and_Cognition/TOEIC_Self_Study_Roadmap_0_To_900.md"
 ---
-
-# TOEIC Self Study Roadmap 0 To 900
-
 ## TL;DR
 
 Lộ trình tự học TOEIC toàn diện từ 0 đến 900+ điểm được chia làm 3 giai đoạn rõ ràng trong 6–9 tháng. Lộ trình ứng dụng các phương pháp học tập dựa trên bằng chứng khoa học như **Phonetic Chunking**, **Chép chính tả (Dictation)**, **Luyện nghe chủ động (Active Listening)**, phân bổ thời gian nghiêm ngặt (Time Allocation), và phân tích lỗi sai sâu (Error Analysis).

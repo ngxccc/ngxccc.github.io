@@ -7,9 +7,6 @@ aliases: []
 domain: "Engineering"
 sourcePath: "30_Resources/Tech/Architecture_and_Patterns/Repository_Pattern_vs_Fat_Service.md"
 ---
-
-# Repository Pattern vs Fat Service
-
 ## TL;DR
 
 So sánh hai trường phái thiết kế tầng truy cập dữ liệu (Data Access Layer): **Repository Pattern** tạo ra một lớp trừu tượng (abstraction) che giấu Database/ORM để phục vụ Domain Logic độc lập, trong khi **Fat Service (Direct ORM / Transaction Script)** nhúng trực tiếp truy vấn ORM vào lớp Service để giảm thiểu code thừa (boilerplate) và tận dụng tối đa sức mạnh của các ORM hiện đại (như Drizzle hay Prisma).
@@ -66,7 +63,11 @@ So sánh hai trường phái thiết kế tầng truy cập dữ liệu (Data Ac
 
   export class DrizzleUserRepository implements UserRepository {
     async findById(id: string): Promise<User | null> {
-      const [row] = await db.select().from(users).where(eq(users.id, id)).limit(1);
+      const [row] = await db
+        .select()
+        .from(users)
+        .where(eq(users.id, id))
+        .limit(1);
       return row
         ? {
             id: row.id,
@@ -109,7 +110,11 @@ So sánh hai trường phái thiết kế tầng truy cập dữ liệu (Data Ac
 
     async incrementDebt(id: string, orderTotal: number) {
       // Viết trực tiếp query trong service để giảm boilerplate
-      const [user] = await this.db.select().from(users).where(eq(users.id, id)).limit(1);
+      const [user] = await this.db
+        .select()
+        .from(users)
+        .where(eq(users.id, id))
+        .limit(1);
       if (!user) throw new Error("User not found");
 
       const currentDebt = parseFloat(user.currentDebt || "0");

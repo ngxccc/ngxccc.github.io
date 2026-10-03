@@ -7,9 +7,6 @@ aliases: ["SOLID", "5 nguyên lý thiết kế hướng đối tượng", "SOLID
 domain: "Engineering"
 sourcePath: "30_Resources/Tech/Architecture_and_Patterns/SOLID_Principles.md"
 ---
-
-# SOLID Principles
-
 ## TL;DR
 
 SOLID là bộ 5 nguyên lý thiết kế hướng đối tượng (OOD) kinh điển được đúc kết bởi Robert C. Martin (Uncle Bob). Nó đóng vai trò là "kim chỉ nam" tối thượng giúp kỹ sư phần mềm biến những mớ code rối rắm, dễ đổ vỡ thành một hệ thống linh hoạt, modular, dễ mở rộng và có khả năng chống chọi cực tốt trước những đợt thay đổi requirement liên tục từ khách hàng.

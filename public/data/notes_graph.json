@@ -649,12 +649,6 @@
       "url": "/notes/Socratic_Questioning_Method"
     },
     {
-      "id": "Card_By_Card_Presentation_Delivery_Technique",
-      "title": "Card By Card Presentation Delivery Technique",
-      "domain": "Linguistics & Learning",
-      "url": "/notes/Card_By_Card_Presentation_Delivery_Technique"
-    },
-    {
       "id": "Mental_Model_Automation_Method",
       "title": "Mental Model Automation Method",
       "domain": "Linguistics & Learning",
@@ -3419,14 +3413,6 @@
       "target": "Critical_Thinking_Models"
     },
     {
-      "source": "Card_By_Card_Presentation_Delivery_Technique",
-      "target": "STAR_Method_Tech"
-    },
-    {
-      "source": "Card_By_Card_Presentation_Delivery_Technique",
-      "target": "000_Methods_MOC"
-    },
-    {
       "source": "Mental_Model_Automation_Method",
       "target": "BATNA_Negotiation_Model"
     },
@@ -3536,10 +3522,6 @@
     },
     {
       "source": "TOEIC_Self_Study_Roadmap_0_To_900",
-      "target": "Card_By_Card_Presentation_Delivery_Technique"
-    },
-    {
-      "source": "TOEIC_Self_Study_Roadmap_0_To_900",
       "target": "Phonetic_Chunking"
     },
     {
@@ -3621,10 +3603,6 @@
     {
       "source": "English_Mastery_80_20_Roadmap",
       "target": "TOEIC_Self_Study_Roadmap_0_To_900"
-    },
-    {
-      "source": "English_Mastery_80_20_Roadmap",
-      "target": "Card_By_Card_Presentation_Delivery_Technique"
     },
     {
       "source": "English_Mastery_80_20_Roadmap",

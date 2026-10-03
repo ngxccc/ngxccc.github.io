@@ -7,9 +7,6 @@ aliases: []
 domain: "Engineering"
 sourcePath: "30_Resources/Concepts/Negotiation_and_Communication/BATNA_Negotiation_Model.md"
 ---
-
-# BATNA Negotiation Model
-
 ## TL;DR
 
 BATNA (Best Alternative to a Negotiated Agreement - Phương án thay thế tốt nhất cho một thỏa thuận được đàm phán) là điểm tựa an toàn và nguồn sức mạnh thương lượng cốt lõi của một cá nhân khi bước vào bàn đàm phán. BATNA xác định ngưỡng giới hạn tối thiểu mà nếu thỏa thuận đàm phán không đạt được ngưỡng này, bạn hoàn toàn có thể chủ động rời đi (Walk-away point) mà không chịu thiệt hại tiêu cực.

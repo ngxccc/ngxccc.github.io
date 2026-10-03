@@ -7,9 +7,6 @@ aliases: []
 domain: "Engineering"
 sourcePath: "30_Resources/Tech/Language_and_Core/Backend_Frameworks_Comparison.md"
 ---
-
-# JS/TS Backend Frameworks Comparison
-
 ## TL;DR
 
 Bản so sánh toàn diện 4 framework backend JavaScript/TypeScript nổi bật nhất tính đến tháng 6 năm 2026: **NestJS (v11)**, **Express (v5)**, **Fastify (v5)**, và **ElysiaJS (v1.4)**. Báo cáo phân tích chi tiết hiệu năng (throughput/RPS), trải nghiệm lập trình (DX), độ trưởng thành hệ sinh thái, độ tương thích với runtime Bun và Node.js, nhằm đưa ra quyết định kiến trúc chính xác nhất cho từng loại quy mô dự án.
@@ -52,7 +49,13 @@ Dưới đây là cách 4 framework xử lý route cơ bản và kiểm tra dữ
 #### A. NestJS - Dựa vào Decorators & Class-Validator
 
 ```typescript
-import { Controller, Post, Body, UsePipes, ValidationPipe } from "@nestjs/common";
+import {
+  Controller,
+  Post,
+  Body,
+  UsePipes,
+  ValidationPipe,
+} from "@nestjs/common";
 import { IsString, IsEmail } from "class-validator";
 
 class CreateUserDto {

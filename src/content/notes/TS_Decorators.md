@@ -7,9 +7,6 @@ aliases: ["TypeScript Decorators", "Decorators trong TypeScript"]
 domain: "Engineering"
 sourcePath: "30_Resources/Tech/Language_and_Core/TS_Decorators.md"
 ---
-
-# TS Decorators
-
 ## TL;DR
 
 Decorator là một tính năng siêu lập trình (meta-programming) cho phép can thiệp, quan sát và thay đổi hành vi của Lớp (Class), Phương thức (Method), Thuộc tính (Property), hoặc Accessor tại runtime. Bài viết này phân tích bản chất, so sánh sự khác biệt sống còn giữa Decorator cũ (`experimentalDecorators` - Stage 2) và Decorator mới tiêu chuẩn (ES Decorators - Stage 3, từ TS 5.0+), đồng thời giải thích tại sao các framework như NestJS/TypeORM vẫn phải tiếp tục duy trì phiên bản cũ.
@@ -66,15 +63,24 @@ Hàm Decorator theo chuẩn mới nhận vào 2 tham số: `value` (giá trị c
 ```typescript
 function Logged<This, Args extends any[], Return>(
   target: (this: This, ...args: Args) => Return,
-  context: ClassMethodDecoratorContext<This, (this: This, ...args: Args) => Return>,
+  context: ClassMethodDecoratorContext<
+    This,
+    (this: This, ...args: Args) => Return
+  >,
 ) {
   const methodName = String(context.name);
 
   // Trả về một hàm mới thay thế phương thức gốc
   return function (this: This, ...args: Args): Return {
-    console.log(`[LOG] Bắt đầu gọi phương thức: ${methodName} với tham số:`, args);
+    console.log(
+      `[LOG] Bắt đầu gọi phương thức: ${methodName} với tham số:`,
+      args,
+    );
     const result = target.call(this, ...args);
-    console.log(`[LOG] Kết thúc phương thức: ${methodName}, Kết quả trả về:`, result);
+    console.log(
+      `[LOG] Kết thúc phương thức: ${methodName}, Kết quả trả về:`,
+      result,
+    );
     return result;
   };
 }
@@ -102,7 +108,11 @@ Hệ thống cũ can thiệp trực tiếp vào `PropertyDescriptor` của phư�
 #### Ví dụ: Tạo `@ReadOnly` cho Thuộc tính
 
 ```typescript
-function ReadOnly(target: any, propertyKey: string, descriptor: PropertyDescriptor) {
+function ReadOnly(
+  target: any,
+  propertyKey: string,
+  descriptor: PropertyDescriptor,
+) {
   descriptor.writable = false;
   return descriptor;
 }

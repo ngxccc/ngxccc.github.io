@@ -4,11 +4,22 @@ import { visit } from "unist-util-visit";
 /**
  * Remark plugin to transform [[Note_Title]] or [[Note_Title|Display Text]]
  * into markdown links pointing to /notes/Note_Title.
+ * Skips math nodes, code nodes, or nodes already inside links.
  */
 export function remarkObsidianWikilink() {
   return (tree: Root) => {
     visit(tree, "text", (node, index, parent) => {
       if (!parent || typeof index !== "number" || !node.value) return;
+      const parentType = String(parent.type);
+      if (
+        parentType === "link" ||
+        parentType === "code" ||
+        parentType === "inlineCode" ||
+        parentType === "inlineMath" ||
+        parentType === "math"
+      ) {
+        return;
+      }
 
       const regex = /\[\[(.*?)\]\]/g;
       if (!regex.test(node.value)) return;

@@ -7,9 +7,6 @@ aliases: []
 domain: "Engineering"
 sourcePath: "30_Resources/Tech/Frameworks_and_Ecosystem/NextJS_Dynamic_Opt_Out_Connection.md"
 ---
-
-# NextJS Dynamic Opt Out and connection() API
-
 ## TL;DR
 
 Trong Next.js 15/16 App Router, `connection()` (từ `next/server`) là một hàm báo hiệu (signaling API) dùng để chủ động ngắt quá trình Prerender tĩnh (Static Generation) tại thời điểm build. Khi gặp `await connection()`, Next.js sẽ hiểu rằng đoạn code/route này bắt buộc phải chạy ở runtime (dynamic) và dừng render tĩnh route đó mà không ném ra lỗi crash build. Thiết kế này giúp bảo vệ các API động (như truy vấn DB theo request, gọi headers, cookies) và là nền tảng cốt lõi của tính năng Partial Prerendering (PPR) để stream nội dung động.
@@ -95,7 +92,10 @@ export async function GET(request: Request) {
     const status = await paymentService.verifyStatus(orderId);
     return NextResponse.json({ success: true, status });
   } catch (error) {
-    return NextResponse.json({ success: false, error: "Internal Server Error" }, { status: 500 });
+    return NextResponse.json(
+      { success: false, error: "Internal Server Error" },
+      { status: 500 },
+    );
   }
 }
 ```

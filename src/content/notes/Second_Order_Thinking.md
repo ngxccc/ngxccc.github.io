@@ -7,9 +7,6 @@ aliases: []
 domain: "Mental Models"
 sourcePath: "30_Resources/Concepts/Psychology_and_Mental_Models/Second_Order_Thinking.md"
 ---
-
-# Second Order Thinking
-
 ## TL;DR
 
 Tư duy hệ quả bậc hai (Second-Order Thinking) là khả năng suy nghĩ vượt xa khỏi các kết quả tức thì (bậc một) để đánh giá chuỗi hiệu ứng gợn sóng (ripple effects) và những hậu quả dài hạn (bậc hai, bậc ba) của một quyết định.

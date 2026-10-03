@@ -7,9 +7,6 @@ aliases: ["Distributive Conditionals", "Disable Distribution"]
 domain: "Engineering"
 sourcePath: "30_Resources/Tech/Language_and_Core/TS_Distributive_Conditional_Types.md"
 ---
-
-# TS Distributive Conditional Types
-
 ## TL;DR
 
 Cơ chế tự động "xé lẻ" của TypeScript. Khi truyền một Union Type (`A | B`) vào một Generic Condition, TS sẽ tự động chạy vòng lặp phân phối (distribute) điều kiện cho từng phần tử bên trong Union thay vì so sánh nguyên một cục.

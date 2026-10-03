@@ -7,9 +7,6 @@ aliases: ["Bid-Ask Spread", "Bẫy thanh khoản", "Paper Profit"]
 domain: "Economics"
 sourcePath: "30_Resources/Concepts/Finance_and_Economics/Liquidity_Trap_Spread.md"
 ---
-
-# Liquidity Trap & Bid-Ask Spread
-
 ## TL;DR
 
 Hiện tượng chênh lệch giữa giá Mua vào (Bid) và giá Bán ra (Ask) nới rộng cực đại khi thị trường hoảng loạn. Người nắm giữ tài sản bị lỗ ngay lập tức khi cố gắng thanh khoản (chuyển thành tiền mặt), dù giá thị trường chưa thực sự giảm sâu.

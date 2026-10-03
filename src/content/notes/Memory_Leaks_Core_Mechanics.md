@@ -7,9 +7,6 @@ aliases: []
 domain: "Engineering"
 sourcePath: "30_Resources/Concepts/Computer_Science/Memory_Leaks_Core_Mechanics.md"
 ---
-
-# Memory Leaks Core Mechanics
-
 ## TL;DR
 
 Memory Leak (rò rỉ bộ nhớ) là hiện tượng bộ nhớ đã cấp phát trên Heap không còn được sử dụng trong logic nghiệp vụ nhưng hệ thống không thể thu hồi. Trong môi trường **Unmanaged** (C/C++), rò rỉ xảy ra khi lập trình viên quên gọi hàm giải phóng (`free`/`delete`). Trong môi trường **Managed** (Java, Go, C#, JavaScript), rò rỉ xảy ra khi đối tượng rác vẫn vô tình bị giữ lại trong đồ thị tham chiếu bắt nguồn từ **GC Roots**, khiến bộ dọn rác (Garbage Collector) coi nó là "còn khả năng truy cập" (Reachable).

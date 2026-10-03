@@ -7,9 +7,6 @@ aliases: ["Immer", "ImmerJS", "Copy-on-Write", "Structural Sharing", "Immutable 
 domain: "Engineering"
 sourcePath: "30_Resources/Tech/Language_and_Core/JS_Immer_Immutable_State.md"
 ---
-
-# Immer.js: Copy-on-Write & Immutable State Management
-
 ## TL;DR
 
 **Immer** là một thư viện JavaScript giúp đơn giản hóa việc quản lý trạng thái bất biến (Immutable State). Nó cho phép lập trình viên viết mã đột biến trực tiếp (mutable mutation) tự nhiên trên một đối tượng nháp (`draft`), sau đó tự động chuyển đổi thành trạng thái mới bất biến thông qua cơ chế **Copy-on-Write (COW)** sử dụng ES6 **Proxy**. Immer đảm bảo tối ưu hóa bộ nhớ thông qua **Structural Sharing (Chia sẻ cấu trúc)** và loại bỏ hoàn toàn các rủi ro lỗi khi sử dụng các toán tử spread lồng nhau (`...`) phức tạp.
@@ -51,7 +48,11 @@ Khi ta cần cập nhật sâu một trạng thái lồng nhau (ví dụ: cập 
 #### Cách viết Spread thủ công
 
 ```typescript
-const updateCartItemQty = (cart: Cart, productId: string, qty: number): Cart => {
+const updateCartItemQty = (
+  cart: Cart,
+  productId: string,
+  qty: number,
+): Cart => {
   return {
     ...cart,
     items: cart.items.map((item) =>
@@ -66,7 +67,11 @@ const updateCartItemQty = (cart: Cart, productId: string, qty: number): Cart => 
 ```typescript
 import { produce } from "immer";
 
-const updateCartItemQty = (cart: Cart, productId: string, qty: number): Cart => {
+const updateCartItemQty = (
+  cart: Cart,
+  productId: string,
+  qty: number,
+): Cart => {
   return produce(cart, (draft) => {
     const item = draft.items.find((i) => i.productId === productId);
     if (item) {
@@ -89,9 +94,14 @@ export const useCartStore = create<CartState>()(
     addItem: async (item, quantity) => {
       set(
         produce((state: CartState) => {
-          const existingItem = state.items.find((i) => i.productId === item.productId);
+          const existingItem = state.items.find(
+            (i) => i.productId === item.productId,
+          );
           if (existingItem) {
-            existingItem.quantity = Math.min(existingItem.quantity + quantity, item.totalStock);
+            existingItem.quantity = Math.min(
+              existingItem.quantity + quantity,
+              item.totalStock,
+            );
           } else {
             state.items.push(createCartItem(item, quantity));
           }

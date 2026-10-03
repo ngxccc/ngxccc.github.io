@@ -7,9 +7,6 @@ aliases: ["Cursor Pagination", "Offset Pagination"]
 domain: "Engineering"
 sourcePath: "30_Resources/Tech/API_and_Data_Design/Cursor_Pagination.md"
 ---
-
-# REST API Pagination & Filtering
-
 ## TL;DR
 
 Kỹ thuật cắt nhỏ dữ liệu lớn thành từng chunk (Phân trang) và tinh chỉnh kết quả (Lọc/Sắp xếp) thông qua URL Parameters. Mục tiêu là chống tràn RAM (Memory overflow) cho Server và giảm tải băng thông (Network latency) cho Client.
@@ -56,7 +53,9 @@ export const getProducts = async (req: Request, res: Response) => {
   res.json({
     data,
     meta: {
-      next_cursor: hasNextPage ? encodeCursor(data.at(-1).createdAt, data.at(-1).id) : null,
+      next_cursor: hasNextPage
+        ? encodeCursor(data.at(-1).createdAt, data.at(-1).id)
+        : null,
     },
   });
 };

@@ -7,9 +7,6 @@ aliases: []
 domain: "Engineering"
 sourcePath: "30_Resources/Concepts/Computer_Science/Process_vs_Thread_and_Context_Switching.md"
 ---
-
-# Process vs Thread and Context Switching
-
 ## TL;DR
 
 - **Bản chất**: **Process** là đơn vị cấp phát tài nguyên độc lập của Operating System (sở hữu riêng Virtual Memory Space, Page Table, File Descriptors, PCB). **Thread** là đơn vị thực thi mã độc lập bên trong Process (dùng chung Text, Data, Heap nhưng có Stack và Register State riêng).

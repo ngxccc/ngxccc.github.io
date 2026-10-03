@@ -7,9 +7,6 @@ aliases: []
 domain: "Mental Models"
 sourcePath: "30_Resources/Concepts/Psychology_and_Mental_Models/Spectrum_Thinking.md"
 ---
-
-# Spectrum Thinking
-
 ## TL;DR
 
 - **Bản chất**: Mô hình tư duy kiến tạo chuyển đổi việc phân tích từ các trạng thái nhị phân rời rạc (Discrete Binary: 0 hoặc 1, Đúng hoặc Sai) sang một dải phổ liên tục (Continuous Spectrum: $X \in [0.0, 1.0]$) với vô số mức độ và biến số trung gian.

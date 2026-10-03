@@ -7,9 +7,6 @@ aliases: []
 domain: "Engineering"
 sourcePath: "30_Resources/Tech/API_and_Data_Design/Redis_Redlock.md"
 ---
-
-# Redis Redlock
-
 ## TL;DR
 
 Redis Redlock là thuật toán khóa phân tán (Distributed Lock) do Salvatore Sanfilippo (antirez) thiết kế, sử dụng $N$ nút Redis Master hoàn toàn độc lập (thường chọn $N=5$) để đạt cơ chế đồng thuận số đông (Quorum). Thuật toán giải quyết triệt để điểm lỗi đơn lẻ (SPOF) và hiện tượng tranh chấp dữ liệu (Race Condition) xuất hiện do cơ chế nhân bản bất đồng bộ (Async Replication) khi dùng Redis Primary-Replica thông thường.

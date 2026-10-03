@@ -7,9 +7,6 @@ aliases: ["Phím tắt Vim", "Vim Shortcuts Cheat Sheet", "Phím tắt nâng cao
 domain: "Engineering"
 sourcePath: "30_Resources/Methods/Engineering/Vim_Shortcuts.md"
 ---
-
-# Vim Advanced Shortcuts & Commands
-
 ## TL;DR
 
 Tập hợp các phím tắt nâng cao và câu lệnh dòng tương đối trong Vim giúp tăng tốc độ điều hướng con trỏ (Navigation), thay thế văn bản (Substitution) và viết code nhanh chóng mà không cần dùng chuột.

@@ -7,9 +7,6 @@ aliases: []
 domain: "Mental Models"
 sourcePath: "30_Resources/Concepts/Psychology_and_Mental_Models/Locus_of_Control_and_Circle_of_Influence.md"
 ---
-
-# Locus of Control and Circle of Influence
-
 ## TL;DR
 
 - **Bản chất**: Sự kết hợp giữa tâm lý học hành vi (Julian Rotter - Locus of Control) và mô hình quản trị cá nhân (Stephen Covey - Circle of Influence): Phân định ranh giới rõ ràng giữa những thứ ta có thể trực tiếp kiểm soát/tác động và những thứ ta chỉ có thể quan sát nhưng không thể thay đổi tức thì.

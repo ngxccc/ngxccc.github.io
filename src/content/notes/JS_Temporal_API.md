@@ -7,9 +7,6 @@ aliases: ["Temporal API", "JS Temporal API", "API xử lý thời gian mới c�
 domain: "Engineering"
 sourcePath: "30_Resources/Tech/Language_and_Core/JS_Temporal_API.md"
 ---
-
-# JS Temporal API
-
 ## TL;DR
 
 Temporal API là API xử lý ngày giờ thế hệ mới chính thức của JavaScript (đạt Stage 4 và là một phần của ECMAScript 2026). Nó được thiết kế để thay thế hoàn toàn đối tượng `Date` cũ vốn nổi tiếng với thiết kế lỗi thời, đột biến (mutable) dễ gây bug, và tháng đánh số từ 0. Temporal cung cấp các thực thể bất biến (immutable), chia nhỏ kiểu dữ liệu chuyên biệt (PlainDate, ZonedDateTime, Duration) và hỗ trợ múi giờ IANA cấp độ một.

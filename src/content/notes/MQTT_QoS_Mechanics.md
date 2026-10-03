@@ -7,9 +7,6 @@ aliases: ["MQTT QoS Mechanics", "MQTT Quality of Service", "MQTT Delivery Guaran
 domain: "Engineering"
 sourcePath: "30_Resources/Concepts/Computer_Science/MQTT_QoS_Mechanics.md"
 ---
-
-# MQTT QoS Mechanics
-
 ## TL;DR
 
 - **Bản chất**: **MQTT QoS (Quality of Service)** là một hợp đồng thỏa thuận mức độ tin cậy trong việc chuyển phát gói tin giữa Client và Broker trên một kênh truyền vật lý không ổn định.

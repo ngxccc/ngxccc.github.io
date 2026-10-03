@@ -7,9 +7,6 @@ aliases: []
 domain: "Engineering"
 sourcePath: "30_Resources/Tech/API_and_Data_Design/Left_Prefix_Index_Postgres.md"
 ---
-
-# Left-Prefix Index Principle in PostgreSQL
-
 ## TL;DR
 
 Nguyên lý Left-Prefix (tiền tố bên trái) của chỉ mục hỗn hợp (Composite Index): Khi tạo chỉ mục trên nhiều cột `(col1, col2, col3)`, PostgreSQL có thể tái sử dụng chỉ mục này cho các truy vấn lọc bằng cột tiền tố bên trái đầu tiên (`col1`), giúp tiết kiệm việc tạo chỉ mục đơn lẻ dư thừa.

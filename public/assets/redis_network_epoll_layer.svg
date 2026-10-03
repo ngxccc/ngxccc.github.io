@@ -1,0 +1,98 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 480" width="100%" height="100%">
+  <defs>
+    <style>
+      .bg { fill: #0f1115; }
+      .title { font-family: 'JetBrains Mono', monospace; font-size: 20px; font-weight: 700; fill: #ffffff; letter-spacing: 2px; }
+      .subtitle { font-family: 'JetBrains Mono', monospace; font-size: 12px; fill: #7e8694; }
+      
+      .box-label { font-family: 'JetBrains Mono', monospace; font-size: 14px; font-weight: 700; fill: #ffffff; letter-spacing: 1px; }
+      .box-sub { font-family: 'JetBrains Mono', monospace; font-size: 11px; fill: #8a93a0; }
+      .box-highlight { font-family: 'JetBrains Mono', monospace; font-size: 14px; font-weight: 700; fill: #ff5722; letter-spacing: 1px; }
+      
+      .code-text { font-family: 'JetBrains Mono', monospace; font-size: 11.5px; fill: #abb2bf; }
+      .code-keyword { fill: #e06c75; font-weight: 600; }
+      .code-func { fill: #98c379; }
+      .code-var { fill: #61afef; }
+      .note-text { font-family: 'JetBrains Mono', monospace; font-size: 11px; fill: #e5c07b; }
+      .conn-label { font-family: 'JetBrains Mono', monospace; font-size: 11px; fill: #5c6370; }
+
+      .dashed-border { stroke: #2c313a; stroke-dasharray: 5,5; fill: none; stroke-width: 1.5; }
+      .solid-border { stroke: #2c313a; fill: #161920; stroke-width: 1.5; }
+      .active-border { stroke: #ff5722; fill: #1a1618; stroke-width: 1.5; }
+      
+      .arrow { stroke: #3e4451; stroke-width: 1.5; fill: none; stroke-dasharray: 4,4; }
+      .arrow-orange { stroke: #ff5722; stroke-width: 1.5; fill: none; }
+    </style>
+    <marker id="arr" markerWidth="8" markerHeight="6" refX="7" refY="3" orient="auto">
+      <polygon points="0 0, 8 3, 0 6" fill="#3e4451" />
+    </marker>
+    <marker id="arr-orange" markerWidth="8" markerHeight="6" refX="7" refY="3" orient="auto">
+      <polygon points="0 0, 8 3, 0 6" fill="#ff5722" />
+    </marker>
+  </defs>
+
+  <rect width="1200" height="480" class="bg" />
+
+  <text x="600" y="40" text-anchor="middle" class="title">PART 1: NETWORK LAYER - I/O MULTIPLEXING (EPOLL)</text>
+  <text x="600" y="65" text-anchor="middle" class="subtitle">HOW 1 THREAD MONITORS 10,000+ CLIENT TCP SOCKETS CONCURRENTLY WITHOUT THREAD OVERHEAD</text>
+
+  <!-- Left: Client Connections -->
+  <rect x="40" y="95" width="260" height="350" rx="4" class="dashed-border" />
+  <text x="60" y="125" class="box-label">TCP CLIENT CONNECTIONS</text>
+  <text x="60" y="145" class="box-sub">Backend Apps on Port 6379</text>
+
+  <rect x="60" y="170" width="220" height="65" rx="3" class="solid-border" />
+  <text x="75" y="195" class="box-label">Client #1 (Node.js)</text>
+  <text x="75" y="218" class="code-text">FD 104 -> <tspan class="code-func">GET user:1</tspan></text>
+
+  <rect x="60" y="250" width="220" height="65" rx="3" class="solid-border" />
+  <text x="75" y="275" class="box-label">Client #2 (Go API)</text>
+  <text x="75" y="298" class="code-text">FD 105 -> <tspan class="code-func">SET order:12 paid</tspan></text>
+
+  <rect x="60" y="330" width="220" height="65" rx="3" class="solid-border" />
+  <text x="75" y="355" class="box-label">Client #10000 (Java)</text>
+  <text x="75" y="378" class="code-text">FD 9942 -> <tspan class="code-func">INCR pageview</tspan></text>
+
+  <text x="170" y="425" text-anchor="middle" class="conn-label">Each connection = 1 File Descriptor</text>
+
+  <!-- Middle: Linux Kernel epoll -->
+  <rect x="360" y="95" width="440" height="350" rx="4" class="active-border" />
+  <text x="380" y="125" class="box-highlight">LINUX KERNEL I/O MULTIPLEXING</text>
+  <text x="380" y="145" class="box-sub">epoll_create, epoll_ctl, epoll_wait</text>
+
+  <rect x="380" y="165" width="400" height="110" rx="3" style="fill: #11141a; stroke: #2c313a; stroke-width: 1;" />
+  <text x="395" y="190" class="code-text"><tspan class="conn-label">// Kernel monitors socket buffers in hardware interrupt</tspan></text>
+  <text x="395" y="215" class="code-text"><tspan class="code-keyword">struct</tspan> epoll_event events[MAX_EVENTS];</text>
+  <text x="395" y="240" class="code-text"><tspan class="code-keyword">int</tspan> n = <tspan class="code-func">epoll_wait</tspan>(epfd, events, MAX_EVENTS, <tspan class="code-var">-1</tspan>);</text>
+  <text x="395" y="262" class="note-text">Main thread sleeps until Kernel notifies ready sockets.</text>
+
+  <rect x="380" y="290" width="400" height="135" rx="3" class="solid-border" />
+  <text x="395" y="315" class="box-label">FIRED EVENTS READY LIST</text>
+  <text x="395" y="340" class="code-text">events[0]: FD 104 [EPOLLIN - Data Ready]</text>
+  <text x="395" y="365" class="code-text">events[1]: FD 105 [EPOLLIN - Data Ready]</text>
+  <text x="395" y="395" class="conn-label">Only FDs with active bytes are returned in O(1) time.</text>
+  <text x="395" y="413" class="conn-label">Zero time wasted on 9,998 idle connections.</text>
+
+  <!-- Right: Dispatch to aeMain -->
+  <rect x="860" y="95" width="300" height="350" rx="4" class="dashed-border" />
+  <text x="880" y="125" class="box-label">REDIS EVENT DISPATCH</text>
+  <text x="880" y="145" class="box-sub">aeProcessEvents in ae.c</text>
+
+  <rect x="880" y="170" width="260" height="255" rx="3" class="solid-border" />
+  <text x="900" y="200" class="box-highlight">DISPATCH LOOP</text>
+  <text x="900" y="230" class="code-text"><tspan class="code-keyword">for</tspan> (i = 0; i &lt; n; i++) {</text>
+  <text x="915" y="258" class="code-text">fd = events[i].data.fd;</text>
+  <text x="915" y="286" class="code-text"><tspan class="code-func">readQueryFromClient</tspan>(fd);</text>
+  <text x="915" y="314" class="conn-label">// push command to</text>
+  <text x="915" y="334" class="conn-label">// Single Execution Thread</text>
+  <text x="900" y="362" class="code-text">}</text>
+  <text x="900" y="395" class="note-text">Pushes commands sequentially to Execution Engine</text>
+
+  <!-- Arrows -->
+  <line x1="280" y1="200" x2="380" y2="200" class="arrow" marker-end="url(#arr)" />
+  <line x1="280" y1="280" x2="380" y2="225" class="arrow" marker-end="url(#arr)" />
+  <line x1="280" y1="360" x2="380" y2="250" class="arrow" marker-end="url(#arr)" />
+
+  <line x1="780" y1="350" x2="880" y2="350" class="arrow-orange" marker-end="url(#arr-orange)" />
+  <text x="800" y="340" class="box-sub" style="fill: #ff5722;">Fired List</text>
+</svg>

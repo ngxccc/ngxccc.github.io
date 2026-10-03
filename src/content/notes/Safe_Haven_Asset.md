@@ -7,9 +7,6 @@ aliases: ["Safe Haven", "Tài sản trú ẩn", "Vàng"]
 domain: "Economics"
 sourcePath: "30_Resources/Concepts/Finance_and_Economics/Safe_Haven_Asset.md"
 ---
-
-# Safe Haven Asset
-
 ## TL;DR
 
 Tài sản trú ẩn (như Vàng) là loại tài sản có khả năng giữ nguyên giá trị hoặc tăng giá trong các giai đoạn kinh tế suy thoái, lạm phát cao hoặc bất ổn chính trị. Chức năng cốt lõi của nó là bảo vệ sức mua (Purchasing Power) chứ không phải để sinh lời đột biến.

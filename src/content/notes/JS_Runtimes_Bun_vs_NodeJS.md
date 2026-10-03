@@ -7,9 +7,6 @@ aliases: ["Bun vs Node.js", "JS Runtimes", "Event Loop Runtime", "JSC vs V8"]
 domain: "Engineering"
 sourcePath: "30_Resources/Tech/Frameworks_and_Ecosystem/JS_Runtimes_Bun_vs_NodeJS.md"
 ---
-
-# JS Runtime Architecture: Bun vs. Node.js
-
 ## TL;DR
 
 Sự khác biệt cốt lõi về mặt kiến trúc giữa **Bun** và **Node.js** nằm ở công cụ thực thi JavaScript (JavaScript Engine) và thư viện quản lý vòng lặp sự kiện (Event Loop). Trong khi Node.js sử dụng **V8 Engine** (Google) kết hợp với thư viện bất đồng bộ **Libuv** (C-based), Bun lại lựa chọn **JavaScriptCore (JSC)** (Apple) kết hợp với hệ thống runtime tùy biến viết trực tiếp bằng ngôn ngữ **Zig**. Lựa chọn này giúp Bun loại bỏ các chi phí chuyển đổi ngữ cảnh (bridging overhead), tối ưu hóa tốc độ khởi động (startup time) và mang lại hiệu năng vượt trội, đổi lại bằng sự trưởng thành và tính ổn định lâu đời của hệ sinh thái Node.js.

@@ -7,9 +7,6 @@ aliases: ["Rust Hybrid Roadmap", "Lộ trình học Rust thực chiến"]
 domain: "Engineering"
 sourcePath: "30_Resources/Tech/Language_and_Core/Rust_Hybrid_Roadmap.md"
 ---
-
-# Lộ Trình Học Rust Thực Chiến: Từ Cơ Bản Đến Hệ Thống & Bảo Mật
-
 ## TL;DR
 
 Tài liệu này cung cấp một lộ trình kết hợp (Hybrid) tối ưu để học Rust hiệu quả nhất bằng cách kết hợp thế mạnh của hai lộ trình: Lộ trình Backend Truyền thống (vững chắc, thực tế) và Lộ trình An ninh mạng/WebAssembly (thực chiến, cuốn hút).

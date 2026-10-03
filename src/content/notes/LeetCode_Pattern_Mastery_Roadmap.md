@@ -7,9 +7,6 @@ aliases: []
 domain: "Engineering"
 sourcePath: "30_Resources/Methods/Engineering/LeetCode_Pattern_Mastery_Roadmap.md"
 ---
-
-# LeetCode Pattern Mastery Roadmap
-
 ## TL;DR
 
 Lộ trình cày LeetCode thông minh dựa trên tư duy nhận dạng Pattern (Pattern Recognition) từ các bộ đề nổi tiếng thế giới (**NeetCode 150**, **Blind 75**, **Striver SDE Sheet**). Thay vì giải $500+$ bài vô định, lộ trình này giúp lập trình viên Backend làm chủ 15 dạng bài cốt lõi với mục tiêu giải 1 bài/ngày ($40$ phút) trong khung giờ Deep Work 2 tối.

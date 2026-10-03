@@ -7,9 +7,6 @@ aliases: ["Tư duy hệ thống", "Systems Thinking", "9 Lăng kính Hệ thốn
 domain: "Mental Models"
 sourcePath: "30_Resources/Concepts/Psychology_and_Mental_Models/Systems_Thinking.md"
 ---
-
-# Systems Thinking in Software Engineering
-
 ## TL;DR
 
 Tư duy hệ thống (Systems Thinking) là kỹ năng phân tích phần mềm dưới góc nhìn toàn cảnh, coi ứng dụng là sự kết hợp của các phần tử và các ràng buộc phi chức năng thay vì chỉ gõ code đơn thuần. Áp dụng hệ quy chiếu 6 lăng kính hệ thống cốt lõi và bài học thực chiến để giải quyết các vấn đề tải cao, giới hạn tài nguyên một cách tối ưu.

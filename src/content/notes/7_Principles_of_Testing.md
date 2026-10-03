@@ -7,9 +7,6 @@ aliases: ["7 nguyên lý kiểm thử", "Seven Principles of Testing"]
 domain: "Engineering"
 sourcePath: "30_Resources/Concepts/Software_Testing/7_Principles_of_Testing.md"
 ---
-
-# 7 Nguyên lý Kiểm thử Phần mềm
-
 ## TL;DR
 
 7 Nguyên lý Kiểm thử Phần mềm là các quy tắc triết lý cơ bản được đúc kết từ thực tế ngành phát triển phần mềm. Chúng giúp người kiểm thử định hình tư duy đúng đắn, tránh những ảo tưởng phi thực tế (như kiểm thử hết mọi trường hợp) và tối ưu hóa nguồn lực kiểm thử để đạt hiệu quả cao nhất.

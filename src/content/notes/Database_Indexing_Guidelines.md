@@ -7,9 +7,6 @@ aliases: []
 domain: "Engineering"
 sourcePath: "30_Resources/Tech/API_and_Data_Design/Database_Indexing_Guidelines.md"
 ---
-
-# Database Indexing Guidelines
-
 ## TL;DR
 
 Quy tắc lựa chọn và thiết lập chỉ mục (Index) hiệu quả cho cơ sở dữ liệu quan hệ dựa trên tính chất chọn lọc (Selectivity), lực lượng (Cardinality) và tần suất truy vấn. Ưu tiên **Composite Index** (tuân thủ Left-Prefix) cho sắp xếp đa chiều, **Partial Index** cho dữ liệu động (loại bỏ các trạng thái tĩnh phổ biến), và tận dụng **Index Skip Scan (PostgreSQL 18+)** để tối ưu số lượng chỉ mục dư thừa dựa trên Lực lượng (Cardinality) của cột đầu tiên.
@@ -78,7 +75,11 @@ export const orders = snakeCase.table("order", {
 // Thiết lập Index tối ưu:
 export const ordersIndexes = (table) => [
   // Composite Index: Dùng cho cả (userId), (userId, status), hoặc phân trang theo createdAt
-  index("order_user_status_created_idx").on(table.userId, table.status, table.createdAt),
+  index("order_user_status_created_idx").on(
+    table.userId,
+    table.status,
+    table.createdAt,
+  ),
 
   // Partial Index: Tối ưu cho dashboard analytics tính toán doanh thu (loại bỏ đơn hủy)
   index("order_active_metrics_idx")

@@ -7,9 +7,6 @@ aliases: ["N-Tier Architecture", "Monolithic Architecture"]
 domain: "Engineering"
 sourcePath: "30_Resources/Tech/Architecture_and_Patterns/Layered_Architecture.md"
 ---
-
-# Layered Architecture
-
 ## TL;DR
 
 Cách tổ chức code bằng cách chia cắt ứng dụng theo chiều ngang dựa trên vai trò kỹ thuật (Technical Concerns): Controller (Giao tiếp HTTP), Service (Xử lý nghiệp vụ), Model (Dữ liệu). Kiến trúc "nhập môn" dễ setup nhất cho các dự án vừa và nhỏ.

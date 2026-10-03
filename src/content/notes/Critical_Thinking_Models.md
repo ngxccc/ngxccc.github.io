@@ -7,9 +7,6 @@ aliases: ["Mental Models", "Khuôn mẫu tư duy"]
 domain: "Mental Models"
 sourcePath: "30_Resources/Concepts/Psychology_and_Mental_Models/Critical_Thinking_Models.md"
 ---
-
-# Critical Thinking Models
-
 ## TL;DR
 
 Những lăng kính/khuôn mẫu trừu tượng được đúc kết từ nhiều ngành khoa học (Toán, Vật lý, Tâm lý học) để giúp con người lọc bỏ nhiễu loạn thông tin (noise), phân tích vấn đề đa chiều và đưa ra các quyết định lý trí hơn.

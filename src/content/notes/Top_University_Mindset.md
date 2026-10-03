@@ -7,9 +7,6 @@ aliases: []
 domain: "Linguistics & Learning"
 sourcePath: "30_Resources/Methods/Learning_and_Cognition/Top_University_Mindset.md"
 ---
-
-# Top University Mindset
-
 ## TL;DR
 
 Quy trình tự rèn luyện tư duy phản biện và giải quyết vấn đề theo tiêu chuẩn của các trường đại học top đầu (như RMIT, Harvard, NUS). Giúp người học chuyển từ tiếp thu thụ động sang học tập chủ động thông qua các công cụ tư duy logic và kiểm chứng thực tế.

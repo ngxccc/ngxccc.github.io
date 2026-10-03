@@ -7,9 +7,6 @@ aliases: ["Gom nhóm ngữ âm", "Sound Clustering"]
 domain: "Linguistics & Learning"
 sourcePath: "30_Resources/Concepts/Learning_and_Linguistics/Phonetic_Chunking.md"
 ---
-
-# Phonetic Chunking
-
 ## TL;DR
 
 Kỹ thuật tối ưu hóa trí nhớ bằng cách gom các từ vựng có chung một gốc phát âm (Sound Root) thành từng nhóm (Cluster). Giúp não bộ học theo quy luật thay vì phải ghi nhớ vẹt từng từ đơn lẻ.

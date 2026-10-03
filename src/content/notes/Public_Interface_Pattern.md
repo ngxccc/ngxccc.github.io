@@ -7,9 +7,6 @@ aliases: ["Module Facade", "Boundary Interface"]
 domain: "Engineering"
 sourcePath: "30_Resources/Tech/Architecture_and_Patterns/Public_Interface_Pattern.md"
 ---
-
-# Public Interface Pattern
-
 ## TL;DR
 
 Kỹ thuật đóng gói (Encapsulation) ở cấp độ Architecture. Tạo ra một "Cổng giao tiếp" duy nhất cho một Module, giấu đi toàn bộ logic phức tạp và database schema bên trong. Các module khác chỉ được phép tương tác thông qua cổng này.

@@ -7,9 +7,6 @@ aliases: ["Lý thuyết trò chơi trong Hẹn hò", "Dating Game Theory", "The 
 domain: "Engineering"
 sourcePath: "30_Resources/Concepts/Product_and_Business_Mindsets/Dating_Game_Theory.md"
 ---
-
-# Dating Game Theory
-
 ## TL;DR
 
 Lý thuyết trò chơi trong Hẹn hò (Dating Game Theory) giải thích thị trường tìm kiếm bạn đời thông qua mô hình 3 yếu tố: **Người chơi (Players)**, **Ràng buộc (Rules/Constraints)** và **Động cơ (Incentives)**. Thay vì vận hành theo Cân bằng Nash lý tưởng hay thuần túy tâm lý học tiến hóa, thị trường hẹn hò hiện đại biến thành trò chơi **Địa vị (Status Game)** — một trò chơi Tổng bằng Không (Zero-sum Game). Khi Kiến trúc thượng tầng (Superstructure) của xã hội đạt đến giai đoạn quá tải dân số và dư thừa tài sản, trò chơi địa vị khiến tỷ lệ sinh sụt giảm nghiêm trọng, dẫn đến nguy cơ sụp đổ văn minh.

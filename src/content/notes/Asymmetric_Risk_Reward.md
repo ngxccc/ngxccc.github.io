@@ -7,9 +7,6 @@ aliases: []
 domain: "Mental Models"
 sourcePath: "30_Resources/Concepts/Psychology_and_Mental_Models/Asymmetric_Risk_Reward.md"
 ---
-
-# Asymmetric Risk Reward
-
 ## TL;DR
 
 Rủi ro bất đối xứng (Asymmetric Risk/Reward) là trạng thái mà ở đó mức thiệt hại tối đa có thể chịu đựng (Downside) là rất nhỏ hoặc bị giới hạn, trong khi tiềm năng lợi nhuận thu về (Upside) lại cực kỳ lớn hoặc không giới hạn.

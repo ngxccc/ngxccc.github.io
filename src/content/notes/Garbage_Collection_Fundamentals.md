@@ -7,9 +7,6 @@ aliases: []
 domain: "Engineering"
 sourcePath: "30_Resources/Concepts/Computer_Science/Garbage_Collection_Fundamentals.md"
 ---
-
-# Garbage Collection Fundamentals
-
 ## TL;DR
 
 Garbage Collection (GC) là cơ chế quản lý bộ nhớ tự động được sáng chế bởi John McCarthy vào năm 1959 cho ngôn ngữ Lisp. GC giải phóng nhà phát triển khỏi việc gọi `malloc`/`free` thủ công bằng cách tự động thu hồi các ô nhớ không còn truy cập được trên Heap. Hai họ thuật toán chính bao gồm **Reference Counting** (Đếm tham chiếu) và **Tracing GC** (Duyệt đồ thị đối tượng từ GC Roots). Hiểu rõ các nguyên lý tổng quát như Generational Hypothesis, Stop-the-World pauses và Tri-color Marking là nền tảng để đánh giá cơ chế GC của bất kỳ ngôn ngữ nào (Java, Go, C#, Python, JavaScript).

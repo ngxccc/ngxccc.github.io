@@ -7,9 +7,6 @@ aliases: ["Edge Functions", "Cloudflare Workers"]
 domain: "Engineering"
 sourcePath: "30_Resources/Tech/Infrastructure_and_Cloud/Edge_Computing.md"
 ---
-
-# Edge Computing
-
 ## TL;DR
 
 Phiên bản "tốc độ cao" của Serverless. Đưa mã nguồn ra thực thi tại các trạm trung chuyển mạng (CDN) nằm ngay sát vị trí địa lý của user, giúp giảm độ trễ (ping) xuống mức tối thiểu (từ 200ms xuống còn ~10ms).

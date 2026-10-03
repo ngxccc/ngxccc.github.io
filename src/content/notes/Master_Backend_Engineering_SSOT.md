@@ -7,9 +7,6 @@ aliases: []
 domain: "Engineering"
 sourcePath: "30_Resources/Methods/Engineering/Master_Backend_Engineering_SSOT.md"
 ---
-
-# Master Backend Engineering SSOT & Strategy Compass
-
 ## TL;DR
 
 Tài liệu này là **Single Source of Truth (SSOT)** và **Interactive Command Center** định hình toàn bộ lộ trình phát triển năng lực, tư duy kiến trúc, và tiêu chuẩn kỹ nghệ cho Backend & Software Engineering. Được xây dựng dựa trên triết lý kỹ nghệ của các kỹ sư huyền thoại (_Salvatore Sanfilippo (antirez)_, _Mitchell Hashimoto_, _Fabrice Bellard_, _Martin Fowler_): **Giá trị cốt lõi đến từ độ sâu kiến trúc, khả năng giải quyết bài toán phức tạp bằng giải pháp tối giản (KISS), và sự thấu hiểu bản chất cách hệ thống vận hành under the hood.**

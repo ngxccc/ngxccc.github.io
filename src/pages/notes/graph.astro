@@ -20,7 +20,7 @@ import graphData from "../../../public/data/notes_graph.json";
       </div>
       <p class="tagline">
         Interactive visualization of connections, mental models, and software
-        architecture notes. Drag background to pan, scroll to zoom, click nodes to open.
+        architecture notes. Hover or tap nodes to inspect details and connected paths.
       </p>
 
       <div class="graph-legend">
@@ -33,7 +33,7 @@ import graphData from "../../../public/data/notes_graph.json";
 
     <div class="canvas-wrapper" id="canvas-container">
       <div id="graph-tooltip" class="graph-tooltip"></div>
-      <canvas id="graph-canvas"></canvas>
+      <svg id="graph-svg"></svg>
       <div class="controls-overlay">
         <button id="zoom-in" title="Zoom In" aria-label="Zoom In">+</button>
         <button id="zoom-out" title="Zoom Out" aria-label="Zoom Out">-</button>
@@ -44,53 +44,43 @@ import graphData from "../../../public/data/notes_graph.json";
 </BaseLayout>
 
 <script define:vars={{ initialGraphData: graphData }}>
-  function initGraph() {
-    const canvas = document.getElementById("graph-canvas");
+  async function initGraph() {
     const container = document.getElementById("canvas-container");
+    const svgElement = document.getElementById("graph-svg");
     const tooltip = document.getElementById("graph-tooltip");
-    if (!canvas || !container) return;
+    if (!container || !svgElement) return;
 
-    const ctx = canvas.getContext("2d");
-    if (!ctx) return;
+    const d3 = await import("https://cdn.jsdelivr.net/npm/d3@7/+esm");
 
     let width = container.clientWidth || 800;
     let height = container.clientHeight || 560;
 
-    const dpr = window.devicePixelRatio || 1;
-    canvas.width = width * dpr;
-    canvas.height = height * dpr;
-    ctx.scale(dpr, dpr);
-
-    function updateSize() {
-      if (!container) return;
-      width = container.clientWidth || 800;
-      height = container.clientHeight || 560;
-      canvas.width = width * dpr;
-      canvas.height = height * dpr;
-      ctx.scale(dpr, dpr);
-    }
-
-    window.addEventListener("resize", updateSize);
-
-    // Bảng màu tối giản thanh lịch (Monochrome / Muted grayscale)
+    // Bảng màu Muted Pastel dịu mắt, dễ phân biệt trên nền đen #111111:
     const domainColors = {
-      Engineering: "#ffffff",
-      "Mental Models": "#d4d4d8",
-      "Linguistics & Learning": "#a1a1aa",
-      Economics: "#71717a",
+      Engineering: "#64b5f6",             // Soft Sky Blue
+      "Mental Models": "#e07a5f",          // Terracotta / Muted Orange
+      "Linguistics & Learning": "#81c784", // Soft Mint Green
+      Economics: "#ffd54f",                // Warm Sand Gold
     };
 
-    const nodeRadius = 4.5;
+    // Calculate degree (connection count)
+    const degreeMap = new Map();
+    for (const link of initialGraphData.links) {
+      const s = typeof link.source === "string" ? link.source : link.source.id;
+      const t = typeof link.target === "string" ? link.target : link.target.id;
+      degreeMap.set(s, (degreeMap.get(s) || 0) + 1);
+      degreeMap.set(t, (degreeMap.get(t) || 0) + 1);
+    }
+
     const nodes = initialGraphData.nodes.map((n) => {
-      const angle = Math.random() * Math.PI * 2;
-      const radius = Math.random() * (Math.min(width, height) * 0.35);
+      const deg = degreeMap.get(n.id) || 0;
       return {
-        ...n,
-        x: width / 2 + Math.cos(angle) * radius,
-        y: height / 2 + Math.sin(angle) * radius,
-        vx: 0,
-        vy: 0,
-        radius: nodeRadius,
+        id: n.id,
+        title: n.title,
+        domain: n.domain,
+        url: n.url,
+        degree: deg,
+        radius: Math.min(8.5, Math.max(4, 4 + Math.sqrt(deg) * 0.85)),
       };
     });
 
@@ -100,208 +90,183 @@ import graphData from "../../../public/data/notes_graph.json";
     }
 
     const links = initialGraphData.links
-      .map((l) => {
-        const s = typeof l.source === "string" ? nodeById.get(l.source) : l.source;
-        const t = typeof l.target === "string" ? nodeById.get(l.target) : l.target;
-        return { source: s, target: t };
-      })
+      .map((l) => ({
+        source: typeof l.source === "string" ? nodeById.get(l.source) : l.source,
+        target: typeof l.target === "string" ? nodeById.get(l.target) : l.target,
+      }))
       .filter((l) => l.source && l.target);
 
-    // Pan & Zoom state
-    let transform = { x: 0, y: 0, scale: 1 };
-    let isDragging = false;
-    let dragStart = { x: 0, y: 0 };
-    let hoveredNode = null;
-    let isClickCandidate = false;
+    // Neighbors Map
+    const neighbors = new Map();
+    for (const link of links) {
+      const s = link.source.id;
+      const t = link.target.id;
+      if (!neighbors.has(s)) neighbors.set(s, new Set());
+      if (!neighbors.has(t)) neighbors.set(t, new Set());
+      neighbors.get(s).add(t);
+      neighbors.get(t).add(s);
+    }
 
-    canvas.addEventListener("mousedown", (e) => {
-      const rect = canvas.getBoundingClientRect();
-      const mouseX = (e.clientX - rect.left - transform.x) / transform.scale;
-      const mouseY = (e.clientY - rect.top - transform.y) / transform.scale;
+    // Thiết lập hệ tọa độ gốc đối xứng đối xứng tuyệt đối [-width/2, -height/2, width, height]
+    // Ngăn chặn 100% việc các node bị đẩy sang trái bị cắt mép (cutoff)
+    const svg = d3
+      .select(svgElement)
+      .attr("viewBox", [-width / 2, -height / 2, width, height])
+      .attr("width", "100%")
+      .attr("height", "100%");
 
-      const hit = nodes.find(
-        (n) => Math.hypot(n.x - mouseX, n.y - mouseY) <= n.radius + 6
-      );
+    svg.selectAll("*").remove();
 
-      if (hit) {
-        window.location.href = hit.url;
-        return;
-      }
+    const g = svg.append("g");
 
-      isDragging = true;
-      isClickCandidate = true;
-      dragStart = { x: e.clientX - transform.x, y: e.clientY - transform.y };
-    });
+    // D3 Zoom & Pan
+    const zoom = d3
+      .zoom()
+      .scaleExtent([0.2, 4])
+      .on("zoom", (event) => {
+        g.attr("transform", event.transform);
+      });
 
-    window.addEventListener("mousemove", (e) => {
-      const rect = canvas.getBoundingClientRect();
-      if (isDragging) {
-        const newX = e.clientX - dragStart.x;
-        const newY = e.clientY - dragStart.y;
-        if (Math.abs(newX - transform.x) > 3 || Math.abs(newY - transform.y) > 3) {
-          isClickCandidate = false;
-        }
-        transform.x = newX;
-        transform.y = newY;
-      } else {
-        const mouseX = (e.clientX - rect.left - transform.x) / transform.scale;
-        const mouseY = (e.clientY - rect.top - transform.y) / transform.scale;
-
-        hoveredNode =
-          nodes.find(
-            (n) => Math.hypot(n.x - mouseX, n.y - mouseY) <= n.radius + 5
-          ) || null;
-
-        if (hoveredNode && tooltip) {
-          canvas.style.cursor = "pointer";
-          tooltip.style.display = "block";
-          tooltip.style.left = `${e.clientX - rect.left + 14}px`;
-          tooltip.style.top = `${e.clientY - rect.top + 10}px`;
-          tooltip.innerHTML = `<div style="font-weight:600; color:#ffffff; margin-bottom:2px;">${hoveredNode.title}</div><div style="font-size:0.75rem; color:#888888;">[${hoveredNode.domain}]</div>`;
-        } else if (tooltip) {
-          canvas.style.cursor = "default";
-          tooltip.style.display = "none";
-        }
-      }
-    });
-
-    window.addEventListener("mouseup", () => {
-      isDragging = false;
-    });
-
-    canvas.addEventListener("wheel", (e) => {
-      e.preventDefault();
-      const rect = canvas.getBoundingClientRect();
-      const mouseX = e.clientX - rect.left;
-      const mouseY = e.clientY - rect.top;
-
-      const zoomFactor = e.deltaY < 0 ? 1.15 : 0.87;
-      const newScale = Math.min(Math.max(transform.scale * zoomFactor, 0.25), 4);
-
-      transform.x = mouseX - (mouseX - transform.x) * (newScale / transform.scale);
-      transform.y = mouseY - (mouseY - transform.y) * (newScale / transform.scale);
-      transform.scale = newScale;
-    });
+    svg.call(zoom);
 
     document.getElementById("zoom-in")?.addEventListener("click", () => {
-      const newScale = Math.min(transform.scale * 1.25, 4);
-      transform.x = width / 2 - (width / 2 - transform.x) * (newScale / transform.scale);
-      transform.y = height / 2 - (height / 2 - transform.y) * (newScale / transform.scale);
-      transform.scale = newScale;
+      svg.transition().duration(250).call(zoom.scaleBy, 1.3);
     });
     document.getElementById("zoom-out")?.addEventListener("click", () => {
-      const newScale = Math.max(transform.scale / 1.25, 0.25);
-      transform.x = width / 2 - (width / 2 - transform.x) * (newScale / transform.scale);
-      transform.y = height / 2 - (height / 2 - transform.y) * (newScale / transform.scale);
-      transform.scale = newScale;
+      svg.transition().duration(250).call(zoom.scaleBy, 0.77);
     });
     document.getElementById("reset-zoom")?.addEventListener("click", () => {
-      transform = { x: 0, y: 0, scale: 1 };
+      svg.transition().duration(350).call(zoom.transform, d3.zoomIdentity);
     });
 
-    let iteration = 0;
-    function simulate() {
-      const alpha = Math.max(0.01, 1 - iteration * 0.001);
-      iteration++;
+    // Links Rendering
+    const link = g
+      .append("g")
+      .attr("class", "links")
+      .selectAll("line")
+      .data(links)
+      .join("line")
+      .attr("stroke", "rgba(255, 255, 255, 0.08)")
+      .attr("stroke-width", 1);
 
-      for (let i = 0; i < nodes.length; i++) {
-        for (let j = i + 1; j < nodes.length; j++) {
-          const dx = nodes[j].x - nodes[i].x;
-          const dy = nodes[j].y - nodes[i].y;
-          const dist = Math.hypot(dx, dy) || 1;
-          if (dist < 120) {
-            const force = ((120 - dist) / dist) * 0.035 * alpha;
-            nodes[i].vx -= dx * force;
-            nodes[i].vy -= dy * force;
-            nodes[j].vx += dx * force;
-            nodes[j].vy += dy * force;
-          }
-        }
+    // Nodes Rendering
+    const node = g
+      .append("g")
+      .attr("class", "nodes")
+      .selectAll("circle")
+      .data(nodes)
+      .join("circle")
+      .attr("r", (d) => d.radius)
+      .attr("fill", (d) => domainColors[d.domain] || "#888888")
+      .attr("stroke", "#111111")
+      .attr("stroke-width", 1.2)
+      .attr("cursor", "pointer");
+
+    // Hover & Tap Logic
+    const handleNodeHighlight = (event, d) => {
+      const connected = neighbors.get(d.id);
+
+      node.attr("opacity", (n) =>
+        n.id === d.id || (connected && connected.has(n.id)) ? 1 : 0.12
+      );
+
+      link
+        .attr("stroke", (l) =>
+          l.source.id === d.id || l.target.id === d.id
+            ? "rgba(255, 255, 255, 0.85)"
+            : "rgba(255, 255, 255, 0.02)"
+        )
+        .attr("stroke-width", (l) =>
+          l.source.id === d.id || l.target.id === d.id ? 1.6 : 0.8
+        );
+
+      if (tooltip) {
+        const rect = container.getBoundingClientRect();
+        const clientX = event.touches ? event.touches[0].clientX : event.clientX;
+        const clientY = event.touches ? event.touches[0].clientY : event.clientY;
+
+        tooltip.style.display = "block";
+        tooltip.style.left = `${Math.min(rect.width - 220, Math.max(10, clientX - rect.left + 15))}px`;
+        tooltip.style.top = `${Math.min(rect.height - 80, Math.max(10, clientY - rect.top + 10))}px`;
+        const color = domainColors[d.domain] || "#ffffff";
+        tooltip.innerHTML = `<div style="font-weight:600; color:#ffffff; margin-bottom:2px;">${d.title}</div><div style="font-size:0.75rem; color:${color};">[${d.domain}] • ${d.degree} connections</div>`;
       }
+    };
 
-      for (const link of links) {
-        if (!link.source || !link.target) continue;
-        const dx = link.target.x - link.source.x;
-        const dy = link.target.y - link.source.y;
-        const dist = Math.hypot(dx, dy) || 1;
-        const targetDist = 40;
-        const force = (dist - targetDist) * 0.004 * alpha;
-        link.source.vx += dx * force;
-        link.source.vy += dy * force;
-        link.target.vx -= dx * force;
-        link.target.vy -= dy * force;
+    node
+      .on("mouseenter", handleNodeHighlight)
+      .on("touchstart", (event, d) => {
+        handleNodeHighlight(event, d);
+      })
+      .on("mouseleave", () => {
+        node.attr("opacity", 1);
+        link
+          .attr("stroke", "rgba(255, 255, 255, 0.08)")
+          .attr("stroke-width", 1);
+        if (tooltip) tooltip.style.display = "none";
+      })
+      .on("click", (_event, d) => {
+        window.location.href = d.url;
+      });
+
+    // D3 Drag Behavior
+    const drag = d3
+      .drag()
+      .on("start", (event, d) => {
+        if (!event.active) simulation.alphaTarget(0.3).restart();
+        d.fx = d.x;
+        d.fy = d.y;
+      })
+      .on("drag", (event, d) => {
+        d.fx = event.x;
+        d.fy = event.y;
+      })
+      .on("end", (event, d) => {
+        if (!event.active) simulation.alphaTarget(0);
+        d.fx = null;
+        d.fy = null;
+      });
+
+    node.call(drag);
+
+    // Balanced Spherical D3 Force Simulation centered at (0, 0)
+    const simulation = d3
+      .forceSimulation(nodes)
+      .alphaDecay(0.04)
+      .velocityDecay(0.4)
+      .force(
+        "link",
+        d3
+          .forceLink(links)
+          .id((d) => d.id)
+          .distance(36)
+          .strength(0.35)
+      )
+      .force("charge", d3.forceManyBody().strength(-75))
+      .force("center", d3.forceCenter(0, 0))
+      .force("x", d3.forceX(0).strength(0.045))
+      .force("y", d3.forceY(0).strength(0.045))
+      .force("collide", d3.forceCollide((d) => d.radius + 3))
+      .on("tick", () => {
+        link
+          .attr("x1", (d) => d.source.x)
+          .attr("y1", (d) => d.source.y)
+          .attr("x2", (d) => d.target.x)
+          .attr("y2", (d) => d.target.y);
+
+        node.attr("cx", (d) => d.x).attr("cy", (d) => d.y);
+      });
+
+    // ResizeObserver on container to adjust viewBox smoothly on resize
+    const ro = new ResizeObserver((entries) => {
+      for (const entry of entries) {
+        width = entry.contentRect.width;
+        height = entry.contentRect.height;
+        svg.attr("viewBox", [-width / 2, -height / 2, width, height]);
+        simulation.force("center", d3.forceCenter(0, 0)).restart();
       }
-
-      const cx = width / 2;
-      const cy = height / 2;
-      for (const n of nodes) {
-        n.vx += (cx - n.x) * 0.0006 * alpha;
-        n.vy += (cy - n.y) * 0.0006 * alpha;
-        n.vx *= 0.88;
-        n.vy *= 0.88;
-        n.x += n.vx;
-        n.y += n.vy;
-      }
-    }
-
-    function render() {
-      simulate();
-
-      ctx.clearRect(0, 0, width, height);
-      ctx.save();
-      ctx.translate(transform.x, transform.y);
-      ctx.scale(transform.scale, transform.scale);
-
-      // Links: muted white stroke
-      ctx.strokeStyle = "rgba(255, 255, 255, 0.08)";
-      ctx.lineWidth = 1;
-      ctx.beginPath();
-      for (const link of links) {
-        if (!link.source || !link.target) continue;
-        ctx.moveTo(link.source.x, link.source.y);
-        ctx.lineTo(link.target.x, link.target.y);
-      }
-      ctx.stroke();
-
-      if (hoveredNode) {
-        ctx.strokeStyle = "rgba(255, 255, 255, 0.65)";
-        ctx.lineWidth = 1.5;
-        ctx.beginPath();
-        for (const link of links) {
-          if (link.source === hoveredNode || link.target === hoveredNode) {
-            ctx.moveTo(link.source.x, link.source.y);
-            ctx.lineTo(link.target.x, link.target.y);
-          }
-        }
-        ctx.stroke();
-      }
-
-      for (const n of nodes) {
-        const isHovered = n === hoveredNode;
-        const color = domainColors[n.domain] || "#888888";
-
-        ctx.beginPath();
-        ctx.arc(n.x, n.y, isHovered ? n.radius + 3 : n.radius, 0, 2 * Math.PI);
-        ctx.fillStyle = color;
-        ctx.fill();
-
-        if (isHovered) {
-          ctx.strokeStyle = "#ffffff";
-          ctx.lineWidth = 2;
-          ctx.stroke();
-
-          ctx.font = "12px 'JetBrains Mono', monospace";
-          ctx.fillStyle = "#ffffff";
-          ctx.textAlign = "center";
-          ctx.fillText(n.title, n.x, n.y - 10);
-        }
-      }
-
-      ctx.restore();
-      requestAnimationFrame(render);
-    }
-
-    render();
+    });
+    ro.observe(container);
   }
 
   if (document.readyState === "loading") {
@@ -316,6 +281,8 @@ import graphData from "../../../public/data/notes_graph.json";
     max-width: 76rem;
     margin: 0 auto;
     font-family: "JetBrains Mono", Consolas, Menlo, monospace;
+    width: 100%;
+    box-sizing: border-box;
   }
 
   .breadcrumb-nav {
@@ -365,6 +332,22 @@ import graphData from "../../../public/data/notes_graph.json";
     margin: 0.5rem 0 1rem 0;
   }
 
+  @media (max-width: 640px) {
+    .page-title {
+      font-size: 1.45rem;
+    }
+    .tagline {
+      font-size: 0.85rem;
+    }
+    .graph-legend {
+      gap: 0.75rem !important;
+      font-size: 0.75rem !important;
+    }
+    .canvas-wrapper {
+      height: 480px !important;
+    }
+  }
+
   .graph-legend {
     display: flex;
     flex-wrap: wrap;
@@ -386,16 +369,16 @@ import graphData from "../../../public/data/notes_graph.json";
   }
 
   .legend-dot.engineering {
-    background-color: #ffffff;
+    background-color: #64b5f6;
   }
   .legend-dot.mental-models {
-    background-color: #d4d4d8;
+    background-color: #e07a5f;
   }
   .legend-dot.linguistics {
-    background-color: #a1a1aa;
+    background-color: #81c784;
   }
   .legend-dot.economics {
-    background-color: #71717a;
+    background-color: #ffd54f;
   }
 
   .canvas-wrapper {
@@ -406,13 +389,13 @@ import graphData from "../../../public/data/notes_graph.json";
     border: 1px solid var(--border-color, #2a2a2a);
     border-radius: 6px;
     overflow: hidden;
+    box-sizing: border-box;
   }
 
-  #graph-canvas {
+  #graph-svg {
     width: 100%;
     height: 100%;
     display: block;
-    cursor: default;
   }
 
   .graph-tooltip {
@@ -426,6 +409,7 @@ import graphData from "../../../public/data/notes_graph.json";
     z-index: 10;
     line-height: 1.4;
     box-shadow: 0 4px 12px rgba(0, 0, 0, 0.5);
+    max-width: 220px;
   }
 
   .controls-overlay {

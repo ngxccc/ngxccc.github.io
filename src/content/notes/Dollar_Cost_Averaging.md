@@ -7,9 +7,6 @@ aliases: ["DCA", "Trung bình giá", "Đầu tư định kỳ"]
 domain: "Economics"
 sourcePath: "30_Resources/Methods/Finance/Dollar_Cost_Averaging.md"
 ---
-
-# Dollar Cost Averaging
-
 ## TL;DR
 
 Chiến thuật chia nhỏ tổng vốn để giải ngân định kỳ (hàng tuần/tháng) bất chấp tình hình thị trường. Mục tiêu cốt lõi là triệt tiêu yếu tố cảm xúc (FOMO/Panic) và tự động kéo giá vốn về mức trung bình an toàn.

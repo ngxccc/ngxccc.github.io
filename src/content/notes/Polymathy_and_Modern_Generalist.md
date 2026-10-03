@@ -7,9 +7,6 @@ aliases: []
 domain: "Mental Models"
 sourcePath: "30_Resources/Concepts/Psychology_and_Mental_Models/Polymathy_and_Modern_Generalist.md"
 ---
-
-# Polymathy and Modern Generalist
-
 ## TL;DR
 
 - **Bản chất**: Năng lực am hiểu sâu sắc và làm chủ đồng thời nhiều domain tri thức khác nhau (Polymathy), kết nối chúng qua một hệ thống mô hình tư duy đa ngành (Latticework of Mental Models).

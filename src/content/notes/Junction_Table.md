@@ -7,9 +7,6 @@ aliases: []
 domain: "Engineering"
 sourcePath: "30_Resources/Tech/API_and_Data_Design/Junction_Table.md"
 ---
-
-# Junction Table & Composite Primary Keys
-
 ## TL;DR
 
 Bảng liên kết (Junction Table) giải quyết mối quan hệ **Nhiều-Nhiều (Many-to-Many)** trong cơ sở dữ liệu quan hệ bằng cách đứng ở giữa kết nối hai bảng chính. Sử dụng **Khóa chính phức hợp (Composite Primary Key)** trên hai cột khóa ngoại để loại bỏ trùng lặp dữ liệu ở mức vật lý mà không cần cột `id` độc lập.

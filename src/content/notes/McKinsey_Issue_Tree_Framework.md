@@ -7,9 +7,6 @@ aliases: []
 domain: "Linguistics & Learning"
 sourcePath: "30_Resources/Methods/Learning_and_Cognition/McKinsey_Issue_Tree_Framework.md"
 ---
-
-# McKinsey Issue Tree Framework
-
 ## TL;DR
 
 **McKinsey Issue Tree Framework** là phương pháp phân rã một bài toán phức tạp thành cấu trúc cây phân cấp tuân theo nguyên tắc **MECE (Mutually Exclusive, Collectively Exhaustive - Không trùng lặp, Không bỏ sót)** kết hợp với mô hình **Hypothesis-Driven Approach (Hướng giả thuyết)**. Phương pháp này giúp cô lập nguyên nhân gốc rễ (Root Cause) và đưa ra bài kiểm tra xác nhận (Verification Test) cho từng nhánh vấn đề.

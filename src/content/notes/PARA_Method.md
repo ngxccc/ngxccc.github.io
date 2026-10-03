@@ -7,9 +7,6 @@ aliases: ["Phương pháp PARA", "Tổ chức thông tin theo mức độ hành 
 domain: "Engineering"
 sourcePath: "30_Resources/Concepts/Knowledge_Management/PARA_Method.md"
 ---
-
-# PARA Method
-
 ## TL;DR
 
 Phương pháp tổ chức thông tin kỹ thuật số do Tiago Forte (tác giả _Building a Second Brain_) phát triển. Điểm mấu chốt của PARA là phân loại tài liệu theo **mức độ hành động (Actionability)** thay vì phân loại theo chủ đề, giúp giảm thiểu tải lượng nhận thức và giữ cho không gian làm việc luôn gọn gàng.

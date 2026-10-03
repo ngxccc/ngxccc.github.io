@@ -7,9 +7,6 @@ aliases: []
 domain: "Engineering"
 sourcePath: "30_Resources/Concepts/Software_Testing/K6_Runner_Performance_and_OS_Tuning.md"
 ---
-
-# k6 Runner Performance & OS Kernel Tuning
-
 ## TL;DR
 
 - **Bản chất**: Hiệu năng của k6 load generator bị giới hạn bởi 2 yếu tố: cấu hình kernel hệ điều hành (Socket/File Descriptors) và mức tiêu thụ RAM của Go runtime do Tag Cardinality.
@@ -86,7 +83,15 @@ export const options: Options = {
   discardResponseBodies: true,
 
   // 2. Chỉ giữ các system tags thiết yếu
-  systemTags: ["status", "method", "url", "scenario", "check", "error", "error_code"],
+  systemTags: [
+    "status",
+    "method",
+    "url",
+    "scenario",
+    "check",
+    "error",
+    "error_code",
+  ],
 
   // 3. Tùy chỉnh phân vị hiển thị
   summaryTrendStats: ["min", "med", "avg", "p(90)", "p(95)", "p(99)", "max"],

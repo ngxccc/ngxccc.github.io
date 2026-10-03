@@ -7,9 +7,6 @@ aliases: []
 domain: "Linguistics & Learning"
 sourcePath: "30_Resources/Methods/Learning_and_Cognition/English_Mastery_80_20_Roadmap.md"
 ---
-
-# Nghiên cứu Học Tiếng Anh: Tiêu chuẩn Nắm chắc và Phương pháp 80/20 theo Khoa học Nhận thức & SLA
-
 ## TL;DR
 
 - **Bản chất**: Lộ trình chắt lọc 20% cốt lõi của Second Language Acquisition (SLA) và Khoa học Nhận thức (Four Strands cân bằng 25%, NGSL 2,800 từ = 92% văn bản, Syntax State Machines, Pedagogical Translanguaging) thay vì học vẹt 80% từ vựng hiếm C1/C2 hay giải thích ngữ pháp lý thuyết.

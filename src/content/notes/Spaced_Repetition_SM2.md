@@ -7,9 +7,6 @@ aliases: ["SuperMemo 2", "SRS", "Forgetting Curve"]
 domain: "Linguistics & Learning"
 sourcePath: "30_Resources/Concepts/Learning_and_Linguistics/Spaced_Repetition_SM2.md"
 ---
-
-# Spaced Repetition
-
 ## TL;DR
 
 Thuật toán tính toán "điểm rơi phong độ" của trí nhớ. Cập nhật khoảng cách ngày ôn tập tiếp theo (Interval) dựa trên hệ số độ dễ (Easiness Factor - EF) và điểm tự đánh giá của người dùng. Giúp ghi nhớ dài hạn với số lần lặp lại ít nhất ($O(1)$ effort cho mỗi từ).

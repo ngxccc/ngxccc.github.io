@@ -7,9 +7,6 @@ aliases: []
 domain: "Engineering"
 sourcePath: "30_Resources/Methods/Engineering/Automated_Verification_System_Framework.md"
 ---
-
-# Automated Verification System Framework
-
 ## TL;DR
 
 Khung phương pháp này định nghĩa cấu trúc 4 tầng kiểm chứng tự động (Automated Verification Stack) và mô hình phân định trách nhiệm Hai Chìa Khóa (Dual-Key Control Model) giữa con người và AI Agents. Phương pháp này loại bỏ quá tải nhận thức do đọc dò code ngẫu nhiên bằng mắt, đồng thời ngăn chặn bẫy ngụy biện tự xác nhận vòng tròn (Self-Referential Validation Bias) khi AI tự sinh code và tự duyệt test của chính nó.

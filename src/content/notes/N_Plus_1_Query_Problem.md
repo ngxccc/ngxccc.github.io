@@ -7,9 +7,6 @@ aliases: ["Vấn đề truy vấn N+1", "N+1 Query Problem", "Solution for N+1 S
 domain: "Engineering"
 sourcePath: "30_Resources/Tech/API_and_Data_Design/N_Plus_1_Query_Problem.md"
 ---
-
-# N+1 Query Problem
-
 ## TL;DR
 
 **N+1 Query Problem** là sự cố hiệu năng phổ biến khi làm việc với ORM (Object-Relational Mapping), xảy ra khi ứng dụng thực thi $1$ câu truy vấn ban đầu để lấy danh sách $N$ bản ghi cha, sau đó tiếp tục phát sinh thêm $N$ câu truy vấn con lặp đi lặp lại để lấy dữ liệu quan hệ liên quan. Tác hại trực tiếp là gây bùng nổ số lượng truy vấn đến CSDL, tăng độ trễ (latency), tiêu tốn CPU và cạn kiệt Connection Pool. Các giải pháp khắc phục triệt để bao gồm **Eager Loading** (`JOIN` / Batch `IN` clause), **DataLoader Pattern** (Batching & Caching ở tầng ứng dụng), hoặc bật chế độ **Strict Loading**.

@@ -7,9 +7,6 @@ aliases: ["Next.js Internationalization", "next-intl", "Đa ngôn ngữ NextJS"]
 domain: "Engineering"
 sourcePath: "30_Resources/Tech/Frameworks_and_Ecosystem/Next_Intl.md"
 ---
-
-# Next-Intl & Internationalization
-
 ## TL;DR
 
 **next-intl** là giải pháp đa ngôn ngữ (i18n) chuẩn mực và tối ưu nhất cho Next.js App Router. Khác biệt cốt lõi là nó tận dụng **React Server Components (RSC)** để dịch thuật và nạp dữ liệu ngôn ngữ trực tiếp từ File System ở Server, đẩy về client mã HTML tĩnh (Zero Client-side Bundle Size). next-intl quản lý định tuyến đa ngôn ngữ thông qua dynamic segment `[locale]/`, middleware tự động chuyển hướng và tích hợp chặt chẽ với TypeScript để cung cấp **Strict Type-Safety** cho các translation keys.
@@ -53,14 +50,18 @@ import { routing } from "./routing";
 import type { Locale } from "next-intl";
 
 const isValidLocale = (locale: unknown): locale is Locale => {
-  return typeof locale === "string" && routing.locales.includes(locale as Locale);
+  return (
+    typeof locale === "string" && routing.locales.includes(locale as Locale)
+  );
 };
 
 export default getRequestConfig(async ({ requestLocale }) => {
   const requestedLocale = await requestLocale;
 
   // Fallback an toàn nếu người dùng cố tình hack/gõ URL sai locale
-  const locale = isValidLocale(requestedLocale) ? requestedLocale : routing.defaultLocale;
+  const locale = isValidLocale(requestedLocale)
+    ? requestedLocale
+    : routing.defaultLocale;
 
   return {
     locale,
@@ -92,7 +93,8 @@ export const routing = defineRouting({
 });
 
 // Sinh ra Link, redirect, useRouter thông minh tự nhận biết locale segment
-export const { Link, redirect, usePathname, useRouter, getPathname } = createNavigation(routing);
+export const { Link, redirect, usePathname, useRouter, getPathname } =
+  createNavigation(routing);
 ```
 
 ### 3. Đồng bộ vs Bất đồng bộ trong Dịch thuật

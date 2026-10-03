@@ -7,9 +7,6 @@ aliases: []
 domain: "Linguistics & Learning"
 sourcePath: "30_Resources/Methods/Learning_and_Cognition/M_Shaped_Polymath_Skill_Stacking.md"
 ---
-
-# M-Shaped Polymath Skill Stacking Framework
-
 ## TL;DR
 
 - **Bản chất**: Quy trình từng bước (Step-by-step SOP) để mở rộng từ một kỹ năng trục sâu duy nhất (I-Shaped / T-Shaped) thành hình mẫu đa trục sâu (M-Shaped / Polymath), kết hợp các kỹ năng tương hỗ tạo thành bộ nhận diện độc bản.

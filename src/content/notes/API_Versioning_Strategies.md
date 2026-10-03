@@ -7,9 +7,6 @@ aliases: ["API Versioning", "Backward Compatibility"]
 domain: "Engineering"
 sourcePath: "30_Resources/Tech/API_and_Data_Design/API_Versioning_Strategies.md"
 ---
-
-# API Versioning Strategies
-
 ## TL;DR
 
 Các chiến lược quản lý nhiều phiên bản API chạy song song nhằm đảm bảo khả năng tương thích ngược (Backward Compatibility). Giúp hệ thống nâng cấp, thay đổi cấu trúc dữ liệu mà không làm crash các Client (đặc biệt là Mobile App) phiên bản cũ.

@@ -7,9 +7,6 @@ aliases: ["React State", "Trạng thái trong React"]
 domain: "Engineering"
 sourcePath: "30_Resources/Tech/Frameworks_and_Ecosystem/React_State.md"
 ---
-
-# React State
-
 ## TL;DR
 
 **React State** là một đối tượng JavaScript nội bộ được quản lý bên trong một component để lưu giữ các thông tin/dữ liệu có thể thay đổi theo thời gian (như giá trị nhập từ input, kết quả API, trạng thái bật/tắt UI). Khi state thay đổi thông qua hàm cập nhật (setter function), React sẽ tự động kích hoạt quá trình render lại (re-render) component đó để cập nhật giao diện hiển thị đồng bộ với dữ liệu mới.

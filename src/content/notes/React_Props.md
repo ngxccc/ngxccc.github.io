@@ -7,9 +7,6 @@ aliases: ["React Props", "Thuộc tính trong React"]
 domain: "Engineering"
 sourcePath: "30_Resources/Tech/Frameworks_and_Ecosystem/React_Props.md"
 ---
-
-# React Props
-
 ## TL;DR
 
 **React Props** (viết tắt của "properties") là một đối tượng JavaScript chứa các giá trị được truyền từ một component cha (parent) xuống các component con (child) của nó. Props mang tính chất bất biến (read-only/immutable) đối với component nhận, đóng vai trò như các tham số đầu vào cấu hình giao diện hoặc hành vi hiển thị cho component đó.

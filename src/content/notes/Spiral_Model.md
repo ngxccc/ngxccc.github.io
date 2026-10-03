@@ -7,9 +7,6 @@ aliases: ["Quy trình xoắn ốc", "Mô hình xoắn ốc", "Spiral Model"]
 domain: "Engineering"
 sourcePath: "30_Resources/Methods/Engineering/Spiral_Model.md"
 ---
-
-# Quy Trình Phát Triển Phần Mềm Theo Mô Hình Xoắn Ốc
-
 ## TL;DR
 
 Quy trình phát triển phần mềm theo mô hình xoắn ốc (Spiral Model) là phương pháp kết hợp tính lặp lại (iterative) của Prototype và tính kiểm soát tuần tự của Waterfall, với trọng tâm là quản lý và giảm thiểu rủi ro (risk-driven). Quy trình được thực hiện theo các vòng lặp (loops) đồng tâm, mở rộng dần tương ứng với chi phí tích lũy tăng lên và sản phẩm hoàn thiện hơn.
