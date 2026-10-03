@@ -7,7 +7,6 @@ aliases: []
 domain: "Mental Models"
 sourcePath: "30_Resources/Concepts/Psychology_and_Mental_Models/Polymathy_and_Modern_Generalist.md"
 ---
-
 # Polymathy and Modern Generalist
 
 ## TL;DR

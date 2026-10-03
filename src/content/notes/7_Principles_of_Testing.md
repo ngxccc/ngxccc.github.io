@@ -7,7 +7,6 @@ aliases: ["7 nguyên lý kiểm thử", "Seven Principles of Testing"]
 domain: "Engineering"
 sourcePath: "30_Resources/Concepts/Software_Testing/7_Principles_of_Testing.md"
 ---
-
 # 7 Nguyên lý Kiểm thử Phần mềm
 
 ## TL;DR

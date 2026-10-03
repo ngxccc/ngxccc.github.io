@@ -7,7 +7,6 @@ aliases: []
 domain: "Engineering"
 sourcePath: "30_Resources/Concepts/Negotiation_and_Communication/Tactical_Empathy_Chris_Voss.md"
 ---
-
 # Tactical Empathy
 
 ## TL;DR

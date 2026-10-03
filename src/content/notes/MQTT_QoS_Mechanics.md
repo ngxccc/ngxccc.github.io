@@ -7,7 +7,6 @@ aliases: ["MQTT QoS Mechanics", "MQTT Quality of Service", "MQTT Delivery Guaran
 domain: "Engineering"
 sourcePath: "30_Resources/Concepts/Computer_Science/MQTT_QoS_Mechanics.md"
 ---
-
 # MQTT QoS Mechanics
 
 ## TL;DR

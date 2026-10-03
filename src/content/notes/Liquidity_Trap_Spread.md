@@ -7,7 +7,6 @@ aliases: ["Bid-Ask Spread", "Bẫy thanh khoản", "Paper Profit"]
 domain: "Economics"
 sourcePath: "30_Resources/Concepts/Finance_and_Economics/Liquidity_Trap_Spread.md"
 ---
-
 # Liquidity Trap & Bid-Ask Spread
 
 ## TL;DR

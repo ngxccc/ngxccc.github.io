@@ -7,7 +7,6 @@ aliases: ["Mental Models", "Khuôn mẫu tư duy"]
 domain: "Mental Models"
 sourcePath: "30_Resources/Concepts/Psychology_and_Mental_Models/Critical_Thinking_Models.md"
 ---
-
 # Critical Thinking Models
 
 ## TL;DR

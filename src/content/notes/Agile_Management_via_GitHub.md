@@ -7,7 +7,6 @@ aliases: []
 domain: "Engineering"
 sourcePath: "30_Resources/Methods/Engineering/Agile_Management_via_GitHub.md"
 ---
-
 # Quản Lý Dự Án Agile/Scrum Bằng GitHub Projects
 
 ## TL;DR

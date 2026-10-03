@@ -7,7 +7,6 @@ aliases: ["Index và B+Tree", "B+Tree Index", "B-Tree vs B+Tree"]
 domain: "Engineering"
 sourcePath: "30_Resources/Tech/API_and_Data_Design/Index_BPlusTree.md"
 ---
-
 # Index và B+Tree
 
 ## TL;DR

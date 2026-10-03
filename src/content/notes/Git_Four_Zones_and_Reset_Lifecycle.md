@@ -7,7 +7,6 @@ aliases: []
 domain: "Engineering"
 sourcePath: "30_Resources/Methods/Engineering/Git_Four_Zones_and_Reset_Lifecycle.md"
 ---
-
 # Git Four Zones and Reset Lifecycle
 
 ## TL;DR

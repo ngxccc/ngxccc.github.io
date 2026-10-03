@@ -7,7 +7,6 @@ aliases: ["Background Sync", "Outbox Pattern", "Offline First"]
 domain: "Engineering"
 sourcePath: "30_Resources/Tech/Web_Client_and_Security/Offline_Sync_Queue.md"
 ---
-
 # Offline Sync Queue
 
 ## TL;DR

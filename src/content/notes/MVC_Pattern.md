@@ -7,7 +7,6 @@ aliases: ["Model-View-Controller", "Classical MVC"]
 domain: "Engineering"
 sourcePath: "30_Resources/Tech/Architecture_and_Patterns/MVC_Pattern.md"
 ---
-
 # MVC Pattern
 
 ## TL;DR

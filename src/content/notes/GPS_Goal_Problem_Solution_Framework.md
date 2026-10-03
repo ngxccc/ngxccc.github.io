@@ -7,7 +7,6 @@ aliases: []
 domain: "Linguistics & Learning"
 sourcePath: "30_Resources/Methods/Learning_and_Cognition/GPS_Goal_Problem_Solution_Framework.md"
 ---
-
 # GPS Goal Problem Solution Framework
 
 ## TL;DR

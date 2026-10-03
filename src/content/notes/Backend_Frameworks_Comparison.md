@@ -7,7 +7,6 @@ aliases: []
 domain: "Engineering"
 sourcePath: "30_Resources/Tech/Language_and_Core/Backend_Frameworks_Comparison.md"
 ---
-
 # JS/TS Backend Frameworks Comparison
 
 ## TL;DR
@@ -52,7 +51,13 @@ Dưới đây là cách 4 framework xử lý route cơ bản và kiểm tra dữ
 #### A. NestJS - Dựa vào Decorators & Class-Validator
 
 ```typescript
-import { Controller, Post, Body, UsePipes, ValidationPipe } from "@nestjs/common";
+import {
+  Controller,
+  Post,
+  Body,
+  UsePipes,
+  ValidationPipe,
+} from "@nestjs/common";
 import { IsString, IsEmail } from "class-validator";
 
 class CreateUserDto {

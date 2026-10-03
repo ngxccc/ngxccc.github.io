@@ -7,7 +7,6 @@ aliases: []
 domain: "Mental Models"
 sourcePath: "30_Resources/Concepts/Psychology_and_Mental_Models/Locus_of_Control_and_Circle_of_Influence.md"
 ---
-
 # Locus of Control and Circle of Influence
 
 ## TL;DR

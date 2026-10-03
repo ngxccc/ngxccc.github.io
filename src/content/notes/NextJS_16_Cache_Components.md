@@ -7,7 +7,6 @@ aliases: []
 domain: "Engineering"
 sourcePath: "30_Resources/Tech/Frameworks_and_Ecosystem/NextJS_16_Cache_Components.md"
 ---
-
 # Next.js 16 Cache Components & 'use cache'
 
 ## TL;DR

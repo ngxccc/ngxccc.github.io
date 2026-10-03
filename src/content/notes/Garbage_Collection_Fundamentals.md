@@ -7,7 +7,6 @@ aliases: []
 domain: "Engineering"
 sourcePath: "30_Resources/Concepts/Computer_Science/Garbage_Collection_Fundamentals.md"
 ---
-
 # Garbage Collection Fundamentals
 
 ## TL;DR

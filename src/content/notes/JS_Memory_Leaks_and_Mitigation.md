@@ -7,7 +7,6 @@ aliases: ["JS Memory Leaks", "Memory Leaks Mitigation", "Memory Leaks Backend"]
 domain: "Engineering"
 sourcePath: "30_Resources/Tech/Language_and_Core/JS_Memory_Leaks_and_Mitigation.md"
 ---
-
 # JS Memory Leaks and Mitigation
 
 Tài liệu này là một ghi chép Layer 2 mô tả chi tiết các nguyên nhân và phương pháp khắc phục rò rỉ bộ nhớ (Memory Leaks) trong môi trường JavaScript Engine (V8), dựa trên nguyên lý khoa học máy tính cốt lõi của [[Memory_Leaks_Core_Mechanics]].

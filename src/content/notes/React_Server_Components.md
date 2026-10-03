@@ -7,7 +7,6 @@ aliases: []
 domain: "Engineering"
 sourcePath: "30_Resources/Tech/Frameworks_and_Ecosystem/React_Server_Components.md"
 ---
-
 # React Server Components vs. Client Components
 
 ## TL;DR

@@ -7,7 +7,6 @@ aliases: []
 domain: "Linguistics & Learning"
 sourcePath: "30_Resources/Methods/Learning_and_Cognition/Top_University_Mindset.md"
 ---
-
 # Top University Mindset
 
 ## TL;DR

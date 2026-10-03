@@ -7,7 +7,6 @@ aliases: ["Socratic Method", "Maieutics", "Elenchus"]
 domain: "Linguistics & Learning"
 sourcePath: "30_Resources/Methods/Learning_and_Cognition/Socratic_Questioning_Method.md"
 ---
-
 # Socratic Questioning Method
 
 ## TL;DR

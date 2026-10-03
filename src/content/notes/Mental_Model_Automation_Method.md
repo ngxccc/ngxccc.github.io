@@ -7,7 +7,6 @@ aliases: []
 domain: "Linguistics & Learning"
 sourcePath: "30_Resources/Methods/Learning_and_Cognition/Mental_Model_Automation_Method.md"
 ---
-
 # Mental Model Automation Method
 
 ## TL;DR

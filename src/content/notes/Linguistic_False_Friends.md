@@ -7,7 +7,6 @@ aliases: ["Homographs", "Word Stress Shift"]
 domain: "Linguistics & Learning"
 sourcePath: "30_Resources/Concepts/Learning_and_Linguistics/Linguistic_False_Friends.md"
 ---
-
 # Linguistic False Friends
 
 ## TL;DR

@@ -7,7 +7,6 @@ aliases: []
 domain: "Engineering"
 sourcePath: "30_Resources/Methods/Engineering/Gorss_Performance_Optimization_RFC.md"
 ---
-
 # RFC: High-Performance UI Navigation & Asynchronous Storage Engine
 
 ## TL;DR

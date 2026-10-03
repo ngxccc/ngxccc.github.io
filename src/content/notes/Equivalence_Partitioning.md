@@ -7,7 +7,6 @@ aliases: []
 domain: "Engineering"
 sourcePath: "30_Resources/Concepts/Software_Testing/Equivalence_Partitioning.md"
 ---
-
 # Kỹ thuật Phân hoạch Tương đương
 
 ## TL;DR

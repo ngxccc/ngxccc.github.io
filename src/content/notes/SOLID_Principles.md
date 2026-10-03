@@ -7,7 +7,6 @@ aliases: ["SOLID", "5 nguyên lý thiết kế hướng đối tượng", "SOLID
 domain: "Engineering"
 sourcePath: "30_Resources/Tech/Architecture_and_Patterns/SOLID_Principles.md"
 ---
-
 # SOLID Principles
 
 ## TL;DR

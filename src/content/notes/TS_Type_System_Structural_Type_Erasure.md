@@ -7,7 +7,6 @@ aliases: []
 domain: "Engineering"
 sourcePath: "30_Resources/Tech/Language_and_Core/TS_Type_System_Structural_Type_Erasure.md"
 ---
-
 # TS Type System: Structural Typing & Type Erasure
 
 ## TL;DR

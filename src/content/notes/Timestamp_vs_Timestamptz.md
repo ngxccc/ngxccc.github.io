@@ -7,7 +7,6 @@ aliases: ["Timestamp vs Timestamptz", "Múi giờ Database", "Thời gian UTC SQ
 domain: "Engineering"
 sourcePath: "30_Resources/Tech/API_and_Data_Design/Timestamp_vs_Timestamptz.md"
 ---
-
 # Timestamp vs Timestamptz in Database
 
 ## TL;DR

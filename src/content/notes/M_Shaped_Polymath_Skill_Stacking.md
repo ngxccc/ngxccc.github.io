@@ -7,7 +7,6 @@ aliases: []
 domain: "Linguistics & Learning"
 sourcePath: "30_Resources/Methods/Learning_and_Cognition/M_Shaped_Polymath_Skill_Stacking.md"
 ---
-
 # M-Shaped Polymath Skill Stacking Framework
 
 ## TL;DR

@@ -7,7 +7,6 @@ aliases: ["Modular Architecture", "Feature-Based Architecture"]
 domain: "Engineering"
 sourcePath: "30_Resources/Tech/Architecture_and_Patterns/Modular_Monolith_Architecture.md"
 ---
-
 # Modular Monolith Architecture
 
 ## TL;DR

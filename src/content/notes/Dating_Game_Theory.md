@@ -7,7 +7,6 @@ aliases: ["Lý thuyết trò chơi trong Hẹn hò", "Dating Game Theory", "The 
 domain: "Engineering"
 sourcePath: "30_Resources/Concepts/Product_and_Business_Mindsets/Dating_Game_Theory.md"
 ---
-
 # Dating Game Theory
 
 ## TL;DR

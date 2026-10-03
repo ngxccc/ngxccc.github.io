@@ -7,7 +7,6 @@ aliases: []
 domain: "Engineering"
 sourcePath: "30_Resources/Concepts/Computer_Science/Heap_Memory_Size_Classes_and_Alignment.md"
 ---
-
 # Heap Memory Size Classes and Alignment
 
 Tài liệu này là một ghi chép Layer 1 phân tích nguyên lý Khoa học Máy tính cốt lõi về cách các trình cấp phát bộ nhớ Heap (Heap Allocators như TCMalloc, jemalloc, glibc malloc, Go Heap Allocator) phân chia RAM thành các **Size Classes** tiêu chuẩn để phòng chống hiện tượng **Rò rỉ mảnh bộ nhớ ngoài (External Memory Fragmentation)**.

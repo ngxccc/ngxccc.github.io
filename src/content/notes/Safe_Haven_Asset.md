@@ -7,7 +7,6 @@ aliases: ["Safe Haven", "Tài sản trú ẩn", "Vàng"]
 domain: "Economics"
 sourcePath: "30_Resources/Concepts/Finance_and_Economics/Safe_Haven_Asset.md"
 ---
-
 # Safe Haven Asset
 
 ## TL;DR

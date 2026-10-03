@@ -7,7 +7,6 @@ aliases: ["Tech Index", "Tech Map"]
 domain: "Engineering"
 sourcePath: "30_Resources/Tech/000_Tech_MOC.md"
 ---
-
 # Tech Knowledge Map of Content
 
 ## TL;DR
@@ -16,7 +15,7 @@ Bản đồ điều hướng trung tâm cho toàn bộ tri thức kỹ thuật. 
 
 ---
 
-```dataviewjs
+```javascript
 dv.header(2, "Architecture & Patterns");
 dv.table(["Note Title", "Description"],
   dv.pages('"30_Resources/Tech/Architecture_and_Patterns"')

@@ -7,7 +7,6 @@ aliases: []
 domain: "Engineering"
 sourcePath: "30_Resources/Methods/Engineering/Master_Backend_Engineering_SSOT.md"
 ---
-
 # Master Backend Engineering SSOT & Strategy Compass
 
 ## TL;DR

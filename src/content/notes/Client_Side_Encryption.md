@@ -7,7 +7,6 @@ aliases: ["AES Encryption", "Secure Local Storage"]
 domain: "Engineering"
 sourcePath: "30_Resources/Tech/Web_Client_and_Security/Client_Side_Encryption.md"
 ---
-
 # Client-Side Encryption
 
 ## TL;DR

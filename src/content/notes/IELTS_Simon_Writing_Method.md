@@ -7,7 +7,6 @@ aliases: ["IELTS Simon Method", "Phương pháp viết IELTS Simon", "IELTS Simo
 domain: "Linguistics & Learning"
 sourcePath: "30_Resources/Methods/Learning_and_Cognition/IELTS_Simon_Writing_Method.md"
 ---
-
 # IELTS Simon Writing Method
 
 ## TL;DR

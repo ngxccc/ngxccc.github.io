@@ -7,7 +7,6 @@ aliases: []
 domain: "Economics"
 sourcePath: "30_Resources/Methods/Finance/Short_Term_Income_and_Defensive_Saving.md"
 ---
-
 # Short-Term Income Acceleration and Defensive Saving Strategy
 
 ## TL;DR

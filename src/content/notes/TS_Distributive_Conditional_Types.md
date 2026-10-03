@@ -7,7 +7,6 @@ aliases: ["Distributive Conditionals", "Disable Distribution"]
 domain: "Engineering"
 sourcePath: "30_Resources/Tech/Language_and_Core/TS_Distributive_Conditional_Types.md"
 ---
-
 # TS Distributive Conditional Types
 
 ## TL;DR

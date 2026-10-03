@@ -7,7 +7,6 @@ aliases: ["Bun vs Node.js", "JS Runtimes", "Event Loop Runtime", "JSC vs V8"]
 domain: "Engineering"
 sourcePath: "30_Resources/Tech/Frameworks_and_Ecosystem/JS_Runtimes_Bun_vs_NodeJS.md"
 ---
-
 # JS Runtime Architecture: Bun vs. Node.js
 
 ## TL;DR

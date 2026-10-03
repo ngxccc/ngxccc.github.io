@@ -7,7 +7,6 @@ aliases: []
 domain: "Engineering"
 sourcePath: "30_Resources/Tech/Language_and_Core/CSharp_WinForms_Thread_Invoke.md"
 ---
-
 # C# WinForms Thread Safety with Invoke
 
 ## TL;DR

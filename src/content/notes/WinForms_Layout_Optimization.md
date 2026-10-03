@@ -7,7 +7,6 @@ aliases: []
 domain: "Engineering"
 sourcePath: "30_Resources/Tech/Frameworks_and_Ecosystem/WinForms_Layout_Optimization.md"
 ---
-
 # Windows Forms Layout Engine Optimization
 
 ## TL;DR

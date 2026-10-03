@@ -7,7 +7,6 @@ aliases: ["Dấu nháy trong SQL", "SQL Quotes", "Single vs Double Quotes SQL"]
 domain: "Engineering"
 sourcePath: "30_Resources/Tech/API_and_Data_Design/SQL_Quotes.md"
 ---
-
 # SQL Quotes: Identifiers vs String Literals
 
 ## TL;DR

@@ -7,7 +7,6 @@ aliases: []
 domain: "Linguistics & Learning"
 sourcePath: "30_Resources/Methods/Learning_and_Cognition/Problem_Solving_Mental_Model_Pipeline.md"
 ---
-
 # Problem Solving Mental Model Pipeline
 
 ## TL;DR

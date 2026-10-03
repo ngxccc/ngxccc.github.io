@@ -7,7 +7,6 @@ aliases: []
 domain: "Linguistics & Learning"
 sourcePath: "30_Resources/Methods/Learning_and_Cognition/McKinsey_Issue_Tree_Framework.md"
 ---
-
 # McKinsey Issue Tree Framework
 
 ## TL;DR

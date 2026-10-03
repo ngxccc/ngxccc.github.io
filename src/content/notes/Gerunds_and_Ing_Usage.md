@@ -7,7 +7,6 @@ aliases: ["Danh động từ và cách dùng đuôi -ing", "Gerunds and Present 
 domain: "Linguistics & Learning"
 sourcePath: "30_Resources/Concepts/Learning_and_Linguistics/Gerunds_and_Ing_Usage.md"
 ---
-
 # Danh động từ và cách dùng đuôi -ing
 
 ## TL;DR

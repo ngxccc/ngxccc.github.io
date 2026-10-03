@@ -7,7 +7,6 @@ aliases: []
 domain: "Mental Models"
 sourcePath: "30_Resources/Concepts/Psychology_and_Mental_Models/Maslow_Hierarchy_and_Brain_Structure.md"
 ---
-
 # Maslow Hierarchy and Brain Structure Alignment
 
 ## TL;DR

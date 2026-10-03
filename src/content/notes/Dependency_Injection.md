@@ -7,7 +7,6 @@ aliases: ["DI", "Inversion of Control", "IoC"]
 domain: "Engineering"
 sourcePath: "30_Resources/Tech/Architecture_and_Patterns/Dependency_Injection.md"
 ---
-
 # Dependency Injection
 
 ## TL;DR

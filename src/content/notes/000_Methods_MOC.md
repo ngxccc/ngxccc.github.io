@@ -7,7 +7,6 @@ aliases: ["Methods Index", "Actionable Frameworks", "The Toolbox"]
 domain: "Engineering"
 sourcePath: "30_Resources/Methods/000_Methods_MOC.md"
 ---
-
 # Methods & Frameworks MOC
 
 ## TL;DR
@@ -16,7 +15,7 @@ Bản đồ quy tụ các quy trình, thuật toán và framework thực chiến
 
 ---
 
-```dataviewjs
+```javascript
 dv.header(2, "1. Engineering & Execution");
 dv.table(["Note Title", "Description"],
   dv.pages('"30_Resources/Methods/Engineering"')

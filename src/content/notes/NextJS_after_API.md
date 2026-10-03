@@ -7,7 +7,6 @@ aliases: ["Next.js after()", "next/server after()", "after()"]
 domain: "Engineering"
 sourcePath: "30_Resources/Tech/Frameworks_and_Ecosystem/NextJS_after_API.md"
 ---
-
 # Next.js after() API
 
 ## TL;DR
@@ -63,7 +62,10 @@ export async function POST(request: Request) {
       processedCount: pendingEvents.length,
     });
   } catch (error) {
-    return NextResponse.json({ success: false, error: "Internal Error" }, { status: 500 });
+    return NextResponse.json(
+      { success: false, error: "Internal Error" },
+      { status: 500 },
+    );
   }
 }
 ```
@@ -90,7 +92,8 @@ after(async () => {
 export default async function Page() {
   // 1. Đọc dữ liệu trước ( Rendering Lifecycle )
   const userAgent = (await headers()).get("user-agent") || "unknown";
-  const sessionCookie = (await cookies()).get("session-id")?.value || "anonymous";
+  const sessionCookie =
+    (await cookies()).get("session-id")?.value || "anonymous";
 
   // 2. Truyền vào after qua closure
   after(() => {

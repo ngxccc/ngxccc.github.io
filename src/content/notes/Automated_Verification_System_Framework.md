@@ -7,7 +7,6 @@ aliases: []
 domain: "Engineering"
 sourcePath: "30_Resources/Methods/Engineering/Automated_Verification_System_Framework.md"
 ---
-
 # Automated Verification System Framework
 
 ## TL;DR

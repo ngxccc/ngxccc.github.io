@@ -7,7 +7,6 @@ aliases: ["Phương pháp phân rã công việc WBS", "WBS Best Practices"]
 domain: "Engineering"
 sourcePath: "30_Resources/Methods/Engineering/WBS_Best_Practices.md"
 ---
-
 # ️ Phương Pháp Phân Rã Công Việc WBS
 
 ## TL;DR

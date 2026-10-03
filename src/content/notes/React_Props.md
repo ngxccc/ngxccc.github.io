@@ -7,7 +7,6 @@ aliases: ["React Props", "Thuộc tính trong React"]
 domain: "Engineering"
 sourcePath: "30_Resources/Tech/Frameworks_and_Ecosystem/React_Props.md"
 ---
-
 # React Props
 
 ## TL;DR

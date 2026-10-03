@@ -7,7 +7,6 @@ aliases: []
 domain: "Engineering"
 sourcePath: "30_Resources/Methods/Engineering/Grafana_K6_Mastery_80_20_Roadmap.md"
 ---
-
 # Nghiên cứu Grafana k6: Tiêu chuẩn Nắm chắc và Phương pháp học 80/20
 
 ## TL;DR

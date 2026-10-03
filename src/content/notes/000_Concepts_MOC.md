@@ -7,7 +7,6 @@ aliases: ["Concepts Index", "Concepts Map"]
 domain: "Engineering"
 sourcePath: "30_Resources/Concepts/000_Concepts_MOC.md"
 ---
-
 # Concepts Knowledge Map of Content
 
 ## TL;DR
@@ -16,7 +15,7 @@ Bản đồ điều hướng trung tâm cho toàn bộ tri thức khái niệm l
 
 ---
 
-```dataviewjs
+```javascript
 dv.header(2, "Computer Science & Fundamentals");
 dv.table(["Note Title", "Description"],
   dv.pages('"30_Resources/Concepts/Computer_Science"')

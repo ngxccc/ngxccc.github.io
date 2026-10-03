@@ -7,7 +7,6 @@ aliases: ["Lỗi nhầm lẫn sự cố", "Error Defect Failure"]
 domain: "Engineering"
 sourcePath: "30_Resources/Concepts/Software_Testing/Error_Defect_Failure.md"
 ---
-
 # Phân biệt Error, Defect và Failure
 
 ## TL;DR

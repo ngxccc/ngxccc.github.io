@@ -7,7 +7,6 @@ aliases: []
 domain: "Engineering"
 sourcePath: "30_Resources/Tech/Frameworks_and_Ecosystem/React_Component_Declaration_Standards.md"
 ---
-
 # React Component Declaration Standards
 
 ## TL;DR
@@ -88,9 +87,11 @@ import { forwardRef } from "react";
 
 interface InputProps extends React.InputHTMLAttributes<HTMLInputElement> {}
 
-export const CustomInput = forwardRef<HTMLInputElement, InputProps>((props, ref) => {
-  return <input ref={ref} {...props} className="border p-2" />;
-});
+export const CustomInput = forwardRef<HTMLInputElement, InputProps>(
+  (props, ref) => {
+    return <input ref={ref} {...props} className="border p-2" />;
+  },
+);
 
 // Khôi phục định danh để tránh lỗi Anonymous trong DevTools
 CustomInput.displayName = "CustomInput";

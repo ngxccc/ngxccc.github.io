@@ -7,7 +7,6 @@ aliases: []
 domain: "Linguistics & Learning"
 sourcePath: "30_Resources/Methods/Learning_and_Cognition/First_Principles_Thinking.md"
 ---
-
 # First Principles Thinking
 
 ## TL;DR

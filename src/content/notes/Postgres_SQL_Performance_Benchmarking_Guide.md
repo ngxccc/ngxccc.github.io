@@ -7,7 +7,6 @@ aliases: []
 domain: "Engineering"
 sourcePath: "30_Resources/Methods/Engineering/Postgres_SQL_Performance_Benchmarking_Guide.md"
 ---
-
 # Postgres SQL Performance & Benchmarking Guide
 
 ## TL;DR

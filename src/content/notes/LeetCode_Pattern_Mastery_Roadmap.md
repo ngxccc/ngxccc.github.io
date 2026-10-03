@@ -7,7 +7,6 @@ aliases: []
 domain: "Engineering"
 sourcePath: "30_Resources/Methods/Engineering/LeetCode_Pattern_Mastery_Roadmap.md"
 ---
-
 # LeetCode Pattern Mastery Roadmap
 
 ## TL;DR

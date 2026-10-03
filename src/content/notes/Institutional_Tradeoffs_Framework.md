@@ -7,7 +7,6 @@ aliases: []
 domain: "Mental Models"
 sourcePath: "30_Resources/Concepts/Psychology_and_Mental_Models/Institutional_Tradeoffs_Framework.md"
 ---
-
 # Institutional Tradeoffs Framework
 
 ## TL;DR

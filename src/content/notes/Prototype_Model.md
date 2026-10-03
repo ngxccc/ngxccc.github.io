@@ -7,7 +7,6 @@ aliases: ["Quy trình bản mẫu", "Mô hình bản mẫu", "Prototype Model", 
 domain: "Engineering"
 sourcePath: "30_Resources/Methods/Engineering/Prototype_Model.md"
 ---
-
 # Quy Trình Phát Triển Phần Mềm Theo Mô Hình Bản Mẫu
 
 ## TL;DR

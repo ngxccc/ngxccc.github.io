@@ -7,7 +7,6 @@ aliases: []
 domain: "Engineering"
 sourcePath: "30_Resources/Tech/API_and_Data_Design/Partial_Index.md"
 ---
-
 # Partial Index
 
 ## TL;DR

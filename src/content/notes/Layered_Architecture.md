@@ -7,7 +7,6 @@ aliases: ["N-Tier Architecture", "Monolithic Architecture"]
 domain: "Engineering"
 sourcePath: "30_Resources/Tech/Architecture_and_Patterns/Layered_Architecture.md"
 ---
-
 # Layered Architecture
 
 ## TL;DR

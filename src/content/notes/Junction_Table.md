@@ -7,7 +7,6 @@ aliases: []
 domain: "Engineering"
 sourcePath: "30_Resources/Tech/API_and_Data_Design/Junction_Table.md"
 ---
-
 # Junction Table & Composite Primary Keys
 
 ## TL;DR

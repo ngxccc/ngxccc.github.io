@@ -7,7 +7,6 @@ aliases: ["Abstract Syntax Tree", "Custom Rules"]
 domain: "Engineering"
 sourcePath: "30_Resources/Tech/Language_and_Core/AST_ESLint.md"
 ---
-
 # Phân tích AST và Custom ESLint Rules
 
 ## TL;DR

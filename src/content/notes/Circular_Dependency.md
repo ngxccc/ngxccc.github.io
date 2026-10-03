@@ -7,7 +7,6 @@ aliases: []
 domain: "Engineering"
 sourcePath: "30_Resources/Tech/Architecture_and_Patterns/Circular_Dependency.md"
 ---
-
 # Circular Dependency
 
 ## TL;DR

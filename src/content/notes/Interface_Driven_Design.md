@@ -7,7 +7,6 @@ aliases: ["IDD", "Contract-First Design", "Contract-Driven Development"]
 domain: "Engineering"
 sourcePath: "30_Resources/Tech/Architecture_and_Patterns/Interface_Driven_Design.md"
 ---
-
 # Interface-Driven Design
 
 ## TL;DR

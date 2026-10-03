@@ -7,7 +7,6 @@ aliases: ["Mô hình kỹ năng chữ T", "Skill Stacking Strategy", "T-Shaped P
 domain: "Mental Models"
 sourcePath: "30_Resources/Concepts/Psychology_and_Mental_Models/T_Shaped_Skills_Model.md"
 ---
-
 # Mô hình Kỹ năng Chữ T và Chiến lược Xếp chồng Kỹ năng
 
 ## TL;DR

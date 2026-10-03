@@ -7,7 +7,6 @@ aliases: []
 domain: "Engineering"
 sourcePath: "30_Resources/Methods/Engineering/System_Design_Architecture_Roadmap.md"
 ---
-
 # System Design Architecture Roadmap
 
 ## TL;DR

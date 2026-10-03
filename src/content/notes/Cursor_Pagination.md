@@ -7,7 +7,6 @@ aliases: ["Cursor Pagination", "Offset Pagination"]
 domain: "Engineering"
 sourcePath: "30_Resources/Tech/API_and_Data_Design/Cursor_Pagination.md"
 ---
-
 # REST API Pagination & Filtering
 
 ## TL;DR
@@ -56,7 +55,9 @@ export const getProducts = async (req: Request, res: Response) => {
   res.json({
     data,
     meta: {
-      next_cursor: hasNextPage ? encodeCursor(data.at(-1).createdAt, data.at(-1).id) : null,
+      next_cursor: hasNextPage
+        ? encodeCursor(data.at(-1).createdAt, data.at(-1).id)
+        : null,
     },
   });
 };

@@ -7,7 +7,6 @@ aliases: ["API Versioning", "Backward Compatibility"]
 domain: "Engineering"
 sourcePath: "30_Resources/Tech/API_and_Data_Design/API_Versioning_Strategies.md"
 ---
-
 # API Versioning Strategies
 
 ## TL;DR

@@ -7,7 +7,6 @@ aliases: []
 domain: "Engineering"
 sourcePath: "30_Resources/Concepts/Computer_Science/MQTT_Broker_Architecture.md"
 ---
-
 # MQTT Broker Architecture
 
 ## TL;DR

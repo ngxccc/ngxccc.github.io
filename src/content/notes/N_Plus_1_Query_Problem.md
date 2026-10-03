@@ -7,7 +7,6 @@ aliases: ["Vấn đề truy vấn N+1", "N+1 Query Problem", "Solution for N+1 S
 domain: "Engineering"
 sourcePath: "30_Resources/Tech/API_and_Data_Design/N_Plus_1_Query_Problem.md"
 ---
-
 # N+1 Query Problem
 
 ## TL;DR

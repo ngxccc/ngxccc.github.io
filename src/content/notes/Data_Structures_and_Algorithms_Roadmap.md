@@ -7,7 +7,6 @@ aliases: []
 domain: "Engineering"
 sourcePath: "30_Resources/Methods/Engineering/Data_Structures_and_Algorithms_Roadmap.md"
 ---
-
 # Data Structures and Algorithms Roadmap
 
 ## TL;DR

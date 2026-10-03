@@ -7,7 +7,6 @@ aliases: []
 domain: "Engineering"
 sourcePath: "30_Resources/Methods/Engineering/Docker_80_20_Mastery_Cheatsheet.md"
 ---
-
 # Docker 80/20 Mastery Cheatsheet
 
 ## TL;DR

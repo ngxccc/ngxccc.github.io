@@ -39,6 +39,14 @@ body {
   font-variant-numeric: lining-nums;
   background-color: var(--bg-color);
   color: var(--text-color);
+  transition: max-width 0.2s ease;
+}
+
+@media (min-width: 1080px) {
+  body:has(.note-page-wrapper),
+  body:has(.graph-page-container) {
+    max-width: 76rem;
+  }
 }
 
 /* Base Typography */

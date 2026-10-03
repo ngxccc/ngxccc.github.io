@@ -7,7 +7,6 @@ aliases: ["Quy trình Waterfall", "Mô hình thác nước", "Waterfall Model"]
 domain: "Engineering"
 sourcePath: "30_Resources/Methods/Engineering/Waterfall.md"
 ---
-
 # Quy Trình Phát Triển Phần Mềm Theo Mô Hình Waterfall
 
 ## TL;DR

@@ -7,7 +7,6 @@ aliases: []
 domain: "Engineering"
 sourcePath: "30_Resources/Tech/Architecture_and_Patterns/Newsfeed_Architecture_Fanout.md"
 ---
-
 # Newsfeed System Design: Hybrid Fan-out Architecture
 
 ## TL;DR

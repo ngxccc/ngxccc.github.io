@@ -7,7 +7,6 @@ aliases: []
 domain: "Engineering"
 sourcePath: "30_Resources/Tech/Language_and_Core/Dotnet_10_and_11_New_Features.md"
 ---
-
 # .NET 10 & .NET 11: So Sánh Tính Năng Cốt Lõi So Với .NET 9
 
 ## TL;DR

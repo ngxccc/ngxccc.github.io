@@ -7,7 +7,6 @@ aliases: []
 domain: "Linguistics & Learning"
 sourcePath: "30_Resources/Methods/Learning_and_Cognition/Project_Anchored_Technical_Mastery.md"
 ---
-
 # Project-Anchored Technical Mastery
 
 ## TL;DR

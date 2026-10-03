@@ -1,13 +1,12 @@
 ---
 title: "Selective Trust Framework"
-description: 'Selective Trust Framework (Khung tư duy Tín có chọn lọc) là mô hình tâm lý và rèn luyện ranh giới cá nhân dành cho người coi trọng chữ tín. Mô hình giúp loại bỏ bẫy "Sự suy đoán ngây thơ" (Naïve Re...'
+description: "Selective Trust Framework (Khung tư duy Tín có chọn lọc) là mô hình tâm lý và rèn luyện ranh giới cá nhân dành cho người coi trọng chữ tín. Mô hình giúp loại bỏ bẫy \"Sự suy đoán ngây thơ\" (Naïve Re..."
 date: "2026-07-31"
 tags: ["type/concept", "status/permanent"]
 aliases: []
 domain: "Engineering"
 sourcePath: "30_Resources/Concepts/Negotiation_and_Communication/Selective_Trust_Framework.md"
 ---
-
 # Selective Trust Framework
 
 ## TL;DR

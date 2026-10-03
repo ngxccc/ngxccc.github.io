@@ -7,7 +7,6 @@ aliases: []
 domain: "Engineering"
 sourcePath: "30_Resources/Tech/Architecture_and_Patterns/Unified_Fullstack_vs_Split_Architecture.md"
 ---
-
 # Unified Fullstack Architecture vs. Split Repository Architecture
 
 ## TL;DR

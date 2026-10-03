@@ -7,7 +7,6 @@ aliases: ["Evan Wallace Path", "Figma CTO Career", "esbuild Creator"]
 domain: "Linguistics & Learning"
 sourcePath: "30_Resources/Concepts/Learning_and_Linguistics/Evan_Wallace_Path.md"
 ---
-
 # Evan Wallace Career Path
 
 ## TL;DR

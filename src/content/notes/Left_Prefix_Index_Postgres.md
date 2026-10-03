@@ -7,7 +7,6 @@ aliases: []
 domain: "Engineering"
 sourcePath: "30_Resources/Tech/API_and_Data_Design/Left_Prefix_Index_Postgres.md"
 ---
-
 # Left-Prefix Index Principle in PostgreSQL
 
 ## TL;DR

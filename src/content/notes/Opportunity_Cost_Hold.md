@@ -7,7 +7,6 @@ aliases: ["Chi phí cơ hội", "Sunk Cost Fallacy", "Loss Aversion"]
 domain: "Economics"
 sourcePath: "30_Resources/Concepts/Finance_and_Economics/Opportunity_Cost_Hold.md"
 ---
-
 # Opportunity Cost & Holding Psychology
 
 ## TL;DR

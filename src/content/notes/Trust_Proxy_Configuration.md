@@ -7,7 +7,6 @@ aliases: []
 domain: "Engineering"
 sourcePath: "30_Resources/Tech/Web_Client_and_Security/Trust_Proxy_Configuration.md"
 ---
-
 # Cấu Hình Trust Proxy Trong Express & NestJS
 
 ## TL;DR

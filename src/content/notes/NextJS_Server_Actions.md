@@ -7,7 +7,6 @@ aliases: []
 domain: "Engineering"
 sourcePath: "30_Resources/Tech/Frameworks_and_Ecosystem/NextJS_Server_Actions.md"
 ---
-
 # Next.js Server Actions & React 19 Integration
 
 ## TL;DR

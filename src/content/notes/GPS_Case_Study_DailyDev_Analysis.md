@@ -7,7 +7,6 @@ aliases: []
 domain: "Engineering"
 sourcePath: "30_Resources/Concepts/Academic_and_Case_Studies/GPS_Case_Study_DailyDev_Analysis.md"
 ---
-
 # GPS Case Study: DailyDev Analysis Thread
 
 ## TL;DR

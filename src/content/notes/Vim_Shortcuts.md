@@ -7,7 +7,6 @@ aliases: ["Phím tắt Vim", "Vim Shortcuts Cheat Sheet", "Phím tắt nâng cao
 domain: "Engineering"
 sourcePath: "30_Resources/Methods/Engineering/Vim_Shortcuts.md"
 ---
-
 # Vim Advanced Shortcuts & Commands
 
 ## TL;DR

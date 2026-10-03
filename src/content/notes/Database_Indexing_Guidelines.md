@@ -7,7 +7,6 @@ aliases: []
 domain: "Engineering"
 sourcePath: "30_Resources/Tech/API_and_Data_Design/Database_Indexing_Guidelines.md"
 ---
-
 # Database Indexing Guidelines
 
 ## TL;DR
@@ -78,7 +77,11 @@ export const orders = snakeCase.table("order", {
 // Thiết lập Index tối ưu:
 export const ordersIndexes = (table) => [
   // Composite Index: Dùng cho cả (userId), (userId, status), hoặc phân trang theo createdAt
-  index("order_user_status_created_idx").on(table.userId, table.status, table.createdAt),
+  index("order_user_status_created_idx").on(
+    table.userId,
+    table.status,
+    table.createdAt,
+  ),
 
   // Partial Index: Tối ưu cho dashboard analytics tính toán doanh thu (loại bỏ đơn hủy)
   index("order_active_metrics_idx")

@@ -7,7 +7,6 @@ aliases: []
 domain: "Mental Models"
 sourcePath: "30_Resources/Concepts/Psychology_and_Mental_Models/Asymmetric_Risk_Reward.md"
 ---
-
 # Asymmetric Risk Reward
 
 ## TL;DR

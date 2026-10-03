@@ -7,7 +7,6 @@ aliases: []
 domain: "Linguistics & Learning"
 sourcePath: "30_Resources/Concepts/Learning_and_Linguistics/Herbert_Simon_Learning_Method.md"
 ---
-
 # Herbert Simon Learning Method
 
 ## TL;DR

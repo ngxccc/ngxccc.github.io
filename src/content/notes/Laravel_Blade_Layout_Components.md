@@ -7,7 +7,6 @@ aliases: ["Blade Components", "Blade Layouts", "Kế thừa Layout Laravel", "x-
 domain: "Engineering"
 sourcePath: "30_Resources/Tech/Frameworks_and_Ecosystem/Laravel_Blade_Layout_Components.md"
 ---
-
 # Laravel Blade Layout Components
 
 ## TL;DR

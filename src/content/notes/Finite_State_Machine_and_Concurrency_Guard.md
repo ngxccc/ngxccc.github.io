@@ -7,7 +7,6 @@ aliases: []
 domain: "Engineering"
 sourcePath: "30_Resources/Concepts/Computer_Science/Finite_State_Machine_and_Concurrency_Guard.md"
 ---
-
 # Finite State Machine and Concurrency Guard
 
 ## TL;DR
