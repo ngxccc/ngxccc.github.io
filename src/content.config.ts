@@ -13,4 +13,17 @@ const posts = defineCollection({
   }),
 });
 
-export const collections = { posts };
+const notes = defineCollection({
+  loader: glob({ pattern: "**/*.{md,mdx}", base: "./src/content/notes" }),
+  schema: z.object({
+    title: z.string(),
+    description: z.string().optional(),
+    date: z.string().optional(),
+    tags: z.array(z.string()).default([]),
+    aliases: z.array(z.string()).default([]),
+    domain: z.string().default("Engineering"),
+    sourcePath: z.string().optional(),
+  }),
+});
+
+export const collections = { posts, notes };

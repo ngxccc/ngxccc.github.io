@@ -1,0 +1,155 @@
+---
+interface HeadingItem {
+  depth: number;
+  slug: string;
+  text: string;
+}
+
+interface Props {
+  headings: HeadingItem[];
+}
+
+const { headings } = Astro.props;
+// Chỉ lấy heading cấp 2 và 3 để giữ TOC sạch sẽ, tối giản
+const filteredHeadings = headings.filter((h) => h.depth >= 2 && h.depth <= 3);
+---
+
+{
+  filteredHeadings.length > 0 && (
+    <aside class="toc-sidebar">
+      <div class="toc-container">
+        <h3 class="toc-title">Table of contents</h3>
+        <nav class="toc-nav">
+          <ul class="toc-list">
+            {filteredHeadings.map((h) => (
+              <li class={`toc-item depth-${h.depth}`}>
+                <a href={`#${h.slug}`} class="toc-link" data-slug={h.slug}>
+                  <span class="toc-bullet">* </span>
+                  <span class="toc-text">{h.text}</span>
+                </a>
+              </li>
+            ))}
+          </ul>
+        </nav>
+      </div>
+    </aside>
+  )
+}
+
+<script>
+  // Active highlight on scroll for TOC items
+  document.addEventListener("DOMContentLoaded", () => {
+    const observer = new IntersectionObserver(
+      (entries) => {
+        for (const entry of entries) {
+          if (entry.isIntersecting) {
+            const id = entry.target.getAttribute("id");
+            if (!id) continue;
+
+            const links = document.querySelectorAll(".toc-link");
+            for (const link of links) {
+              if (link.getAttribute("data-slug") === id) {
+                link.classList.add("active");
+              } else {
+                link.classList.remove("active");
+              }
+            }
+          }
+        }
+      },
+      {
+        rootMargin: "0px 0px -70% 0px",
+        threshold: 0.1,
+      }
+    );
+
+    const headings = document.querySelectorAll(
+      ".note-content h2, .note-content h3"
+    );
+    for (const heading of headings) {
+      observer.observe(heading);
+    }
+  });
+</script>
+
+<style>
+  .toc-sidebar {
+    width: 260px;
+    flex-shrink: 0;
+    display: none;
+  }
+
+  @media (min-width: 1080px) {
+    .toc-sidebar {
+      display: block;
+    }
+  }
+
+  .toc-container {
+    position: sticky;
+    top: 2rem;
+    max-height: calc(100vh - 4rem);
+    overflow-y: auto;
+    padding-left: 1.5rem;
+    font-family: "JetBrains Mono", Consolas, Menlo, monospace;
+    font-size: 0.85rem;
+    border-left: 1px dashed var(--border-dotted, #3d3d3d);
+  }
+
+  .toc-title {
+    font-family: "JetBrains Mono", Consolas, Menlo, monospace;
+    font-size: 0.88rem;
+    font-weight: 500;
+    color: var(--subheading-color, #888888);
+    margin-top: 0;
+    margin-bottom: 1.25rem;
+    text-transform: none;
+    letter-spacing: 0.02em;
+  }
+
+  .toc-list {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    display: flex;
+    flex-direction: column;
+    gap: 0.6rem;
+  }
+
+  .toc-item.depth-3 {
+    padding-left: 1rem;
+  }
+
+  .toc-link {
+    color: var(--text-color, #dddddd);
+    text-decoration: none;
+    display: inline-flex;
+    align-items: flex-start;
+    line-height: 1.45;
+    transition: color 0.15s ease;
+  }
+
+  .toc-bullet {
+    color: var(--subheading-color, #888888);
+    margin-right: 0.35rem;
+    user-select: none;
+  }
+
+  .toc-link:hover {
+    color: #ff5500;
+  }
+
+  .toc-link:hover .toc-bullet {
+    color: #ff5500;
+  }
+
+  .toc-link.active {
+    color: #ffffff;
+    font-weight: 600;
+  }
+
+  .toc-link.active .toc-bullet {
+    color: #ff5500;
+    font-weight: bold;
+  }
+</style>

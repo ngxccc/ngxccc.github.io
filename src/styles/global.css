@@ -34,8 +34,8 @@ body {
   padding: 0.5rem 1rem 0.5rem 1rem;
   max-width: 48rem;
   font-family:
-    "DejaVu Serif", "Bitstream Vera Serif", Constantia, Georgia,
-    "Lucida Bright", Lucidabright, "Lucida Serif", Lucida, serif;
+    "DejaVu Serif", "Bitstream Vera Serif", Constantia, Georgia, "Lucida Bright", Lucidabright,
+    "Lucida Serif", Lucida, serif;
   font-variant-numeric: lining-nums;
   background-color: var(--bg-color);
   color: var(--text-color);
@@ -49,9 +49,9 @@ h4,
 h5,
 h6 {
   font-family:
-    "DejaVu Sans Condensed", "Nimbus Sans L", Frutiger, "Frutiger Linotype",
-    Univers, Calibri, "Gill Sans", "Gill Sans MT", "Myriad Pro", Myriad, Tahoma,
-    Geneva, "Helvetica Neue", Helvetica, Arial, sans-serif;
+    "DejaVu Sans Condensed", "Nimbus Sans L", Frutiger, "Frutiger Linotype", Univers, Calibri,
+    "Gill Sans", "Gill Sans MT", "Myriad Pro", Myriad, Tahoma, Geneva, "Helvetica Neue", Helvetica,
+    Arial, sans-serif;
   font-weight: normal;
   line-height: 1.2;
   margin-top: 1.8rem;
@@ -154,8 +154,7 @@ nav#navigation a.active {
 /* Code & Pre Blocks with Ligatures */
 code {
   font-size: 0.9em;
-  font-family:
-    "JetBrains Mono", "Fira Code", Consolas, "DejaVu Sans Mono", monospace;
+  font-family: "JetBrains Mono", "Fira Code", Consolas, "DejaVu Sans Mono", monospace;
   font-variant-ligatures: normal;
   font-feature-settings: "calt" 1;
   background-color: var(--code-bg);
@@ -200,8 +199,7 @@ pre:hover[data-language]::before {
 }
 
 pre code {
-  font-family:
-    "JetBrains Mono", "Fira Code", Consolas, "DejaVu Sans Mono", monospace;
+  font-family: "JetBrains Mono", "Fira Code", Consolas, "DejaVu Sans Mono", monospace;
   font-variant-ligatures: normal;
   font-feature-settings: "calt" 1;
   background-color: transparent;

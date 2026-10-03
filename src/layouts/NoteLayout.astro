@@ -1,0 +1,281 @@
+---
+import BaseLayout from "./BaseLayout.astro";
+import TableOfContents from "../components/TableOfContents.astro";
+
+interface HeadingItem {
+  depth: number;
+  slug: string;
+  text: string;
+}
+
+interface Props {
+  title: string;
+  description?: string | undefined;
+  date?: string | undefined;
+  domain?: string | undefined;
+  tags?: string[] | undefined;
+  headings: HeadingItem[];
+}
+
+const {
+  title,
+  description,
+  date,
+  domain = "Engineering",
+  tags = [],
+  headings,
+} = Astro.props;
+
+function formatNoteDate(dateStr?: string) {
+  if (!dateStr) return "";
+  const d = new Date(dateStr);
+  const options: Intl.DateTimeFormatOptions = {
+    year: "numeric",
+    month: "long",
+    day: "numeric",
+    timeZone: "UTC",
+  };
+  return d.toLocaleDateString("en-US", options);
+}
+---
+
+<BaseLayout title={`${title} — Second Brain`} description={description}>
+  <div class="note-page-wrapper">
+    <article class="note-article">
+      <nav class="breadcrumb-nav">
+        <a href="/notes" class="back-link">&lt;- Second Brain</a>
+        <span class="domain-tag">[{domain}]</span>
+      </nav>
+
+      <header class="terminal-note-header">
+        <div class="title-bar-wrap">
+          <div class="accent-bar"></div>
+          <h1 class="note-title">{title}</h1>
+        </div>
+
+        <div class="note-meta">
+          <span class="meta-author">Tran Van Ngoc</span>
+          {
+            date && (
+              <>
+                <span class="meta-divider">|</span>
+                <time class="meta-date">{formatNoteDate(date)}</time>
+              </>
+            )
+          }
+        </div>
+
+        {
+          tags.length > 0 && (
+            <div class="note-tags">
+              {tags.map((t) => (
+                <span class="tag-badge">#{t}</span>
+              ))}
+            </div>
+          )
+        }
+      </header>
+
+      <div class="note-content">
+        <slot />
+      </div>
+
+      <nav class="note-bottom-nav">
+        <a href="/notes" class="back-link">&lt;- Back to Second Brain</a>
+        <a href="/notes/graph" class="graph-link">Explore Graph View -&gt;</a>
+      </nav>
+    </article>
+
+    <TableOfContents headings={headings} />
+  </div>
+</BaseLayout>
+
+<style>
+  .note-page-wrapper {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    gap: 3rem;
+    position: relative;
+    max-width: 76rem;
+    margin: 0 auto;
+  }
+
+  .note-article {
+    flex: 1;
+    min-width: 0;
+    max-width: 48rem;
+  }
+
+  .breadcrumb-nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 2rem;
+    font-family: "JetBrains Mono", Consolas, Menlo, monospace;
+    font-size: 0.85rem;
+  }
+
+  .back-link {
+    color: var(--subheading-color, #888888);
+    text-decoration: none;
+    transition: color 0.15s ease;
+  }
+
+  .back-link:hover {
+    color: #ff5500;
+  }
+
+  .domain-tag {
+    color: #ff5500;
+    font-weight: 500;
+  }
+
+  .terminal-note-header {
+    margin-bottom: 2.5rem;
+    padding-bottom: 1.5rem;
+    border-bottom: 1px dashed var(--border-dotted, #3d3d3d);
+  }
+
+  .title-bar-wrap {
+    display: flex;
+    align-items: flex-start;
+    gap: 0.75rem;
+    margin-bottom: 0.75rem;
+  }
+
+  .accent-bar {
+    width: 4px;
+    align-self: stretch;
+    background-color: #ff5500;
+    border-radius: 2px;
+    flex-shrink: 0;
+  }
+
+  .note-title {
+    font-family: "JetBrains Mono", Consolas, Menlo, monospace;
+    font-size: 1.85rem;
+    font-weight: 700;
+    color: var(--heading-color, #ffffff);
+    margin: 0;
+    line-height: 1.25;
+    letter-spacing: -0.01em;
+  }
+
+  .note-meta {
+    display: flex;
+    align-items: center;
+    gap: 0.75rem;
+    font-family: "JetBrains Mono", Consolas, Menlo, monospace;
+    font-size: 0.85rem;
+    color: var(--subheading-color, #888888);
+    margin-top: 0.5rem;
+    padding-left: 1rem;
+  }
+
+  .meta-author {
+    color: #cccccc;
+  }
+
+  .meta-divider {
+    color: #555555;
+  }
+
+  .note-tags {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 0.5rem;
+    margin-top: 1rem;
+    padding-left: 1rem;
+  }
+
+  .tag-badge {
+    font-family: "JetBrains Mono", Consolas, Menlo, monospace;
+    font-size: 0.75rem;
+    color: #aaaaaa;
+    background-color: #1a1a1a;
+    padding: 0.15rem 0.5rem;
+    border-radius: 3px;
+    border: 1px solid #2a2a2a;
+  }
+
+  /* Note content typography matching terminal / clean hacker aesthetic */
+  .note-content {
+    line-height: 1.68;
+    color: var(--text-color, #dddddd);
+  }
+
+  .note-content :global(h2) {
+    font-family: "JetBrains Mono", Consolas, Menlo, monospace;
+    font-size: 1.35rem;
+    color: #ffffff;
+    margin-top: 2.75rem;
+    margin-bottom: 1rem;
+    padding-bottom: 0.4rem;
+    border-bottom: 1px solid #262626;
+  }
+
+  .note-content :global(h3) {
+    font-family: "JetBrains Mono", Consolas, Menlo, monospace;
+    font-size: 1.1rem;
+    color: #eeeeee;
+    margin-top: 2rem;
+    margin-bottom: 0.75rem;
+  }
+
+  .note-content :global(code) {
+    font-family: "JetBrains Mono", Consolas, Menlo, monospace;
+    font-size: 0.88em;
+    background-color: #1a1a1a;
+    padding: 0.15em 0.35em;
+    border-radius: 3px;
+    color: #ffaa66;
+  }
+
+  .note-content :global(pre) {
+    background-color: #141414 !important;
+    border: 1px solid #282828;
+    padding: 1rem;
+    border-radius: 4px;
+    overflow-x: auto;
+  }
+
+  .note-content :global(pre code) {
+    background: transparent;
+    padding: 0;
+    color: inherit;
+  }
+
+  .note-content :global(a) {
+    color: #ffffff;
+    text-decoration: underline;
+    text-decoration-color: #ff5500;
+    text-underline-offset: 3px;
+    transition: all 0.15s ease;
+  }
+
+  .note-content :global(a:hover) {
+    color: #ff5500;
+  }
+
+  .note-bottom-nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: 4rem;
+    padding-top: 1.5rem;
+    border-top: 1px dashed var(--border-dotted, #3d3d3d);
+    font-family: "JetBrains Mono", Consolas, Menlo, monospace;
+    font-size: 0.88rem;
+  }
+
+  .graph-link {
+    color: #ff5500;
+    text-decoration: none;
+    font-weight: 500;
+  }
+
+  .graph-link:hover {
+    text-decoration: underline;
+  }
+</style>

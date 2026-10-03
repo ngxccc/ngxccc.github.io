@@ -1,0 +1,267 @@
+---
+import BaseLayout from "../../layouts/BaseLayout.astro";
+import { getCollection } from "astro:content";
+
+const notes = await getCollection("notes");
+
+// Group notes by domain
+const groupedNotes = notes.reduce(
+  (acc, note) => {
+    const domain = note.data.domain || "Engineering";
+    if (!acc[domain]) acc[domain] = [];
+    acc[domain].push(note);
+    return acc;
+  },
+  {} as Record<string, typeof notes>
+);
+
+// Sort notes alphabetically by title within each domain
+for (const domain of Object.keys(groupedNotes)) {
+  groupedNotes[domain].sort((a, b) => a.data.title.localeCompare(b.data.title));
+}
+
+const totalNotes = notes.length;
+---
+
+<BaseLayout
+  title="Second Brain — Tran Van Ngoc"
+  description="Digital garden and atomic knowledge base on Software Engineering, Mental Models, and Economics."
+>
+  <div class="brain-index-container">
+    <header class="brain-header">
+      <div class="title-wrap">
+        <div class="accent-bar"></div>
+        <h1 class="page-title">Second Brain</h1>
+      </div>
+      <p class="tagline">
+        Networked atomic notes on backend architecture, systems programming,
+        mental models, and economics.
+      </p>
+
+      <div class="brain-actions">
+        <span class="stat-badge">{totalNotes} notes published</span>
+        <a href="/notes/graph" class="graph-btn">&gt; Explore Knowledge Graph</a>
+      </div>
+    </header>
+
+    <div class="search-box-wrap">
+      <input
+        type="text"
+        id="note-search"
+        placeholder="Type to filter notes or press /..."
+        autocomplete="off"
+      />
+    </div>
+
+    <div class="domains-container">
+      {
+        Object.entries(groupedNotes).map(([domain, domainNotes]) => (
+          <section class="domain-section" data-domain={domain}>
+            <h2 class="domain-heading">
+              <span class="domain-prefix">#</span> {domain}
+              <span class="count-pill">({domainNotes.length})</span>
+            </h2>
+            <ul class="notes-list">
+              {domainNotes.map((note) => {
+                const slug = note.id.replace(/\.(md|mdx)$/, "");
+                return (
+                  <li class="note-item" data-title={note.data.title.toLowerCase()}>
+                    <a href={`/notes/${slug}`} class="note-link">
+                      <span class="note-bullet">*</span>
+                      <span class="note-item-title">{note.data.title}</span>
+                    </a>
+                  </li>
+                );
+              })}
+            </ul>
+          </section>
+        ))
+      }
+    </div>
+  </div>
+</BaseLayout>
+
+<script>
+  // Simple instant search filter
+  const searchInput = document.getElementById("note-search") as HTMLInputElement | null;
+  const noteItems = document.querySelectorAll<HTMLElement>(".note-item");
+  const domainSections = document.querySelectorAll<HTMLElement>(".domain-section");
+
+  searchInput?.addEventListener("input", (e) => {
+    const query = (e.target as HTMLInputElement).value.toLowerCase().trim();
+
+    for (const item of noteItems) {
+      const title = item.dataset.title || "";
+      if (!query || title.includes(query)) {
+        item.style.display = "";
+      } else {
+        item.style.display = "none";
+      }
+    }
+
+    // Hide empty domain sections
+    for (const sec of domainSections) {
+      const visible = sec.querySelectorAll<HTMLElement>('.note-item:not([style*="display: none"])');
+      sec.style.display = visible.length === 0 ? "none" : "";
+    }
+  });
+
+  // Shortcut key "/"
+  document.addEventListener("keydown", (e) => {
+    if (e.key === "/" && document.activeElement !== searchInput) {
+      e.preventDefault();
+      searchInput?.focus();
+    }
+  });
+</script>
+
+<style>
+  .brain-index-container {
+    max-width: 48rem;
+    margin: 0 auto;
+    font-family: "JetBrains Mono", Consolas, Menlo, monospace;
+  }
+
+  .brain-header {
+    margin-bottom: 2.5rem;
+    padding-bottom: 1.5rem;
+    border-bottom: 1px dashed var(--border-dotted, #3d3d3d);
+  }
+
+  .title-wrap {
+    display: flex;
+    align-items: center;
+    gap: 0.75rem;
+    margin-bottom: 0.5rem;
+  }
+
+  .accent-bar {
+    width: 4px;
+    height: 1.85rem;
+    background-color: #ff5500;
+    border-radius: 2px;
+  }
+
+  .page-title {
+    font-size: 1.85rem;
+    font-weight: 700;
+    color: var(--heading-color, #ffffff);
+    margin: 0;
+  }
+
+  .tagline {
+    color: var(--subheading-color, #888888);
+    font-size: 0.95rem;
+    line-height: 1.5;
+    margin-top: 0.75rem;
+    margin-bottom: 1.25rem;
+  }
+
+  .brain-actions {
+    display: flex;
+    align-items: center;
+    gap: 1.25rem;
+  }
+
+  .stat-badge {
+    font-size: 0.82rem;
+    color: #aaaaaa;
+    background-color: #1a1a1a;
+    padding: 0.25rem 0.65rem;
+    border-radius: 4px;
+    border: 1px solid #2a2a2a;
+  }
+
+  .graph-btn {
+    font-size: 0.85rem;
+    color: #ff5500;
+    text-decoration: none;
+    font-weight: 500;
+    transition: all 0.15s ease;
+  }
+
+  .graph-btn:hover {
+    text-decoration: underline;
+    color: #ff7733;
+  }
+
+  .search-box-wrap {
+    margin-bottom: 2.5rem;
+  }
+
+  #note-search {
+    width: 100%;
+    background-color: #141414;
+    border: 1px solid #282828;
+    color: #ffffff;
+    padding: 0.65rem 1rem;
+    font-family: inherit;
+    font-size: 0.9rem;
+    border-radius: 4px;
+    outline: none;
+    transition: border-color 0.15s ease;
+  }
+
+  #note-search:focus {
+    border-color: #ff5500;
+  }
+
+  .domains-container {
+    display: flex;
+    flex-direction: column;
+    gap: 2.5rem;
+  }
+
+  .domain-heading {
+    font-size: 1.15rem;
+    color: #ffffff;
+    margin: 0 0 1rem 0;
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+  }
+
+  .domain-prefix {
+    color: #ff5500;
+  }
+
+  .count-pill {
+    font-size: 0.8rem;
+    color: var(--subheading-color, #888888);
+    font-weight: 400;
+  }
+
+  .notes-list {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    display: flex;
+    flex-direction: column;
+    gap: 0.5rem;
+  }
+
+  .note-item {
+    line-height: 1.4;
+  }
+
+  .note-link {
+    color: var(--text-color, #dddddd);
+    text-decoration: none;
+    display: inline-flex;
+    align-items: baseline;
+    gap: 0.5rem;
+    transition: color 0.15s ease;
+  }
+
+  .note-bullet {
+    color: var(--subheading-color, #888888);
+  }
+
+  .note-link:hover {
+    color: #ff5500;
+  }
+
+  .note-link:hover .note-bullet {
+    color: #ff5500;
+  }
+</style>

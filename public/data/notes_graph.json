@@ -1,0 +1,4666 @@
+{
+  "nodes": [
+    {
+      "id": "000_Concepts_MOC",
+      "title": "Concepts Knowledge Map of Content",
+      "domain": "Engineering",
+      "url": "/notes/000_Concepts_MOC"
+    },
+    {
+      "id": "Kelly_Criterion",
+      "title": "Kelly Criterion",
+      "domain": "Economics",
+      "url": "/notes/Kelly_Criterion"
+    },
+    {
+      "id": "Liquidity_Trap_Spread",
+      "title": "Liquidity Trap & Bid-Ask Spread",
+      "domain": "Economics",
+      "url": "/notes/Liquidity_Trap_Spread"
+    },
+    {
+      "id": "Opportunity_Cost_Hold",
+      "title": "Opportunity Cost & Holding Psychology",
+      "domain": "Economics",
+      "url": "/notes/Opportunity_Cost_Hold"
+    },
+    {
+      "id": "Safe_Haven_Asset",
+      "title": "Safe Haven Asset",
+      "domain": "Economics",
+      "url": "/notes/Safe_Haven_Asset"
+    },
+    {
+      "id": "Systems_Thinking",
+      "title": "Systems Thinking in Software Engineering",
+      "domain": "Mental Models",
+      "url": "/notes/Systems_Thinking"
+    },
+    {
+      "id": "Student_Mindsets",
+      "title": "Student Mindsets",
+      "domain": "Mental Models",
+      "url": "/notes/Student_Mindsets"
+    },
+    {
+      "id": "Critical_Thinking_Models",
+      "title": "Critical Thinking Models",
+      "domain": "Mental Models",
+      "url": "/notes/Critical_Thinking_Models"
+    },
+    {
+      "id": "Swimmers_Body_Illusion",
+      "title": "Swimmer's Body Illusion",
+      "domain": "Mental Models",
+      "url": "/notes/Swimmers_Body_Illusion"
+    },
+    {
+      "id": "Confirmation_Bias",
+      "title": "Confirmation Bias",
+      "domain": "Mental Models",
+      "url": "/notes/Confirmation_Bias"
+    },
+    {
+      "id": "Cognitive_Stack_Framework",
+      "title": "Cognitive Stack Framework",
+      "domain": "Mental Models",
+      "url": "/notes/Cognitive_Stack_Framework"
+    },
+    {
+      "id": "Maslow_Hierarchy_and_Brain_Structure",
+      "title": "Maslow Hierarchy and Brain Structure Alignment",
+      "domain": "Mental Models",
+      "url": "/notes/Maslow_Hierarchy_and_Brain_Structure"
+    },
+    {
+      "id": "Inversion_Thinking",
+      "title": "Inversion Thinking",
+      "domain": "Mental Models",
+      "url": "/notes/Inversion_Thinking"
+    },
+    {
+      "id": "Second_Order_Thinking",
+      "title": "Second Order Thinking",
+      "domain": "Mental Models",
+      "url": "/notes/Second_Order_Thinking"
+    },
+    {
+      "id": "Asymmetric_Risk_Reward",
+      "title": "Asymmetric Risk Reward",
+      "domain": "Mental Models",
+      "url": "/notes/Asymmetric_Risk_Reward"
+    },
+    {
+      "id": "T_Shaped_Skills_Model",
+      "title": "Mô hình Kỹ năng Chữ T và Chiến lược Xếp chồng Kỹ năng",
+      "domain": "Mental Models",
+      "url": "/notes/T_Shaped_Skills_Model"
+    },
+    {
+      "id": "False_Dichotomy",
+      "title": "False Dichotomy",
+      "domain": "Mental Models",
+      "url": "/notes/False_Dichotomy"
+    },
+    {
+      "id": "Negativity_Bias_and_Outrage_Economy",
+      "title": "Negativity Bias and Outrage Economy",
+      "domain": "Mental Models",
+      "url": "/notes/Negativity_Bias_and_Outrage_Economy"
+    },
+    {
+      "id": "Availability_Heuristic_and_Base_Rate",
+      "title": "Availability Heuristic and Base Rate",
+      "domain": "Mental Models",
+      "url": "/notes/Availability_Heuristic_and_Base_Rate"
+    },
+    {
+      "id": "Institutional_Tradeoffs_Framework",
+      "title": "Institutional Tradeoffs Framework",
+      "domain": "Mental Models",
+      "url": "/notes/Institutional_Tradeoffs_Framework"
+    },
+    {
+      "id": "Locus_of_Control_and_Circle_of_Influence",
+      "title": "Locus of Control and Circle of Influence",
+      "domain": "Mental Models",
+      "url": "/notes/Locus_of_Control_and_Circle_of_Influence"
+    },
+    {
+      "id": "Spectrum_Thinking",
+      "title": "Spectrum Thinking",
+      "domain": "Mental Models",
+      "url": "/notes/Spectrum_Thinking"
+    },
+    {
+      "id": "Polymathy_and_Modern_Generalist",
+      "title": "Polymathy and Modern Generalist",
+      "domain": "Mental Models",
+      "url": "/notes/Polymathy_and_Modern_Generalist"
+    },
+    {
+      "id": "Map_of_Content",
+      "title": "Map of Content",
+      "domain": "Engineering",
+      "url": "/notes/Map_of_Content"
+    },
+    {
+      "id": "PARA_Method",
+      "title": "PARA Method",
+      "domain": "Engineering",
+      "url": "/notes/PARA_Method"
+    },
+    {
+      "id": "Zettelkasten_Method",
+      "title": "Zettelkasten Method",
+      "domain": "Engineering",
+      "url": "/notes/Zettelkasten_Method"
+    },
+    {
+      "id": "Visual_Workflow_Documentation_Policy",
+      "title": "Visual Workflow Documentation Policy",
+      "domain": "Engineering",
+      "url": "/notes/Visual_Workflow_Documentation_Policy"
+    },
+    {
+      "id": "Herbert_Simon_Learning_Method",
+      "title": "Herbert Simon Learning Method",
+      "domain": "Linguistics & Learning",
+      "url": "/notes/Herbert_Simon_Learning_Method"
+    },
+    {
+      "id": "Evan_Wallace_Path",
+      "title": "Evan Wallace Career Path",
+      "domain": "Linguistics & Learning",
+      "url": "/notes/Evan_Wallace_Path"
+    },
+    {
+      "id": "Linguistic_False_Friends",
+      "title": "Linguistic False Friends",
+      "domain": "Linguistics & Learning",
+      "url": "/notes/Linguistic_False_Friends"
+    },
+    {
+      "id": "Phonetic_Chunking",
+      "title": "Phonetic Chunking",
+      "domain": "Linguistics & Learning",
+      "url": "/notes/Phonetic_Chunking"
+    },
+    {
+      "id": "Spaced_Repetition_SM2",
+      "title": "Spaced Repetition",
+      "domain": "Linguistics & Learning",
+      "url": "/notes/Spaced_Repetition_SM2"
+    },
+    {
+      "id": "Gerunds_and_Ing_Usage",
+      "title": "Danh động từ và cách dùng đuôi -ing",
+      "domain": "Linguistics & Learning",
+      "url": "/notes/Gerunds_and_Ing_Usage"
+    },
+    {
+      "id": "Word_Family_and_Morphology_Method",
+      "title": "Word Family and Morphology Method",
+      "domain": "Linguistics & Learning",
+      "url": "/notes/Word_Family_and_Morphology_Method"
+    },
+    {
+      "id": "Error_Defect_Failure",
+      "title": "Phân biệt Error, Defect và Failure",
+      "domain": "Engineering",
+      "url": "/notes/Error_Defect_Failure"
+    },
+    {
+      "id": "7_Principles_of_Testing",
+      "title": "7 Nguyên lý Kiểm thử Phần mềm",
+      "domain": "Engineering",
+      "url": "/notes/7_Principles_of_Testing"
+    },
+    {
+      "id": "Black_Box_Testing_Techniques",
+      "title": "Kỹ thuật Kiểm thử Hộp đen",
+      "domain": "Engineering",
+      "url": "/notes/Black_Box_Testing_Techniques"
+    },
+    {
+      "id": "White_Box_Testing_Techniques",
+      "title": "Kỹ thuật Kiểm thử Hộp trắng",
+      "domain": "Engineering",
+      "url": "/notes/White_Box_Testing_Techniques"
+    },
+    {
+      "id": "Test_Case",
+      "title": "Test Case",
+      "domain": "Engineering",
+      "url": "/notes/Test_Case"
+    },
+    {
+      "id": "Equivalence_Partitioning",
+      "title": "Kỹ thuật Phân hoạch Tương đương",
+      "domain": "Engineering",
+      "url": "/notes/Equivalence_Partitioning"
+    },
+    {
+      "id": "K6_Execution_Lifecycle_and_Memory_Architecture",
+      "title": "k6 Execution Lifecycle & Memory Architecture",
+      "domain": "Engineering",
+      "url": "/notes/K6_Execution_Lifecycle_and_Memory_Architecture"
+    },
+    {
+      "id": "K6_Scenario_Executors_and_Workload_Modeling",
+      "title": "k6 Scenario Executors & Workload Modeling",
+      "domain": "Engineering",
+      "url": "/notes/K6_Scenario_Executors_and_Workload_Modeling"
+    },
+    {
+      "id": "K6_Telemetry_Metrics_and_Threshold_Gates",
+      "title": "k6 Telemetry Metrics & Threshold Gates",
+      "domain": "Engineering",
+      "url": "/notes/K6_Telemetry_Metrics_and_Threshold_Gates"
+    },
+    {
+      "id": "K6_Runner_Performance_and_OS_Tuning",
+      "title": "k6 Runner Performance & OS Kernel Tuning",
+      "domain": "Engineering",
+      "url": "/notes/K6_Runner_Performance_and_OS_Tuning"
+    },
+    {
+      "id": "Open_vs_Closed_Workload_Models",
+      "title": "Open vs Closed Workload Models",
+      "domain": "Engineering",
+      "url": "/notes/Open_vs_Closed_Workload_Models"
+    },
+    {
+      "id": "Garbage_Collection_Fundamentals",
+      "title": "Garbage Collection Fundamentals",
+      "domain": "Engineering",
+      "url": "/notes/Garbage_Collection_Fundamentals"
+    },
+    {
+      "id": "Memory_Leaks_Core_Mechanics",
+      "title": "Memory Leaks Core Mechanics",
+      "domain": "Engineering",
+      "url": "/notes/Memory_Leaks_Core_Mechanics"
+    },
+    {
+      "id": "Stack_vs_Heap_Memory_Fundamentals",
+      "title": "Stack vs Heap Memory Fundamentals",
+      "domain": "Engineering",
+      "url": "/notes/Stack_vs_Heap_Memory_Fundamentals"
+    },
+    {
+      "id": "Dynamic_Array_Exponential_Growth",
+      "title": "Dynamic Array Exponential Growth",
+      "domain": "Engineering",
+      "url": "/notes/Dynamic_Array_Exponential_Growth"
+    },
+    {
+      "id": "Heap_Memory_Size_Classes_and_Alignment",
+      "title": "Heap Memory Size Classes and Alignment",
+      "domain": "Engineering",
+      "url": "/notes/Heap_Memory_Size_Classes_and_Alignment"
+    },
+    {
+      "id": "SDLC_Methodologies_Evolution",
+      "title": "Lịch Sử Tiến Hóa Của Các Mô Hình SDLC",
+      "domain": "Engineering",
+      "url": "/notes/SDLC_Methodologies_Evolution"
+    },
+    {
+      "id": "Git_DAG_and_Object_Storage_Model",
+      "title": "Git DAG and Object Storage Model",
+      "domain": "Engineering",
+      "url": "/notes/Git_DAG_and_Object_Storage_Model"
+    },
+    {
+      "id": "Git_Merge_Base_Algorithm",
+      "title": "Git Merge Base Algorithm",
+      "domain": "Engineering",
+      "url": "/notes/Git_Merge_Base_Algorithm"
+    },
+    {
+      "id": "Git_Stash_Internals_and_Object_Structure",
+      "title": "Git Stash Internals and Object Structure",
+      "domain": "Engineering",
+      "url": "/notes/Git_Stash_Internals_and_Object_Structure"
+    },
+    {
+      "id": "Process_vs_Thread_and_Context_Switching",
+      "title": "Process vs Thread and Context Switching",
+      "domain": "Engineering",
+      "url": "/notes/Process_vs_Thread_and_Context_Switching"
+    },
+    {
+      "id": "MQTT_Broker_Architecture",
+      "title": "MQTT Broker Architecture",
+      "domain": "Engineering",
+      "url": "/notes/MQTT_Broker_Architecture"
+    },
+    {
+      "id": "MQTT_QoS_Mechanics",
+      "title": "MQTT QoS Mechanics",
+      "domain": "Engineering",
+      "url": "/notes/MQTT_QoS_Mechanics"
+    },
+    {
+      "id": "Finite_State_Machine_and_Concurrency_Guard",
+      "title": "Finite State Machine and Concurrency Guard",
+      "domain": "Engineering",
+      "url": "/notes/Finite_State_Machine_and_Concurrency_Guard"
+    },
+    {
+      "id": "N_Plus_One_Query_Optimization_via_In_Memory_Hash_Map",
+      "title": "N Plus One Query Optimization via In-Memory Hash Map",
+      "domain": "Engineering",
+      "url": "/notes/N_Plus_One_Query_Optimization_via_In_Memory_Hash_Map"
+    },
+    {
+      "id": "Latency_Percentiles_and_Throughput_Fundamentals",
+      "title": "Latency Percentiles and Throughput Fundamentals",
+      "domain": "Engineering",
+      "url": "/notes/Latency_Percentiles_and_Throughput_Fundamentals"
+    },
+    {
+      "id": "Redis_Single_Threaded_Event_Loop_Architecture",
+      "title": "Redis Single Threaded Event Loop Architecture",
+      "domain": "Engineering",
+      "url": "/notes/Redis_Single_Threaded_Event_Loop_Architecture"
+    },
+    {
+      "id": "BATNA_Negotiation_Model",
+      "title": "BATNA Negotiation Model",
+      "domain": "Engineering",
+      "url": "/notes/BATNA_Negotiation_Model"
+    },
+    {
+      "id": "ZOPA_Negotiation_Framework",
+      "title": "ZOPA Negotiation Framework",
+      "domain": "Engineering",
+      "url": "/notes/ZOPA_Negotiation_Framework"
+    },
+    {
+      "id": "Principled_Negotiation_Getting_To_Yes",
+      "title": "Principled Negotiation",
+      "domain": "Engineering",
+      "url": "/notes/Principled_Negotiation_Getting_To_Yes"
+    },
+    {
+      "id": "Tactical_Empathy_Chris_Voss",
+      "title": "Tactical Empathy",
+      "domain": "Engineering",
+      "url": "/notes/Tactical_Empathy_Chris_Voss"
+    },
+    {
+      "id": "Selective_Trust_Framework",
+      "title": "Selective Trust Framework",
+      "domain": "Engineering",
+      "url": "/notes/Selective_Trust_Framework"
+    },
+    {
+      "id": "Product_Mindset",
+      "title": "Product Mindset",
+      "domain": "Engineering",
+      "url": "/notes/Product_Mindset"
+    },
+    {
+      "id": "Customer_Outcome_Thinking",
+      "title": "Customer Outcome Thinking",
+      "domain": "Engineering",
+      "url": "/notes/Customer_Outcome_Thinking"
+    },
+    {
+      "id": "Kanban_Methodology",
+      "title": "Phương Pháp & Bảng Kanban Trong Quản Trị Dự Án",
+      "domain": "Engineering",
+      "url": "/notes/Kanban_Methodology"
+    },
+    {
+      "id": "Dating_Game_Theory",
+      "title": "Dating Game Theory",
+      "domain": "Engineering",
+      "url": "/notes/Dating_Game_Theory"
+    },
+    {
+      "id": "RMIT_Critical_Review_AI_Coding_2026",
+      "title": "Critical Review Report: Should You Still Learn to Code in 2026?",
+      "domain": "Engineering",
+      "url": "/notes/RMIT_Critical_Review_AI_Coding_2026"
+    },
+    {
+      "id": "GPS_Case_Study_DailyDev_Analysis",
+      "title": "GPS Case Study: DailyDev Analysis Thread",
+      "domain": "Engineering",
+      "url": "/notes/GPS_Case_Study_DailyDev_Analysis"
+    },
+    {
+      "id": "000_Methods_MOC",
+      "title": "Methods & Frameworks MOC",
+      "domain": "Engineering",
+      "url": "/notes/000_Methods_MOC"
+    },
+    {
+      "id": "Go_Benchmarking_and_Allocation_Guide",
+      "title": "Go Benchmarking and Allocation Guide",
+      "domain": "Engineering",
+      "url": "/notes/Go_Benchmarking_and_Allocation_Guide"
+    },
+    {
+      "id": "Automated_Verification_System_Framework",
+      "title": "Automated Verification System Framework",
+      "domain": "Engineering",
+      "url": "/notes/Automated_Verification_System_Framework"
+    },
+    {
+      "id": "System_Design_Architecture_Roadmap",
+      "title": "System Design Architecture Roadmap",
+      "domain": "Engineering",
+      "url": "/notes/System_Design_Architecture_Roadmap"
+    },
+    {
+      "id": "Problem_Driven_System_Design_Framework",
+      "title": "Problem-Driven System Design Framework",
+      "domain": "Engineering",
+      "url": "/notes/Problem_Driven_System_Design_Framework"
+    },
+    {
+      "id": "Postgres_SQL_Performance_Benchmarking_Guide",
+      "title": "Postgres SQL Performance & Benchmarking Guide",
+      "domain": "Engineering",
+      "url": "/notes/Postgres_SQL_Performance_Benchmarking_Guide"
+    },
+    {
+      "id": "LeetCode_Pattern_Mastery_Roadmap",
+      "title": "LeetCode Pattern Mastery Roadmap",
+      "domain": "Engineering",
+      "url": "/notes/LeetCode_Pattern_Mastery_Roadmap"
+    },
+    {
+      "id": "Data_Structures_and_Algorithms_Roadmap",
+      "title": "Data Structures and Algorithms Roadmap",
+      "domain": "Engineering",
+      "url": "/notes/Data_Structures_and_Algorithms_Roadmap"
+    },
+    {
+      "id": "Multi_Layer_Rate_Limiting_DDoS_Prevention",
+      "title": "Chiến Lược Rate Limiting Đa Lớp & Phòng Chống DDoS",
+      "domain": "Engineering",
+      "url": "/notes/Multi_Layer_Rate_Limiting_DDoS_Prevention"
+    },
+    {
+      "id": "Local_Stress_Testing_Benchmark",
+      "title": "Local Stress Testing & Benchmarking Guide",
+      "domain": "Engineering",
+      "url": "/notes/Local_Stress_Testing_Benchmark"
+    },
+    {
+      "id": "Prototype_Model",
+      "title": "Quy Trình Phát Triển Phần Mềm Theo Mô Hình Bản Mẫu",
+      "domain": "Engineering",
+      "url": "/notes/Prototype_Model"
+    },
+    {
+      "id": "Spiral_Model",
+      "title": "Quy Trình Phát Triển Phần Mềm Theo Mô Hình Xoắn Ốc",
+      "domain": "Engineering",
+      "url": "/notes/Spiral_Model"
+    },
+    {
+      "id": "V_Model",
+      "title": "Quy Trình Phát Triển Phần Mềm Theo Mô Hình V-Model",
+      "domain": "Engineering",
+      "url": "/notes/V_Model"
+    },
+    {
+      "id": "Waterfall",
+      "title": "Quy Trình Phát Triển Phần Mềm Theo Mô Hình Waterfall",
+      "domain": "Engineering",
+      "url": "/notes/Waterfall"
+    },
+    {
+      "id": "Agile_Management_via_GitHub",
+      "title": "Quản Lý Dự Án Agile/Scrum Bằng GitHub Projects",
+      "domain": "Engineering",
+      "url": "/notes/Agile_Management_via_GitHub"
+    },
+    {
+      "id": "Agile_Scrum",
+      "title": "Quy Trình Agile & Scrum Trong Dự Án",
+      "domain": "Engineering",
+      "url": "/notes/Agile_Scrum"
+    },
+    {
+      "id": "WBS_Best_Practices",
+      "title": "️ Phương Pháp Phân Rã Công Việc WBS",
+      "domain": "Engineering",
+      "url": "/notes/WBS_Best_Practices"
+    },
+    {
+      "id": "Standard_Project_Timeline_SOP",
+      "title": "Standard Project Timeline SOP",
+      "domain": "Engineering",
+      "url": "/notes/Standard_Project_Timeline_SOP"
+    },
+    {
+      "id": "STAR_Method_Tech",
+      "title": "STAR Method",
+      "domain": "Engineering",
+      "url": "/notes/STAR_Method_Tech"
+    },
+    {
+      "id": "Vim_Shortcuts",
+      "title": "Vim Advanced Shortcuts & Commands",
+      "domain": "Engineering",
+      "url": "/notes/Vim_Shortcuts"
+    },
+    {
+      "id": "Master_Backend_Engineering_SSOT",
+      "title": "Master Backend Engineering SSOT & Strategy Compass",
+      "domain": "Engineering",
+      "url": "/notes/Master_Backend_Engineering_SSOT"
+    },
+    {
+      "id": "Gorss_Performance_Optimization_RFC",
+      "title": "RFC: High-Performance UI Navigation & Asynchronous Storage Engine",
+      "domain": "Engineering",
+      "url": "/notes/Gorss_Performance_Optimization_RFC"
+    },
+    {
+      "id": "Code_Comment_Taxonomy_and_Standards",
+      "title": "Code Comment Taxonomy & Standards (SSOT)",
+      "domain": "Engineering",
+      "url": "/notes/Code_Comment_Taxonomy_and_Standards"
+    },
+    {
+      "id": "Linux_Mastery_Core_Roadmap",
+      "title": "Linux Mastery Core Roadmap",
+      "domain": "Engineering",
+      "url": "/notes/Linux_Mastery_Core_Roadmap"
+    },
+    {
+      "id": "K6_High_Concurrency_Load_Testing_SOP",
+      "title": "High-Concurrency Load Testing SOP with Grafana k6",
+      "domain": "Engineering",
+      "url": "/notes/K6_High_Concurrency_Load_Testing_SOP"
+    },
+    {
+      "id": "Git_Conflict_and_Three_Way_Merge_Mechanics",
+      "title": "Git Conflict and Three-Way Merge Mechanics",
+      "domain": "Engineering",
+      "url": "/notes/Git_Conflict_and_Three_Way_Merge_Mechanics"
+    },
+    {
+      "id": "Git_Four_Zones_and_Reset_Lifecycle",
+      "title": "Git Four Zones and Reset Lifecycle",
+      "domain": "Engineering",
+      "url": "/notes/Git_Four_Zones_and_Reset_Lifecycle"
+    },
+    {
+      "id": "Git_Branch_Deletion_and_Recovery_Mechanics",
+      "title": "Git Branch Deletion and Recovery Mechanics",
+      "domain": "Engineering",
+      "url": "/notes/Git_Branch_Deletion_and_Recovery_Mechanics"
+    },
+    {
+      "id": "Git_Revert_vs_Reset_on_Shared_Branch",
+      "title": "Git Revert vs Reset on Shared Branch",
+      "domain": "Engineering",
+      "url": "/notes/Git_Revert_vs_Reset_on_Shared_Branch"
+    },
+    {
+      "id": "Docker_80_20_Mastery_Cheatsheet",
+      "title": "Docker 80/20 Mastery Cheatsheet",
+      "domain": "Engineering",
+      "url": "/notes/Docker_80_20_Mastery_Cheatsheet"
+    },
+    {
+      "id": "Grafana_K6_Mastery_80_20_Roadmap",
+      "title": "Nghiên cứu Grafana k6: Tiêu chuẩn Nắm chắc và Phương pháp học 80/20",
+      "domain": "Engineering",
+      "url": "/notes/Grafana_K6_Mastery_80_20_Roadmap"
+    },
+    {
+      "id": "Redis_Mastery_80_20_Roadmap",
+      "title": "Nghiên cứu Redis: Tiêu chuẩn Nắm chắc và Phương pháp học 80/20",
+      "domain": "Engineering",
+      "url": "/notes/Redis_Mastery_80_20_Roadmap"
+    },
+    {
+      "id": "Metalearning_Just_In_Time_Framework",
+      "title": "Metalearning Just-In-Time Framework",
+      "domain": "Linguistics & Learning",
+      "url": "/notes/Metalearning_Just_In_Time_Framework"
+    },
+    {
+      "id": "Problem_Solving_Mental_Model_Pipeline",
+      "title": "Problem Solving Mental Model Pipeline",
+      "domain": "Linguistics & Learning",
+      "url": "/notes/Problem_Solving_Mental_Model_Pipeline"
+    },
+    {
+      "id": "First_Principles_Thinking",
+      "title": "First Principles Thinking",
+      "domain": "Linguistics & Learning",
+      "url": "/notes/First_Principles_Thinking"
+    },
+    {
+      "id": "Socratic_Questioning_Method",
+      "title": "Socratic Questioning Method",
+      "domain": "Linguistics & Learning",
+      "url": "/notes/Socratic_Questioning_Method"
+    },
+    {
+      "id": "Card_By_Card_Presentation_Delivery_Technique",
+      "title": "Card By Card Presentation Delivery Technique",
+      "domain": "Linguistics & Learning",
+      "url": "/notes/Card_By_Card_Presentation_Delivery_Technique"
+    },
+    {
+      "id": "Mental_Model_Automation_Method",
+      "title": "Mental Model Automation Method",
+      "domain": "Linguistics & Learning",
+      "url": "/notes/Mental_Model_Automation_Method"
+    },
+    {
+      "id": "McKinsey_Issue_Tree_Framework",
+      "title": "McKinsey Issue Tree Framework",
+      "domain": "Linguistics & Learning",
+      "url": "/notes/McKinsey_Issue_Tree_Framework"
+    },
+    {
+      "id": "GPS_Goal_Problem_Solution_Framework",
+      "title": "GPS Goal Problem Solution Framework",
+      "domain": "Linguistics & Learning",
+      "url": "/notes/GPS_Goal_Problem_Solution_Framework"
+    },
+    {
+      "id": "Top_University_Mindset",
+      "title": "Top University Mindset",
+      "domain": "Linguistics & Learning",
+      "url": "/notes/Top_University_Mindset"
+    },
+    {
+      "id": "TOEIC_Self_Study_Roadmap_0_To_900",
+      "title": "TOEIC Self Study Roadmap 0 To 900",
+      "domain": "Linguistics & Learning",
+      "url": "/notes/TOEIC_Self_Study_Roadmap_0_To_900"
+    },
+    {
+      "id": "IELTS_Simon_Writing_Method",
+      "title": "IELTS Simon Writing Method",
+      "domain": "Linguistics & Learning",
+      "url": "/notes/IELTS_Simon_Writing_Method"
+    },
+    {
+      "id": "Project_Anchored_Technical_Mastery",
+      "title": "Project-Anchored Technical Mastery",
+      "domain": "Linguistics & Learning",
+      "url": "/notes/Project_Anchored_Technical_Mastery"
+    },
+    {
+      "id": "M_Shaped_Polymath_Skill_Stacking",
+      "title": "M-Shaped Polymath Skill Stacking Framework",
+      "domain": "Linguistics & Learning",
+      "url": "/notes/M_Shaped_Polymath_Skill_Stacking"
+    },
+    {
+      "id": "English_Mastery_80_20_Roadmap",
+      "title": "Nghiên cứu Học Tiếng Anh: Tiêu chuẩn Nắm chắc và Phương pháp 80/20 theo Khoa học Nhận thức & SLA",
+      "domain": "Linguistics & Learning",
+      "url": "/notes/English_Mastery_80_20_Roadmap"
+    },
+    {
+      "id": "Dollar_Cost_Averaging",
+      "title": "Dollar Cost Averaging",
+      "domain": "Economics",
+      "url": "/notes/Dollar_Cost_Averaging"
+    },
+    {
+      "id": "Short_Term_Income_and_Defensive_Saving",
+      "title": "Short-Term Income Acceleration and Defensive Saving Strategy",
+      "domain": "Economics",
+      "url": "/notes/Short_Term_Income_and_Defensive_Saving"
+    },
+    {
+      "id": "000_Tech_MOC",
+      "title": "Tech Knowledge Map of Content",
+      "domain": "Engineering",
+      "url": "/notes/000_Tech_MOC"
+    },
+    {
+      "id": "Newsfeed_Architecture_Fanout",
+      "title": "Newsfeed System Design: Hybrid Fan-out Architecture",
+      "domain": "Engineering",
+      "url": "/notes/Newsfeed_Architecture_Fanout"
+    },
+    {
+      "id": "Domain_Driven_Design",
+      "title": "Domain-Driven Design",
+      "domain": "Engineering",
+      "url": "/notes/Domain_Driven_Design"
+    },
+    {
+      "id": "DI_WinForms_Components",
+      "title": "WinForms Component Design with Dependency Injection",
+      "domain": "Engineering",
+      "url": "/notes/DI_WinForms_Components"
+    },
+    {
+      "id": "Repository_Pattern_vs_Fat_Service",
+      "title": "Repository Pattern vs Fat Service",
+      "domain": "Engineering",
+      "url": "/notes/Repository_Pattern_vs_Fat_Service"
+    },
+    {
+      "id": "Unified_Fullstack_vs_Split_Architecture",
+      "title": "Unified Fullstack Architecture vs. Split Repository Architecture",
+      "domain": "Engineering",
+      "url": "/notes/Unified_Fullstack_vs_Split_Architecture"
+    },
+    {
+      "id": "Circular_Dependency",
+      "title": "Circular Dependency",
+      "domain": "Engineering",
+      "url": "/notes/Circular_Dependency"
+    },
+    {
+      "id": "Clean_Architecture",
+      "title": "Clean Architecture",
+      "domain": "Engineering",
+      "url": "/notes/Clean_Architecture"
+    },
+    {
+      "id": "Dependency_Injection",
+      "title": "Dependency Injection",
+      "domain": "Engineering",
+      "url": "/notes/Dependency_Injection"
+    },
+    {
+      "id": "Interface_Driven_Design",
+      "title": "Interface-Driven Design",
+      "domain": "Engineering",
+      "url": "/notes/Interface_Driven_Design"
+    },
+    {
+      "id": "Layered_Architecture",
+      "title": "Layered Architecture",
+      "domain": "Engineering",
+      "url": "/notes/Layered_Architecture"
+    },
+    {
+      "id": "MVC_Pattern",
+      "title": "MVC Pattern",
+      "domain": "Engineering",
+      "url": "/notes/MVC_Pattern"
+    },
+    {
+      "id": "Modular_Monolith_Architecture",
+      "title": "Modular Monolith Architecture",
+      "domain": "Engineering",
+      "url": "/notes/Modular_Monolith_Architecture"
+    },
+    {
+      "id": "Public_Interface_Pattern",
+      "title": "Public Interface Pattern",
+      "domain": "Engineering",
+      "url": "/notes/Public_Interface_Pattern"
+    },
+    {
+      "id": "SOLID_Principles",
+      "title": "SOLID Principles",
+      "domain": "Engineering",
+      "url": "/notes/SOLID_Principles"
+    },
+    {
+      "id": "Shared_Module_Dependency_Rule",
+      "title": "Shared Module Dependency Rule",
+      "domain": "Engineering",
+      "url": "/notes/Shared_Module_Dependency_Rule"
+    },
+    {
+      "id": "Test_Driven_Design",
+      "title": "Test-Driven Design",
+      "domain": "Engineering",
+      "url": "/notes/Test_Driven_Design"
+    },
+    {
+      "id": "Next_Intl",
+      "title": "Next-Intl & Internationalization",
+      "domain": "Engineering",
+      "url": "/notes/Next_Intl"
+    },
+    {
+      "id": "React_Server_Components",
+      "title": "React Server Components vs. Client Components",
+      "domain": "Engineering",
+      "url": "/notes/React_Server_Components"
+    },
+    {
+      "id": "NextJS_Server_Actions",
+      "title": "Next.js Server Actions & React 19 Integration",
+      "domain": "Engineering",
+      "url": "/notes/NextJS_Server_Actions"
+    },
+    {
+      "id": "WinForms_Layout_Optimization",
+      "title": "Windows Forms Layout Engine Optimization",
+      "domain": "Engineering",
+      "url": "/notes/WinForms_Layout_Optimization"
+    },
+    {
+      "id": "React_Component_Declaration_Standards",
+      "title": "React Component Declaration Standards",
+      "domain": "Engineering",
+      "url": "/notes/React_Component_Declaration_Standards"
+    },
+    {
+      "id": "NextJS_16_Cache_Components",
+      "title": "Next.js 16 Cache Components & 'use cache'",
+      "domain": "Engineering",
+      "url": "/notes/NextJS_16_Cache_Components"
+    },
+    {
+      "id": "NextJS_PPR_Platform_Support",
+      "title": "NextJS PPR Platform Support",
+      "domain": "Engineering",
+      "url": "/notes/NextJS_PPR_Platform_Support"
+    },
+    {
+      "id": "NextJS_ISR",
+      "title": "NextJS ISR",
+      "domain": "Engineering",
+      "url": "/notes/NextJS_ISR"
+    },
+    {
+      "id": "NextJS_Dynamic_Opt_Out_Connection",
+      "title": "NextJS Dynamic Opt Out and connection() API",
+      "domain": "Engineering",
+      "url": "/notes/NextJS_Dynamic_Opt_Out_Connection"
+    },
+    {
+      "id": "NextJS_Route_Groups_and_Nested_Layouts",
+      "title": "Next.js Route Groups & Nested Layouts Inheritance",
+      "domain": "Engineering",
+      "url": "/notes/NextJS_Route_Groups_and_Nested_Layouts"
+    },
+    {
+      "id": "NextJS_Monorepo_Package_Transpilation",
+      "title": "Next.js Monorepo & Package Transpilation",
+      "domain": "Engineering",
+      "url": "/notes/NextJS_Monorepo_Package_Transpilation"
+    },
+    {
+      "id": "JS_Runtimes_Bun_vs_NodeJS",
+      "title": "JS Runtime Architecture: Bun vs. Node.js",
+      "domain": "Engineering",
+      "url": "/notes/JS_Runtimes_Bun_vs_NodeJS"
+    },
+    {
+      "id": "React_State",
+      "title": "React State",
+      "domain": "Engineering",
+      "url": "/notes/React_State"
+    },
+    {
+      "id": "React_Props",
+      "title": "React Props",
+      "domain": "Engineering",
+      "url": "/notes/React_Props"
+    },
+    {
+      "id": "Laravel_Blade_Layout_Components",
+      "title": "Laravel Blade Layout Components",
+      "domain": "Engineering",
+      "url": "/notes/Laravel_Blade_Layout_Components"
+    },
+    {
+      "id": "Turborepo",
+      "title": "Turborepo và Kiến trúc Monorepo",
+      "domain": "Engineering",
+      "url": "/notes/Turborepo"
+    },
+    {
+      "id": "NextJS_after_API",
+      "title": "Next.js after() API",
+      "domain": "Engineering",
+      "url": "/notes/NextJS_after_API"
+    },
+    {
+      "id": "Prepare_Statements",
+      "title": "Prepare Statements",
+      "domain": "Engineering",
+      "url": "/notes/Prepare_Statements"
+    },
+    {
+      "id": "Outbox_Pattern",
+      "title": "Outbox Pattern",
+      "domain": "Engineering",
+      "url": "/notes/Outbox_Pattern"
+    },
+    {
+      "id": "Partial_Index",
+      "title": "Partial Index",
+      "domain": "Engineering",
+      "url": "/notes/Partial_Index"
+    },
+    {
+      "id": "SQL_Quotes",
+      "title": "SQL Quotes: Identifiers vs String Literals",
+      "domain": "Engineering",
+      "url": "/notes/SQL_Quotes"
+    },
+    {
+      "id": "Left_Prefix_Index_Postgres",
+      "title": "Left-Prefix Index Principle in PostgreSQL",
+      "domain": "Engineering",
+      "url": "/notes/Left_Prefix_Index_Postgres"
+    },
+    {
+      "id": "Junction_Table",
+      "title": "Junction Table & Composite Primary Keys",
+      "domain": "Engineering",
+      "url": "/notes/Junction_Table"
+    },
+    {
+      "id": "Timestamp_vs_Timestamptz",
+      "title": "Timestamp vs Timestamptz in Database",
+      "domain": "Engineering",
+      "url": "/notes/Timestamp_vs_Timestamptz"
+    },
+    {
+      "id": "RFC_Trending_Cache",
+      "title": "RFC: Realtime Leaderboard Caching System",
+      "domain": "Engineering",
+      "url": "/notes/RFC_Trending_Cache"
+    },
+    {
+      "id": "Database_Indexing_Guidelines",
+      "title": "Database Indexing Guidelines",
+      "domain": "Engineering",
+      "url": "/notes/Database_Indexing_Guidelines"
+    },
+    {
+      "id": "Index_BPlusTree",
+      "title": "Index và B+Tree",
+      "domain": "Engineering",
+      "url": "/notes/Index_BPlusTree"
+    },
+    {
+      "id": "Postgres_18_New_Features",
+      "title": "️ PostgreSQL 18: Tính Năng & Cải Tiến Kiến Trúc",
+      "domain": "Engineering",
+      "url": "/notes/Postgres_18_New_Features"
+    },
+    {
+      "id": "API_Versioning_Strategies",
+      "title": "API Versioning Strategies",
+      "domain": "Engineering",
+      "url": "/notes/API_Versioning_Strategies"
+    },
+    {
+      "id": "Cursor_Pagination",
+      "title": "REST API Pagination & Filtering",
+      "domain": "Engineering",
+      "url": "/notes/Cursor_Pagination"
+    },
+    {
+      "id": "DB_Naming",
+      "title": "DB Naming Conventions",
+      "domain": "Engineering",
+      "url": "/notes/DB_Naming"
+    },
+    {
+      "id": "Postgres_Select_For_Update_Pessimistic_Locking",
+      "title": "Postgres SELECT FOR UPDATE",
+      "domain": "Engineering",
+      "url": "/notes/Postgres_Select_For_Update_Pessimistic_Locking"
+    },
+    {
+      "id": "N_Plus_1_Query_Problem",
+      "title": "N+1 Query Problem",
+      "domain": "Engineering",
+      "url": "/notes/N_Plus_1_Query_Problem"
+    },
+    {
+      "id": "Redis_Redlock",
+      "title": "Redis Redlock",
+      "domain": "Engineering",
+      "url": "/notes/Redis_Redlock"
+    },
+    {
+      "id": "Atomic_Conditional_Update",
+      "title": "Atomic Conditional Update",
+      "domain": "Engineering",
+      "url": "/notes/Atomic_Conditional_Update"
+    },
+    {
+      "id": "Postgres_MVCC_Tuple_Visibility",
+      "title": "Postgres MVCC Tuple Visibility",
+      "domain": "Engineering",
+      "url": "/notes/Postgres_MVCC_Tuple_Visibility"
+    },
+    {
+      "id": "Torrent_CLI_Download_Tools",
+      "title": "Torrent CLI Download Tools Comparison",
+      "domain": "Engineering",
+      "url": "/notes/Torrent_CLI_Download_Tools"
+    },
+    {
+      "id": "Edge_Computing",
+      "title": "Edge Computing",
+      "domain": "Engineering",
+      "url": "/notes/Edge_Computing"
+    },
+    {
+      "id": "Serverless_Architecture",
+      "title": "Serverless Architecture",
+      "domain": "Engineering",
+      "url": "/notes/Serverless_Architecture"
+    },
+    {
+      "id": "Tmux_Session_Window_Pane",
+      "title": "Quản lý và Điều hướng Terminal với Tmux",
+      "domain": "Engineering",
+      "url": "/notes/Tmux_Session_Window_Pane"
+    },
+    {
+      "id": "Search_Engine_Optimization",
+      "title": "Search Engine Optimization",
+      "domain": "Engineering",
+      "url": "/notes/Search_Engine_Optimization"
+    },
+    {
+      "id": "Client_Side_Encryption",
+      "title": "Client-Side Encryption",
+      "domain": "Engineering",
+      "url": "/notes/Client_Side_Encryption"
+    },
+    {
+      "id": "Offline_Sync_Queue",
+      "title": "Offline Sync Queue",
+      "domain": "Engineering",
+      "url": "/notes/Offline_Sync_Queue"
+    },
+    {
+      "id": "Trust_Proxy_Configuration",
+      "title": "Cấu Hình Trust Proxy Trong Express & NestJS",
+      "domain": "Engineering",
+      "url": "/notes/Trust_Proxy_Configuration"
+    },
+    {
+      "id": "Tree_Shaking",
+      "title": "Tree Shaking",
+      "domain": "Engineering",
+      "url": "/notes/Tree_Shaking"
+    },
+    {
+      "id": "JS_Destructuring",
+      "title": "JS Destructuring Assignment",
+      "domain": "Engineering",
+      "url": "/notes/JS_Destructuring"
+    },
+    {
+      "id": "CSharp_WinForms_Thread_Invoke",
+      "title": "C# WinForms Thread Safety with Invoke",
+      "domain": "Engineering",
+      "url": "/notes/CSharp_WinForms_Thread_Invoke"
+    },
+    {
+      "id": "JS_V8_Hidden_Classes_Inline_Caching",
+      "title": "JS Hidden Classes & Inline Caching",
+      "domain": "Engineering",
+      "url": "/notes/JS_V8_Hidden_Classes_Inline_Caching"
+    },
+    {
+      "id": "TS_Type_System_Structural_Type_Erasure",
+      "title": "TS Type System: Structural Typing & Type Erasure",
+      "domain": "Engineering",
+      "url": "/notes/TS_Type_System_Structural_Type_Erasure"
+    },
+    {
+      "id": "JS_Immer_Immutable_State",
+      "title": "Immer.js: Copy-on-Write & Immutable State Management",
+      "domain": "Engineering",
+      "url": "/notes/JS_Immer_Immutable_State"
+    },
+    {
+      "id": "TS_Decorators",
+      "title": "TS Decorators",
+      "domain": "Engineering",
+      "url": "/notes/TS_Decorators"
+    },
+    {
+      "id": "JS_Temporal_API",
+      "title": "JS Temporal API",
+      "domain": "Engineering",
+      "url": "/notes/JS_Temporal_API"
+    },
+    {
+      "id": "Backend_Frameworks_Comparison",
+      "title": "JS/TS Backend Frameworks Comparison",
+      "domain": "Engineering",
+      "url": "/notes/Backend_Frameworks_Comparison"
+    },
+    {
+      "id": "TS_Distributive_Conditional_Types",
+      "title": "TS Distributive Conditional Types",
+      "domain": "Engineering",
+      "url": "/notes/TS_Distributive_Conditional_Types"
+    },
+    {
+      "id": "TS_Type_Utilities_Omit_Pick_Exclude",
+      "title": "TypeScript Type Utilities: Omit, Pick, Exclude",
+      "domain": "Engineering",
+      "url": "/notes/TS_Type_Utilities_Omit_Pick_Exclude"
+    },
+    {
+      "id": "Rust_Hybrid_Roadmap",
+      "title": "Lộ Trình Học Rust Thực Chiến: Từ Cơ Bản Đến Hệ Thống & Bảo Mật",
+      "domain": "Engineering",
+      "url": "/notes/Rust_Hybrid_Roadmap"
+    },
+    {
+      "id": "Dotnet_10_and_11_New_Features",
+      "title": ".NET 10 & .NET 11: So Sánh Tính Năng Cốt Lõi So Với .NET 9",
+      "domain": "Engineering",
+      "url": "/notes/Dotnet_10_and_11_New_Features"
+    },
+    {
+      "id": "Go_Learning_Roadmap",
+      "title": "Lộ Trình Học Go Thực Chiến: Từ Cơ Bản Đến Microservices & Production",
+      "domain": "Linguistics & Learning",
+      "url": "/notes/Go_Learning_Roadmap"
+    },
+    {
+      "id": "Go_Escape_Analysis_Mechanics",
+      "title": "Bản Chất Kiến Trúc Và Cơ Chế Vận Hành Của Go Escape Analysis",
+      "domain": "Engineering",
+      "url": "/notes/Go_Escape_Analysis_Mechanics"
+    },
+    {
+      "id": "Go_Array_Vs_Slice_Distinction",
+      "title": "Bản Chất Kiến Trúc Và Sự Phân Biệt Giữa Array Và Slice Trong Go",
+      "domain": "Engineering",
+      "url": "/notes/Go_Array_Vs_Slice_Distinction"
+    },
+    {
+      "id": "JS_Stack_vs_Heap_Memory",
+      "title": "JS Stack vs Heap Memory",
+      "domain": "Engineering",
+      "url": "/notes/JS_Stack_vs_Heap_Memory"
+    },
+    {
+      "id": "JS_Generational_Garbage_Collection",
+      "title": "JS Generational Garbage Collection",
+      "domain": "Engineering",
+      "url": "/notes/JS_Generational_Garbage_Collection"
+    },
+    {
+      "id": "JS_Memory_Leaks_and_Mitigation",
+      "title": "JS Memory Leaks and Mitigation",
+      "domain": "Engineering",
+      "url": "/notes/JS_Memory_Leaks_and_Mitigation"
+    },
+    {
+      "id": "Go_Slice_Underlying_Mechanics",
+      "title": "Go Slice Underlying Mechanics",
+      "domain": "Engineering",
+      "url": "/notes/Go_Slice_Underlying_Mechanics"
+    },
+    {
+      "id": "AST_ESLint",
+      "title": "Phân tích AST và Custom ESLint Rules",
+      "domain": "Engineering",
+      "url": "/notes/AST_ESLint"
+    }
+  ],
+  "links": [
+    {
+      "source": "Kelly_Criterion",
+      "target": "Dollar_Cost_Averaging"
+    },
+    {
+      "source": "Kelly_Criterion",
+      "target": "Opportunity_Cost_Hold"
+    },
+    {
+      "source": "Liquidity_Trap_Spread",
+      "target": "Dollar_Cost_Averaging"
+    },
+    {
+      "source": "Liquidity_Trap_Spread",
+      "target": "Safe_Haven_Asset"
+    },
+    {
+      "source": "Opportunity_Cost_Hold",
+      "target": "Liquidity_Trap_Spread"
+    },
+    {
+      "source": "Opportunity_Cost_Hold",
+      "target": "Dollar_Cost_Averaging"
+    },
+    {
+      "source": "Safe_Haven_Asset",
+      "target": "Liquidity_Trap_Spread"
+    },
+    {
+      "source": "Safe_Haven_Asset",
+      "target": "Opportunity_Cost_Hold"
+    },
+    {
+      "source": "Safe_Haven_Asset",
+      "target": "Dollar_Cost_Averaging"
+    },
+    {
+      "source": "Systems_Thinking",
+      "target": "000_Concepts_MOC"
+    },
+    {
+      "source": "Systems_Thinking",
+      "target": "Newsfeed_Architecture_Fanout"
+    },
+    {
+      "source": "Student_Mindsets",
+      "target": "000_Concepts_MOC"
+    },
+    {
+      "source": "Student_Mindsets",
+      "target": "First_Principles_Thinking"
+    },
+    {
+      "source": "Student_Mindsets",
+      "target": "Dollar_Cost_Averaging"
+    },
+    {
+      "source": "Student_Mindsets",
+      "target": "STAR_Method_Tech"
+    },
+    {
+      "source": "Student_Mindsets",
+      "target": "Spaced_Repetition_SM2"
+    },
+    {
+      "source": "Student_Mindsets",
+      "target": "Critical_Thinking_Models"
+    },
+    {
+      "source": "Student_Mindsets",
+      "target": "Kelly_Criterion"
+    },
+    {
+      "source": "Critical_Thinking_Models",
+      "target": "Cognitive_Stack_Framework"
+    },
+    {
+      "source": "Critical_Thinking_Models",
+      "target": "First_Principles_Thinking"
+    },
+    {
+      "source": "Critical_Thinking_Models",
+      "target": "Socratic_Questioning_Method"
+    },
+    {
+      "source": "Critical_Thinking_Models",
+      "target": "Second_Order_Thinking"
+    },
+    {
+      "source": "Critical_Thinking_Models",
+      "target": "Opportunity_Cost_Hold"
+    },
+    {
+      "source": "Critical_Thinking_Models",
+      "target": "Cognitive_Stack_Framework"
+    },
+    {
+      "source": "Swimmers_Body_Illusion",
+      "target": "000_Concepts_MOC"
+    },
+    {
+      "source": "Swimmers_Body_Illusion",
+      "target": "Critical_Thinking_Models"
+    },
+    {
+      "source": "Swimmers_Body_Illusion",
+      "target": "Opportunity_Cost_Hold"
+    },
+    {
+      "source": "Confirmation_Bias",
+      "target": "000_Concepts_MOC"
+    },
+    {
+      "source": "Confirmation_Bias",
+      "target": "Top_University_Mindset"
+    },
+    {
+      "source": "Confirmation_Bias",
+      "target": "Socratic_Questioning_Method"
+    },
+    {
+      "source": "Confirmation_Bias",
+      "target": "Swimmers_Body_Illusion"
+    },
+    {
+      "source": "Confirmation_Bias",
+      "target": "Cognitive_Stack_Framework"
+    },
+    {
+      "source": "Cognitive_Stack_Framework",
+      "target": "Confirmation_Bias"
+    },
+    {
+      "source": "Cognitive_Stack_Framework",
+      "target": "False_Dichotomy"
+    },
+    {
+      "source": "Cognitive_Stack_Framework",
+      "target": "Spectrum_Thinking"
+    },
+    {
+      "source": "Cognitive_Stack_Framework",
+      "target": "Negativity_Bias_and_Outrage_Economy"
+    },
+    {
+      "source": "Cognitive_Stack_Framework",
+      "target": "Availability_Heuristic_and_Base_Rate"
+    },
+    {
+      "source": "Cognitive_Stack_Framework",
+      "target": "Institutional_Tradeoffs_Framework"
+    },
+    {
+      "source": "Cognitive_Stack_Framework",
+      "target": "Locus_of_Control_and_Circle_of_Influence"
+    },
+    {
+      "source": "Cognitive_Stack_Framework",
+      "target": "Critical_Thinking_Models"
+    },
+    {
+      "source": "Cognitive_Stack_Framework",
+      "target": "000_Concepts_MOC"
+    },
+    {
+      "source": "Cognitive_Stack_Framework",
+      "target": "First_Principles_Thinking"
+    },
+    {
+      "source": "Cognitive_Stack_Framework",
+      "target": "Systems_Thinking"
+    },
+    {
+      "source": "Cognitive_Stack_Framework",
+      "target": "Socratic_Questioning_Method"
+    },
+    {
+      "source": "Maslow_Hierarchy_and_Brain_Structure",
+      "target": "Short_Term_Income_and_Defensive_Saving"
+    },
+    {
+      "source": "Maslow_Hierarchy_and_Brain_Structure",
+      "target": "Kanban_Methodology"
+    },
+    {
+      "source": "Maslow_Hierarchy_and_Brain_Structure",
+      "target": "Swimmers_Body_Illusion"
+    },
+    {
+      "source": "Maslow_Hierarchy_and_Brain_Structure",
+      "target": "Product_Mindset"
+    },
+    {
+      "source": "Maslow_Hierarchy_and_Brain_Structure",
+      "target": "Customer_Outcome_Thinking"
+    },
+    {
+      "source": "Maslow_Hierarchy_and_Brain_Structure",
+      "target": "Confirmation_Bias"
+    },
+    {
+      "source": "Maslow_Hierarchy_and_Brain_Structure",
+      "target": "Student_Mindsets"
+    },
+    {
+      "source": "Maslow_Hierarchy_and_Brain_Structure",
+      "target": "STAR_Method_Tech"
+    },
+    {
+      "source": "Maslow_Hierarchy_and_Brain_Structure",
+      "target": "Cognitive_Stack_Framework"
+    },
+    {
+      "source": "Maslow_Hierarchy_and_Brain_Structure",
+      "target": "First_Principles_Thinking"
+    },
+    {
+      "source": "Maslow_Hierarchy_and_Brain_Structure",
+      "target": "Systems_Thinking"
+    },
+    {
+      "source": "Maslow_Hierarchy_and_Brain_Structure",
+      "target": "000_Concepts_MOC"
+    },
+    {
+      "source": "Maslow_Hierarchy_and_Brain_Structure",
+      "target": "Systems_Thinking"
+    },
+    {
+      "source": "Maslow_Hierarchy_and_Brain_Structure",
+      "target": "Cognitive_Stack_Framework"
+    },
+    {
+      "source": "Maslow_Hierarchy_and_Brain_Structure",
+      "target": "Critical_Thinking_Models"
+    },
+    {
+      "source": "Maslow_Hierarchy_and_Brain_Structure",
+      "target": "Short_Term_Income_and_Defensive_Saving"
+    },
+    {
+      "source": "Inversion_Thinking",
+      "target": "Second_Order_Thinking"
+    },
+    {
+      "source": "Inversion_Thinking",
+      "target": "First_Principles_Thinking"
+    },
+    {
+      "source": "Inversion_Thinking",
+      "target": "Swimmers_Body_Illusion"
+    },
+    {
+      "source": "Second_Order_Thinking",
+      "target": "Inversion_Thinking"
+    },
+    {
+      "source": "Second_Order_Thinking",
+      "target": "Asymmetric_Risk_Reward"
+    },
+    {
+      "source": "Second_Order_Thinking",
+      "target": "Opportunity_Cost_Hold"
+    },
+    {
+      "source": "Asymmetric_Risk_Reward",
+      "target": "Kelly_Criterion"
+    },
+    {
+      "source": "Asymmetric_Risk_Reward",
+      "target": "BATNA_Negotiation_Model"
+    },
+    {
+      "source": "Asymmetric_Risk_Reward",
+      "target": "Inversion_Thinking"
+    },
+    {
+      "source": "False_Dichotomy",
+      "target": "T_Shaped_Skills_Model"
+    },
+    {
+      "source": "False_Dichotomy",
+      "target": "Spectrum_Thinking"
+    },
+    {
+      "source": "False_Dichotomy",
+      "target": "Cognitive_Stack_Framework"
+    },
+    {
+      "source": "False_Dichotomy",
+      "target": "First_Principles_Thinking"
+    },
+    {
+      "source": "False_Dichotomy",
+      "target": "Socratic_Questioning_Method"
+    },
+    {
+      "source": "False_Dichotomy",
+      "target": "Confirmation_Bias"
+    },
+    {
+      "source": "False_Dichotomy",
+      "target": "Second_Order_Thinking"
+    },
+    {
+      "source": "False_Dichotomy",
+      "target": "Asymmetric_Risk_Reward"
+    },
+    {
+      "source": "False_Dichotomy",
+      "target": "Opportunity_Cost_Hold"
+    },
+    {
+      "source": "Negativity_Bias_and_Outrage_Economy",
+      "target": "False_Dichotomy"
+    },
+    {
+      "source": "Negativity_Bias_and_Outrage_Economy",
+      "target": "Confirmation_Bias"
+    },
+    {
+      "source": "Negativity_Bias_and_Outrage_Economy",
+      "target": "Availability_Heuristic_and_Base_Rate"
+    },
+    {
+      "source": "Negativity_Bias_and_Outrage_Economy",
+      "target": "Locus_of_Control_and_Circle_of_Influence"
+    },
+    {
+      "source": "Negativity_Bias_and_Outrage_Economy",
+      "target": "Cognitive_Stack_Framework"
+    },
+    {
+      "source": "Availability_Heuristic_and_Base_Rate",
+      "target": "Negativity_Bias_and_Outrage_Economy"
+    },
+    {
+      "source": "Availability_Heuristic_and_Base_Rate",
+      "target": "Swimmers_Body_Illusion"
+    },
+    {
+      "source": "Availability_Heuristic_and_Base_Rate",
+      "target": "False_Dichotomy"
+    },
+    {
+      "source": "Availability_Heuristic_and_Base_Rate",
+      "target": "Cognitive_Stack_Framework"
+    },
+    {
+      "source": "Availability_Heuristic_and_Base_Rate",
+      "target": "First_Principles_Thinking"
+    },
+    {
+      "source": "Institutional_Tradeoffs_Framework",
+      "target": "Systems_Thinking"
+    },
+    {
+      "source": "Institutional_Tradeoffs_Framework",
+      "target": "Second_Order_Thinking"
+    },
+    {
+      "source": "Institutional_Tradeoffs_Framework",
+      "target": "Opportunity_Cost_Hold"
+    },
+    {
+      "source": "Institutional_Tradeoffs_Framework",
+      "target": "Second_Order_Thinking"
+    },
+    {
+      "source": "Institutional_Tradeoffs_Framework",
+      "target": "Systems_Thinking"
+    },
+    {
+      "source": "Institutional_Tradeoffs_Framework",
+      "target": "Opportunity_Cost_Hold"
+    },
+    {
+      "source": "Institutional_Tradeoffs_Framework",
+      "target": "False_Dichotomy"
+    },
+    {
+      "source": "Institutional_Tradeoffs_Framework",
+      "target": "Cognitive_Stack_Framework"
+    },
+    {
+      "source": "Locus_of_Control_and_Circle_of_Influence",
+      "target": "Dollar_Cost_Averaging"
+    },
+    {
+      "source": "Locus_of_Control_and_Circle_of_Influence",
+      "target": "Short_Term_Income_and_Defensive_Saving"
+    },
+    {
+      "source": "Locus_of_Control_and_Circle_of_Influence",
+      "target": "LeetCode_Pattern_Mastery_Roadmap"
+    },
+    {
+      "source": "Locus_of_Control_and_Circle_of_Influence",
+      "target": "False_Dichotomy"
+    },
+    {
+      "source": "Locus_of_Control_and_Circle_of_Influence",
+      "target": "Negativity_Bias_and_Outrage_Economy"
+    },
+    {
+      "source": "Locus_of_Control_and_Circle_of_Influence",
+      "target": "Institutional_Tradeoffs_Framework"
+    },
+    {
+      "source": "Locus_of_Control_and_Circle_of_Influence",
+      "target": "Cognitive_Stack_Framework"
+    },
+    {
+      "source": "Locus_of_Control_and_Circle_of_Influence",
+      "target": "Short_Term_Income_and_Defensive_Saving"
+    },
+    {
+      "source": "Spectrum_Thinking",
+      "target": "False_Dichotomy"
+    },
+    {
+      "source": "Spectrum_Thinking",
+      "target": "7_Principles_of_Testing"
+    },
+    {
+      "source": "Spectrum_Thinking",
+      "target": "False_Dichotomy"
+    },
+    {
+      "source": "Spectrum_Thinking",
+      "target": "Institutional_Tradeoffs_Framework"
+    },
+    {
+      "source": "Spectrum_Thinking",
+      "target": "Systems_Thinking"
+    },
+    {
+      "source": "Spectrum_Thinking",
+      "target": "Cognitive_Stack_Framework"
+    },
+    {
+      "source": "Spectrum_Thinking",
+      "target": "Opportunity_Cost_Hold"
+    },
+    {
+      "source": "Spectrum_Thinking",
+      "target": "First_Principles_Thinking"
+    },
+    {
+      "source": "Polymathy_and_Modern_Generalist",
+      "target": "Systems_Thinking"
+    },
+    {
+      "source": "Polymathy_and_Modern_Generalist",
+      "target": "Second_Order_Thinking"
+    },
+    {
+      "source": "Polymathy_and_Modern_Generalist",
+      "target": "Availability_Heuristic_and_Base_Rate"
+    },
+    {
+      "source": "Polymathy_and_Modern_Generalist",
+      "target": "Negativity_Bias_and_Outrage_Economy"
+    },
+    {
+      "source": "Polymathy_and_Modern_Generalist",
+      "target": "Opportunity_Cost_Hold"
+    },
+    {
+      "source": "Polymathy_and_Modern_Generalist",
+      "target": "Kelly_Criterion"
+    },
+    {
+      "source": "Polymathy_and_Modern_Generalist",
+      "target": "First_Principles_Thinking"
+    },
+    {
+      "source": "Polymathy_and_Modern_Generalist",
+      "target": "Herbert_Simon_Learning_Method"
+    },
+    {
+      "source": "Polymathy_and_Modern_Generalist",
+      "target": "Master_Backend_Engineering_SSOT"
+    },
+    {
+      "source": "Polymathy_and_Modern_Generalist",
+      "target": "Asymmetric_Risk_Reward"
+    },
+    {
+      "source": "Polymathy_and_Modern_Generalist",
+      "target": "Kelly_Criterion"
+    },
+    {
+      "source": "Polymathy_and_Modern_Generalist",
+      "target": "Selective_Trust_Framework"
+    },
+    {
+      "source": "Polymathy_and_Modern_Generalist",
+      "target": "Tactical_Empathy_Chris_Voss"
+    },
+    {
+      "source": "Polymathy_and_Modern_Generalist",
+      "target": "Latency_Percentiles_and_Throughput_Fundamentals"
+    },
+    {
+      "source": "Map_of_Content",
+      "target": "Layered_Architecture"
+    },
+    {
+      "source": "Map_of_Content",
+      "target": "Public_Interface_Pattern"
+    },
+    {
+      "source": "Map_of_Content",
+      "target": "Shared_Module_Dependency_Rule"
+    },
+    {
+      "source": "Map_of_Content",
+      "target": "Zettelkasten_Method"
+    },
+    {
+      "source": "PARA_Method",
+      "target": "Zettelkasten_Method"
+    },
+    {
+      "source": "Zettelkasten_Method",
+      "target": "PARA_Method"
+    },
+    {
+      "source": "Visual_Workflow_Documentation_Policy",
+      "target": "Kanban_Methodology"
+    },
+    {
+      "source": "Visual_Workflow_Documentation_Policy",
+      "target": "Standard_Project_Timeline_SOP"
+    },
+    {
+      "source": "Visual_Workflow_Documentation_Policy",
+      "target": "Agile_Management_via_GitHub"
+    },
+    {
+      "source": "Herbert_Simon_Learning_Method",
+      "target": "Polymathy_and_Modern_Generalist"
+    },
+    {
+      "source": "Herbert_Simon_Learning_Method",
+      "target": "M_Shaped_Polymath_Skill_Stacking"
+    },
+    {
+      "source": "Herbert_Simon_Learning_Method",
+      "target": "Phonetic_Chunking"
+    },
+    {
+      "source": "Herbert_Simon_Learning_Method",
+      "target": "Spaced_Repetition_SM2"
+    },
+    {
+      "source": "Evan_Wallace_Path",
+      "target": "000_Concepts_MOC"
+    },
+    {
+      "source": "Evan_Wallace_Path",
+      "target": "Master_Backend_Engineering_SSOT"
+    },
+    {
+      "source": "Evan_Wallace_Path",
+      "target": "M_Shaped_Polymath_Skill_Stacking"
+    },
+    {
+      "source": "Linguistic_False_Friends",
+      "target": "Phonetic_Chunking"
+    },
+    {
+      "source": "Phonetic_Chunking",
+      "target": "Linguistic_False_Friends"
+    },
+    {
+      "source": "Phonetic_Chunking",
+      "target": "Spaced_Repetition_SM2"
+    },
+    {
+      "source": "Spaced_Repetition_SM2",
+      "target": "Phonetic_Chunking"
+    },
+    {
+      "source": "Gerunds_and_Ing_Usage",
+      "target": "English_Mastery_80_20_Roadmap"
+    },
+    {
+      "source": "Gerunds_and_Ing_Usage",
+      "target": "Phonetic_Chunking"
+    },
+    {
+      "source": "Gerunds_and_Ing_Usage",
+      "target": "Word_Family_and_Morphology_Method"
+    },
+    {
+      "source": "Word_Family_and_Morphology_Method",
+      "target": "Phonetic_Chunking"
+    },
+    {
+      "source": "Word_Family_and_Morphology_Method",
+      "target": "Spaced_Repetition_SM2"
+    },
+    {
+      "source": "7_Principles_of_Testing",
+      "target": "Error_Defect_Failure"
+    },
+    {
+      "source": "Black_Box_Testing_Techniques",
+      "target": "Error_Defect_Failure"
+    },
+    {
+      "source": "Black_Box_Testing_Techniques",
+      "target": "7_Principles_of_Testing"
+    },
+    {
+      "source": "White_Box_Testing_Techniques",
+      "target": "Error_Defect_Failure"
+    },
+    {
+      "source": "White_Box_Testing_Techniques",
+      "target": "7_Principles_of_Testing"
+    },
+    {
+      "source": "White_Box_Testing_Techniques",
+      "target": "Black_Box_Testing_Techniques"
+    },
+    {
+      "source": "Test_Case",
+      "target": "Error_Defect_Failure"
+    },
+    {
+      "source": "Test_Case",
+      "target": "7_Principles_of_Testing"
+    },
+    {
+      "source": "Test_Case",
+      "target": "Black_Box_Testing_Techniques"
+    },
+    {
+      "source": "Equivalence_Partitioning",
+      "target": "7_Principles_of_Testing"
+    },
+    {
+      "source": "Equivalence_Partitioning",
+      "target": "Black_Box_Testing_Techniques"
+    },
+    {
+      "source": "Equivalence_Partitioning",
+      "target": "Test_Case"
+    },
+    {
+      "source": "Equivalence_Partitioning",
+      "target": "7_Principles_of_Testing"
+    },
+    {
+      "source": "Equivalence_Partitioning",
+      "target": "Error_Defect_Failure"
+    },
+    {
+      "source": "K6_Execution_Lifecycle_and_Memory_Architecture",
+      "target": "K6_Scenario_Executors_and_Workload_Modeling"
+    },
+    {
+      "source": "K6_Execution_Lifecycle_and_Memory_Architecture",
+      "target": "K6_Telemetry_Metrics_and_Threshold_Gates"
+    },
+    {
+      "source": "K6_Execution_Lifecycle_and_Memory_Architecture",
+      "target": "K6_High_Concurrency_Load_Testing_SOP"
+    },
+    {
+      "source": "K6_Execution_Lifecycle_and_Memory_Architecture",
+      "target": "Stack_vs_Heap_Memory_Fundamentals"
+    },
+    {
+      "source": "K6_Execution_Lifecycle_and_Memory_Architecture",
+      "target": "Local_Stress_Testing_Benchmark"
+    },
+    {
+      "source": "K6_Scenario_Executors_and_Workload_Modeling",
+      "target": "Open_vs_Closed_Workload_Models"
+    },
+    {
+      "source": "K6_Scenario_Executors_and_Workload_Modeling",
+      "target": "K6_Execution_Lifecycle_and_Memory_Architecture"
+    },
+    {
+      "source": "K6_Scenario_Executors_and_Workload_Modeling",
+      "target": "Open_vs_Closed_Workload_Models"
+    },
+    {
+      "source": "K6_Scenario_Executors_and_Workload_Modeling",
+      "target": "K6_Telemetry_Metrics_and_Threshold_Gates"
+    },
+    {
+      "source": "K6_Scenario_Executors_and_Workload_Modeling",
+      "target": "K6_High_Concurrency_Load_Testing_SOP"
+    },
+    {
+      "source": "K6_Scenario_Executors_and_Workload_Modeling",
+      "target": "Redis_Redlock"
+    },
+    {
+      "source": "K6_Scenario_Executors_and_Workload_Modeling",
+      "target": "Postgres_Select_For_Update_Pessimistic_Locking"
+    },
+    {
+      "source": "K6_Scenario_Executors_and_Workload_Modeling",
+      "target": "Multi_Layer_Rate_Limiting_DDoS_Prevention"
+    },
+    {
+      "source": "K6_Telemetry_Metrics_and_Threshold_Gates",
+      "target": "K6_Execution_Lifecycle_and_Memory_Architecture"
+    },
+    {
+      "source": "K6_Telemetry_Metrics_and_Threshold_Gates",
+      "target": "K6_Scenario_Executors_and_Workload_Modeling"
+    },
+    {
+      "source": "K6_Telemetry_Metrics_and_Threshold_Gates",
+      "target": "K6_High_Concurrency_Load_Testing_SOP"
+    },
+    {
+      "source": "K6_Telemetry_Metrics_and_Threshold_Gates",
+      "target": "7_Principles_of_Testing"
+    },
+    {
+      "source": "K6_Telemetry_Metrics_and_Threshold_Gates",
+      "target": "Error_Defect_Failure"
+    },
+    {
+      "source": "K6_Runner_Performance_and_OS_Tuning",
+      "target": "K6_Execution_Lifecycle_and_Memory_Architecture"
+    },
+    {
+      "source": "K6_Runner_Performance_and_OS_Tuning",
+      "target": "K6_Scenario_Executors_and_Workload_Modeling"
+    },
+    {
+      "source": "K6_Runner_Performance_and_OS_Tuning",
+      "target": "K6_Telemetry_Metrics_and_Threshold_Gates"
+    },
+    {
+      "source": "K6_Runner_Performance_and_OS_Tuning",
+      "target": "K6_High_Concurrency_Load_Testing_SOP"
+    },
+    {
+      "source": "K6_Runner_Performance_and_OS_Tuning",
+      "target": "Local_Stress_Testing_Benchmark"
+    },
+    {
+      "source": "Open_vs_Closed_Workload_Models",
+      "target": "K6_Scenario_Executors_and_Workload_Modeling"
+    },
+    {
+      "source": "Open_vs_Closed_Workload_Models",
+      "target": "K6_Telemetry_Metrics_and_Threshold_Gates"
+    },
+    {
+      "source": "Open_vs_Closed_Workload_Models",
+      "target": "K6_Execution_Lifecycle_and_Memory_Architecture"
+    },
+    {
+      "source": "Open_vs_Closed_Workload_Models",
+      "target": "K6_High_Concurrency_Load_Testing_SOP"
+    },
+    {
+      "source": "Garbage_Collection_Fundamentals",
+      "target": "Memory_Leaks_Core_Mechanics"
+    },
+    {
+      "source": "Garbage_Collection_Fundamentals",
+      "target": "Stack_vs_Heap_Memory_Fundamentals"
+    },
+    {
+      "source": "Garbage_Collection_Fundamentals",
+      "target": "JS_Generational_Garbage_Collection"
+    },
+    {
+      "source": "Garbage_Collection_Fundamentals",
+      "target": "JS_Memory_Leaks_and_Mitigation"
+    },
+    {
+      "source": "Garbage_Collection_Fundamentals",
+      "target": "000_Concepts_MOC"
+    },
+    {
+      "source": "Memory_Leaks_Core_Mechanics",
+      "target": "Garbage_Collection_Fundamentals"
+    },
+    {
+      "source": "Memory_Leaks_Core_Mechanics",
+      "target": "Stack_vs_Heap_Memory_Fundamentals"
+    },
+    {
+      "source": "Memory_Leaks_Core_Mechanics",
+      "target": "JS_Memory_Leaks_and_Mitigation"
+    },
+    {
+      "source": "Memory_Leaks_Core_Mechanics",
+      "target": "000_Concepts_MOC"
+    },
+    {
+      "source": "Stack_vs_Heap_Memory_Fundamentals",
+      "target": "Garbage_Collection_Fundamentals"
+    },
+    {
+      "source": "Stack_vs_Heap_Memory_Fundamentals",
+      "target": "Memory_Leaks_Core_Mechanics"
+    },
+    {
+      "source": "Stack_vs_Heap_Memory_Fundamentals",
+      "target": "Heap_Memory_Size_Classes_and_Alignment"
+    },
+    {
+      "source": "Stack_vs_Heap_Memory_Fundamentals",
+      "target": "Go_Escape_Analysis_Mechanics"
+    },
+    {
+      "source": "Stack_vs_Heap_Memory_Fundamentals",
+      "target": "JS_Stack_vs_Heap_Memory"
+    },
+    {
+      "source": "Stack_vs_Heap_Memory_Fundamentals",
+      "target": "000_Concepts_MOC"
+    },
+    {
+      "source": "Dynamic_Array_Exponential_Growth",
+      "target": "Stack_vs_Heap_Memory_Fundamentals"
+    },
+    {
+      "source": "Dynamic_Array_Exponential_Growth",
+      "target": "Heap_Memory_Size_Classes_and_Alignment"
+    },
+    {
+      "source": "Dynamic_Array_Exponential_Growth",
+      "target": "Go_Slice_Underlying_Mechanics"
+    },
+    {
+      "source": "Heap_Memory_Size_Classes_and_Alignment",
+      "target": "Stack_vs_Heap_Memory_Fundamentals"
+    },
+    {
+      "source": "Heap_Memory_Size_Classes_and_Alignment",
+      "target": "Dynamic_Array_Exponential_Growth"
+    },
+    {
+      "source": "Heap_Memory_Size_Classes_and_Alignment",
+      "target": "Go_Slice_Underlying_Mechanics"
+    },
+    {
+      "source": "SDLC_Methodologies_Evolution",
+      "target": "Waterfall"
+    },
+    {
+      "source": "SDLC_Methodologies_Evolution",
+      "target": "V_Model"
+    },
+    {
+      "source": "SDLC_Methodologies_Evolution",
+      "target": "Prototype_Model"
+    },
+    {
+      "source": "SDLC_Methodologies_Evolution",
+      "target": "Spiral_Model"
+    },
+    {
+      "source": "SDLC_Methodologies_Evolution",
+      "target": "Agile_Scrum"
+    },
+    {
+      "source": "Git_DAG_and_Object_Storage_Model",
+      "target": "Git_Conflict_and_Three_Way_Merge_Mechanics"
+    },
+    {
+      "source": "Git_DAG_and_Object_Storage_Model",
+      "target": "Git_Four_Zones_and_Reset_Lifecycle"
+    },
+    {
+      "source": "Git_DAG_and_Object_Storage_Model",
+      "target": "Stack_vs_Heap_Memory_Fundamentals"
+    },
+    {
+      "source": "Git_DAG_and_Object_Storage_Model",
+      "target": "000_Concepts_MOC"
+    },
+    {
+      "source": "Git_Merge_Base_Algorithm",
+      "target": "Git_DAG_and_Object_Storage_Model"
+    },
+    {
+      "source": "Git_Merge_Base_Algorithm",
+      "target": "Git_Conflict_and_Three_Way_Merge_Mechanics"
+    },
+    {
+      "source": "Git_Merge_Base_Algorithm",
+      "target": "000_Concepts_MOC"
+    },
+    {
+      "source": "Git_Stash_Internals_and_Object_Structure",
+      "target": "Git_DAG_and_Object_Storage_Model"
+    },
+    {
+      "source": "Git_Stash_Internals_and_Object_Structure",
+      "target": "Git_Four_Zones_and_Reset_Lifecycle"
+    },
+    {
+      "source": "Git_Stash_Internals_and_Object_Structure",
+      "target": "000_Concepts_MOC"
+    },
+    {
+      "source": "Process_vs_Thread_and_Context_Switching",
+      "target": "Stack_vs_Heap_Memory_Fundamentals"
+    },
+    {
+      "source": "Process_vs_Thread_and_Context_Switching",
+      "target": "Master_Backend_Engineering_SSOT"
+    },
+    {
+      "source": "Process_vs_Thread_and_Context_Switching",
+      "target": "000_Concepts_MOC"
+    },
+    {
+      "source": "MQTT_Broker_Architecture",
+      "target": "MQTT_QoS_Mechanics"
+    },
+    {
+      "source": "MQTT_Broker_Architecture",
+      "target": "MQTT_QoS_Mechanics"
+    },
+    {
+      "source": "MQTT_Broker_Architecture",
+      "target": "Process_vs_Thread_and_Context_Switching"
+    },
+    {
+      "source": "MQTT_Broker_Architecture",
+      "target": "000_Concepts_MOC"
+    },
+    {
+      "source": "MQTT_QoS_Mechanics",
+      "target": "MQTT_Broker_Architecture"
+    },
+    {
+      "source": "MQTT_QoS_Mechanics",
+      "target": "Process_vs_Thread_and_Context_Switching"
+    },
+    {
+      "source": "MQTT_QoS_Mechanics",
+      "target": "000_Concepts_MOC"
+    },
+    {
+      "source": "Finite_State_Machine_and_Concurrency_Guard",
+      "target": "Postgres_Select_For_Update_Pessimistic_Locking"
+    },
+    {
+      "source": "Finite_State_Machine_and_Concurrency_Guard",
+      "target": "Master_Backend_Engineering_SSOT"
+    },
+    {
+      "source": "Finite_State_Machine_and_Concurrency_Guard",
+      "target": "000_Concepts_MOC"
+    },
+    {
+      "source": "N_Plus_One_Query_Optimization_via_In_Memory_Hash_Map",
+      "target": "Finite_State_Machine_and_Concurrency_Guard"
+    },
+    {
+      "source": "N_Plus_One_Query_Optimization_via_In_Memory_Hash_Map",
+      "target": "Postgres_Select_For_Update_Pessimistic_Locking"
+    },
+    {
+      "source": "N_Plus_One_Query_Optimization_via_In_Memory_Hash_Map",
+      "target": "000_Concepts_MOC"
+    },
+    {
+      "source": "Latency_Percentiles_and_Throughput_Fundamentals",
+      "target": "Finite_State_Machine_and_Concurrency_Guard"
+    },
+    {
+      "source": "Latency_Percentiles_and_Throughput_Fundamentals",
+      "target": "Master_Backend_Engineering_SSOT"
+    },
+    {
+      "source": "Latency_Percentiles_and_Throughput_Fundamentals",
+      "target": "000_Concepts_MOC"
+    },
+    {
+      "source": "Redis_Single_Threaded_Event_Loop_Architecture",
+      "target": "Process_vs_Thread_and_Context_Switching"
+    },
+    {
+      "source": "Redis_Single_Threaded_Event_Loop_Architecture",
+      "target": "Latency_Percentiles_and_Throughput_Fundamentals"
+    },
+    {
+      "source": "Redis_Single_Threaded_Event_Loop_Architecture",
+      "target": "000_Concepts_MOC"
+    },
+    {
+      "source": "BATNA_Negotiation_Model",
+      "target": "ZOPA_Negotiation_Framework"
+    },
+    {
+      "source": "BATNA_Negotiation_Model",
+      "target": "Principled_Negotiation_Getting_To_Yes"
+    },
+    {
+      "source": "BATNA_Negotiation_Model",
+      "target": "Opportunity_Cost_Hold"
+    },
+    {
+      "source": "BATNA_Negotiation_Model",
+      "target": "Cognitive_Stack_Framework"
+    },
+    {
+      "source": "ZOPA_Negotiation_Framework",
+      "target": "BATNA_Negotiation_Model"
+    },
+    {
+      "source": "ZOPA_Negotiation_Framework",
+      "target": "BATNA_Negotiation_Model"
+    },
+    {
+      "source": "ZOPA_Negotiation_Framework",
+      "target": "Principled_Negotiation_Getting_To_Yes"
+    },
+    {
+      "source": "ZOPA_Negotiation_Framework",
+      "target": "Tactical_Empathy_Chris_Voss"
+    },
+    {
+      "source": "Principled_Negotiation_Getting_To_Yes",
+      "target": "Tactical_Empathy_Chris_Voss"
+    },
+    {
+      "source": "Principled_Negotiation_Getting_To_Yes",
+      "target": "BATNA_Negotiation_Model"
+    },
+    {
+      "source": "Principled_Negotiation_Getting_To_Yes",
+      "target": "BATNA_Negotiation_Model"
+    },
+    {
+      "source": "Principled_Negotiation_Getting_To_Yes",
+      "target": "ZOPA_Negotiation_Framework"
+    },
+    {
+      "source": "Principled_Negotiation_Getting_To_Yes",
+      "target": "Socratic_Questioning_Method"
+    },
+    {
+      "source": "Principled_Negotiation_Getting_To_Yes",
+      "target": "Tactical_Empathy_Chris_Voss"
+    },
+    {
+      "source": "Tactical_Empathy_Chris_Voss",
+      "target": "Principled_Negotiation_Getting_To_Yes"
+    },
+    {
+      "source": "Tactical_Empathy_Chris_Voss",
+      "target": "Socratic_Questioning_Method"
+    },
+    {
+      "source": "Tactical_Empathy_Chris_Voss",
+      "target": "Confirmation_Bias"
+    },
+    {
+      "source": "Tactical_Empathy_Chris_Voss",
+      "target": "Maslow_Hierarchy_and_Brain_Structure"
+    },
+    {
+      "source": "Selective_Trust_Framework",
+      "target": "Tactical_Empathy_Chris_Voss"
+    },
+    {
+      "source": "Selective_Trust_Framework",
+      "target": "Principled_Negotiation_Getting_To_Yes"
+    },
+    {
+      "source": "Selective_Trust_Framework",
+      "target": "Confirmation_Bias"
+    },
+    {
+      "source": "Selective_Trust_Framework",
+      "target": "Maslow_Hierarchy_and_Brain_Structure"
+    },
+    {
+      "source": "Product_Mindset",
+      "target": "000_Concepts_MOC"
+    },
+    {
+      "source": "Product_Mindset",
+      "target": "Customer_Outcome_Thinking"
+    },
+    {
+      "source": "Product_Mindset",
+      "target": "Systems_Thinking"
+    },
+    {
+      "source": "Customer_Outcome_Thinking",
+      "target": "Cursor_Pagination"
+    },
+    {
+      "source": "Customer_Outcome_Thinking",
+      "target": "Interface_Driven_Design"
+    },
+    {
+      "source": "Customer_Outcome_Thinking",
+      "target": "000_Concepts_MOC"
+    },
+    {
+      "source": "Customer_Outcome_Thinking",
+      "target": "Product_Mindset"
+    },
+    {
+      "source": "Customer_Outcome_Thinking",
+      "target": "Systems_Thinking"
+    },
+    {
+      "source": "Kanban_Methodology",
+      "target": "Agile_Scrum"
+    },
+    {
+      "source": "Kanban_Methodology",
+      "target": "Agile_Management_via_GitHub"
+    },
+    {
+      "source": "Kanban_Methodology",
+      "target": "Systems_Thinking"
+    },
+    {
+      "source": "Dating_Game_Theory",
+      "target": "000_Concepts_MOC"
+    },
+    {
+      "source": "Dating_Game_Theory",
+      "target": "Systems_Thinking"
+    },
+    {
+      "source": "Dating_Game_Theory",
+      "target": "Critical_Thinking_Models"
+    },
+    {
+      "source": "Dating_Game_Theory",
+      "target": "Opportunity_Cost_Hold"
+    },
+    {
+      "source": "RMIT_Critical_Review_AI_Coding_2026",
+      "target": "Cognitive_Stack_Framework"
+    },
+    {
+      "source": "RMIT_Critical_Review_AI_Coding_2026",
+      "target": "Cognitive_Stack_Framework"
+    },
+    {
+      "source": "RMIT_Critical_Review_AI_Coding_2026",
+      "target": "First_Principles_Thinking"
+    },
+    {
+      "source": "RMIT_Critical_Review_AI_Coding_2026",
+      "target": "Socratic_Questioning_Method"
+    },
+    {
+      "source": "RMIT_Critical_Review_AI_Coding_2026",
+      "target": "Systems_Thinking"
+    },
+    {
+      "source": "RMIT_Critical_Review_AI_Coding_2026",
+      "target": "Second_Order_Thinking"
+    },
+    {
+      "source": "RMIT_Critical_Review_AI_Coding_2026",
+      "target": "Cognitive_Stack_Framework"
+    },
+    {
+      "source": "RMIT_Critical_Review_AI_Coding_2026",
+      "target": "First_Principles_Thinking"
+    },
+    {
+      "source": "RMIT_Critical_Review_AI_Coding_2026",
+      "target": "Systems_Thinking"
+    },
+    {
+      "source": "RMIT_Critical_Review_AI_Coding_2026",
+      "target": "Second_Order_Thinking"
+    },
+    {
+      "source": "RMIT_Critical_Review_AI_Coding_2026",
+      "target": "Socratic_Questioning_Method"
+    },
+    {
+      "source": "RMIT_Critical_Review_AI_Coding_2026",
+      "target": "Confirmation_Bias"
+    },
+    {
+      "source": "GPS_Case_Study_DailyDev_Analysis",
+      "target": "GPS_Goal_Problem_Solution_Framework"
+    },
+    {
+      "source": "GPS_Case_Study_DailyDev_Analysis",
+      "target": "McKinsey_Issue_Tree_Framework"
+    },
+    {
+      "source": "GPS_Case_Study_DailyDev_Analysis",
+      "target": "Automated_Verification_System_Framework"
+    },
+    {
+      "source": "GPS_Case_Study_DailyDev_Analysis",
+      "target": "GPS_Goal_Problem_Solution_Framework"
+    },
+    {
+      "source": "GPS_Case_Study_DailyDev_Analysis",
+      "target": "McKinsey_Issue_Tree_Framework"
+    },
+    {
+      "source": "GPS_Case_Study_DailyDev_Analysis",
+      "target": "Automated_Verification_System_Framework"
+    },
+    {
+      "source": "GPS_Case_Study_DailyDev_Analysis",
+      "target": "RMIT_Critical_Review_AI_Coding_2026"
+    },
+    {
+      "source": "GPS_Case_Study_DailyDev_Analysis",
+      "target": "Cognitive_Stack_Framework"
+    },
+    {
+      "source": "Go_Benchmarking_and_Allocation_Guide",
+      "target": "Go_Slice_Underlying_Mechanics"
+    },
+    {
+      "source": "Go_Benchmarking_and_Allocation_Guide",
+      "target": "Go_Slice_Underlying_Mechanics"
+    },
+    {
+      "source": "Go_Benchmarking_and_Allocation_Guide",
+      "target": "Stack_vs_Heap_Memory_Fundamentals"
+    },
+    {
+      "source": "Go_Benchmarking_and_Allocation_Guide",
+      "target": "Garbage_Collection_Fundamentals"
+    },
+    {
+      "source": "Automated_Verification_System_Framework",
+      "target": "GPS_Goal_Problem_Solution_Framework"
+    },
+    {
+      "source": "Automated_Verification_System_Framework",
+      "target": "McKinsey_Issue_Tree_Framework"
+    },
+    {
+      "source": "Automated_Verification_System_Framework",
+      "target": "GPS_Case_Study_DailyDev_Analysis"
+    },
+    {
+      "source": "Automated_Verification_System_Framework",
+      "target": "Cognitive_Stack_Framework"
+    },
+    {
+      "source": "System_Design_Architecture_Roadmap",
+      "target": "Master_Backend_Engineering_SSOT"
+    },
+    {
+      "source": "System_Design_Architecture_Roadmap",
+      "target": "Postgres_SQL_Performance_Benchmarking_Guide"
+    },
+    {
+      "source": "System_Design_Architecture_Roadmap",
+      "target": "Local_Stress_Testing_Benchmark"
+    },
+    {
+      "source": "System_Design_Architecture_Roadmap",
+      "target": "Outbox_Pattern"
+    },
+    {
+      "source": "Problem_Driven_System_Design_Framework",
+      "target": "Metalearning_Just_In_Time_Framework"
+    },
+    {
+      "source": "Problem_Driven_System_Design_Framework",
+      "target": "System_Design_Architecture_Roadmap"
+    },
+    {
+      "source": "Problem_Driven_System_Design_Framework",
+      "target": "Customer_Outcome_Thinking"
+    },
+    {
+      "source": "Problem_Driven_System_Design_Framework",
+      "target": "First_Principles_Thinking"
+    },
+    {
+      "source": "Postgres_SQL_Performance_Benchmarking_Guide",
+      "target": "Master_Backend_Engineering_SSOT"
+    },
+    {
+      "source": "Postgres_SQL_Performance_Benchmarking_Guide",
+      "target": "System_Design_Architecture_Roadmap"
+    },
+    {
+      "source": "Postgres_SQL_Performance_Benchmarking_Guide",
+      "target": "Local_Stress_Testing_Benchmark"
+    },
+    {
+      "source": "Postgres_SQL_Performance_Benchmarking_Guide",
+      "target": "Database_Indexing_Guidelines"
+    },
+    {
+      "source": "Postgres_SQL_Performance_Benchmarking_Guide",
+      "target": "Index_BPlusTree"
+    },
+    {
+      "source": "Postgres_SQL_Performance_Benchmarking_Guide",
+      "target": "Postgres_Select_For_Update_Pessimistic_Locking"
+    },
+    {
+      "source": "LeetCode_Pattern_Mastery_Roadmap",
+      "target": "Master_Backend_Engineering_SSOT"
+    },
+    {
+      "source": "LeetCode_Pattern_Mastery_Roadmap",
+      "target": "System_Design_Architecture_Roadmap"
+    },
+    {
+      "source": "LeetCode_Pattern_Mastery_Roadmap",
+      "target": "Postgres_SQL_Performance_Benchmarking_Guide"
+    },
+    {
+      "source": "LeetCode_Pattern_Mastery_Roadmap",
+      "target": "Data_Structures_and_Algorithms_Roadmap"
+    },
+    {
+      "source": "Data_Structures_and_Algorithms_Roadmap",
+      "target": "First_Principles_Thinking"
+    },
+    {
+      "source": "Data_Structures_and_Algorithms_Roadmap",
+      "target": "Herbert_Simon_Learning_Method"
+    },
+    {
+      "source": "Data_Structures_and_Algorithms_Roadmap",
+      "target": "Top_University_Mindset"
+    },
+    {
+      "source": "Data_Structures_and_Algorithms_Roadmap",
+      "target": "Systems_Thinking"
+    },
+    {
+      "source": "Data_Structures_and_Algorithms_Roadmap",
+      "target": "Critical_Thinking_Models"
+    },
+    {
+      "source": "Multi_Layer_Rate_Limiting_DDoS_Prevention",
+      "target": "000_Tech_MOC"
+    },
+    {
+      "source": "Local_Stress_Testing_Benchmark",
+      "target": "000_Methods_MOC"
+    },
+    {
+      "source": "Local_Stress_Testing_Benchmark",
+      "target": "Newsfeed_Architecture_Fanout"
+    },
+    {
+      "source": "Prototype_Model",
+      "target": "SDLC_Methodologies_Evolution"
+    },
+    {
+      "source": "Prototype_Model",
+      "target": "SDLC_Methodologies_Evolution"
+    },
+    {
+      "source": "Prototype_Model",
+      "target": "Waterfall"
+    },
+    {
+      "source": "Prototype_Model",
+      "target": "V_Model"
+    },
+    {
+      "source": "Prototype_Model",
+      "target": "Agile_Scrum"
+    },
+    {
+      "source": "Prototype_Model",
+      "target": "Standard_Project_Timeline_SOP"
+    },
+    {
+      "source": "Spiral_Model",
+      "target": "SDLC_Methodologies_Evolution"
+    },
+    {
+      "source": "Spiral_Model",
+      "target": "SDLC_Methodologies_Evolution"
+    },
+    {
+      "source": "Spiral_Model",
+      "target": "Waterfall"
+    },
+    {
+      "source": "Spiral_Model",
+      "target": "V_Model"
+    },
+    {
+      "source": "Spiral_Model",
+      "target": "Prototype_Model"
+    },
+    {
+      "source": "Spiral_Model",
+      "target": "Agile_Scrum"
+    },
+    {
+      "source": "Spiral_Model",
+      "target": "Standard_Project_Timeline_SOP"
+    },
+    {
+      "source": "V_Model",
+      "target": "SDLC_Methodologies_Evolution"
+    },
+    {
+      "source": "V_Model",
+      "target": "SDLC_Methodologies_Evolution"
+    },
+    {
+      "source": "V_Model",
+      "target": "Waterfall"
+    },
+    {
+      "source": "V_Model",
+      "target": "Agile_Scrum"
+    },
+    {
+      "source": "V_Model",
+      "target": "Standard_Project_Timeline_SOP"
+    },
+    {
+      "source": "Waterfall",
+      "target": "SDLC_Methodologies_Evolution"
+    },
+    {
+      "source": "Waterfall",
+      "target": "SDLC_Methodologies_Evolution"
+    },
+    {
+      "source": "Waterfall",
+      "target": "Agile_Scrum"
+    },
+    {
+      "source": "Waterfall",
+      "target": "Standard_Project_Timeline_SOP"
+    },
+    {
+      "source": "Agile_Management_via_GitHub",
+      "target": "Agile_Scrum"
+    },
+    {
+      "source": "Agile_Management_via_GitHub",
+      "target": "Standard_Project_Timeline_SOP"
+    },
+    {
+      "source": "Agile_Management_via_GitHub",
+      "target": "STAR_Method_Tech"
+    },
+    {
+      "source": "Agile_Scrum",
+      "target": "Waterfall"
+    },
+    {
+      "source": "Agile_Scrum",
+      "target": "V_Model"
+    },
+    {
+      "source": "Agile_Scrum",
+      "target": "Spiral_Model"
+    },
+    {
+      "source": "Agile_Scrum",
+      "target": "SDLC_Methodologies_Evolution"
+    },
+    {
+      "source": "Agile_Scrum",
+      "target": "SDLC_Methodologies_Evolution"
+    },
+    {
+      "source": "Agile_Scrum",
+      "target": "Standard_Project_Timeline_SOP"
+    },
+    {
+      "source": "WBS_Best_Practices",
+      "target": "000_Methods_MOC"
+    },
+    {
+      "source": "WBS_Best_Practices",
+      "target": "Agile_Scrum"
+    },
+    {
+      "source": "WBS_Best_Practices",
+      "target": "Agile_Management_via_GitHub"
+    },
+    {
+      "source": "Standard_Project_Timeline_SOP",
+      "target": "Modular_Monolith_Architecture"
+    },
+    {
+      "source": "STAR_Method_Tech",
+      "target": "First_Principles_Thinking"
+    },
+    {
+      "source": "STAR_Method_Tech",
+      "target": "Socratic_Questioning_Method"
+    },
+    {
+      "source": "Vim_Shortcuts",
+      "target": "000_Methods_MOC"
+    },
+    {
+      "source": "Master_Backend_Engineering_SSOT",
+      "target": "Stack_vs_Heap_Memory_Fundamentals"
+    },
+    {
+      "source": "Master_Backend_Engineering_SSOT",
+      "target": "Process_vs_Thread_and_Context_Switching"
+    },
+    {
+      "source": "Master_Backend_Engineering_SSOT",
+      "target": "Garbage_Collection_Fundamentals"
+    },
+    {
+      "source": "Master_Backend_Engineering_SSOT",
+      "target": "Memory_Leaks_Core_Mechanics"
+    },
+    {
+      "source": "Master_Backend_Engineering_SSOT",
+      "target": "Dynamic_Array_Exponential_Growth"
+    },
+    {
+      "source": "Master_Backend_Engineering_SSOT",
+      "target": "Heap_Memory_Size_Classes_and_Alignment"
+    },
+    {
+      "source": "Master_Backend_Engineering_SSOT",
+      "target": "JS_Stack_vs_Heap_Memory"
+    },
+    {
+      "source": "Master_Backend_Engineering_SSOT",
+      "target": "JS_Generational_Garbage_Collection"
+    },
+    {
+      "source": "Master_Backend_Engineering_SSOT",
+      "target": "JS_Memory_Leaks_and_Mitigation"
+    },
+    {
+      "source": "Master_Backend_Engineering_SSOT",
+      "target": "JS_V8_Hidden_Classes_Inline_Caching"
+    },
+    {
+      "source": "Master_Backend_Engineering_SSOT",
+      "target": "JS_Destructuring"
+    },
+    {
+      "source": "Master_Backend_Engineering_SSOT",
+      "target": "AST_ESLint"
+    },
+    {
+      "source": "Master_Backend_Engineering_SSOT",
+      "target": "JS_Temporal_API"
+    },
+    {
+      "source": "Master_Backend_Engineering_SSOT",
+      "target": "JS_Immer_Immutable_State"
+    },
+    {
+      "source": "Master_Backend_Engineering_SSOT",
+      "target": "Go_Slice_Underlying_Mechanics"
+    },
+    {
+      "source": "Master_Backend_Engineering_SSOT",
+      "target": "Go_Array_Vs_Slice_Distinction"
+    },
+    {
+      "source": "Master_Backend_Engineering_SSOT",
+      "target": "Go_Escape_Analysis_Mechanics"
+    },
+    {
+      "source": "Master_Backend_Engineering_SSOT",
+      "target": "TS_Type_System_Structural_Type_Erasure"
+    },
+    {
+      "source": "Master_Backend_Engineering_SSOT",
+      "target": "TS_Distributive_Conditional_Types"
+    },
+    {
+      "source": "Master_Backend_Engineering_SSOT",
+      "target": "TS_Type_Utilities_Omit_Pick_Exclude"
+    },
+    {
+      "source": "Master_Backend_Engineering_SSOT",
+      "target": "TS_Decorators"
+    },
+    {
+      "source": "Master_Backend_Engineering_SSOT",
+      "target": "Tree_Shaking"
+    },
+    {
+      "source": "Master_Backend_Engineering_SSOT",
+      "target": "Client_Side_Encryption"
+    },
+    {
+      "source": "Master_Backend_Engineering_SSOT",
+      "target": "Serverless_Architecture"
+    },
+    {
+      "source": "Master_Backend_Engineering_SSOT",
+      "target": "Edge_Computing"
+    },
+    {
+      "source": "Master_Backend_Engineering_SSOT",
+      "target": "NextJS_after_API"
+    },
+    {
+      "source": "Master_Backend_Engineering_SSOT",
+      "target": "Clean_Architecture"
+    },
+    {
+      "source": "Master_Backend_Engineering_SSOT",
+      "target": "SOLID_Principles"
+    },
+    {
+      "source": "Master_Backend_Engineering_SSOT",
+      "target": "Domain_Driven_Design"
+    },
+    {
+      "source": "Master_Backend_Engineering_SSOT",
+      "target": "Layered_Architecture"
+    },
+    {
+      "source": "Master_Backend_Engineering_SSOT",
+      "target": "MVC_Pattern"
+    },
+    {
+      "source": "Master_Backend_Engineering_SSOT",
+      "target": "Modular_Monolith_Architecture"
+    },
+    {
+      "source": "Master_Backend_Engineering_SSOT",
+      "target": "Shared_Module_Dependency_Rule"
+    },
+    {
+      "source": "Master_Backend_Engineering_SSOT",
+      "target": "Circular_Dependency"
+    },
+    {
+      "source": "Master_Backend_Engineering_SSOT",
+      "target": "Public_Interface_Pattern"
+    },
+    {
+      "source": "Master_Backend_Engineering_SSOT",
+      "target": "Unified_Fullstack_vs_Split_Architecture"
+    },
+    {
+      "source": "Master_Backend_Engineering_SSOT",
+      "target": "Dependency_Injection"
+    },
+    {
+      "source": "Master_Backend_Engineering_SSOT",
+      "target": "Interface_Driven_Design"
+    },
+    {
+      "source": "Master_Backend_Engineering_SSOT",
+      "target": "Repository_Pattern_vs_Fat_Service"
+    },
+    {
+      "source": "Master_Backend_Engineering_SSOT",
+      "target": "DI_WinForms_Components"
+    },
+    {
+      "source": "Master_Backend_Engineering_SSOT",
+      "target": "System_Design_Architecture_Roadmap"
+    },
+    {
+      "source": "Master_Backend_Engineering_SSOT",
+      "target": "Problem_Driven_System_Design_Framework"
+    },
+    {
+      "source": "Master_Backend_Engineering_SSOT",
+      "target": "Newsfeed_Architecture_Fanout"
+    },
+    {
+      "source": "Master_Backend_Engineering_SSOT",
+      "target": "Index_BPlusTree"
+    },
+    {
+      "source": "Master_Backend_Engineering_SSOT",
+      "target": "Database_Indexing_Guidelines"
+    },
+    {
+      "source": "Master_Backend_Engineering_SSOT",
+      "target": "Left_Prefix_Index_Postgres"
+    },
+    {
+      "source": "Master_Backend_Engineering_SSOT",
+      "target": "Partial_Index"
+    },
+    {
+      "source": "Master_Backend_Engineering_SSOT",
+      "target": "Prepare_Statements"
+    },
+    {
+      "source": "Master_Backend_Engineering_SSOT",
+      "target": "N_Plus_1_Query_Problem"
+    },
+    {
+      "source": "Master_Backend_Engineering_SSOT",
+      "target": "Postgres_18_New_Features"
+    },
+    {
+      "source": "Master_Backend_Engineering_SSOT",
+      "target": "Timestamp_vs_Timestamptz"
+    },
+    {
+      "source": "Master_Backend_Engineering_SSOT",
+      "target": "Junction_Table"
+    },
+    {
+      "source": "Master_Backend_Engineering_SSOT",
+      "target": "DB_Naming"
+    },
+    {
+      "source": "Master_Backend_Engineering_SSOT",
+      "target": "SQL_Quotes"
+    },
+    {
+      "source": "Master_Backend_Engineering_SSOT",
+      "target": "Postgres_Select_For_Update_Pessimistic_Locking"
+    },
+    {
+      "source": "Master_Backend_Engineering_SSOT",
+      "target": "Redis_Redlock"
+    },
+    {
+      "source": "Master_Backend_Engineering_SSOT",
+      "target": "RFC_Trending_Cache"
+    },
+    {
+      "source": "Master_Backend_Engineering_SSOT",
+      "target": "Outbox_Pattern"
+    },
+    {
+      "source": "Master_Backend_Engineering_SSOT",
+      "target": "Multi_Layer_Rate_Limiting_DDoS_Prevention"
+    },
+    {
+      "source": "Master_Backend_Engineering_SSOT",
+      "target": "API_Versioning_Strategies"
+    },
+    {
+      "source": "Master_Backend_Engineering_SSOT",
+      "target": "Cursor_Pagination"
+    },
+    {
+      "source": "Master_Backend_Engineering_SSOT",
+      "target": "Postgres_SQL_Performance_Benchmarking_Guide"
+    },
+    {
+      "source": "Master_Backend_Engineering_SSOT",
+      "target": "Go_Benchmarking_and_Allocation_Guide"
+    },
+    {
+      "source": "Master_Backend_Engineering_SSOT",
+      "target": "Local_Stress_Testing_Benchmark"
+    },
+    {
+      "source": "Master_Backend_Engineering_SSOT",
+      "target": "Turborepo"
+    },
+    {
+      "source": "Master_Backend_Engineering_SSOT",
+      "target": "Trust_Proxy_Configuration"
+    },
+    {
+      "source": "Master_Backend_Engineering_SSOT",
+      "target": "Tmux_Session_Window_Pane"
+    },
+    {
+      "source": "Master_Backend_Engineering_SSOT",
+      "target": "7_Principles_of_Testing"
+    },
+    {
+      "source": "Master_Backend_Engineering_SSOT",
+      "target": "Error_Defect_Failure"
+    },
+    {
+      "source": "Master_Backend_Engineering_SSOT",
+      "target": "Test_Case"
+    },
+    {
+      "source": "Master_Backend_Engineering_SSOT",
+      "target": "SDLC_Methodologies_Evolution"
+    },
+    {
+      "source": "Master_Backend_Engineering_SSOT",
+      "target": "Black_Box_Testing_Techniques"
+    },
+    {
+      "source": "Master_Backend_Engineering_SSOT",
+      "target": "White_Box_Testing_Techniques"
+    },
+    {
+      "source": "Master_Backend_Engineering_SSOT",
+      "target": "Equivalence_Partitioning"
+    },
+    {
+      "source": "Master_Backend_Engineering_SSOT",
+      "target": "Waterfall"
+    },
+    {
+      "source": "Master_Backend_Engineering_SSOT",
+      "target": "V_Model"
+    },
+    {
+      "source": "Master_Backend_Engineering_SSOT",
+      "target": "Prototype_Model"
+    },
+    {
+      "source": "Master_Backend_Engineering_SSOT",
+      "target": "Spiral_Model"
+    },
+    {
+      "source": "Master_Backend_Engineering_SSOT",
+      "target": "Agile_Scrum"
+    },
+    {
+      "source": "Master_Backend_Engineering_SSOT",
+      "target": "Agile_Management_via_GitHub"
+    },
+    {
+      "source": "Master_Backend_Engineering_SSOT",
+      "target": "Standard_Project_Timeline_SOP"
+    },
+    {
+      "source": "Master_Backend_Engineering_SSOT",
+      "target": "Automated_Verification_System_Framework"
+    },
+    {
+      "source": "Master_Backend_Engineering_SSOT",
+      "target": "Test_Driven_Design"
+    },
+    {
+      "source": "Master_Backend_Engineering_SSOT",
+      "target": "JS_Memory_Leaks_and_Mitigation"
+    },
+    {
+      "source": "Master_Backend_Engineering_SSOT",
+      "target": "Postgres_SQL_Performance_Benchmarking_Guide"
+    },
+    {
+      "source": "Master_Backend_Engineering_SSOT",
+      "target": "Local_Stress_Testing_Benchmark"
+    },
+    {
+      "source": "Master_Backend_Engineering_SSOT",
+      "target": "RMIT_Critical_Review_AI_Coding_2026"
+    },
+    {
+      "source": "Master_Backend_Engineering_SSOT",
+      "target": "System_Design_Architecture_Roadmap"
+    },
+    {
+      "source": "Master_Backend_Engineering_SSOT",
+      "target": "Problem_Driven_System_Design_Framework"
+    },
+    {
+      "source": "Master_Backend_Engineering_SSOT",
+      "target": "Postgres_SQL_Performance_Benchmarking_Guide"
+    },
+    {
+      "source": "Master_Backend_Engineering_SSOT",
+      "target": "Automated_Verification_System_Framework"
+    },
+    {
+      "source": "Master_Backend_Engineering_SSOT",
+      "target": "Data_Structures_and_Algorithms_Roadmap"
+    },
+    {
+      "source": "Master_Backend_Engineering_SSOT",
+      "target": "000_Methods_MOC"
+    },
+    {
+      "source": "Master_Backend_Engineering_SSOT",
+      "target": "000_Tech_MOC"
+    },
+    {
+      "source": "Gorss_Performance_Optimization_RFC",
+      "target": "Go_Benchmarking_and_Allocation_Guide"
+    },
+    {
+      "source": "Gorss_Performance_Optimization_RFC",
+      "target": "Go_Slice_Underlying_Mechanics"
+    },
+    {
+      "source": "Code_Comment_Taxonomy_and_Standards",
+      "target": "Master_Backend_Engineering_SSOT"
+    },
+    {
+      "source": "Code_Comment_Taxonomy_and_Standards",
+      "target": "Clean_Architecture"
+    },
+    {
+      "source": "Linux_Mastery_Core_Roadmap",
+      "target": "Master_Backend_Engineering_SSOT"
+    },
+    {
+      "source": "Linux_Mastery_Core_Roadmap",
+      "target": "System_Design_Architecture_Roadmap"
+    },
+    {
+      "source": "Linux_Mastery_Core_Roadmap",
+      "target": "Stack_vs_Heap_Memory_Fundamentals"
+    },
+    {
+      "source": "Linux_Mastery_Core_Roadmap",
+      "target": "First_Principles_Thinking"
+    },
+    {
+      "source": "Linux_Mastery_Core_Roadmap",
+      "target": "Metalearning_Just_In_Time_Framework"
+    },
+    {
+      "source": "Linux_Mastery_Core_Roadmap",
+      "target": "000_Methods_MOC"
+    },
+    {
+      "source": "K6_High_Concurrency_Load_Testing_SOP",
+      "target": "Redis_Redlock"
+    },
+    {
+      "source": "K6_High_Concurrency_Load_Testing_SOP",
+      "target": "Postgres_Select_For_Update_Pessimistic_Locking"
+    },
+    {
+      "source": "K6_High_Concurrency_Load_Testing_SOP",
+      "target": "K6_Execution_Lifecycle_and_Memory_Architecture"
+    },
+    {
+      "source": "K6_High_Concurrency_Load_Testing_SOP",
+      "target": "K6_Scenario_Executors_and_Workload_Modeling"
+    },
+    {
+      "source": "K6_High_Concurrency_Load_Testing_SOP",
+      "target": "K6_Telemetry_Metrics_and_Threshold_Gates"
+    },
+    {
+      "source": "K6_High_Concurrency_Load_Testing_SOP",
+      "target": "Redis_Redlock"
+    },
+    {
+      "source": "K6_High_Concurrency_Load_Testing_SOP",
+      "target": "Postgres_Select_For_Update_Pessimistic_Locking"
+    },
+    {
+      "source": "K6_High_Concurrency_Load_Testing_SOP",
+      "target": "Automated_Verification_System_Framework"
+    },
+    {
+      "source": "K6_High_Concurrency_Load_Testing_SOP",
+      "target": "Local_Stress_Testing_Benchmark"
+    },
+    {
+      "source": "K6_High_Concurrency_Load_Testing_SOP",
+      "target": "000_Methods_MOC"
+    },
+    {
+      "source": "Git_Conflict_and_Three_Way_Merge_Mechanics",
+      "target": "Git_Merge_Base_Algorithm"
+    },
+    {
+      "source": "Git_Conflict_and_Three_Way_Merge_Mechanics",
+      "target": "Git_DAG_and_Object_Storage_Model"
+    },
+    {
+      "source": "Git_Conflict_and_Three_Way_Merge_Mechanics",
+      "target": "Git_Four_Zones_and_Reset_Lifecycle"
+    },
+    {
+      "source": "Git_Conflict_and_Three_Way_Merge_Mechanics",
+      "target": "Stack_vs_Heap_Memory_Fundamentals"
+    },
+    {
+      "source": "Git_Conflict_and_Three_Way_Merge_Mechanics",
+      "target": "Master_Backend_Engineering_SSOT"
+    },
+    {
+      "source": "Git_Conflict_and_Three_Way_Merge_Mechanics",
+      "target": "000_Methods_MOC"
+    },
+    {
+      "source": "Git_Four_Zones_and_Reset_Lifecycle",
+      "target": "Git_DAG_and_Object_Storage_Model"
+    },
+    {
+      "source": "Git_Four_Zones_and_Reset_Lifecycle",
+      "target": "Git_Conflict_and_Three_Way_Merge_Mechanics"
+    },
+    {
+      "source": "Git_Four_Zones_and_Reset_Lifecycle",
+      "target": "Master_Backend_Engineering_SSOT"
+    },
+    {
+      "source": "Git_Four_Zones_and_Reset_Lifecycle",
+      "target": "000_Methods_MOC"
+    },
+    {
+      "source": "Git_Branch_Deletion_and_Recovery_Mechanics",
+      "target": "Git_DAG_and_Object_Storage_Model"
+    },
+    {
+      "source": "Git_Branch_Deletion_and_Recovery_Mechanics",
+      "target": "Git_Four_Zones_and_Reset_Lifecycle"
+    },
+    {
+      "source": "Git_Branch_Deletion_and_Recovery_Mechanics",
+      "target": "000_Methods_MOC"
+    },
+    {
+      "source": "Git_Revert_vs_Reset_on_Shared_Branch",
+      "target": "Git_Four_Zones_and_Reset_Lifecycle"
+    },
+    {
+      "source": "Git_Revert_vs_Reset_on_Shared_Branch",
+      "target": "Git_DAG_and_Object_Storage_Model"
+    },
+    {
+      "source": "Git_Revert_vs_Reset_on_Shared_Branch",
+      "target": "000_Methods_MOC"
+    },
+    {
+      "source": "Docker_80_20_Mastery_Cheatsheet",
+      "target": "Master_Backend_Engineering_SSOT"
+    },
+    {
+      "source": "Docker_80_20_Mastery_Cheatsheet",
+      "target": "Linux_Mastery_Core_Roadmap"
+    },
+    {
+      "source": "Docker_80_20_Mastery_Cheatsheet",
+      "target": "000_Methods_MOC"
+    },
+    {
+      "source": "Grafana_K6_Mastery_80_20_Roadmap",
+      "target": "K6_High_Concurrency_Load_Testing_SOP"
+    },
+    {
+      "source": "Grafana_K6_Mastery_80_20_Roadmap",
+      "target": "Open_vs_Closed_Workload_Models"
+    },
+    {
+      "source": "Grafana_K6_Mastery_80_20_Roadmap",
+      "target": "K6_Scenario_Executors_and_Workload_Modeling"
+    },
+    {
+      "source": "Grafana_K6_Mastery_80_20_Roadmap",
+      "target": "K6_Telemetry_Metrics_and_Threshold_Gates"
+    },
+    {
+      "source": "Grafana_K6_Mastery_80_20_Roadmap",
+      "target": "K6_Execution_Lifecycle_and_Memory_Architecture"
+    },
+    {
+      "source": "Grafana_K6_Mastery_80_20_Roadmap",
+      "target": "K6_Runner_Performance_and_OS_Tuning"
+    },
+    {
+      "source": "Grafana_K6_Mastery_80_20_Roadmap",
+      "target": "Master_Backend_Engineering_SSOT"
+    },
+    {
+      "source": "Grafana_K6_Mastery_80_20_Roadmap",
+      "target": "000_Methods_MOC"
+    },
+    {
+      "source": "Redis_Mastery_80_20_Roadmap",
+      "target": "Redis_Single_Threaded_Event_Loop_Architecture"
+    },
+    {
+      "source": "Redis_Mastery_80_20_Roadmap",
+      "target": "Redis_Redlock"
+    },
+    {
+      "source": "Redis_Mastery_80_20_Roadmap",
+      "target": "Multi_Layer_Rate_Limiting_DDoS_Prevention"
+    },
+    {
+      "source": "Redis_Mastery_80_20_Roadmap",
+      "target": "Master_Backend_Engineering_SSOT"
+    },
+    {
+      "source": "Redis_Mastery_80_20_Roadmap",
+      "target": "000_Tech_MOC"
+    },
+    {
+      "source": "Redis_Mastery_80_20_Roadmap",
+      "target": "000_Methods_MOC"
+    },
+    {
+      "source": "Metalearning_Just_In_Time_Framework",
+      "target": "First_Principles_Thinking"
+    },
+    {
+      "source": "Metalearning_Just_In_Time_Framework",
+      "target": "First_Principles_Thinking"
+    },
+    {
+      "source": "Metalearning_Just_In_Time_Framework",
+      "target": "Socratic_Questioning_Method"
+    },
+    {
+      "source": "Metalearning_Just_In_Time_Framework",
+      "target": "Top_University_Mindset"
+    },
+    {
+      "source": "Metalearning_Just_In_Time_Framework",
+      "target": "Project_Anchored_Technical_Mastery"
+    },
+    {
+      "source": "Problem_Solving_Mental_Model_Pipeline",
+      "target": "First_Principles_Thinking"
+    },
+    {
+      "source": "Problem_Solving_Mental_Model_Pipeline",
+      "target": "Socratic_Questioning_Method"
+    },
+    {
+      "source": "Problem_Solving_Mental_Model_Pipeline",
+      "target": "Inversion_Thinking"
+    },
+    {
+      "source": "Problem_Solving_Mental_Model_Pipeline",
+      "target": "Swimmers_Body_Illusion"
+    },
+    {
+      "source": "Problem_Solving_Mental_Model_Pipeline",
+      "target": "Confirmation_Bias"
+    },
+    {
+      "source": "Problem_Solving_Mental_Model_Pipeline",
+      "target": "Second_Order_Thinking"
+    },
+    {
+      "source": "Problem_Solving_Mental_Model_Pipeline",
+      "target": "Opportunity_Cost_Hold"
+    },
+    {
+      "source": "Problem_Solving_Mental_Model_Pipeline",
+      "target": "Asymmetric_Risk_Reward"
+    },
+    {
+      "source": "Problem_Solving_Mental_Model_Pipeline",
+      "target": "BATNA_Negotiation_Model"
+    },
+    {
+      "source": "Problem_Solving_Mental_Model_Pipeline",
+      "target": "Product_Mindset"
+    },
+    {
+      "source": "Problem_Solving_Mental_Model_Pipeline",
+      "target": "First_Principles_Thinking"
+    },
+    {
+      "source": "Problem_Solving_Mental_Model_Pipeline",
+      "target": "Socratic_Questioning_Method"
+    },
+    {
+      "source": "Problem_Solving_Mental_Model_Pipeline",
+      "target": "Inversion_Thinking"
+    },
+    {
+      "source": "Problem_Solving_Mental_Model_Pipeline",
+      "target": "Second_Order_Thinking"
+    },
+    {
+      "source": "Problem_Solving_Mental_Model_Pipeline",
+      "target": "Asymmetric_Risk_Reward"
+    },
+    {
+      "source": "Problem_Solving_Mental_Model_Pipeline",
+      "target": "BATNA_Negotiation_Model"
+    },
+    {
+      "source": "Problem_Solving_Mental_Model_Pipeline",
+      "target": "000_Methods_MOC"
+    },
+    {
+      "source": "First_Principles_Thinking",
+      "target": "Socratic_Questioning_Method"
+    },
+    {
+      "source": "Socratic_Questioning_Method",
+      "target": "First_Principles_Thinking"
+    },
+    {
+      "source": "Socratic_Questioning_Method",
+      "target": "Critical_Thinking_Models"
+    },
+    {
+      "source": "Card_By_Card_Presentation_Delivery_Technique",
+      "target": "STAR_Method_Tech"
+    },
+    {
+      "source": "Card_By_Card_Presentation_Delivery_Technique",
+      "target": "000_Methods_MOC"
+    },
+    {
+      "source": "Mental_Model_Automation_Method",
+      "target": "BATNA_Negotiation_Model"
+    },
+    {
+      "source": "Mental_Model_Automation_Method",
+      "target": "ZOPA_Negotiation_Framework"
+    },
+    {
+      "source": "Mental_Model_Automation_Method",
+      "target": "Tactical_Empathy_Chris_Voss"
+    },
+    {
+      "source": "Mental_Model_Automation_Method",
+      "target": "Socratic_Questioning_Method"
+    },
+    {
+      "source": "Mental_Model_Automation_Method",
+      "target": "Socratic_Questioning_Method"
+    },
+    {
+      "source": "Mental_Model_Automation_Method",
+      "target": "Tactical_Empathy_Chris_Voss"
+    },
+    {
+      "source": "Mental_Model_Automation_Method",
+      "target": "BATNA_Negotiation_Model"
+    },
+    {
+      "source": "Mental_Model_Automation_Method",
+      "target": "Spaced_Repetition_SM2"
+    },
+    {
+      "source": "Mental_Model_Automation_Method",
+      "target": "Principled_Negotiation_Getting_To_Yes"
+    },
+    {
+      "source": "Mental_Model_Automation_Method",
+      "target": "Socratic_Questioning_Method"
+    },
+    {
+      "source": "Mental_Model_Automation_Method",
+      "target": "Critical_Thinking_Models"
+    },
+    {
+      "source": "Mental_Model_Automation_Method",
+      "target": "Tactical_Empathy_Chris_Voss"
+    },
+    {
+      "source": "Mental_Model_Automation_Method",
+      "target": "Principled_Negotiation_Getting_To_Yes"
+    },
+    {
+      "source": "Mental_Model_Automation_Method",
+      "target": "Socratic_Questioning_Method"
+    },
+    {
+      "source": "Mental_Model_Automation_Method",
+      "target": "Spaced_Repetition_SM2"
+    },
+    {
+      "source": "Mental_Model_Automation_Method",
+      "target": "Herbert_Simon_Learning_Method"
+    },
+    {
+      "source": "McKinsey_Issue_Tree_Framework",
+      "target": "GPS_Goal_Problem_Solution_Framework"
+    },
+    {
+      "source": "McKinsey_Issue_Tree_Framework",
+      "target": "Problem_Solving_Mental_Model_Pipeline"
+    },
+    {
+      "source": "McKinsey_Issue_Tree_Framework",
+      "target": "Problem_Solving_Mental_Model_Pipeline"
+    },
+    {
+      "source": "McKinsey_Issue_Tree_Framework",
+      "target": "Problem_Driven_System_Design_Framework"
+    },
+    {
+      "source": "GPS_Goal_Problem_Solution_Framework",
+      "target": "Problem_Solving_Mental_Model_Pipeline"
+    },
+    {
+      "source": "GPS_Goal_Problem_Solution_Framework",
+      "target": "McKinsey_Issue_Tree_Framework"
+    },
+    {
+      "source": "GPS_Goal_Problem_Solution_Framework",
+      "target": "Problem_Solving_Mental_Model_Pipeline"
+    },
+    {
+      "source": "GPS_Goal_Problem_Solution_Framework",
+      "target": "Problem_Driven_System_Design_Framework"
+    },
+    {
+      "source": "Top_University_Mindset",
+      "target": "Socratic_Questioning_Method"
+    },
+    {
+      "source": "Top_University_Mindset",
+      "target": "First_Principles_Thinking"
+    },
+    {
+      "source": "Top_University_Mindset",
+      "target": "000_Methods_MOC"
+    },
+    {
+      "source": "TOEIC_Self_Study_Roadmap_0_To_900",
+      "target": "Card_By_Card_Presentation_Delivery_Technique"
+    },
+    {
+      "source": "TOEIC_Self_Study_Roadmap_0_To_900",
+      "target": "Phonetic_Chunking"
+    },
+    {
+      "source": "TOEIC_Self_Study_Roadmap_0_To_900",
+      "target": "Spaced_Repetition_SM2"
+    },
+    {
+      "source": "TOEIC_Self_Study_Roadmap_0_To_900",
+      "target": "Gerunds_and_Ing_Usage"
+    },
+    {
+      "source": "IELTS_Simon_Writing_Method",
+      "target": "TOEIC_Self_Study_Roadmap_0_To_900"
+    },
+    {
+      "source": "IELTS_Simon_Writing_Method",
+      "target": "Phonetic_Chunking"
+    },
+    {
+      "source": "Project_Anchored_Technical_Mastery",
+      "target": "First_Principles_Thinking"
+    },
+    {
+      "source": "Project_Anchored_Technical_Mastery",
+      "target": "First_Principles_Thinking"
+    },
+    {
+      "source": "Project_Anchored_Technical_Mastery",
+      "target": "Metalearning_Just_In_Time_Framework"
+    },
+    {
+      "source": "Project_Anchored_Technical_Mastery",
+      "target": "Socratic_Questioning_Method"
+    },
+    {
+      "source": "M_Shaped_Polymath_Skill_Stacking",
+      "target": "Stack_vs_Heap_Memory_Fundamentals"
+    },
+    {
+      "source": "M_Shaped_Polymath_Skill_Stacking",
+      "target": "Herbert_Simon_Learning_Method"
+    },
+    {
+      "source": "M_Shaped_Polymath_Skill_Stacking",
+      "target": "Metalearning_Just_In_Time_Framework"
+    },
+    {
+      "source": "M_Shaped_Polymath_Skill_Stacking",
+      "target": "First_Principles_Thinking"
+    },
+    {
+      "source": "M_Shaped_Polymath_Skill_Stacking",
+      "target": "Selective_Trust_Framework"
+    },
+    {
+      "source": "M_Shaped_Polymath_Skill_Stacking",
+      "target": "Asymmetric_Risk_Reward"
+    },
+    {
+      "source": "M_Shaped_Polymath_Skill_Stacking",
+      "target": "Socratic_Questioning_Method"
+    },
+    {
+      "source": "English_Mastery_80_20_Roadmap",
+      "target": "Word_Family_and_Morphology_Method"
+    },
+    {
+      "source": "English_Mastery_80_20_Roadmap",
+      "target": "Phonetic_Chunking"
+    },
+    {
+      "source": "English_Mastery_80_20_Roadmap",
+      "target": "Spaced_Repetition_SM2"
+    },
+    {
+      "source": "English_Mastery_80_20_Roadmap",
+      "target": "Herbert_Simon_Learning_Method"
+    },
+    {
+      "source": "English_Mastery_80_20_Roadmap",
+      "target": "TOEIC_Self_Study_Roadmap_0_To_900"
+    },
+    {
+      "source": "English_Mastery_80_20_Roadmap",
+      "target": "Card_By_Card_Presentation_Delivery_Technique"
+    },
+    {
+      "source": "English_Mastery_80_20_Roadmap",
+      "target": "Master_Backend_Engineering_SSOT"
+    },
+    {
+      "source": "English_Mastery_80_20_Roadmap",
+      "target": "000_Methods_MOC"
+    },
+    {
+      "source": "Dollar_Cost_Averaging",
+      "target": "Opportunity_Cost_Hold"
+    },
+    {
+      "source": "Dollar_Cost_Averaging",
+      "target": "Safe_Haven_Asset"
+    },
+    {
+      "source": "Short_Term_Income_and_Defensive_Saving",
+      "target": "Maslow_Hierarchy_and_Brain_Structure"
+    },
+    {
+      "source": "Short_Term_Income_and_Defensive_Saving",
+      "target": "000_Concepts_MOC"
+    },
+    {
+      "source": "Short_Term_Income_and_Defensive_Saving",
+      "target": "Dollar_Cost_Averaging"
+    },
+    {
+      "source": "Short_Term_Income_and_Defensive_Saving",
+      "target": "Opportunity_Cost_Hold"
+    },
+    {
+      "source": "Newsfeed_Architecture_Fanout",
+      "target": "Local_Stress_Testing_Benchmark"
+    },
+    {
+      "source": "Newsfeed_Architecture_Fanout",
+      "target": "000_Tech_MOC"
+    },
+    {
+      "source": "Domain_Driven_Design",
+      "target": "000_Tech_MOC"
+    },
+    {
+      "source": "DI_WinForms_Components",
+      "target": "CSharp_WinForms_Thread_Invoke"
+    },
+    {
+      "source": "DI_WinForms_Components",
+      "target": "WinForms_Layout_Optimization"
+    },
+    {
+      "source": "DI_WinForms_Components",
+      "target": "000_Tech_MOC"
+    },
+    {
+      "source": "Repository_Pattern_vs_Fat_Service",
+      "target": "Layered_Architecture"
+    },
+    {
+      "source": "Repository_Pattern_vs_Fat_Service",
+      "target": "Clean_Architecture"
+    },
+    {
+      "source": "Repository_Pattern_vs_Fat_Service",
+      "target": "Dependency_Injection"
+    },
+    {
+      "source": "Repository_Pattern_vs_Fat_Service",
+      "target": "Outbox_Pattern"
+    },
+    {
+      "source": "Unified_Fullstack_vs_Split_Architecture",
+      "target": "000_Tech_MOC"
+    },
+    {
+      "source": "Unified_Fullstack_vs_Split_Architecture",
+      "target": "Turborepo"
+    },
+    {
+      "source": "Unified_Fullstack_vs_Split_Architecture",
+      "target": "React_Server_Components"
+    },
+    {
+      "source": "Circular_Dependency",
+      "target": "Shared_Module_Dependency_Rule"
+    },
+    {
+      "source": "Circular_Dependency",
+      "target": "Dependency_Injection"
+    },
+    {
+      "source": "Circular_Dependency",
+      "target": "Modular_Monolith_Architecture"
+    },
+    {
+      "source": "Circular_Dependency",
+      "target": "Public_Interface_Pattern"
+    },
+    {
+      "source": "Circular_Dependency",
+      "target": "Layered_Architecture"
+    },
+    {
+      "source": "Clean_Architecture",
+      "target": "Interface_Driven_Design"
+    },
+    {
+      "source": "Clean_Architecture",
+      "target": "Test_Driven_Design"
+    },
+    {
+      "source": "Clean_Architecture",
+      "target": "SOLID_Principles"
+    },
+    {
+      "source": "Clean_Architecture",
+      "target": "Dependency_Injection"
+    },
+    {
+      "source": "Dependency_Injection",
+      "target": "Public_Interface_Pattern"
+    },
+    {
+      "source": "Dependency_Injection",
+      "target": "Shared_Module_Dependency_Rule"
+    },
+    {
+      "source": "Interface_Driven_Design",
+      "target": "Test_Driven_Design"
+    },
+    {
+      "source": "Interface_Driven_Design",
+      "target": "Clean_Architecture"
+    },
+    {
+      "source": "Interface_Driven_Design",
+      "target": "Dependency_Injection"
+    },
+    {
+      "source": "Interface_Driven_Design",
+      "target": "SOLID_Principles"
+    },
+    {
+      "source": "Layered_Architecture",
+      "target": "Modular_Monolith_Architecture"
+    },
+    {
+      "source": "MVC_Pattern",
+      "target": "Layered_Architecture"
+    },
+    {
+      "source": "MVC_Pattern",
+      "target": "Modular_Monolith_Architecture"
+    },
+    {
+      "source": "Modular_Monolith_Architecture",
+      "target": "Layered_Architecture"
+    },
+    {
+      "source": "Modular_Monolith_Architecture",
+      "target": "Public_Interface_Pattern"
+    },
+    {
+      "source": "Public_Interface_Pattern",
+      "target": "Modular_Monolith_Architecture"
+    },
+    {
+      "source": "SOLID_Principles",
+      "target": "Interface_Driven_Design"
+    },
+    {
+      "source": "SOLID_Principles",
+      "target": "Test_Driven_Design"
+    },
+    {
+      "source": "SOLID_Principles",
+      "target": "Clean_Architecture"
+    },
+    {
+      "source": "SOLID_Principles",
+      "target": "Dependency_Injection"
+    },
+    {
+      "source": "Shared_Module_Dependency_Rule",
+      "target": "Modular_Monolith_Architecture"
+    },
+    {
+      "source": "Shared_Module_Dependency_Rule",
+      "target": "Dependency_Injection"
+    },
+    {
+      "source": "Test_Driven_Design",
+      "target": "Interface_Driven_Design"
+    },
+    {
+      "source": "Test_Driven_Design",
+      "target": "Clean_Architecture"
+    },
+    {
+      "source": "Next_Intl",
+      "target": "000_Tech_MOC"
+    },
+    {
+      "source": "Next_Intl",
+      "target": "NextJS_Dynamic_Opt_Out_Connection"
+    },
+    {
+      "source": "Next_Intl",
+      "target": "React_Server_Components"
+    },
+    {
+      "source": "React_Server_Components",
+      "target": "000_Tech_MOC"
+    },
+    {
+      "source": "React_Server_Components",
+      "target": "NextJS_Dynamic_Opt_Out_Connection"
+    },
+    {
+      "source": "React_Server_Components",
+      "target": "NextJS_Server_Actions"
+    },
+    {
+      "source": "NextJS_Server_Actions",
+      "target": "000_Tech_MOC"
+    },
+    {
+      "source": "NextJS_Server_Actions",
+      "target": "React_Server_Components"
+    },
+    {
+      "source": "WinForms_Layout_Optimization",
+      "target": "CSharp_WinForms_Thread_Invoke"
+    },
+    {
+      "source": "WinForms_Layout_Optimization",
+      "target": "DI_WinForms_Components"
+    },
+    {
+      "source": "WinForms_Layout_Optimization",
+      "target": "000_Tech_MOC"
+    },
+    {
+      "source": "React_Component_Declaration_Standards",
+      "target": "React_Server_Components"
+    },
+    {
+      "source": "React_Component_Declaration_Standards",
+      "target": "NextJS_Server_Actions"
+    },
+    {
+      "source": "React_Component_Declaration_Standards",
+      "target": "000_Tech_MOC"
+    },
+    {
+      "source": "NextJS_16_Cache_Components",
+      "target": "000_Tech_MOC"
+    },
+    {
+      "source": "NextJS_16_Cache_Components",
+      "target": "NextJS_Dynamic_Opt_Out_Connection"
+    },
+    {
+      "source": "NextJS_16_Cache_Components",
+      "target": "NextJS_Route_Groups_and_Nested_Layouts"
+    },
+    {
+      "source": "NextJS_PPR_Platform_Support",
+      "target": "React_Server_Components"
+    },
+    {
+      "source": "NextJS_PPR_Platform_Support",
+      "target": "NextJS_Server_Actions"
+    },
+    {
+      "source": "NextJS_PPR_Platform_Support",
+      "target": "000_Tech_MOC"
+    },
+    {
+      "source": "NextJS_ISR",
+      "target": "NextJS_PPR_Platform_Support"
+    },
+    {
+      "source": "NextJS_ISR",
+      "target": "React_Server_Components"
+    },
+    {
+      "source": "NextJS_ISR",
+      "target": "000_Tech_MOC"
+    },
+    {
+      "source": "NextJS_Dynamic_Opt_Out_Connection",
+      "target": "000_Tech_MOC"
+    },
+    {
+      "source": "NextJS_Dynamic_Opt_Out_Connection",
+      "target": "NextJS_16_Cache_Components"
+    },
+    {
+      "source": "NextJS_Dynamic_Opt_Out_Connection",
+      "target": "NextJS_PPR_Platform_Support"
+    },
+    {
+      "source": "NextJS_Route_Groups_and_Nested_Layouts",
+      "target": "000_Tech_MOC"
+    },
+    {
+      "source": "NextJS_Route_Groups_and_Nested_Layouts",
+      "target": "NextJS_Dynamic_Opt_Out_Connection"
+    },
+    {
+      "source": "NextJS_Route_Groups_and_Nested_Layouts",
+      "target": "React_Server_Components"
+    },
+    {
+      "source": "NextJS_Monorepo_Package_Transpilation",
+      "target": "000_Tech_MOC"
+    },
+    {
+      "source": "NextJS_Monorepo_Package_Transpilation",
+      "target": "Unified_Fullstack_vs_Split_Architecture"
+    },
+    {
+      "source": "NextJS_Monorepo_Package_Transpilation",
+      "target": "Turborepo"
+    },
+    {
+      "source": "JS_Runtimes_Bun_vs_NodeJS",
+      "target": "000_Tech_MOC"
+    },
+    {
+      "source": "JS_Runtimes_Bun_vs_NodeJS",
+      "target": "Unified_Fullstack_vs_Split_Architecture"
+    },
+    {
+      "source": "JS_Runtimes_Bun_vs_NodeJS",
+      "target": "NextJS_Monorepo_Package_Transpilation"
+    },
+    {
+      "source": "React_State",
+      "target": "React_Props"
+    },
+    {
+      "source": "React_State",
+      "target": "React_Component_Declaration_Standards"
+    },
+    {
+      "source": "React_State",
+      "target": "JS_Immer_Immutable_State"
+    },
+    {
+      "source": "React_Props",
+      "target": "React_State"
+    },
+    {
+      "source": "React_Props",
+      "target": "React_Component_Declaration_Standards"
+    },
+    {
+      "source": "Laravel_Blade_Layout_Components",
+      "target": "000_Tech_MOC"
+    },
+    {
+      "source": "Laravel_Blade_Layout_Components",
+      "target": "NextJS_Route_Groups_and_Nested_Layouts"
+    },
+    {
+      "source": "Turborepo",
+      "target": "NextJS_Route_Groups_and_Nested_Layouts"
+    },
+    {
+      "source": "Turborepo",
+      "target": "AST_ESLint"
+    },
+    {
+      "source": "NextJS_after_API",
+      "target": "Outbox_Pattern"
+    },
+    {
+      "source": "NextJS_after_API",
+      "target": "Serverless_Architecture"
+    },
+    {
+      "source": "Prepare_Statements",
+      "target": "Index_BPlusTree"
+    },
+    {
+      "source": "Prepare_Statements",
+      "target": "Database_Indexing_Guidelines"
+    },
+    {
+      "source": "Prepare_Statements",
+      "target": "Postgres_SQL_Performance_Benchmarking_Guide"
+    },
+    {
+      "source": "Prepare_Statements",
+      "target": "Client_Side_Encryption"
+    },
+    {
+      "source": "Outbox_Pattern",
+      "target": "Clean_Architecture"
+    },
+    {
+      "source": "Outbox_Pattern",
+      "target": "Clean_Architecture"
+    },
+    {
+      "source": "Partial_Index",
+      "target": "Index_BPlusTree"
+    },
+    {
+      "source": "Partial_Index",
+      "target": "Database_Indexing_Guidelines"
+    },
+    {
+      "source": "Partial_Index",
+      "target": "Left_Prefix_Index_Postgres"
+    },
+    {
+      "source": "Partial_Index",
+      "target": "Prepare_Statements"
+    },
+    {
+      "source": "SQL_Quotes",
+      "target": "000_Tech_MOC"
+    },
+    {
+      "source": "Left_Prefix_Index_Postgres",
+      "target": "000_Tech_MOC"
+    },
+    {
+      "source": "Left_Prefix_Index_Postgres",
+      "target": "Database_Indexing_Guidelines"
+    },
+    {
+      "source": "Junction_Table",
+      "target": "000_Tech_MOC"
+    },
+    {
+      "source": "Junction_Table",
+      "target": "DB_Naming"
+    },
+    {
+      "source": "Timestamp_vs_Timestamptz",
+      "target": "000_Tech_MOC"
+    },
+    {
+      "source": "RFC_Trending_Cache",
+      "target": "000_Tech_MOC"
+    },
+    {
+      "source": "RFC_Trending_Cache",
+      "target": "Cursor_Pagination"
+    },
+    {
+      "source": "Database_Indexing_Guidelines",
+      "target": "Left_Prefix_Index_Postgres"
+    },
+    {
+      "source": "Database_Indexing_Guidelines",
+      "target": "Postgres_18_New_Features"
+    },
+    {
+      "source": "Database_Indexing_Guidelines",
+      "target": "000_Tech_MOC"
+    },
+    {
+      "source": "Index_BPlusTree",
+      "target": "000_Tech_MOC"
+    },
+    {
+      "source": "Index_BPlusTree",
+      "target": "Database_Indexing_Guidelines"
+    },
+    {
+      "source": "Postgres_18_New_Features",
+      "target": "000_Tech_MOC"
+    },
+    {
+      "source": "Postgres_18_New_Features",
+      "target": "Database_Indexing_Guidelines"
+    },
+    {
+      "source": "Postgres_18_New_Features",
+      "target": "Left_Prefix_Index_Postgres"
+    },
+    {
+      "source": "Postgres_18_New_Features",
+      "target": "Index_BPlusTree"
+    },
+    {
+      "source": "Postgres_18_New_Features",
+      "target": "Timestamp_vs_Timestamptz"
+    },
+    {
+      "source": "API_Versioning_Strategies",
+      "target": "Modular_Monolith_Architecture"
+    },
+    {
+      "source": "Cursor_Pagination",
+      "target": "API_Versioning_Strategies"
+    },
+    {
+      "source": "DB_Naming",
+      "target": "000_Tech_MOC"
+    },
+    {
+      "source": "Postgres_Select_For_Update_Pessimistic_Locking",
+      "target": "000_Tech_MOC"
+    },
+    {
+      "source": "Postgres_Select_For_Update_Pessimistic_Locking",
+      "target": "Database_Indexing_Guidelines"
+    },
+    {
+      "source": "Postgres_Select_For_Update_Pessimistic_Locking",
+      "target": "Outbox_Pattern"
+    },
+    {
+      "source": "Postgres_Select_For_Update_Pessimistic_Locking",
+      "target": "Atomic_Conditional_Update"
+    },
+    {
+      "source": "N_Plus_1_Query_Problem",
+      "target": "Database_Indexing_Guidelines"
+    },
+    {
+      "source": "N_Plus_1_Query_Problem",
+      "target": "Repository_Pattern_vs_Fat_Service"
+    },
+    {
+      "source": "N_Plus_1_Query_Problem",
+      "target": "000_Tech_MOC"
+    },
+    {
+      "source": "Redis_Redlock",
+      "target": "Postgres_Select_For_Update_Pessimistic_Locking"
+    },
+    {
+      "source": "Redis_Redlock",
+      "target": "Outbox_Pattern"
+    },
+    {
+      "source": "Redis_Redlock",
+      "target": "Multi_Layer_Rate_Limiting_DDoS_Prevention"
+    },
+    {
+      "source": "Redis_Redlock",
+      "target": "RFC_Trending_Cache"
+    },
+    {
+      "source": "Atomic_Conditional_Update",
+      "target": "Postgres_Select_For_Update_Pessimistic_Locking"
+    },
+    {
+      "source": "Atomic_Conditional_Update",
+      "target": "Database_Indexing_Guidelines"
+    },
+    {
+      "source": "Atomic_Conditional_Update",
+      "target": "Outbox_Pattern"
+    },
+    {
+      "source": "Atomic_Conditional_Update",
+      "target": "000_Tech_MOC"
+    },
+    {
+      "source": "Postgres_MVCC_Tuple_Visibility",
+      "target": "Postgres_Select_For_Update_Pessimistic_Locking"
+    },
+    {
+      "source": "Postgres_MVCC_Tuple_Visibility",
+      "target": "Atomic_Conditional_Update"
+    },
+    {
+      "source": "Postgres_MVCC_Tuple_Visibility",
+      "target": "Index_BPlusTree"
+    },
+    {
+      "source": "Postgres_MVCC_Tuple_Visibility",
+      "target": "Database_Indexing_Guidelines"
+    },
+    {
+      "source": "Postgres_MVCC_Tuple_Visibility",
+      "target": "000_Tech_MOC"
+    },
+    {
+      "source": "Torrent_CLI_Download_Tools",
+      "target": "000_Tech_MOC"
+    },
+    {
+      "source": "Torrent_CLI_Download_Tools",
+      "target": "Serverless_Architecture"
+    },
+    {
+      "source": "Torrent_CLI_Download_Tools",
+      "target": "Edge_Computing"
+    },
+    {
+      "source": "Edge_Computing",
+      "target": "Serverless_Architecture"
+    },
+    {
+      "source": "Serverless_Architecture",
+      "target": "Edge_Computing"
+    },
+    {
+      "source": "Tmux_Session_Window_Pane",
+      "target": "Vim_Shortcuts"
+    },
+    {
+      "source": "Client_Side_Encryption",
+      "target": "Offline_Sync_Queue"
+    },
+    {
+      "source": "Offline_Sync_Queue",
+      "target": "Client_Side_Encryption"
+    },
+    {
+      "source": "Trust_Proxy_Configuration",
+      "target": "000_Tech_MOC"
+    },
+    {
+      "source": "Trust_Proxy_Configuration",
+      "target": "Multi_Layer_Rate_Limiting_DDoS_Prevention"
+    },
+    {
+      "source": "Tree_Shaking",
+      "target": "TS_Type_System_Structural_Type_Erasure"
+    },
+    {
+      "source": "Tree_Shaking",
+      "target": "JS_V8_Hidden_Classes_Inline_Caching"
+    },
+    {
+      "source": "Tree_Shaking",
+      "target": "NextJS_Monorepo_Package_Transpilation"
+    },
+    {
+      "source": "Tree_Shaking",
+      "target": "Turborepo"
+    },
+    {
+      "source": "JS_Destructuring",
+      "target": "000_Tech_MOC"
+    },
+    {
+      "source": "CSharp_WinForms_Thread_Invoke",
+      "target": "WinForms_Layout_Optimization"
+    },
+    {
+      "source": "CSharp_WinForms_Thread_Invoke",
+      "target": "DI_WinForms_Components"
+    },
+    {
+      "source": "CSharp_WinForms_Thread_Invoke",
+      "target": "000_Tech_MOC"
+    },
+    {
+      "source": "JS_V8_Hidden_Classes_Inline_Caching",
+      "target": "000_Tech_MOC"
+    },
+    {
+      "source": "JS_V8_Hidden_Classes_Inline_Caching",
+      "target": "JS_Stack_vs_Heap_Memory"
+    },
+    {
+      "source": "JS_V8_Hidden_Classes_Inline_Caching",
+      "target": "JS_Runtimes_Bun_vs_NodeJS"
+    },
+    {
+      "source": "TS_Type_System_Structural_Type_Erasure",
+      "target": "000_Tech_MOC"
+    },
+    {
+      "source": "TS_Type_System_Structural_Type_Erasure",
+      "target": "JS_Runtimes_Bun_vs_NodeJS"
+    },
+    {
+      "source": "TS_Type_System_Structural_Type_Erasure",
+      "target": "JS_Stack_vs_Heap_Memory"
+    },
+    {
+      "source": "JS_Immer_Immutable_State",
+      "target": "000_Tech_MOC"
+    },
+    {
+      "source": "JS_Immer_Immutable_State",
+      "target": "JS_Generational_Garbage_Collection"
+    },
+    {
+      "source": "TS_Decorators",
+      "target": "000_Tech_MOC"
+    },
+    {
+      "source": "TS_Decorators",
+      "target": "Dependency_Injection"
+    },
+    {
+      "source": "TS_Decorators",
+      "target": "SOLID_Principles"
+    },
+    {
+      "source": "TS_Decorators",
+      "target": "JS_Stack_vs_Heap_Memory"
+    },
+    {
+      "source": "JS_Temporal_API",
+      "target": "000_Tech_MOC"
+    },
+    {
+      "source": "JS_Temporal_API",
+      "target": "JS_Stack_vs_Heap_Memory"
+    },
+    {
+      "source": "JS_Temporal_API",
+      "target": "TS_Decorators"
+    },
+    {
+      "source": "JS_Temporal_API",
+      "target": "JS_Runtimes_Bun_vs_NodeJS"
+    },
+    {
+      "source": "Backend_Frameworks_Comparison",
+      "target": "000_Tech_MOC"
+    },
+    {
+      "source": "Backend_Frameworks_Comparison",
+      "target": "JS_Runtimes_Bun_vs_NodeJS"
+    },
+    {
+      "source": "Backend_Frameworks_Comparison",
+      "target": "JS_Temporal_API"
+    },
+    {
+      "source": "Backend_Frameworks_Comparison",
+      "target": "TS_Decorators"
+    },
+    {
+      "source": "TS_Type_Utilities_Omit_Pick_Exclude",
+      "target": "TS_Distributive_Conditional_Types"
+    },
+    {
+      "source": "TS_Type_Utilities_Omit_Pick_Exclude",
+      "target": "000_Tech_MOC"
+    },
+    {
+      "source": "Rust_Hybrid_Roadmap",
+      "target": "000_Tech_MOC"
+    },
+    {
+      "source": "Rust_Hybrid_Roadmap",
+      "target": "Multi_Layer_Rate_Limiting_DDoS_Prevention"
+    },
+    {
+      "source": "Dotnet_10_and_11_New_Features",
+      "target": "000_Tech_MOC"
+    },
+    {
+      "source": "Dotnet_10_and_11_New_Features",
+      "target": "Backend_Frameworks_Comparison"
+    },
+    {
+      "source": "Go_Learning_Roadmap",
+      "target": "Data_Structures_and_Algorithms_Roadmap"
+    },
+    {
+      "source": "Go_Learning_Roadmap",
+      "target": "000_Tech_MOC"
+    },
+    {
+      "source": "Go_Learning_Roadmap",
+      "target": "Rust_Hybrid_Roadmap"
+    },
+    {
+      "source": "Go_Escape_Analysis_Mechanics",
+      "target": "Stack_vs_Heap_Memory_Fundamentals"
+    },
+    {
+      "source": "Go_Escape_Analysis_Mechanics",
+      "target": "Garbage_Collection_Fundamentals"
+    },
+    {
+      "source": "Go_Escape_Analysis_Mechanics",
+      "target": "Stack_vs_Heap_Memory_Fundamentals"
+    },
+    {
+      "source": "Go_Escape_Analysis_Mechanics",
+      "target": "Garbage_Collection_Fundamentals"
+    },
+    {
+      "source": "Go_Escape_Analysis_Mechanics",
+      "target": "Memory_Leaks_Core_Mechanics"
+    },
+    {
+      "source": "Go_Escape_Analysis_Mechanics",
+      "target": "Go_Slice_Underlying_Mechanics"
+    },
+    {
+      "source": "Go_Escape_Analysis_Mechanics",
+      "target": "Go_Learning_Roadmap"
+    },
+    {
+      "source": "Go_Escape_Analysis_Mechanics",
+      "target": "JS_Stack_vs_Heap_Memory"
+    },
+    {
+      "source": "Go_Escape_Analysis_Mechanics",
+      "target": "First_Principles_Thinking"
+    },
+    {
+      "source": "Go_Array_Vs_Slice_Distinction",
+      "target": "Stack_vs_Heap_Memory_Fundamentals"
+    },
+    {
+      "source": "Go_Array_Vs_Slice_Distinction",
+      "target": "Garbage_Collection_Fundamentals"
+    },
+    {
+      "source": "Go_Array_Vs_Slice_Distinction",
+      "target": "Stack_vs_Heap_Memory_Fundamentals"
+    },
+    {
+      "source": "Go_Array_Vs_Slice_Distinction",
+      "target": "Garbage_Collection_Fundamentals"
+    },
+    {
+      "source": "Go_Array_Vs_Slice_Distinction",
+      "target": "Memory_Leaks_Core_Mechanics"
+    },
+    {
+      "source": "Go_Array_Vs_Slice_Distinction",
+      "target": "Go_Slice_Underlying_Mechanics"
+    },
+    {
+      "source": "Go_Array_Vs_Slice_Distinction",
+      "target": "Go_Escape_Analysis_Mechanics"
+    },
+    {
+      "source": "JS_Stack_vs_Heap_Memory",
+      "target": "Stack_vs_Heap_Memory_Fundamentals"
+    },
+    {
+      "source": "JS_Stack_vs_Heap_Memory",
+      "target": "JS_Generational_Garbage_Collection"
+    },
+    {
+      "source": "JS_Stack_vs_Heap_Memory",
+      "target": "JS_Memory_Leaks_and_Mitigation"
+    },
+    {
+      "source": "JS_Stack_vs_Heap_Memory",
+      "target": "JS_Generational_Garbage_Collection"
+    },
+    {
+      "source": "JS_Stack_vs_Heap_Memory",
+      "target": "JS_Memory_Leaks_and_Mitigation"
+    },
+    {
+      "source": "JS_Stack_vs_Heap_Memory",
+      "target": "Stack_vs_Heap_Memory_Fundamentals"
+    },
+    {
+      "source": "JS_Stack_vs_Heap_Memory",
+      "target": "Garbage_Collection_Fundamentals"
+    },
+    {
+      "source": "JS_Stack_vs_Heap_Memory",
+      "target": "Memory_Leaks_Core_Mechanics"
+    },
+    {
+      "source": "JS_Stack_vs_Heap_Memory",
+      "target": "JS_Generational_Garbage_Collection"
+    },
+    {
+      "source": "JS_Stack_vs_Heap_Memory",
+      "target": "JS_Memory_Leaks_and_Mitigation"
+    },
+    {
+      "source": "JS_Stack_vs_Heap_Memory",
+      "target": "JS_Runtimes_Bun_vs_NodeJS"
+    },
+    {
+      "source": "JS_Stack_vs_Heap_Memory",
+      "target": "000_Tech_MOC"
+    },
+    {
+      "source": "JS_Generational_Garbage_Collection",
+      "target": "Garbage_Collection_Fundamentals"
+    },
+    {
+      "source": "JS_Generational_Garbage_Collection",
+      "target": "JS_Stack_vs_Heap_Memory"
+    },
+    {
+      "source": "JS_Generational_Garbage_Collection",
+      "target": "JS_Memory_Leaks_and_Mitigation"
+    },
+    {
+      "source": "JS_Generational_Garbage_Collection",
+      "target": "JS_Runtimes_Bun_vs_NodeJS"
+    },
+    {
+      "source": "JS_Generational_Garbage_Collection",
+      "target": "Garbage_Collection_Fundamentals"
+    },
+    {
+      "source": "JS_Generational_Garbage_Collection",
+      "target": "Memory_Leaks_Core_Mechanics"
+    },
+    {
+      "source": "JS_Generational_Garbage_Collection",
+      "target": "Stack_vs_Heap_Memory_Fundamentals"
+    },
+    {
+      "source": "JS_Generational_Garbage_Collection",
+      "target": "JS_Stack_vs_Heap_Memory"
+    },
+    {
+      "source": "JS_Generational_Garbage_Collection",
+      "target": "JS_Memory_Leaks_and_Mitigation"
+    },
+    {
+      "source": "JS_Generational_Garbage_Collection",
+      "target": "JS_Runtimes_Bun_vs_NodeJS"
+    },
+    {
+      "source": "JS_Generational_Garbage_Collection",
+      "target": "000_Tech_MOC"
+    },
+    {
+      "source": "JS_Memory_Leaks_and_Mitigation",
+      "target": "Memory_Leaks_Core_Mechanics"
+    },
+    {
+      "source": "JS_Memory_Leaks_and_Mitigation",
+      "target": "JS_Generational_Garbage_Collection"
+    },
+    {
+      "source": "JS_Memory_Leaks_and_Mitigation",
+      "target": "JS_Stack_vs_Heap_Memory"
+    },
+    {
+      "source": "JS_Memory_Leaks_and_Mitigation",
+      "target": "JS_Runtimes_Bun_vs_NodeJS"
+    },
+    {
+      "source": "JS_Memory_Leaks_and_Mitigation",
+      "target": "Memory_Leaks_Core_Mechanics"
+    },
+    {
+      "source": "JS_Memory_Leaks_and_Mitigation",
+      "target": "Garbage_Collection_Fundamentals"
+    },
+    {
+      "source": "JS_Memory_Leaks_and_Mitigation",
+      "target": "Stack_vs_Heap_Memory_Fundamentals"
+    },
+    {
+      "source": "JS_Memory_Leaks_and_Mitigation",
+      "target": "JS_Stack_vs_Heap_Memory"
+    },
+    {
+      "source": "JS_Memory_Leaks_and_Mitigation",
+      "target": "JS_Generational_Garbage_Collection"
+    },
+    {
+      "source": "JS_Memory_Leaks_and_Mitigation",
+      "target": "JS_Runtimes_Bun_vs_NodeJS"
+    },
+    {
+      "source": "JS_Memory_Leaks_and_Mitigation",
+      "target": "000_Tech_MOC"
+    },
+    {
+      "source": "Go_Slice_Underlying_Mechanics",
+      "target": "Stack_vs_Heap_Memory_Fundamentals"
+    },
+    {
+      "source": "Go_Slice_Underlying_Mechanics",
+      "target": "Garbage_Collection_Fundamentals"
+    },
+    {
+      "source": "Go_Slice_Underlying_Mechanics",
+      "target": "Dynamic_Array_Exponential_Growth"
+    },
+    {
+      "source": "Go_Slice_Underlying_Mechanics",
+      "target": "Heap_Memory_Size_Classes_and_Alignment"
+    },
+    {
+      "source": "Go_Slice_Underlying_Mechanics",
+      "target": "Go_Benchmarking_and_Allocation_Guide"
+    },
+    {
+      "source": "Go_Slice_Underlying_Mechanics",
+      "target": "Go_Benchmarking_and_Allocation_Guide"
+    },
+    {
+      "source": "Go_Slice_Underlying_Mechanics",
+      "target": "Stack_vs_Heap_Memory_Fundamentals"
+    },
+    {
+      "source": "Go_Slice_Underlying_Mechanics",
+      "target": "Dynamic_Array_Exponential_Growth"
+    },
+    {
+      "source": "Go_Slice_Underlying_Mechanics",
+      "target": "Heap_Memory_Size_Classes_and_Alignment"
+    },
+    {
+      "source": "Go_Slice_Underlying_Mechanics",
+      "target": "Garbage_Collection_Fundamentals"
+    },
+    {
+      "source": "Go_Slice_Underlying_Mechanics",
+      "target": "Memory_Leaks_Core_Mechanics"
+    },
+    {
+      "source": "Go_Slice_Underlying_Mechanics",
+      "target": "Go_Learning_Roadmap"
+    },
+    {
+      "source": "Go_Slice_Underlying_Mechanics",
+      "target": "JS_Stack_vs_Heap_Memory"
+    },
+    {
+      "source": "Go_Slice_Underlying_Mechanics",
+      "target": "First_Principles_Thinking"
+    },
+    {
+      "source": "AST_ESLint",
+      "target": "NextJS_Route_Groups_and_Nested_Layouts"
+    }
+  ]
+}
