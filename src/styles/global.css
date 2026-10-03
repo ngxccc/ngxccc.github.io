@@ -39,12 +39,14 @@ body {
   font-variant-numeric: lining-nums;
   background-color: var(--bg-color);
   color: var(--text-color);
-  transition: max-width 0.2s ease;
 }
 
+/* Stable wide layout for all Second Brain pages: index, note detail, and graph */
 @media (min-width: 1080px) {
   body:has(.note-page-wrapper),
-  body:has(.graph-page-container) {
+  body:has(.brain-index-container),
+  body:has(.graph-page-container),
+  body.layout-wide {
     max-width: 76rem;
   }
 }
@@ -60,59 +62,53 @@ h6 {
     "DejaVu Sans Condensed", "Nimbus Sans L", Frutiger, "Frutiger Linotype", Univers, Calibri,
     "Gill Sans", "Gill Sans MT", "Myriad Pro", Myriad, Tahoma, Geneva, "Helvetica Neue", Helvetica,
     Arial, sans-serif;
-  font-weight: normal;
-  line-height: 1.2;
-  margin-top: 1.8rem;
-  margin-bottom: 0.8rem;
   color: var(--heading-color);
+  line-height: 1.25;
+  text-wrap: balance;
 }
 
 h1 {
-  font-size: 1.55rem;
-}
-h2 {
-  font-size: 1.25rem;
-}
-h3 {
-  font-size: 1.1rem;
+  font-size: 1.833rem;
+  margin-top: 2rem;
+  margin-bottom: 0.8rem;
 }
 
-p,
-blockquote,
-ul,
-ol,
-table,
-pre {
+h2 {
+  font-size: 1.444rem;
+  margin-top: 1.8rem;
+  margin-bottom: 0.6rem;
+}
+
+h3 {
+  font-size: 1.222rem;
+  margin-top: 1.5rem;
+  margin-bottom: 0.5rem;
+}
+
+h4,
+h5,
+h6 {
+  font-size: 1.05rem;
+  margin-top: 1.2rem;
+  margin-bottom: 0.4rem;
+}
+
+p {
   margin-top: 0;
   margin-bottom: 1.2rem;
 }
 
-li + li {
-  margin-top: 0.4rem;
-}
-
-ul {
-  list-style-type: square;
-  padding-left: 1.2rem;
-}
-
-ol {
-  padding-left: 1.2rem;
+p:empty {
+  display: none;
 }
 
 /* Links */
 a {
-  text-decoration: underline;
-  text-underline-offset: 3px;
-  text-decoration-thickness: 1px;
-}
-
-a:link {
   color: var(--link-color);
-}
-
-a:visited {
-  color: var(--link-visited);
+  text-decoration: underline;
+  text-decoration-thickness: 1px;
+  text-underline-offset: 3px;
+  transition: all 0.15s ease;
 }
 
 a:hover,
@@ -167,107 +163,117 @@ code {
   font-feature-settings: "calt" 1;
   background-color: var(--code-bg);
   color: var(--code-text);
-  padding: 0.15em 0.35em;
-  border-radius: 3px;
-  border: 1px solid var(--border-color);
+  padding: 0.2em 0.4em;
+  border-radius: 2px;
 }
 
 pre {
-  position: relative;
-  border-top: 1px solid var(--border-color);
-  border-bottom: 1px solid var(--border-color);
-  padding: 0.8rem 1.1rem;
   background-color: var(--code-bg);
-  font-size: 0.9rem;
-  line-height: 1.55;
-  white-space: pre-wrap;
-  word-wrap: break-word;
-  word-break: break-word;
-}
-
-pre[data-language]::before {
-  content: attr(data-language);
-  position: absolute;
-  top: 0.4rem;
-  right: 0.75rem;
-  font-family: "JetBrains Mono", Consolas, monospace;
-  font-size: 0.72rem;
-  color: #71717a;
-  text-transform: lowercase;
-  letter-spacing: 0.5px;
-  user-select: none;
-  pointer-events: none;
-  line-height: 1.2;
-  opacity: 0.8;
-  transition: opacity 0.15s ease;
-}
-
-pre:hover[data-language]::before {
-  opacity: 0;
+  border: 1px solid var(--border-color);
+  padding: 1rem;
+  overflow-x: auto;
+  margin-bottom: 1.5rem;
+  border-radius: 4px;
+  position: relative;
+  font-family: "JetBrains Mono", "Fira Code", Consolas, monospace;
 }
 
 pre code {
-  font-family: "JetBrains Mono", "Fira Code", Consolas, "DejaVu Sans Mono", monospace;
-  font-variant-ligatures: normal;
-  font-feature-settings: "calt" 1;
   background-color: transparent;
+  color: inherit;
   padding: 0;
   border-radius: 0;
-  border: none;
-  white-space: inherit;
-  word-break: inherit;
+  font-size: 0.88rem;
+  line-height: 1.5;
 }
 
-/* Copy Code Button */
+/* Copy Button for Pre Blocks */
 .copy-code-btn {
   position: absolute;
-  top: 0.35rem;
+  top: 0.5rem;
   right: 0.5rem;
-  background: #222226;
-  color: #a1a1aa;
-  border: 1px solid #3f3f46;
+  background-color: rgba(255, 255, 255, 0.08);
+  border: 1px solid var(--border-color);
+  color: var(--subheading-color);
+  font-family: "JetBrains Mono", Consolas, monospace;
+  font-size: 0.722rem;
+  padding: 0.2rem 0.5rem;
   border-radius: 3px;
-  font-family: "JetBrains Mono", monospace;
-  font-size: 0.72rem;
-  padding: 0.15rem 0.45rem;
   cursor: pointer;
-  opacity: 0;
-  pointer-events: none;
-  transition:
-    opacity 0.15s ease,
-    color 0.15s ease,
-    background 0.15s ease;
-}
-
-pre:hover .copy-code-btn {
-  opacity: 1;
-  pointer-events: auto;
+  transition: all 0.15s ease;
+  user-select: none;
 }
 
 .copy-code-btn:hover {
-  color: #ffffff;
-  background: #3f3f46;
+  background-color: rgba(255, 255, 255, 0.15);
+  color: var(--heading-color);
+  border-color: #555555;
 }
 
 .copy-code-btn.copied {
-  color: #ffffff;
-  border-color: #888888;
+  background-color: #22c55e;
+  color: #111111;
+  border-color: #22c55e;
+  font-weight: bold;
 }
 
+/* Blockquotes */
 blockquote {
-  border-left: 2px solid var(--subheading-color);
-  margin-left: 0;
-  margin-right: 0;
-  padding-left: 0.9rem;
+  margin: 1.5rem 0;
+  padding-left: 1rem;
+  border-left: 3px solid var(--subheading-color);
   color: #bbbbbb;
   font-style: italic;
-  font-size: 0.85rem;
+}
+
+blockquote p {
+  margin-bottom: 0.5rem;
+}
+
+/* Lists */
+ul,
+ol {
+  margin-top: 0;
+  margin-bottom: 1.2rem;
+  padding-left: 1.5rem;
+}
+
+li {
+  margin-bottom: 0.3rem;
+}
+
+/* Tables */
+table {
+  width: 100%;
+  border-collapse: collapse;
+  margin-bottom: 1.5rem;
+  font-size: 0.95rem;
+}
+
+th,
+td {
+  padding: 0.5rem 0.75rem;
+  border: 1px solid var(--border-color);
+  text-align: left;
+}
+
+th {
+  background-color: var(--code-bg);
+  color: var(--heading-color);
+  font-family: "DejaVu Sans Condensed", sans-serif;
+  font-weight: bold;
+}
+
+/* Images & Horizontal Rules */
+img {
+  max-width: 100%;
+  height: auto;
+  border-radius: 4px;
 }
 
 hr {
   border: 0;
-  height: 1px;
-  background: var(--border-color);
+  border-top: 1px dotted var(--border-dotted);
   margin: 2rem 0;
 }
 
@@ -276,14 +282,7 @@ footer#site-footer {
   border-top: 1px solid var(--border-color);
   font-size: 0.833rem;
   text-align: center;
-  margin-top: 1.8rem;
-  padding-top: 0.8rem;
-  line-height: 1.4;
   color: var(--subheading-color);
-}
-
-@media (max-width: 600px) {
-  body {
-    padding: 0.5rem 0.8rem 0.5rem 0.8rem;
-  }
+  margin-top: 3.5rem;
+  padding: 1.5rem 0 2rem 0;
 }

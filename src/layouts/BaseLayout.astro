@@ -5,10 +5,14 @@ import { siteConfig } from "../data/site";
 interface Props {
   title?: string | undefined;
   description?: string | undefined;
+  wide?: boolean | undefined;
 }
 
-const { title = siteConfig.title, description = siteConfig.description } =
-  Astro.props;
+const {
+  title = siteConfig.title,
+  description = siteConfig.description,
+  wide = false,
+} = Astro.props;
 
 const pathname = Astro.url.pathname;
 const isHome = pathname === "/" || pathname === "";
@@ -30,29 +34,31 @@ const isAbout = pathname.startsWith("/about");
     <link rel="icon" href="/favicon.ico" sizes="any" />
     <link rel="apple-touch-icon" href="/logo.png" />
   </head>
-  <body>
-    <header id="site-header">
-      <nav id="navigation">
-        <a href="/" class={isHome ? "active" : ""}>Home</a>
-        <a href="/posts" class={isWriting ? "active" : ""}>Writing</a>
-        <a href="/notes" class={isNotes ? "active" : ""}>Notes</a>
-        <a href="/projects" class={isProjects ? "active" : ""}>Projects</a>
-        <a href="/about" class={isAbout ? "active" : ""}>About</a>
-      </nav>
-    </header>
+  <body class={wide ? "layout-wide" : "layout-standard"}>
+    <div class="site-container">
+      <header id="site-header">
+        <nav id="navigation">
+          <a href="/" class={isHome ? "active" : ""}>Home</a>
+          <a href="/posts" class={isWriting ? "active" : ""}>Writing</a>
+          <a href="/notes" class={isNotes ? "active" : ""}>Notes</a>
+          <a href="/projects" class={isProjects ? "active" : ""}>Projects</a>
+          <a href="/about" class={isAbout ? "active" : ""}>About</a>
+        </nav>
+      </header>
 
-    <main>
-      <slot />
-    </main>
+      <main>
+        <slot />
+      </main>
 
-    <footer id="site-footer">
-      &copy; {`${new Date().getFullYear()} ${siteConfig.author.name}`}.<br />
-      Content licensed under <a
-        href="https://creativecommons.org/licenses/by-nc-sa/4.0/"
-        target="_blank"
-        rel="noopener">CC-BY-NC-SA 4.0</a
-      >.
-    </footer>
+      <footer id="site-footer">
+        &copy; {`${new Date().getFullYear()} ${siteConfig.author.name}`}.<br />
+        Content licensed under <a
+          href="https://creativecommons.org/licenses/by-nc-sa/4.0/"
+          target="_blank"
+          rel="noopener">CC-BY-NC-SA 4.0</a
+        >.
+      </footer>
+    </div>
 
     <script is:inline>
       document.addEventListener("DOMContentLoaded", () => {

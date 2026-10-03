@@ -39,7 +39,11 @@ function formatNoteDate(dateStr?: string) {
 }
 ---
 
-<BaseLayout title={`${title} — Second Brain`} description={description}>
+<BaseLayout
+  title={`${title} — Second Brain`}
+  description={description}
+  wide={true}
+>
   <div class="note-page-wrapper">
     <article class="note-article">
       <nav class="breadcrumb-nav">
@@ -95,7 +99,7 @@ function formatNoteDate(dateStr?: string) {
     display: flex;
     justify-content: space-between;
     align-items: flex-start;
-    gap: 3rem;
+    gap: 3.5rem;
     position: relative;
     max-width: 76rem;
     margin: 0 auto;
