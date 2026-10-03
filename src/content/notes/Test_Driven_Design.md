@@ -7,6 +7,7 @@ aliases: ["Test-Driven Development"]
 domain: "Engineering"
 sourcePath: "30_Resources/Tech/Architecture_and_Patterns/Test_Driven_Design.md"
 ---
+
 # Test-Driven Design
 
 ## TL;DR
@@ -42,9 +43,7 @@ describe("TimelineFeed Logic", () => {
   it("should fetch trending posts correctly", async () => {
     // Space/Time Complexity of mock setup: O(1) Time / O(N) Space
     const mockRepo: IPostRepository = {
-      getTrending: async () => [
-        { id: "1", content: "Pragmatic TDD strict mode" },
-      ],
+      getTrending: async () => [{ id: "1", content: "Pragmatic TDD strict mode" }],
     };
 
     const feedService = new FeedService(mockRepo);

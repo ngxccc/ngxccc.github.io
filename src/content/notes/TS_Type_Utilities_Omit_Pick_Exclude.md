@@ -7,6 +7,7 @@ aliases: ["TypeScript Type Utilities", "So sánh Omit Pick Exclude"]
 domain: "Engineering"
 sourcePath: "30_Resources/Tech/Language_and_Core/TS_Type_Utilities_Omit_Pick_Exclude.md"
 ---
+
 # TypeScript Type Utilities: Omit, Pick, Exclude
 
 ## TL;DR

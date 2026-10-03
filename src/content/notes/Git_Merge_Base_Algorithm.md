@@ -7,6 +7,7 @@ aliases: []
 domain: "Engineering"
 sourcePath: "30_Resources/Concepts/Computer_Science/Git_Merge_Base_Algorithm.md"
 ---
+
 # Git Merge Base Algorithm
 
 ## TL;DR

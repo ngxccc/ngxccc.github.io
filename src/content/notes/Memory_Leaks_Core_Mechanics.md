@@ -7,6 +7,7 @@ aliases: []
 domain: "Engineering"
 sourcePath: "30_Resources/Concepts/Computer_Science/Memory_Leaks_Core_Mechanics.md"
 ---
+
 # Memory Leaks Core Mechanics
 
 ## TL;DR

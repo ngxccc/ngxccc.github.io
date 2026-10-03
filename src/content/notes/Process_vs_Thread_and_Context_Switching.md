@@ -7,6 +7,7 @@ aliases: []
 domain: "Engineering"
 sourcePath: "30_Resources/Concepts/Computer_Science/Process_vs_Thread_and_Context_Switching.md"
 ---
+
 # Process vs Thread and Context Switching
 
 ## TL;DR

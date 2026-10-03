@@ -7,6 +7,7 @@ aliases: ["Hidden Classes", "Shapes", "Inline Caching", "JS Optimization"]
 domain: "Engineering"
 sourcePath: "30_Resources/Tech/Language_and_Core/JS_V8_Hidden_Classes_Inline_Caching.md"
 ---
+
 # JS Hidden Classes & Inline Caching
 
 ## TL;DR

@@ -7,6 +7,7 @@ aliases: []
 domain: "Engineering"
 sourcePath: "30_Resources/Concepts/Computer_Science/Redis_Single_Threaded_Event_Loop_Architecture.md"
 ---
+
 # Redis Single Threaded Event Loop Architecture
 
 ## TL;DR

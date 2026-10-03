@@ -7,6 +7,7 @@ aliases: ["Temporal API", "JS Temporal API", "API xử lý thời gian mới c�
 domain: "Engineering"
 sourcePath: "30_Resources/Tech/Language_and_Core/JS_Temporal_API.md"
 ---
+
 # JS Temporal API
 
 ## TL;DR

@@ -7,6 +7,7 @@ aliases: ["SEO", "Search Engine Optimization", "Tối ưu hóa công cụ tìm k
 domain: "Engineering"
 sourcePath: "30_Resources/Tech/Web_Client_and_Security/Search_Engine_Optimization.md"
 ---
+
 # Search Engine Optimization
 
 ## TL;DR

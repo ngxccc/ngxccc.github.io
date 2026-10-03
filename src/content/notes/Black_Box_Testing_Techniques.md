@@ -7,6 +7,7 @@ aliases: []
 domain: "Engineering"
 sourcePath: "30_Resources/Concepts/Software_Testing/Black_Box_Testing_Techniques.md"
 ---
+
 # Kỹ thuật Kiểm thử Hộp đen
 
 ## TL;DR

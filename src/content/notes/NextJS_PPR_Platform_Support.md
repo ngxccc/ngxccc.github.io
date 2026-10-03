@@ -7,6 +7,7 @@ aliases: []
 domain: "Engineering"
 sourcePath: "30_Resources/Tech/Frameworks_and_Ecosystem/NextJS_PPR_Platform_Support.md"
 ---
+
 # NextJS PPR Platform Support
 
 ## TL;DR

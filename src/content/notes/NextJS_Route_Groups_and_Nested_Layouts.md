@@ -7,6 +7,7 @@ aliases: []
 domain: "Engineering"
 sourcePath: "30_Resources/Tech/Frameworks_and_Ecosystem/NextJS_Route_Groups_and_Nested_Layouts.md"
 ---
+
 # Next.js Route Groups & Nested Layouts Inheritance
 
 ## TL;DR

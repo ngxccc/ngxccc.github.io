@@ -7,6 +7,7 @@ aliases: ["Lambda", "Cloud Functions"]
 domain: "Engineering"
 sourcePath: "30_Resources/Tech/Infrastructure_and_Cloud/Serverless_Architecture.md"
 ---
+
 # Serverless Architecture
 
 ## TL;DR

@@ -7,6 +7,7 @@ aliases: []
 domain: "Engineering"
 sourcePath: "30_Resources/Tech/API_and_Data_Design/Postgres_18_New_Features.md"
 ---
+
 # ️ PostgreSQL 18: Tính Năng & Cải Tiến Kiến Trúc
 
 ## TL;DR

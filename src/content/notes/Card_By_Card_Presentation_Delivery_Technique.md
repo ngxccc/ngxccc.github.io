@@ -7,6 +7,7 @@ aliases: []
 domain: "Linguistics & Learning"
 sourcePath: "30_Resources/Methods/Learning_and_Cognition/Card_By_Card_Presentation_Delivery_Technique.md"
 ---
+
 # Card By Card Presentation Delivery Technique
 
 > **Category**: Presentation & Public Speaking Method  

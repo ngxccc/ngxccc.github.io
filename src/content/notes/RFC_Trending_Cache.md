@@ -7,6 +7,7 @@ aliases: []
 domain: "Engineering"
 sourcePath: "30_Resources/Tech/API_and_Data_Design/RFC_Trending_Cache.md"
 ---
+
 # RFC: Realtime Leaderboard Caching System
 
 ## TL;DR

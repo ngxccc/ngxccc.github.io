@@ -7,6 +7,7 @@ aliases: ["SuperMemo 2", "SRS", "Forgetting Curve"]
 domain: "Linguistics & Learning"
 sourcePath: "30_Resources/Concepts/Learning_and_Linguistics/Spaced_Repetition_SM2.md"
 ---
+
 # Spaced Repetition
 
 ## TL;DR

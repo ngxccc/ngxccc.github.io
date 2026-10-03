@@ -7,6 +7,7 @@ aliases: ["Module Facade", "Boundary Interface"]
 domain: "Engineering"
 sourcePath: "30_Resources/Tech/Architecture_and_Patterns/Public_Interface_Pattern.md"
 ---
+
 # Public Interface Pattern
 
 ## TL;DR

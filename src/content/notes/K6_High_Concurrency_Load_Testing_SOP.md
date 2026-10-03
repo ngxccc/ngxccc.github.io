@@ -7,6 +7,7 @@ aliases: []
 domain: "Engineering"
 sourcePath: "30_Resources/Methods/Engineering/K6_High_Concurrency_Load_Testing_SOP.md"
 ---
+
 # High-Concurrency Load Testing SOP with Grafana k6
 
 ## TL;DR
@@ -131,9 +132,7 @@ export const options = {
   thresholds: {
     reserve_success_201: ["count==1"],
     reserve_conflict_409: [`count==${fixture.totalVus - 1}`],
-    reserve_unexpected_errors: [
-      { threshold: "count==0", abortOnFail: true, delayAbortEval: "1s" },
-    ],
+    reserve_unexpected_errors: [{ threshold: "count==0", abortOnFail: true, delayAbortEval: "1s" }],
   },
 };
 

@@ -7,6 +7,7 @@ aliases: []
 domain: "Engineering"
 sourcePath: "30_Resources/Concepts/Negotiation_and_Communication/Principled_Negotiation_Getting_To_Yes.md"
 ---
+
 # Principled Negotiation
 
 ## TL;DR

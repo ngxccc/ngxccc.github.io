@@ -7,6 +7,7 @@ aliases: []
 domain: "Engineering"
 sourcePath: "30_Resources/Concepts/Knowledge_Management/Visual_Workflow_Documentation_Policy.md"
 ---
+
 # Visual Workflow Documentation Policy
 
 ## TL;DR

@@ -7,6 +7,7 @@ aliases: ["Next.js Internationalization", "next-intl", "Đa ngôn ngữ NextJS"]
 domain: "Engineering"
 sourcePath: "30_Resources/Tech/Frameworks_and_Ecosystem/Next_Intl.md"
 ---
+
 # Next-Intl & Internationalization
 
 ## TL;DR
@@ -52,18 +53,14 @@ import { routing } from "./routing";
 import type { Locale } from "next-intl";
 
 const isValidLocale = (locale: unknown): locale is Locale => {
-  return (
-    typeof locale === "string" && routing.locales.includes(locale as Locale)
-  );
+  return typeof locale === "string" && routing.locales.includes(locale as Locale);
 };
 
 export default getRequestConfig(async ({ requestLocale }) => {
   const requestedLocale = await requestLocale;
 
   // Fallback an toàn nếu người dùng cố tình hack/gõ URL sai locale
-  const locale = isValidLocale(requestedLocale)
-    ? requestedLocale
-    : routing.defaultLocale;
+  const locale = isValidLocale(requestedLocale) ? requestedLocale : routing.defaultLocale;
 
   return {
     locale,
@@ -95,8 +92,7 @@ export const routing = defineRouting({
 });
 
 // Sinh ra Link, redirect, useRouter thông minh tự nhận biết locale segment
-export const { Link, redirect, usePathname, useRouter, getPathname } =
-  createNavigation(routing);
+export const { Link, redirect, usePathname, useRouter, getPathname } = createNavigation(routing);
 ```
 
 ### 3. Đồng bộ vs Bất đồng bộ trong Dịch thuật

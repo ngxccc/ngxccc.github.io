@@ -7,6 +7,7 @@ aliases: []
 domain: "Engineering"
 sourcePath: "30_Resources/Concepts/Product_and_Business_Mindsets/Customer_Outcome_Thinking.md"
 ---
+
 # Customer Outcome Thinking
 
 ## TL;DR

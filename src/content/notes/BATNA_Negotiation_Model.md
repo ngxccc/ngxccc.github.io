@@ -7,6 +7,7 @@ aliases: []
 domain: "Engineering"
 sourcePath: "30_Resources/Concepts/Negotiation_and_Communication/BATNA_Negotiation_Model.md"
 ---
+
 # BATNA Negotiation Model
 
 ## TL;DR

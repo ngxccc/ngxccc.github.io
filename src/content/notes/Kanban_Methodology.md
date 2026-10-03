@@ -7,6 +7,7 @@ aliases: ["Phương pháp Kanban", "Kanban Methodology", "Kanban Board Concept"]
 domain: "Engineering"
 sourcePath: "30_Resources/Concepts/Product_and_Business_Mindsets/Kanban_Methodology.md"
 ---
+
 # Phương Pháp & Bảng Kanban Trong Quản Trị Dự Án
 
 ## TL;DR

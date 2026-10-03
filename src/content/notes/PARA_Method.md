@@ -7,6 +7,7 @@ aliases: ["Phương pháp PARA", "Tổ chức thông tin theo mức độ hành 
 domain: "Engineering"
 sourcePath: "30_Resources/Concepts/Knowledge_Management/PARA_Method.md"
 ---
+
 # PARA Method
 
 ## TL;DR

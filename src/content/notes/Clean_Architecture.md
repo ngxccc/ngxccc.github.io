@@ -7,6 +7,7 @@ aliases: ["CA", "Kiến trúc sạch", "Clean Architecture"]
 domain: "Engineering"
 sourcePath: "30_Resources/Tech/Architecture_and_Patterns/Clean_Architecture.md"
 ---
+
 # Clean Architecture
 
 ## TL;DR

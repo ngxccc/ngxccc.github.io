@@ -7,6 +7,7 @@ aliases: []
 domain: "Engineering"
 sourcePath: "30_Resources/Concepts/Software_Testing/Open_vs_Closed_Workload_Models.md"
 ---
+
 # Open vs Closed Workload Models
 
 ## TL;DR

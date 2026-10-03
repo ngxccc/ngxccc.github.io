@@ -7,6 +7,7 @@ aliases: []
 domain: "Engineering"
 sourcePath: "30_Resources/Tech/Architecture_and_Patterns/DI_WinForms_Components.md"
 ---
+
 # WinForms Component Design with Dependency Injection
 
 ## TL;DR

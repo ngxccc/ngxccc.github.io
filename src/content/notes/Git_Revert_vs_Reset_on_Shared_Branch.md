@@ -7,6 +7,7 @@ aliases: []
 domain: "Engineering"
 sourcePath: "30_Resources/Methods/Engineering/Git_Revert_vs_Reset_on_Shared_Branch.md"
 ---
+
 # Git Revert vs Reset on Shared Branch
 
 ## TL;DR

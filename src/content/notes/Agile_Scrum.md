@@ -7,6 +7,7 @@ aliases: ["Quy trình Agile Scrum", "Agile Scrum Process"]
 domain: "Engineering"
 sourcePath: "30_Resources/Methods/Engineering/Agile_Scrum.md"
 ---
+
 # Quy Trình Agile & Scrum Trong Dự Án
 
 ## TL;DR

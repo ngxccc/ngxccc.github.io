@@ -7,6 +7,7 @@ aliases: []
 domain: "Engineering"
 sourcePath: "30_Resources/Concepts/Computer_Science/Git_Stash_Internals_and_Object_Structure.md"
 ---
+
 # Git Stash Internals and Object Structure
 
 ## TL;DR

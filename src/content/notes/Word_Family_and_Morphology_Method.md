@@ -7,6 +7,7 @@ aliases: []
 domain: "Linguistics & Learning"
 sourcePath: "30_Resources/Concepts/Learning_and_Linguistics/Word_Family_and_Morphology_Method.md"
 ---
+
 # Word Family and Morphology Method
 
 ## TL;DR

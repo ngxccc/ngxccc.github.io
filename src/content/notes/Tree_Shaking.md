@@ -7,6 +7,7 @@ aliases: []
 domain: "Engineering"
 sourcePath: "30_Resources/Tech/Language_and_Core/Tree_Shaking.md"
 ---
+
 # Tree Shaking
 
 ## TL;DR

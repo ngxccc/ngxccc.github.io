@@ -7,6 +7,7 @@ aliases: []
 domain: "Mental Models"
 sourcePath: "30_Resources/Concepts/Psychology_and_Mental_Models/Negativity_Bias_and_Outrage_Economy.md"
 ---
+
 # Negativity Bias and Outrage Economy
 
 ## TL;DR

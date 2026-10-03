@@ -7,6 +7,7 @@ aliases: ["Edge Functions", "Cloudflare Workers"]
 domain: "Engineering"
 sourcePath: "30_Resources/Tech/Infrastructure_and_Cloud/Edge_Computing.md"
 ---
+
 # Edge Computing
 
 ## TL;DR

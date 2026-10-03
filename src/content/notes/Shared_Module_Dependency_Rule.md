@@ -7,6 +7,7 @@ aliases: ["SDP", "Stable Dependencies Principle", "Circular Dependency"]
 domain: "Engineering"
 sourcePath: "30_Resources/Tech/Architecture_and_Patterns/Shared_Module_Dependency_Rule.md"
 ---
+
 # Shared Module Dependency Rule
 
 ## TL;DR

@@ -7,6 +7,7 @@ aliases: ["Quy trình V-Model", "Mô hình chữ V", "V-Model"]
 domain: "Engineering"
 sourcePath: "30_Resources/Methods/Engineering/V_Model.md"
 ---
+
 # Quy Trình Phát Triển Phần Mềm Theo Mô Hình V-Model
 
 ## TL;DR

@@ -7,6 +7,7 @@ aliases: ["Domain-Driven Design", "Thiết kế hướng tên miền", "DDD"]
 domain: "Engineering"
 sourcePath: "30_Resources/Tech/Architecture_and_Patterns/Domain_Driven_Design.md"
 ---
+
 # Domain-Driven Design
 
 ## TL;DR

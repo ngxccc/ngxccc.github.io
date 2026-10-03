@@ -7,6 +7,7 @@ aliases: ["Package Transpilation", "transpilePackages", "Monorepo Transpilation"
 domain: "Engineering"
 sourcePath: "30_Resources/Tech/Frameworks_and_Ecosystem/NextJS_Monorepo_Package_Transpilation.md"
 ---
+
 # Next.js Monorepo & Package Transpilation
 
 ## TL;DR

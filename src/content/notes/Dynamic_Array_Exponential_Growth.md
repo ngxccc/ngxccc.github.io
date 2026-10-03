@@ -7,6 +7,7 @@ aliases: []
 domain: "Engineering"
 sourcePath: "30_Resources/Concepts/Computer_Science/Dynamic_Array_Exponential_Growth.md"
 ---
+
 # Dynamic Array Exponential Growth
 
 Tài liệu này là một ghi chép Layer 1 phân tích nguyên lý Khoa học Máy tính cốt lõi về thuật toán tăng trưởng lũy thừa của Mảng động (Dynamic Arrays như C++ `std::vector`, Java `ArrayList`, Python `list`, Rust `Vec`, Go `slice`), giải thích lý do tại sao việc nhân sức chứa giúp đưa độ phức tạp của thao tác chèn cuối về mức khấu trắc Amortized $O(1)$.

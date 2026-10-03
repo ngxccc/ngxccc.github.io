@@ -7,6 +7,7 @@ aliases: []
 domain: "Engineering"
 sourcePath: "30_Resources/Concepts/Computer_Science/Latency_Percentiles_and_Throughput_Fundamentals.md"
 ---
+
 # Latency Percentiles and Throughput Fundamentals
 
 ## TL;DR

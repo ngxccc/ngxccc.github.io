@@ -7,6 +7,7 @@ aliases: ["Stack vs Heap Memory", "JS Stack vs Heap", "Stack and Heap"]
 domain: "Engineering"
 sourcePath: "30_Resources/Tech/Language_and_Core/JS_Stack_vs_Heap_Memory.md"
 ---
+
 # JS Stack vs Heap Memory
 
 Tài liệu này là một ghi chép Layer 2 mô tả chi tiết cách JavaScript (V8 Engine) triển khai phân tầng bộ nhớ Stack và Heap, dựa trên nguyên lý khoa học máy tính cốt lõi của [[Stack_vs_Heap_Memory_Fundamentals]].

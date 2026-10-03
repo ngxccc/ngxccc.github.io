@@ -7,6 +7,7 @@ aliases: []
 domain: "Engineering"
 sourcePath: "30_Resources/Methods/Engineering/Git_Branch_Deletion_and_Recovery_Mechanics.md"
 ---
+
 # Git Branch Deletion and Recovery Mechanics
 
 ## TL;DR

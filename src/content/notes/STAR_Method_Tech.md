@@ -7,6 +7,7 @@ aliases: ["STAR Framework", "Kỹ thuật phỏng vấn hành vi"]
 domain: "Engineering"
 sourcePath: "30_Resources/Methods/Engineering/STAR_Method_Tech.md"
 ---
+
 # STAR Method
 
 ## TL;DR

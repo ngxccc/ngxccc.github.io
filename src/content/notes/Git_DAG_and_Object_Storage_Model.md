@@ -7,6 +7,7 @@ aliases: []
 domain: "Engineering"
 sourcePath: "30_Resources/Concepts/Computer_Science/Git_DAG_and_Object_Storage_Model.md"
 ---
+
 # Git DAG and Object Storage Model
 
 ## TL;DR

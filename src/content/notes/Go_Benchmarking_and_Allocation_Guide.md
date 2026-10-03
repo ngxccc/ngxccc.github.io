@@ -7,6 +7,7 @@ aliases: []
 domain: "Engineering"
 sourcePath: "30_Resources/Methods/Engineering/Go_Benchmarking_and_Allocation_Guide.md"
 ---
+
 # Go Benchmarking and Allocation Guide
 
 Tài liệu này là một quy trình SOP (`type/method`) hướng dẫn chi tiết cách thiết lập file đo đạc hiệu năng (Benchmarking), phân tích lượng cấp phát bộ nhớ RAM (`allocs/op`, `B/op`), phòng chống tối ưu hóa sai lệch từ Compiler (Benchmark Sink), và kiểm tra Escape Analysis trên ngôn ngữ Go.

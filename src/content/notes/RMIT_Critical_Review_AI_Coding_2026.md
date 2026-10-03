@@ -7,6 +7,7 @@ aliases: []
 domain: "Engineering"
 sourcePath: "30_Resources/Concepts/Academic_and_Case_Studies/RMIT_Critical_Review_AI_Coding_2026.md"
 ---
+
 # Critical Review Report: Should You Still Learn to Code in 2026?
 
 ## TL;DR

@@ -7,6 +7,7 @@ aliases: ["Go Learning Roadmap", "Lộ trình học Go thực chiến"]
 domain: "Linguistics & Learning"
 sourcePath: "30_Resources/Tech/Language_and_Core/Go_Learning_Roadmap.md"
 ---
+
 # Lộ Trình Học Go Thực Chiến: Từ Cơ Bản Đến Microservices & Production
 
 ## TL;DR

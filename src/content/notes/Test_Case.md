@@ -7,6 +7,7 @@ aliases: ["Trường hợp kiểm thử", "Ca kiểm thử", "Test Case Basics"]
 domain: "Engineering"
 sourcePath: "30_Resources/Concepts/Software_Testing/Test_Case.md"
 ---
+
 # Test Case
 
 ## TL;DR

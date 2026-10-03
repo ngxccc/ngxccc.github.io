@@ -7,6 +7,7 @@ aliases: []
 domain: "Linguistics & Learning"
 sourcePath: "30_Resources/Methods/Learning_and_Cognition/English_Mastery_80_20_Roadmap.md"
 ---
+
 # Nghiên cứu Học Tiếng Anh: Tiêu chuẩn Nắm chắc và Phương pháp 80/20 theo Khoa học Nhận thức & SLA
 
 ## TL;DR

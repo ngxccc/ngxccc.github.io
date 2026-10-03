@@ -7,6 +7,7 @@ aliases: []
 domain: "Engineering"
 sourcePath: "30_Resources/Concepts/Computer_Science/Stack_vs_Heap_Memory_Fundamentals.md"
 ---
+
 # Stack vs Heap Memory Fundamentals
 
 ## TL;DR

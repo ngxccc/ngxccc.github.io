@@ -7,6 +7,7 @@ aliases: ["MOC", "Index Note", "Bản đồ định hướng"]
 domain: "Engineering"
 sourcePath: "30_Resources/Concepts/Knowledge_Management/Map_of_Content.md"
 ---
+
 # Map of Content
 
 ## TL;DR

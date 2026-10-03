@@ -7,6 +7,7 @@ aliases: ["React State", "Trạng thái trong React"]
 domain: "Engineering"
 sourcePath: "30_Resources/Tech/Frameworks_and_Ecosystem/React_State.md"
 ---
+
 # React State
 
 ## TL;DR

@@ -7,6 +7,7 @@ aliases: []
 domain: "Engineering"
 sourcePath: "30_Resources/Methods/Engineering/Git_Conflict_and_Three_Way_Merge_Mechanics.md"
 ---
+
 # Git Conflict and Three-Way Merge Mechanics
 
 ## TL;DR

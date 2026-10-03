@@ -7,6 +7,7 @@ aliases: ["Tư duy sinh viên", "Student Mindsets", "Mô hình tư duy sinh viê
 domain: "Mental Models"
 sourcePath: "30_Resources/Concepts/Psychology_and_Mental_Models/Student_Mindsets.md"
 ---
+
 # Student Mindsets
 
 ## TL;DR

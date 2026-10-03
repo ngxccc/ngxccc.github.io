@@ -7,6 +7,7 @@ aliases: ["Hộp ghi chú", "Atomic Notes", "Linked Thinking"]
 domain: "Engineering"
 sourcePath: "30_Resources/Concepts/Knowledge_Management/Zettelkasten_Method.md"
 ---
+
 # Zettelkasten Method
 
 ## TL;DR

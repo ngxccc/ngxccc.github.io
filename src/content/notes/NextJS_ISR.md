@@ -7,6 +7,7 @@ aliases: ["NextJS ISR", "Incremental Static Regeneration", "Tái tạo tĩnh the
 domain: "Engineering"
 sourcePath: "30_Resources/Tech/Frameworks_and_Ecosystem/NextJS_ISR.md"
 ---
+
 # NextJS ISR
 
 ## TL;DR

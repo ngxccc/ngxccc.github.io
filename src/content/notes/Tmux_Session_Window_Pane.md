@@ -7,6 +7,7 @@ aliases: ["Tmux Session vs Window vs Pane", "Tmux Keybinds"]
 domain: "Engineering"
 sourcePath: "30_Resources/Tech/Infrastructure_and_Cloud/Tmux_Session_Window_Pane.md"
 ---
+
 # Quản lý và Điều hướng Terminal với Tmux
 
 ## TL;DR

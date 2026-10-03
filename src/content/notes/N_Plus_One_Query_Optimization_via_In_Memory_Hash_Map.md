@@ -7,6 +7,7 @@ aliases: []
 domain: "Engineering"
 sourcePath: "30_Resources/Concepts/Computer_Science/N_Plus_One_Query_Optimization_via_In_Memory_Hash_Map.md"
 ---
+
 # N Plus One Query Optimization via In-Memory Hash Map
 
 ## TL;DR
@@ -71,11 +72,7 @@ Nhiều người nghĩ: _"Tại sao không `LEFT JOIN` bảng `quotes`, `quote_i
 
 ```typescript
 // 1. Query 1: Lấy danh sách Quotes chính xác theo Pagination
-const quoteRecords = await this.db
-  .select()
-  .from(quotes)
-  .limit(limit)
-  .offset(offset);
+const quoteRecords = await this.db.select().from(quotes).limit(limit).offset(offset);
 if (quoteRecords.length === 0) return { items: [], meta };
 
 const quoteIds = quoteRecords.map((q) => q.id);

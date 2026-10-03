@@ -7,6 +7,7 @@ aliases: []
 domain: "Engineering"
 sourcePath: "30_Resources/Methods/Engineering/Linux_Mastery_Core_Roadmap.md"
 ---
+
 # Linux Mastery Core Roadmap
 
 ## TL;DR

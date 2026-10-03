@@ -7,6 +7,7 @@ aliases: ["Quy trình xoắn ốc", "Mô hình xoắn ốc", "Spiral Model"]
 domain: "Engineering"
 sourcePath: "30_Resources/Methods/Engineering/Spiral_Model.md"
 ---
+
 # Quy Trình Phát Triển Phần Mềm Theo Mô Hình Xoắn Ốc
 
 ## TL;DR

@@ -7,6 +7,7 @@ aliases: []
 domain: "Mental Models"
 sourcePath: "30_Resources/Concepts/Psychology_and_Mental_Models/Availability_Heuristic_and_Base_Rate.md"
 ---
+
 # Availability Heuristic and Base Rate
 
 ## TL;DR

@@ -7,6 +7,7 @@ aliases: []
 domain: "Engineering"
 sourcePath: "30_Resources/Tech/Frameworks_and_Ecosystem/NextJS_Dynamic_Opt_Out_Connection.md"
 ---
+
 # NextJS Dynamic Opt Out and connection() API
 
 ## TL;DR
@@ -94,10 +95,7 @@ export async function GET(request: Request) {
     const status = await paymentService.verifyStatus(orderId);
     return NextResponse.json({ success: true, status });
   } catch (error) {
-    return NextResponse.json(
-      { success: false, error: "Internal Server Error" },
-      { status: 500 },
-    );
+    return NextResponse.json({ success: false, error: "Internal Server Error" }, { status: 500 });
   }
 }
 ```

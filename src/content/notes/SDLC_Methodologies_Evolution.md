@@ -7,6 +7,7 @@ aliases: ["Lịch sử tiến hóa SDLC", "Tiến trình phát triển SDLC", "S
 domain: "Engineering"
 sourcePath: "30_Resources/Concepts/Computer_Science/SDLC_Methodologies_Evolution.md"
 ---
+
 # Lịch Sử Tiến Hóa Của Các Mô Hình SDLC
 
 ## TL;DR

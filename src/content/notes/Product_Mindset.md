@@ -7,6 +7,7 @@ aliases: ["Product Mindset", "Tư duy sản phẩm", "Product-led Thinking"]
 domain: "Engineering"
 sourcePath: "30_Resources/Concepts/Product_and_Business_Mindsets/Product_Mindset.md"
 ---
+
 # Product Mindset
 
 ## TL;DR

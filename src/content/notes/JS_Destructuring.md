@@ -7,6 +7,7 @@ aliases: ["Bóc tách dữ liệu JS", "Destructuring Assignment", "ES6 Destruct
 domain: "Engineering"
 sourcePath: "30_Resources/Tech/Language_and_Core/JS_Destructuring.md"
 ---
+
 # JS Destructuring Assignment
 
 ## TL;DR

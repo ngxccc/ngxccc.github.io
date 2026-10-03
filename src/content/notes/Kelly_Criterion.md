@@ -7,6 +7,7 @@ aliases: ["Công thức Kelly", "Kelly Criterion", "Kelly Formula", "Tỷ lệ K
 domain: "Economics"
 sourcePath: "30_Resources/Concepts/Finance_and_Economics/Kelly_Criterion.md"
 ---
+
 # Kelly Criterion
 
 ## TL;DR
@@ -25,7 +26,7 @@ $$f^* = \frac{bp - q}{b} = \frac{p(b+1) - 1}{b}$$
 
 Trong đó:
 
-- **$f^*$**: Tỷ lệ phần trăm tối ưu của tổng vốn để phân bổ vào giao dịch này.
+- **$f^\*$**: Tỷ lệ phần trăm tối ưu của tổng vốn để phân bổ vào giao dịch này.
 - **$p$**: Xác suất thắng ($0 \le p \le 1$).
 - **$q$**: Xác suất thua ($q = 1 - p$).
 - **$b$**: Tỷ lệ cược ròng (net odds), nghĩa là nếu thắng bạn nhận được $b$ lần số tiền đã đặt cược (ví dụ: cược 1 ăn 2 thì $b = 2$).
@@ -53,7 +54,7 @@ $$f_{\text{frac}} = \lambda \cdot f^* \quad (0 < \lambda < 1)$$
 
 - **Half-Kelly ($\lambda = 0.5$):** Đặt cược $50\%$ tỷ lệ khuyến nghị của Kelly.
 - **Mối quan hệ phi tuyến giữa tăng trưởng và tỷ lệ đặt cược:**
-  Tốc độ tăng trưởng vượt mức kỳ vọng $g(\lambda f^*)$ liên hệ với tốc độ tăng trưởng tối đa của Full Kelly $g^*$ theo công thức:
+  Tốc độ tăng trưởng vượt mức kỳ vọng $g(\lambda f^_)$ liên hệ với tốc độ tăng trưởng tối đa của Full Kelly $g^_$ theo công thức:
   $$g(\lambda f^*) = \lambda(2 - \lambda) g^*$$
   - Với **Half-Kelly ($\lambda = 0.5$)**, nhà đầu tư giữ lại được $0.5 \times (2 - 0.5) = 75\%$ tốc độ tăng trưởng của Full Kelly.
   - Trong khi đó, biến động (volatility/standard deviation) của danh mục giảm đi một nửa ($50\%$), giúp hạn chế đáng kể các pha sụt giảm tài sản cực hạn và tăng tính ổn định tâm lý.
@@ -117,7 +118,7 @@ def simulate_path(p, b, fraction, steps=100, init_capital=100):
 
 Mặc dù có cơ sở toán học vững chắc, công thức Kelly có những giới hạn và yêu cầu kỷ luật nghiêm ngặt khi áp dụng vào thực tế đầu tư tài chính:
 
-- **Overbetting (Đặt cược quá tay):** Nếu đặt cược lớn hơn mức Kelly tối ưu ($f > f^*$), tốc độ tăng trưởng dài hạn sẽ sụt giảm. Nếu đặt cược vượt quá hai lần mức Kelly khuyến nghị ($f > 2f^*$), tốc độ tăng trưởng kỳ vọng sẽ âm và dẫn đến phá sản chắc chắn (certain ruin) trong dài hạn.
+- **Overbetting (Đặt cược quá tay):** Nếu đặt cược lớn hơn mức Kelly tối ưu ($f > f^_$), tốc độ tăng trưởng dài hạn sẽ sụt giảm. Nếu đặt cược vượt quá hai lần mức Kelly khuyến nghị ($f > 2f^_$), tốc độ tăng trưởng kỳ vọng sẽ âm và dẫn đến phá sản chắc chắn (certain ruin) trong dài hạn.
 - **Sai số ước lượng (Estimation Error):** Trong thực tế, các biến số $p$, $b$, $\mu$, $\sigma^2$ là ước lượng lịch sử hoặc kỳ vọng cá nhân, không bao giờ hoàn hảo. Việc phóng đại biên an toàn hoặc đánh giá quá cao xác suất thắng sẽ dẫn đến overbetting. Do đó, Half-Kelly hoặc Quarter-Kelly luôn được ưu tiên để tạo biên an toàn chống lại sai số mô hình.
 - **Giả định tĩnh (Stationarity):** Công thức Kelly giả định thị trường có các thuộc tính thống kê không đổi theo thời gian. Thực tế, biến động thị trường thay đổi liên tục (non-stationarity), đòi hỏi phải cập nhật định kỳ ma trận hiệp phương sai và lợi nhuận kỳ vọng.
 

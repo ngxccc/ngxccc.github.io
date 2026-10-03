@@ -7,6 +7,7 @@ aliases: ["ZOPA", "Zone of Possible Agreement", "Vùng thỏa thuận khả thi"
 domain: "Engineering"
 sourcePath: "30_Resources/Concepts/Negotiation_and_Communication/ZOPA_Negotiation_Framework.md"
 ---
+
 # ZOPA Negotiation Framework
 
 ## TL;DR

@@ -7,6 +7,7 @@ aliases: []
 domain: "Engineering"
 sourcePath: "30_Resources/Concepts/Software_Testing/K6_Telemetry_Metrics_and_Threshold_Gates.md"
 ---
+
 # k6 Telemetry Metrics & Threshold Gates
 
 ## TL;DR
@@ -84,9 +85,7 @@ export const options = {
     // Invariant: 99 requests còn lại nhận 409
     reserve_conflict_409: ["count==99"],
     // Fail-Fast: Dừng test ngay lập tức nếu xuất hiện bất kỳ lỗi 500 nào
-    reserve_unexpected_errors: [
-      { threshold: "count==0", abortOnFail: true, delayAbortEval: "1s" },
-    ],
+    reserve_unexpected_errors: [{ threshold: "count==0", abortOnFail: true, delayAbortEval: "1s" }],
     // SLA phân vị p95 cho kịch bản có tag
     "hot_seat_duration_ms{scenario:hot_seat}": ["p(95)<=700", "p(99)<=800"],
   },
@@ -98,11 +97,7 @@ export default function (): void {
     tags: { scenario: "hot_seat" },
   };
 
-  const res = post(
-    "http://127.0.0.1:3000/reserve",
-    JSON.stringify({ seatId: "A1" }),
-    params,
-  );
+  const res = post("http://127.0.0.1:3000/reserve", JSON.stringify({ seatId: "A1" }), params);
 
   hotSeatDuration.add(res.timings.duration);
   if (res.status === 201) reserve201.add(1);

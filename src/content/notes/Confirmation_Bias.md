@@ -7,6 +7,7 @@ aliases: []
 domain: "Mental Models"
 sourcePath: "30_Resources/Concepts/Psychology_and_Mental_Models/Confirmation_Bias.md"
 ---
+
 # Confirmation Bias
 
 ## TL;DR

@@ -7,6 +7,7 @@ aliases: ["Tư duy hệ thống", "Systems Thinking", "9 Lăng kính Hệ thốn
 domain: "Mental Models"
 sourcePath: "30_Resources/Concepts/Psychology_and_Mental_Models/Systems_Thinking.md"
 ---
+
 # Systems Thinking in Software Engineering
 
 ## TL;DR

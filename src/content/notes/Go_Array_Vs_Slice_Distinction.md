@@ -7,6 +7,7 @@ aliases: []
 domain: "Engineering"
 sourcePath: "30_Resources/Tech/Language_and_Core/Go_Array_Vs_Slice_Distinction.md"
 ---
+
 # Bản Chất Kiến Trúc Và Sự Phân Biệt Giữa Array Và Slice Trong Go
 
 Tài liệu này là một ghi chép Layer 2 phân tích sự khác biệt giữa Array và Slice trong Go, cách chúng tương tác với bộ nhớ Stack (dành cho mảng cố định) và Heap (dành cho mảng động), dựa trên nguyên lý khoa học máy tính cốt lõi của [[Stack_vs_Heap_Memory_Fundamentals]] và ảnh hưởng của chúng đối với áp lực dọn rác của [[Garbage_Collection_Fundamentals]].

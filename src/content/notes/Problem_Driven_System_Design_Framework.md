@@ -7,6 +7,7 @@ aliases: []
 domain: "Engineering"
 sourcePath: "30_Resources/Methods/Engineering/Problem_Driven_System_Design_Framework.md"
 ---
+
 # Problem-Driven System Design Framework
 
 ## TL;DR

@@ -7,6 +7,7 @@ aliases: ["Capstone Roadmap", "Software Dev Lifecycle", "Project SOP"]
 domain: "Engineering"
 sourcePath: "30_Resources/Methods/Engineering/Standard_Project_Timeline_SOP.md"
 ---
+
 # Standard Project Timeline SOP
 
 ## TL;DR

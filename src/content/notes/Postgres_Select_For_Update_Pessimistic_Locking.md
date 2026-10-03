@@ -7,6 +7,7 @@ aliases: ["SELECT FOR UPDATE", "Row-Level Locking", "Pessimistic Locking"]
 domain: "Engineering"
 sourcePath: "30_Resources/Tech/API_and_Data_Design/Postgres_Select_For_Update_Pessimistic_Locking.md"
 ---
+
 # Postgres SELECT FOR UPDATE
 
 ## TL;DR
@@ -63,11 +64,7 @@ COMMIT;
 ```typescript
 await this.db.transaction(async (tx) => {
   // 1. Lock dòng user ngay khi đọc dữ liệu để ngăn ngừa TOCTOU & Race Condition
-  const [user] = await tx
-    .select()
-    .from(users)
-    .where(eq(users.email, dto.email))
-    .for("update");
+  const [user] = await tx.select().from(users).where(eq(users.email, dto.email)).for("update");
 
   // 2. Anti-enumeration check
   if (!user || user.status !== "pending_verification") {
@@ -76,8 +73,7 @@ await this.db.transaction(async (tx) => {
 
   // 3. Cooldown check (60s)
   if (user.verificationExpiresAt) {
-    const tokenCreatedAt =
-      user.verificationExpiresAt.getTime() - 24 * 60 * 60 * 1000;
+    const tokenCreatedAt = user.verificationExpiresAt.getTime() - 24 * 60 * 60 * 1000;
     if (Date.now() - tokenCreatedAt < 60000) {
       return;
     }

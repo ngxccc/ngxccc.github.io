@@ -7,6 +7,7 @@ aliases: ["DCA", "Trung bình giá", "Đầu tư định kỳ"]
 domain: "Economics"
 sourcePath: "30_Resources/Methods/Finance/Dollar_Cost_Averaging.md"
 ---
+
 # Dollar Cost Averaging
 
 ## TL;DR

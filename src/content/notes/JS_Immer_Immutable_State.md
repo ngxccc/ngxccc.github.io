@@ -7,6 +7,7 @@ aliases: ["Immer", "ImmerJS", "Copy-on-Write", "Structural Sharing", "Immutable 
 domain: "Engineering"
 sourcePath: "30_Resources/Tech/Language_and_Core/JS_Immer_Immutable_State.md"
 ---
+
 # Immer.js: Copy-on-Write & Immutable State Management
 
 ## TL;DR
@@ -50,11 +51,7 @@ Khi ta cần cập nhật sâu một trạng thái lồng nhau (ví dụ: cập 
 #### Cách viết Spread thủ công
 
 ```typescript
-const updateCartItemQty = (
-  cart: Cart,
-  productId: string,
-  qty: number,
-): Cart => {
+const updateCartItemQty = (cart: Cart, productId: string, qty: number): Cart => {
   return {
     ...cart,
     items: cart.items.map((item) =>
@@ -69,11 +66,7 @@ const updateCartItemQty = (
 ```typescript
 import { produce } from "immer";
 
-const updateCartItemQty = (
-  cart: Cart,
-  productId: string,
-  qty: number,
-): Cart => {
+const updateCartItemQty = (cart: Cart, productId: string, qty: number): Cart => {
   return produce(cart, (draft) => {
     const item = draft.items.find((i) => i.productId === productId);
     if (item) {
@@ -96,14 +89,9 @@ export const useCartStore = create<CartState>()(
     addItem: async (item, quantity) => {
       set(
         produce((state: CartState) => {
-          const existingItem = state.items.find(
-            (i) => i.productId === item.productId,
-          );
+          const existingItem = state.items.find((i) => i.productId === item.productId);
           if (existingItem) {
-            existingItem.quantity = Math.min(
-              existingItem.quantity + quantity,
-              item.totalStock,
-            );
+            existingItem.quantity = Math.min(existingItem.quantity + quantity, item.totalStock);
           } else {
             state.items.push(createCartItem(item, quantity));
           }
