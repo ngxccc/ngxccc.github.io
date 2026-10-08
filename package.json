@@ -28,8 +28,8 @@
     "@astrojs/check": "^0.9.10",
     "@astrojs/markdown-remark": "^7.3.1",
     "@types/node": "^26.6.4",
-    "oxfmt": "^0.71.0",
-    "oxlint": "^1.86.0",
+    "oxfmt": "^0.72.0",
+    "oxlint": "^1.87.0",
     "typescript": "^6"
   }
 }
